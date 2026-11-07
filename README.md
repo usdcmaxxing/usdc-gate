@@ -94,6 +94,7 @@ coverage, window, hits) so a caller can audit the call rather than trust it.
 | File | Purpose |
 |---|---|
 | `server.js` | Express + x402 middleware; the paid endpoint |
+| `mcp-server.js` | stdio MCP server — the free, rate-limited funnel |
 | `check.js` | Verdict logic (no x402 coupling) |
 | `flow.js` | Real chain-history flow checks (Blockscout / eth_getLogs) |
 | `usdc.js` | On-chain reads of `isBlacklisted`, token identity |
@@ -170,6 +171,36 @@ Also free, ungated:
 - `GET /v1/sample` — a static example verdict, so a buyer can see the shape before paying.
 - `GET /health`
 - `GET /` — service metadata
+
+---
+
+## MCP access
+
+The same check is available as a stdio **MCP server**, so MCP-based agents can call it
+directly:
+
+```bash
+node mcp-server.js
+```
+
+Tools:
+
+- `check_counterparty` — the full verdict (native asset, issuer blacklist, OFAC, flow).
+- `service_info` — what the service checks, supported chains, and the paid endpoint.
+
+Wire it into a client with the standard stdio transport:
+
+```json
+{
+  "mcpServers": {
+    "usdc-gate": { "command": "node", "args": ["/absolute/path/to/usdc-gate/mcp-server.js"] }
+  }
+}
+```
+
+This is the **acquisition funnel**, not the product: it is free but rate-limited
+(`MCP_RATE_LIMIT`, default 30 calls/hour), and the response says so. Production traffic
+belongs on the paid x402 endpoint.
 
 ---
 

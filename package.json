@@ -5,8 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "mcp": "node mcp-server.js",
     "demo": "./demo.sh",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "test:mcp": "node tests/mcp-smoke.mjs"
   },
   "keywords": [
     "x402",
@@ -19,6 +21,7 @@
   "license": "MIT",
   "description": "Pre-flight counterparty risk for USDC payments. USDC only.",
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "@x402/core": "^2.30.0",
     "@x402/evm": "^2.30.0",
     "@x402/express": "^2.30.0",
