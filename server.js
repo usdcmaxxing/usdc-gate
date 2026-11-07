@@ -65,6 +65,202 @@ app.get("/", (_req, res) => {
 
 app.get("/health", (_req, res) => res.json({ ok: true, payTo: PAY_TO }));
 
+// ── Machine-readable discovery ────────────────────────────────────────────
+// These are UNGATED on purpose: a crawler must be able to read what the
+// service sells before it pays for a call. Every x402 directory
+// (agent402.tools, the CDP Bazaar, Celo's index) probes a public origin, so
+// these routes are the difference between being listed and being invisible.
+//
+// They still do not make the service discoverable on their own — the
+// directories require a public HTTPS origin, and the CDP Bazaar only
+// indexes a resource after it has settled a real payment. See README.
+
+const ORIGIN = process.env.PUBLIC_ORIGIN || `http://localhost:${PORT}`;
+
+const ENDPOINTS = [
+  {
+    path: "/v1/check-counterparty",
+    method: "POST",
+    price: PRICE,
+    network: NETWORK,
+    scheme: "exact",
+    asset: USDC["base-sepolia"].address,
+    payTo: PAY_TO,
+    description:
+      "Pre-flight counterparty risk check for a USDC payment. USDC only.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        payer: { type: "string", description: "Payer address (0x…)" },
+        payee: { type: "string", description: "Payee address (0x…)" },
+        chain: { type: "string", enum: ["base-sepolia", "base"] },
+        asset: { type: "string" },
+        amount: { type: "string" },
+      },
+      required: ["payer", "payee"],
+    },
+    outputExample: {
+      verdict: "APPROVE",
+      reason_codes: [],
+      issuer_blacklist: { payer: { blacklisted: false } },
+    },
+  },
+  {
+    path: "/v1/check-counterparty",
+    method: "GET",
+    price: PRICE,
+    network: NETWORK,
+    scheme: "exact",
+    asset: USDC["base-sepolia"].address,
+    payTo: PAY_TO,
+    description: "Same check as POST; query parameters instead of a body.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        payer: { type: "string" },
+        payee: { type: "string" },
+        chain: { type: "string", enum: ["base-sepolia", "base"] },
+      },
+      required: ["payer", "payee"],
+    },
+    outputExample: { verdict: "APPROVE", reason_codes: [] },
+  },
+];
+
+app.get("/.well-known/x402", (_req, res) => {
+  res.json({
+    origin: ORIGIN,
+    x402Version: 2,
+    service: "USDC Gate",
+    description: "Pre-flight counterparty risk for USDC payments. USDC only.",
+    endpoints: ENDPOINTS,
+    freeEndpoints: ["/v1/sample", "/health", "/"],
+    assets: {
+      "base-sepolia": USDC["base-sepolia"],
+      base: USDC.base,
+    },
+    payTo: PAY_TO,
+  });
+});
+
+// A2A agent card — lets another agent discover and delegate to this service.
+app.get("/.well-known/agent.json", (_req, res) => {
+  res.json({
+    name: "USDC Gate",
+    description:
+      "Pre-flight counterparty risk for USDC payments: Circle issuer " +
+      "blacklist, OFAC SDN, and on-chain flow checks. Paid per call in USDC.",
+    url: ORIGIN,
+    version: "0.2.0",
+    provider: { name: "USDC Gate", url: ORIGIN },
+    schemaVersion: "1.0",
+    capabilities: { streaming: false, pushNotifications: false },
+    securitySchemes: { x402: { type: "x402", network: NETWORK, price: PRICE } },
+    skills: [{
+      id: "check-counterparty",
+      name: "Check counterparty",
+      description: "Is this address safe to pay in USDC?",
+      tags: ["compliance", "risk", "usdc", "x402"],
+      endpoint: `${ORIGIN}/v1/check-counterparty`,
+      price: PRICE,
+      network: NETWORK,
+    }],
+  });
+});
+
+app.get("/llms.txt", (_req, res) => {
+  res.type("text/plain").send(
+    [
+      "# USDC Gate",
+      "",
+      "> Pre-flight counterparty risk for USDC payments. USDC only.",
+      "",
+      "## What it sells",
+      "",
+      `- \`POST /v1/check-counterparty\` — ${PRICE} USDC on ${NETWORK} (exact scheme)`,
+      "  Input: { payer, payee, chain?, asset?, amount? }",
+      "  Output: { verdict: APPROVE|HOLD|REJECT, reason_codes, issuer_blacklist, sanctions, flow, policy }",
+      "",
+      "## Why it exists",
+      "",
+      "Circle's USDC exposes isBlacklisted(address) on-chain. That is live",
+      "issuer state, readable at any block. OFAC is a dated download — a floor,",
+      "not a live signal. An address frozen mid-relationship is invisible to a",
+      "list check and obvious to an on-chain read.",
+      "",
+      "The x402 facilitator screens at verification AND settlement, and a",
+      "decline returns 403 non-retryably at the address level. This check runs",
+      "before that happens.",
+      "",
+      "## Free, ungated",
+      "",
+      "- `GET /v1/sample` — static example of the verdict shape",
+      "- `GET /health` — liveness",
+      "- `GET /.well-known/x402` — this manifest",
+      "",
+      "## Assets",
+      "",
+      `- base-sepolia: ${USDC["base-sepolia"].address}`,
+      `- base: ${USDC.base.address}`,
+      `- ethereum: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`,
+      "",
+      `payTo: ${PAY_TO}`,
+      "",
+    ].join("\n"),
+  );
+});
+
+// Agent402-style skill file. Agents read this to decide whether to call.
+app.get("/skill.md", (_req, res) => {
+  res.type("text/markdown").send(
+    [
+      "---",
+      "name: usdc-gate",
+      "description: Is this address safe to pay in USDC? Live Circle issuer blacklist, OFAC SDN, and on-chain flow checks. Paid per call in USDC.",
+      "payment: x402",
+      `price: ${PRICE}`,
+      `network: ${NETWORK}`,
+      "---",
+      "",
+      "# USDC Gate",
+      "",
+      "Pre-flight counterparty risk for USDC payments. USDC only.",
+      "",
+      "## When to use",
+      "",
+      "Before sending USDC to an address you do not fully trust — a payee,",
+      "a payer, or a counterparty in an agent-to-agent settlement.",
+      "",
+      "## How to call",
+      "",
+      "```bash",
+      `curl -X POST ${ORIGIN}/v1/check-counterparty \\`,
+      "  -H 'content-type: application/json' \\",
+      "  -d '{\"payer\":\"0x…\",\"payee\":\"0x…\",\"amount\":\"0.02\"}'",
+      "```",
+      "",
+      "The first response is `402 Payment Required`. Pay the challenge in USDC",
+      "and retry with the payment signature. No account, no API key.",
+      "",
+      "## Reading the verdict",
+      "",
+      "- `APPROVE` — no sanctions, not issuer-blacklisted, no flow flags.",
+      "- `HOLD` — a tiered/variable venue with no tier supplied, or a first",
+      "  interaction with a payee with no USDC history. Not a rejection.",
+      "- `REJECT` — OFAC SDN match, issuer blacklist hit, or self-send.",
+      "",
+      "## Caveat",
+      "",
+      "`issuer_blacklist` is live and authoritative. `sanctions` is exact-match",
+      "against a dated OFAC download — a floor, not a live signal. `flow` checks",
+      "need chain history; when unavailable they report `unknown` and never",
+      "fail a verdict alone.",
+      "",
+    ].join("\n"),
+  );
+});
+
+
 // Free sample verdict — lets a buyer see the output shape before paying.
 // Clearly labelled: a static example, not a live check.
 app.get("/v1/sample", (_req, res) => {

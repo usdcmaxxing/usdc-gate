@@ -1,0 +1,55 @@
+# Smithery MCP listing configuration.
+# https://smithery.ai/docs/config#smitheryyaml
+#
+# Smithery connects to the stdio MCP server in mcp-server.js. The paid tool
+# is x402-gated: Smithery gets the 402 challenge and the caller pays in USDC.
+schemaVersion: 1
+name: usdc-gate
+displayName: USDC Gate
+description: >-
+  Pre-flight counterparty risk for USDC payments. Live Circle issuer
+  blacklist (on-chain isBlacklisted), OFAC SDN screening, and on-chain flow
+  checks (shared funder, mixer exposure, peel chain). Paid per call in USDC
+  over x402 — no account, no API key.
+version: 0.2.0
+avatar: https://raw.githubusercontent.com/local/usdc-gate/main/assets/logo.png
+homepage: https://github.com/local/usdc-gate
+readme: https://github.com/local/usdc-gate#readme
+repository: https://github.com/local/usdc-gate
+license: MIT
+keywords:
+  - usdc
+  - x402
+  - compliance
+  - risk
+  - solana
+  - agent-payments
+  - counterparty-risk
+  - sanctions
+price: 0.02
+currency: USD
+tags:
+  - finance
+  - compliance
+  - crypto
+  - risk
+server:
+  type: stdio
+  command: node
+  args:
+    - mcp-server.js
+  env: {}
+tools:
+  - name: check_counterparty
+    description: >-
+      Check whether an address is safe to pay in USDC. Returns APPROVE, HOLD
+      or REJECT with the evidence for each.
+    parameters:
+      payer: string, required
+      payee: string, required
+      chain: string, optional (base-sepolia | base)
+      asset: string, optional
+      amount: string, optional
+  - name: service_info
+    description: Service metadata, accepted assets, and the free endpoints.
+    parameters: {}

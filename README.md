@@ -268,18 +268,69 @@ PRICE='$0.02' \
 node server.js
 ```
 
-Registration checklist (all free, do all of it):
+## Discovery and registration
 
-- **x402 Bazaar** — ✅ done. The 402 carries a `bazaar` discovery extension
-  (`declareDiscoveryExtension` + `bazaarResourceServerExtension`), so the
-  endpoint's input/output schema is self-describing and facilitators can catalog
-  it from the 402 alone. Verify with `curl -D - -o /dev/null -X POST …` and decode
-  the `PAYMENT-REQUIRED` header.
-- **Agent402 index** — submit the origin; their crawler probes it every 30 minutes.
-- **MCP directories** — Glama, mcp.so, Smithery, MCP Marketplace (list as `type: "mcp"`).
-- **ERC-8004** — register an agent identity so verdicts are attributable, then collect
-  *grounded* feedback: every review references the x402 payment hash that proves the
-  interaction happened. That is the fix for the known weakness of the Reputation Registry.
+The service ships the machine-readable surfaces a crawler needs. All are
+**ungated** — a crawler must be able to read what is for sale before it pays.
+
+| Route | What it is | Who reads it |
+|---|---|---|
+| `GET /.well-known/x402` | Manifest: endpoints, price, network, asset, payTo, schemas | agent402.tools, the CDP Bazaar, Celo's index |
+| `GET /.well-known/agent.json` | A2A agent card | A2A / Google AP2 discovery |
+| `GET /llms.txt` | Plain-text service description and call example | LLM crawlers, Agent402 |
+| `GET /skill.md` | Agent402-style skill file with the verdict vocabulary | Agent402 |
+| `POST /v1/check-counterparty` | 402 carries a `bazaar` discovery extension | the Bazaar (self-describing) |
+
+### The two blockers — both real, both measured
+
+**1. A public HTTPS origin is required.** Agent402 rejects anything else:
+
+```
+$ curl -X POST https://agent402.tools/api/index/register \
+    -H 'content-type: application/json' \
+    -d '{"origin":"http://localhost:4021"}'
+{"error":"origin must be https"}      ← HTTP 400
+```
+
+`localhost` works for development and for the MCP smoke test; it will never
+be listed. Deploy to any public HTTPS origin and set `PUBLIC_ORIGIN` so the
+manifests advertise the right URL:
+
+```bash
+PUBLIC_ORIGIN=https://usdc-gate.example.com node server.js
+```
+
+Render, Railway, Fly, Cloudflare Workers, or a $5 VPS are all sufficient —
+the service is a single Node process with no state.
+
+**2. The CDP Bazaar only indexes a resource after it has settled a real
+payment.** As of 7 Nov 2026 a search of `/discovery/resources` for this origin
+returned **0 hits**. The `bazaar` extension makes the endpoint
+*self-describing*, but the catalog is settlement-gated by design: it is a
+record of things that have actually been paid, not a directory of things that
+exist. One settled payment is the trigger.
+
+That second blocker is the same one documented under *Seeing a real
+settlement* — the demo buyer is unfunded. Fund it and one call settles both.
+
+### MCP directories
+
+`smithery.yaml` is included for Smithery. The MCP server is stdio
+(`npm run mcp`), tools `check_counterparty` and `service_info`.
+
+To list elsewhere, the same three things are needed:
+
+- **Glama** — add the server URL; it proxies to the MCP endpoint.
+- **mcp.so / MCP Marketplace** — register the tool as `type: "mcp"`.
+- **Smithery** — the committed `smithery.yaml` is the listing config.
+
+### ERC-8004
+
+Register an agent identity so verdicts are attributable, then collect
+*grounded* feedback: every review references the x402 payment hash that proves
+the interaction happened. That is the fix for the known weakness of the
+Reputation Registry — feedback that is "rarely grounded in verifiable
+interactions" and cheap to manipulate.
 
 ---
 
