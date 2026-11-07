@@ -1,0 +1,25 @@
+{
+  "name": "usdc-gate",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "./demo.sh",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": ["x402", "usdc", "compliance", "agent-payments", "risk"],
+  "author": "",
+  "license": "MIT",
+  "description": "Pre-flight counterparty risk for USDC payments. USDC only.",
+  "dependencies": {
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/express": "^2.30.0",
+    "@x402/fetch": "^2.30.0",
+    "express": "^5.3.0",
+    "puppeteer-core": "^25.16.0",
+    "viem": "^2.57.16"
+  },
+  "type": "module"
+}
