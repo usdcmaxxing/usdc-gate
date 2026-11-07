@@ -2,6 +2,11 @@ import express from "express";
 import { paymentMiddleware, x402ResourceServer } from "@x402/express";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
+import {
+  declareDiscoveryExtension,
+  bazaarResourceServerExtension,
+  withBazaar,
+} from "@x402/extensions/bazaar";
 import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
 import { USDC } from "./usdc.js";
 import { checkCounterparty, OFAC } from "./check.js";
@@ -107,24 +112,83 @@ app.get("/v1/sample", (_req, res) => {
   });
 });
 
+// ── Bazaar discovery ───────────────────────────────────────────────────────
+// Declares the endpoint's input/output shape in the 402 itself, so facilitators
+// and crawlers can catalog it without reading this file. The server extension
+// fills in the HTTP method at request time; withBazaar lets our facilitator
+// client read the declaration back.
+const INPUT_SCHEMA = {
+  type: "object",
+  properties: {
+    payer: { type: "string", description: "Payer address (0x…)" },
+    payee: { type: "string", description: "Payee address (0x…)" },
+    chain: {
+      type: "string",
+      enum: ["base-sepolia", "base"],
+      description: "Chain key (default: base-sepolia)",
+    },
+    asset: {
+      type: "string",
+      description: "Asset contract address (default: native USDC on the chain)",
+    },
+    amount: { type: "string", description: "Optional amount for policy checks" },
+  },
+  required: ["payer", "payee"],
+};
+
+const OUTPUT = {
+  example: {
+    verdict: "APPROVE",
+    reason_codes: [],
+    issuer_blacklist: { payer: { blacklisted: false } },
+  },
+  schema: { type: "object" },
+};
+
+const postBazaar = declareDiscoveryExtension({
+  method: "POST",
+  input: { payer: "0x…", payee: "0x…", chain: "base-sepolia", amount: "0.02" },
+  inputSchema: INPUT_SCHEMA,
+  bodyType: "json",
+  output: OUTPUT,
+});
+
+const getQueryBazaar = declareDiscoveryExtension({
+  method: "GET",
+  input: { payer: "0x…", payee: "0x…" },
+  inputSchema: {
+    type: "object",
+    properties: {
+      payer: { type: "string" },
+      payee: { type: "string" },
+      chain: { type: "string", enum: ["base-sepolia", "base"] },
+      asset: { type: "string" },
+      amount: { type: "string" },
+    },
+    required: ["payer", "payee"],
+  },
+  output: OUTPUT,
+});
+
 const routes = {
   "POST /v1/check-counterparty": {
     accepts: [{ scheme: "exact", price: PRICE, network: NETWORK, payTo: PAY_TO }],
     description: "Pre-flight counterparty risk check for a USDC payment (USDC only)",
     mimeType: "application/json",
+    extensions: postBazaar,
   },
   "GET /v1/check-counterparty": {
     accepts: [{ scheme: "exact", price: PRICE, network: NETWORK, payTo: PAY_TO }],
     description: "Pre-flight counterparty risk check for a USDC payment (USDC only)",
     mimeType: "application/json",
+    extensions: getQueryBazaar,
   },
 };
 
-const facilitatorClient = new HTTPFacilitatorClient({ url: FACILITATOR });
-const resourceServer = new x402ResourceServer(facilitatorClient).register(
-  NETWORK,
-  new ExactEvmScheme()
-);
+const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
+const resourceServer = new x402ResourceServer(facilitatorClient)
+  .register(NETWORK, new ExactEvmScheme())
+  .registerExtension(bazaarResourceServerExtension);
 
 // Fetch the facilitator's supported schemes before serving.
 try {

@@ -239,8 +239,11 @@ node server.js
 
 Registration checklist (all free, do all of it):
 
-- **x402 Bazaar** — add the `bazaar` extension to the route config so the 402 is
-  self-describing; facilitators and crawlers catalog it from the 402 itself.
+- **x402 Bazaar** — ✅ done. The 402 carries a `bazaar` discovery extension
+  (`declareDiscoveryExtension` + `bazaarResourceServerExtension`), so the
+  endpoint's input/output schema is self-describing and facilitators can catalog
+  it from the 402 alone. Verify with `curl -D - -o /dev/null -X POST …` and decode
+  the `PAYMENT-REQUIRED` header.
 - **Agent402 index** — submit the origin; their crawler probes it every 30 minutes.
 - **MCP directories** — Glama, mcp.so, Smithery, MCP Marketplace (list as `type: "mcp"`).
 - **ERC-8004** — register an agent identity so verdicts are attributable, then collect
