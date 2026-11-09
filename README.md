@@ -359,3 +359,26 @@ chain history is the next build.
 ## License
 
 MIT. The OFAC snapshot is US government public-domain data.
+
+## Deploy (free tier)
+
+Both configs are committed. Pick one:
+
+**Render** (easiest — auto-detects `render.yaml`):
+1. render.com → New Web Service → connect repo
+2. Add env var `SELLER_PRIVATE_KEY` (first line of `.seller`)
+3. Set `PUBLIC_ORIGIN` to your Render URL
+4. Deploy
+
+**Railway** (no sleep, $5/mo free credit):
+1. railway.app → New Project → Deploy from GitHub
+2. Add env var `SELLER_PRIVATE_KEY`
+3. Set `PUBLIC_ORIGIN` to your Railway URL
+4. Deploy
+
+After deploying, re-register with Agent402:
+```bash
+curl -X POST https://agent402.tools/api/index/register \
+  -H 'content-type: application/json' \
+  -d '{"origin":"https://YOUR-DEPLOY-URL"}'
+```
