@@ -18,7 +18,7 @@ import { createPublicClient, http } from "viem";
 import { base, baseSepolia } from "viem/chains";
 import { USDC } from "./usdc.js";
 
-const __dirname_unused = null;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const TRANSFER_TOPIC =
   "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef";
@@ -52,35 +52,8 @@ function loadJson(rel) {
   }
 }
 
-const MIXERS = await (async () => {
-  try {
-    const m = await import("./data/mixers.json", { assert: { type: "json" } });
-    return (m.default || m).addresses || [];
-  } catch {
-    try {
-      const fs = (await import("node:fs")).default;
-      const path = (await import("node:path")).default;
-      const { fileURLToPath } = await import("node:url");
-      const dir = path.dirname(fileURLToPath(import.meta.url));
-      return JSON.parse(fs.readFileSync(path.join(dir, "data", "mixers.json"), "utf8")).addresses || [];
-    } catch { return []; }
-  }
-})();
-
-const OFAC = await (async () => {
-  try {
-    const m = await import("./data/ofac-sdn-digital.json", { assert: { type: "json" } });
-    return m.default || m;
-  } catch {
-    try {
-      const fs = (await import("node:fs")).default;
-      const path = (await import("node:path")).default;
-      const { fileURLToPath } = await import("node:url");
-      const dir = path.dirname(fileURLToPath(import.meta.url));
-      return JSON.parse(fs.readFileSync(path.join(dir, "data", "ofac-sdn-digital.json"), "utf8"));
-    } catch { return null; }
-  }
-})();
+const MIXERS = loadJson("data/mixers.json")?.addresses || [];
+const OFAC = loadJson("data/ofac-sdn-digital.json");
 
 /** Mixer/privacy-pool contracts, keyed by lowercase address. */
 function mixerIndex() {

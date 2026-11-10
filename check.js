@@ -10,18 +10,11 @@ import { analyzeFlow } from "./flow.js";
 const FLOW_ENABLED = String(process.env.FLOW_ENABLED ?? "true") !== "false";
 let OFAC = { records: [], fetched_at: null, total_addresses: 0 };
 try {
-  const mod = await import("./data/ofac-sdn-digital.json", { assert: { type: "json" } });
-  OFAC = mod.default || mod;
+  OFAC = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data", "ofac-sdn-digital.json"), "utf8")
+  );
 } catch {
-  try {
-    const fs = (await import("node:fs")).default;
-    const path = (await import("node:path")).default;
-    const { fileURLToPath } = await import("node:url");
-    const dir = path.dirname(fileURLToPath(import.meta.url));
-    OFAC = JSON.parse(fs.readFileSync(path.join(dir, "data", "ofac-sdn-digital.json"), "utf8"));
-  } catch {
-    // sanctions layer disabled
-  }
+  // sanctions layer disabled
 }
 const OFAC_INDEX = new Map(
   OFAC.records.filter((r) => r.asset === "ETH").map((r) => [r.address.toLowerCase(), r])
