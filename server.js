@@ -10,6 +10,8 @@ import {
 import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
 import { USDC } from "./usdc.js";
 import { checkCounterparty, OFAC } from "./check.js";
+import { getTokenPrice, getMultiplePrices } from "./prices.js";
+import { scoreWallet } from "./walletscore.js";
 
 // ── Config ────────────────────────────────────────────────────────────────
 const PORT = Number(process.env.PORT || 4021);
@@ -51,6 +53,8 @@ app.get("/", (_req, res) => {
         input: "{ payer, payee, chain?, asset?, amount? }",
       },
       "GET /v1/check-counterparty": "same check as POST (returns 402 until paid)",
+      "GET /v1/token-price": "$0.01 — real-time token prices (CoinGecko). ?symbol=ETH or ?symbols=ETH,BTC,SOL",
+      "POST /v1/wallet-score": "$0.03 — wallet risk score (0-100): sanctions, blacklist, activity, contract detection",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
     },
@@ -379,6 +383,16 @@ const routes = {
     mimeType: "application/json",
     extensions: getQueryBazaar,
   },
+  "GET /v1/token-price": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Real-time token price from CoinGecko. Query: ?symbol=ETH or ?symbols=ETH,BTC,SOL",
+    mimeType: "application/json",
+  },
+  "POST /v1/wallet-score": {
+    accepts: [{ scheme: "exact", price: "$0.03", network: NETWORK, payTo: PAY_TO }],
+    description: "Wallet risk score (0-100): sanctions, issuer blacklist, on-chain activity, contract detection",
+    mimeType: "application/json",
+  },
 };
 
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
@@ -417,9 +431,44 @@ app.get("/v1/check-counterparty", async (req, res) => {
   res.json(result);
 });
 
-const server = app.listen(PORT, () => {
-  console.log(`[usdc-gate] listening on http://localhost:${PORT}`);
+// Token price oracle — real-time prices from CoinGecko
+app.get("/v1/token-price", async (req, res) => {
+  try {
+    const { symbol, symbols } = req.query;
+    if (symbols) {
+      const result = await getMultiplePrices(symbols.split(","));
+      res.json({ prices: result, fetched_at: new Date().toISOString() });
+    } else if (symbol) {
+      const result = await getTokenPrice(symbol);
+      res.json(result);
+    } else {
+      res.status(400).json({ error: "Provide ?symbol=ETH or ?symbols=ETH,BTC,SOL" });
+    }
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
 });
 
-process.on("SIGTERM", () => server.close(() => process.exit(0)));
-process.on("SIGINT", () => server.close(() => process.exit(0)));
+// Wallet risk scorer — broader risk assessment
+app.post("/v1/wallet-score", async (req, res) => {
+  try {
+    const { address, chain } = req.body || {};
+    if (!address) return res.status(400).json({ error: "address required" });
+    const result = await scoreWallet(address, chain || "base-sepolia");
+    res.json(result);
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Export for Cloudflare Workers and Vercel (and other serverless platforms)
+export default app;
+
+// Only listen when running as a standalone Node.js process
+if (!process.env.WORKER_MODE && !process.env.VERCEL) {
+  const server = app.listen(PORT, () => {
+    console.log(`[usdc-gate] listening on http://localhost:${PORT}`);
+  });
+  process.on("SIGTERM", () => server.close(() => process.exit(0)));
+  process.on("SIGINT", () => server.close(() => process.exit(0)));
+}

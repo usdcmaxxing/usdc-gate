@@ -1,0 +1,17 @@
+name = "usdc-gate"
+main = "server.js"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[rules]]
+type = "Data"
+globs = ["**/*.json"]
+
+[vars]
+X402_NETWORK = "eip155:84532"
+PRICE = "$0.02"
+FACILITATOR = "https://x402.org/facilitator"
+PUBLIC_ORIGIN = "https://usdc-gate.workers.dev"
+PORT = "4021"
+WORKER_MODE = "1"
+SELLER_PRIVATE_KEY = ""
