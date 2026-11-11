@@ -75,6 +75,27 @@ app.get("/openapi.json", (_req, res) => {
   res.json(openApiDocument(ORIGIN));
 });
 
+// Favicon — SVG icon served at root
+app.get("/favicon.ico", (_req, res) => {
+  res.type("image/svg+xml").send(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">' +
+    '<rect width="32" height="32" rx="8" fill="#2775CA"/>' +
+    '<circle cx="16" cy="16" r="9" fill="none" stroke="white" stroke-width="2"/>' +
+    '<path d="M16 11 L16 21 M12 13.5 Q16 11 20 13.5 M12 18.5 Q16 21 20 18.5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<circle cx="16" cy="16" r="1.5" fill="white"/></svg>'
+  );
+});
+
+app.get("/favicon.svg", (_req, res) => {
+  res.type("image/svg+xml").send(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">' +
+    '<rect width="32" height="32" rx="8" fill="#2775CA"/>' +
+    '<circle cx="16" cy="16" r="9" fill="none" stroke="white" stroke-width="2"/>' +
+    '<path d="M16 11 L16 21 M12 13.5 Q16 11 20 13.5 M12 18.5 Q16 21 20 18.5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<circle cx="16" cy="16" r="1.5" fill="white"/></svg>'
+  );
+});
+
 // ── Machine-readable discovery ────────────────────────────────────────────
 // These are UNGATED on purpose: a crawler must be able to read what the
 // service sells before it pays for a call. Every x402 directory

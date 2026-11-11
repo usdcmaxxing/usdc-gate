@@ -13,6 +13,7 @@ export function openApiDocument(origin) {
       contact: {
         name: "USDC Gate",
         url: "https://github.com/usdcmaxxing/usdc-gate",
+        email: "usdcgate@gmail.com",
       },
       "x-guidance":
         "Use POST /v1/check-counterparty to check if an address is safe to pay in USDC. " +
