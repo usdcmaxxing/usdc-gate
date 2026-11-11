@@ -183,6 +183,44 @@ export function openApiDocument(origin) {
           },
         },
       },
+      "/v1/dataset/sanctions": {
+        get: {
+          operationId: "sanctionsDataset",
+          summary: "Crypto sanctions & risk dataset (paid)",
+          description:
+            "623 records: 527 OFAC SDN digital currency addresses, " +
+            "91 Circle blacklisted addresses, 5 mixer/privacy pool contracts. " +
+            "Filter with ?query= or ?type=sanctions|issuer_blacklist|mixer.",
+          tags: ["Data"],
+          "x-payment-info": {
+            price: { mode: "fixed", currency: "USD", amount: "0.010000" },
+            protocols: [{ x402: {} }],
+          },
+          parameters: [
+            { name: "query", in: "query", schema: { type: "string" }, description: "Filter by address, name, type, or asset" },
+            { name: "type", in: "query", schema: { type: "string", enum: ["sanctions", "issuer_blacklist", "mixer"] }, description: "Filter by record type" },
+          ],
+          responses: {
+            "200": {
+              description: "Sanctions & risk dataset",
+              content: {
+                "application/json": {
+                  schema: {
+                    type: "object",
+                    properties: {
+                      name: { type: "string" },
+                      description: { type: "string" },
+                      version: { type: "string" },
+                      records: { type: "array", items: { type: "object" } },
+                    },
+                  },
+                },
+              },
+            },
+            "402": { description: "Payment Required" },
+          },
+        },
+      },
       "/health": {
         get: {
           operationId: "health",

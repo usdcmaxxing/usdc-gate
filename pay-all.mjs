@@ -16,6 +16,7 @@ const calls = [
   { name: "token-price", url: `${BASE}/v1/token-price?symbol=ETH`, method: "GET" },
   { name: "wallet-score", url: `${BASE}/v1/wallet-score`, method: "POST",
     body: { address: account.address, chain: "base-sepolia" } },
+  { name: "dataset-sanctions", url: `${BASE}/v1/dataset/sanctions`, method: "GET" },
 ];
 
 let client = new x402Client();

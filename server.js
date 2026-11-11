@@ -13,6 +13,7 @@ import { checkCounterparty, OFAC } from "./check.js";
 import { getTokenPrice, getMultiplePrices } from "./prices.js";
 import { scoreWallet } from "./walletscore.js";
 import { openApiDocument } from "./openapi.js";
+import { getSanctionsDataset, querySanctions } from "./dataset.js";
 
 // ── Config ────────────────────────────────────────────────────────────────
 const PORT = Number(process.env.PORT || 4021);
@@ -56,6 +57,7 @@ app.get("/", (_req, res) => {
       "GET /v1/check-counterparty": "same check as POST (returns 402 until paid)",
       "GET /v1/token-price": "$0.01 — real-time token prices (CoinGecko). ?symbol=ETH or ?symbols=ETH,BTC,SOL",
       "POST /v1/wallet-score": "$0.03 — wallet risk score (0-100): sanctions, blacklist, activity, contract detection",
+      "GET /v1/dataset/sanctions": "$0.01 — crypto sanctions & risk dataset (527 OFAC SDN + 91 Circle blacklist + 5 mixers). ?query= to filter.",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
     },
@@ -431,6 +433,22 @@ const walletScoreBazaar = declareDiscoveryExtension({
   },
 });
 
+const sanctionsDatasetBazaar = declareDiscoveryExtension({
+  method: "GET",
+  input: { query: "sanctions" },
+  inputSchema: {
+    type: "object",
+    properties: {
+      query: { type: "string", description: "Filter by address, name, type, or asset" },
+      type: { type: "string", enum: ["sanctions", "issuer_blacklist", "mixer"] },
+    },
+  },
+  output: {
+    example: { name: "Crypto Sanctions & Risk List", records: [{ type: "sanctions", asset: "ETH", address: "0x…" }] },
+    schema: { type: "object" },
+  },
+});
+
 const routes = {
   "POST /v1/check-counterparty": {
     accepts: [{ scheme: "exact", price: PRICE, network: NETWORK, payTo: PAY_TO }],
@@ -455,6 +473,12 @@ const routes = {
     description: "Wallet risk score (0-100): sanctions, issuer blacklist, on-chain activity, contract detection",
     mimeType: "application/json",
     extensions: walletScoreBazaar,
+  },
+  "GET /v1/dataset/sanctions": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Crypto sanctions & risk dataset: 527 OFAC SDN addresses, 91 Circle blacklisted, 5 mixers. ?query= to filter, ?type= to filter by type.",
+    mimeType: "application/json",
+    extensions: sanctionsDatasetBazaar,
   },
 };
 
@@ -519,6 +543,24 @@ app.post("/v1/wallet-score", async (req, res) => {
     if (!address) return res.status(400).json({ error: "address required" });
     const result = await scoreWallet(address, chain || "base-sepolia");
     res.json(result);
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Sanctions & risk dataset — 623 records (OFAC SDN + Circle blacklist + mixers)
+app.get("/v1/dataset/sanctions", async (req, res) => {
+  try {
+    const { query, type } = req.query;
+    if (query) {
+      return res.json(querySanctions(query));
+    }
+    if (type) {
+      const ds = getSanctionsDataset();
+      const filtered = ds.records.filter((r) => r.type === type);
+      return res.json({ ...ds, type_filter: type, match_count: filtered.length, records: filtered });
+    }
+    res.json(getSanctionsDataset());
   } catch (e) {
     res.status(500).json({ error: String(e?.message || e) });
   }
