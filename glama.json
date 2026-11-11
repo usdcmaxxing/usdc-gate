@@ -1,0 +1,16 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/glama.json",
+  "name": "USDC Gate",
+  "description": "Pre-flight counterparty risk for USDC payments. Live Circle issuer blacklist, OFAC SDN screening, and on-chain flow checks. Paid per call in USDC over x402.",
+  "category": "Finance",
+  "tags": ["usdc", "x402", "compliance", "risk", "crypto", "payments", "sanctions"],
+  "logo": "https://raw.githubusercontent.com/usdcmaxxing/usdc-gate/main/assets/logo.svg",
+  "githubUrl": "https://github.com/usdcmaxxing/usdc-gate",
+  "homepage": "https://github.com/usdcmaxxing/usdc-gate#readme",
+  "env": {},
+  "server": {
+    "type": "stdio",
+    "command": "node",
+    "args": ["mcp-server.js"]
+  }
+}

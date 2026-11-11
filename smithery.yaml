@@ -12,10 +12,10 @@ description: >-
   checks (shared funder, mixer exposure, peel chain). Paid per call in USDC
   over x402 — no account, no API key.
 version: 0.2.0
-avatar: https://raw.githubusercontent.com/local/usdc-gate/main/assets/logo.png
-homepage: https://github.com/local/usdc-gate
-readme: https://github.com/local/usdc-gate#readme
-repository: https://github.com/local/usdc-gate
+avatar: https://raw.githubusercontent.com/usdcmaxxing/usdc-gate/main/assets/logo.svg
+homepage: https://github.com/usdcmaxxing/usdc-gate
+readme: https://github.com/usdcmaxxing/usdc-gate#readme
+repository: https://github.com/usdcmaxxing/usdc-gate
 license: MIT
 keywords:
   - usdc
