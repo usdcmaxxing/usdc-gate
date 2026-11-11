@@ -12,6 +12,7 @@ import { USDC } from "./usdc.js";
 import { checkCounterparty, OFAC } from "./check.js";
 import { getTokenPrice, getMultiplePrices } from "./prices.js";
 import { scoreWallet } from "./walletscore.js";
+import { openApiDocument } from "./openapi.js";
 
 // ── Config ────────────────────────────────────────────────────────────────
 const PORT = Number(process.env.PORT || 4021);
@@ -68,6 +69,11 @@ app.get("/", (_req, res) => {
 });
 
 app.get("/health", (_req, res) => res.json({ ok: true, payTo: PAY_TO }));
+
+// AgentCash / x402scan discovery document (OpenAPI 3.1 + x-payment-info)
+app.get("/openapi.json", (_req, res) => {
+  res.json(openApiDocument(ORIGIN));
+});
 
 // ── Machine-readable discovery ────────────────────────────────────────────
 // These are UNGATED on purpose: a crawler must be able to read what the
@@ -372,7 +378,7 @@ const getQueryBazaar = declareDiscoveryExtension({
 
 const tokenPriceBazaar = declareDiscoveryExtension({
   method: "GET",
-  input: { symbol: "ETH", symbols: "ETH,BTC,SOL" },
+  input: { symbol: "ETH" },
   inputSchema: {
     type: "object",
     properties: {
@@ -397,6 +403,7 @@ const walletScoreBazaar = declareDiscoveryExtension({
     },
     required: ["address"],
   },
+  bodyType: "json",
   output: {
     example: { address: "0x…", risk_score: 10, risk_level: "LOW", flags: [] },
     schema: { type: "object" },
