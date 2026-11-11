@@ -370,6 +370,39 @@ const getQueryBazaar = declareDiscoveryExtension({
   output: OUTPUT,
 });
 
+const tokenPriceBazaar = declareDiscoveryExtension({
+  method: "GET",
+  input: { symbol: "ETH", symbols: "ETH,BTC,SOL" },
+  inputSchema: {
+    type: "object",
+    properties: {
+      symbol: { type: "string", description: "Token symbol (e.g. ETH, BTC, SOL)" },
+      symbols: { type: "string", description: "Comma-separated list of symbols" },
+    },
+  },
+  output: {
+    example: { token: "ETH", price_usd: 2132.11, change_24h_pct: 0.52 },
+    schema: { type: "object" },
+  },
+});
+
+const walletScoreBazaar = declareDiscoveryExtension({
+  method: "POST",
+  input: { address: "0x…", chain: "base-sepolia" },
+  inputSchema: {
+    type: "object",
+    properties: {
+      address: { type: "string", description: "Wallet address (0x…)" },
+      chain: { type: "string", enum: ["base-sepolia", "base"] },
+    },
+    required: ["address"],
+  },
+  output: {
+    example: { address: "0x…", risk_score: 10, risk_level: "LOW", flags: [] },
+    schema: { type: "object" },
+  },
+});
+
 const routes = {
   "POST /v1/check-counterparty": {
     accepts: [{ scheme: "exact", price: PRICE, network: NETWORK, payTo: PAY_TO }],
@@ -387,11 +420,13 @@ const routes = {
     accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
     description: "Real-time token price from CoinGecko. Query: ?symbol=ETH or ?symbols=ETH,BTC,SOL",
     mimeType: "application/json",
+    extensions: tokenPriceBazaar,
   },
   "POST /v1/wallet-score": {
     accepts: [{ scheme: "exact", price: "$0.03", network: NETWORK, payTo: PAY_TO }],
     description: "Wallet risk score (0-100): sanctions, issuer blacklist, on-chain activity, contract detection",
     mimeType: "application/json",
+    extensions: walletScoreBazaar,
   },
 };
 
