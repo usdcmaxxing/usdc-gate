@@ -1,0 +1,334 @@
+{
+  "name": "Memecoin Filter Attribution",
+  "description": "Analysis of which filters (liquidity, venue, post-age) correlate with winning trades. For AI agents optimizing memecoin trading strategies. Paper trading only.",
+  "version": "2026-11-11",
+  "source": "memetrader shadow book analysis",
+  "disclaimer": "Paper trading data. Not financial advice.",
+  "records": [
+    {
+      "symbol": "sol",
+      "caller": null,
+      "liquidity_usd": 5082.2629,
+      "dex": "pump-fun",
+      "venue": "pumpfun_app_curve",
+      "post_age_minutes": null,
+      "outcome_multiple": 0.9990588390242104,
+      "outcome_pct": -0.09411609757895567,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "NOSTROMO",
+      "caller": null,
+      "liquidity_usd": 19176.9142,
+      "dex": "raydium-launchlab",
+      "venue": "raydium_launchlab",
+      "post_age_minutes": null,
+      "outcome_multiple": 1.0,
+      "outcome_pct": 0.0,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "BRANCH",
+      "caller": null,
+      "liquidity_usd": 15601.2440121761,
+      "dex": "meteora-damm-v2",
+      "venue": "meteora_damm_v2",
+      "post_age_minutes": null,
+      "outcome_multiple": 0.7181198812086094,
+      "outcome_pct": -28.18801187913906,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "BRANCH",
+      "caller": null,
+      "liquidity_usd": 15906.2904,
+      "dex": "meteora-damm-v2",
+      "venue": "meteora_damm_v2",
+      "post_age_minutes": null,
+      "outcome_multiple": 1.3856436401576628,
+      "outcome_pct": 38.56436401576629,
+      "win": true,
+      "arm": null
+    },
+    {
+      "symbol": "HERO",
+      "caller": null,
+      "liquidity_usd": 15290.2835,
+      "dex": "pumpswap",
+      "venue": "pumpswap_canonical",
+      "post_age_minutes": null,
+      "outcome_multiple": 1.1422146938252628e-07,
+      "outcome_pct": -99.99998857785306,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "HODL",
+      "caller": null,
+      "liquidity_usd": 5515.4603,
+      "dex": "pump-fun",
+      "venue": "pumpfun_app_curve",
+      "post_age_minutes": null,
+      "outcome_multiple": 0.21656222023276633,
+      "outcome_pct": -78.34377797672336,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "ALON",
+      "caller": null,
+      "liquidity_usd": 14503.3363532746,
+      "dex": "pumpswap",
+      "venue": "pumpswap_canonical",
+      "post_age_minutes": null,
+      "outcome_multiple": 0.0009870529656829867,
+      "outcome_pct": -99.9012947034317,
+      "win": false,
+      "arm": null
+    },
+    {
+      "symbol": "piLL",
+      "caller": null,
+      "liquidity_usd": 14517.198955896,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": null,
+      "outcome_multiple": 2.809566657150625,
+      "outcome_pct": 180.95666571506248,
+      "win": true,
+      "arm": null
+    },
+    {
+      "symbol": "george",
+      "caller": "@AlphaHunte19762",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 56.1,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "ClapCat",
+      "caller": "Pump.fun callout",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": null,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "AMD",
+      "caller": "@hakuand_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 346.7,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "higher",
+      "caller": "@badattrading_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 359.3,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "AI",
+      "caller": "@badattrading_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 331.8,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "ZELDA",
+      "caller": "@badattrading_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 297.5,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "LEEROY",
+      "caller": "Pump.fun callout",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": null,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "FIX",
+      "caller": "@badattrading_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 349.4,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "Look",
+      "caller": "Pump.fun callout (chairman)",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": null,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "SNDK",
+      "caller": "@GotrillaGorilla",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 5.1,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "BREAK",
+      "caller": "@codedgengar",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 14.6,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "swordcat",
+      "caller": "@slingoorio",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 10.3,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "ZCAT",
+      "caller": "@CryptoCurb",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 8.1,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "Gato",
+      "caller": "@arangotrades",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 20.2,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "BORDR",
+      "caller": "@0xBiZzy",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 3.7,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    },
+    {
+      "symbol": "iCoin",
+      "caller": "@badattrading_",
+      "liquidity_usd": null,
+      "dex": null,
+      "venue": null,
+      "post_age_minutes": 9.7,
+      "outcome_multiple": null,
+      "outcome_pct": null,
+      "win": null,
+      "arm": null
+    }
+  ],
+  "aggregates": {
+    "by_venue": {
+      "pumpfun_app_curve": {
+        "n": 2,
+        "mean_pct": -39.21894703715116,
+        "wins": 0
+      },
+      "raydium_launchlab": {
+        "n": 1,
+        "mean_pct": 0.0,
+        "wins": 0
+      },
+      "meteora_damm_v2": {
+        "n": 2,
+        "mean_pct": 5.188176068313613,
+        "wins": 1
+      },
+      "pumpswap_canonical": {
+        "n": 2,
+        "mean_pct": -99.95064164064237,
+        "wins": 0
+      }
+    },
+    "by_liquidity_band": {
+      "<0k": {
+        "n": 2,
+        "mean_pct": -39.21894703715116,
+        "wins": 0
+      },
+      "0k-0k": {
+        "n": 6,
+        "mean_pct": -1.4280442382658418,
+        "wins": 2
+      }
+    },
+    "by_age_band": {}
+  }
+}

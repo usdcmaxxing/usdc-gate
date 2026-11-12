@@ -13,7 +13,14 @@ import { checkCounterparty, OFAC } from "./check.js";
 import { getTokenPrice, getMultiplePrices } from "./prices.js";
 import { scoreWallet } from "./walletscore.js";
 import { openApiDocument } from "./openapi.js";
-import { getSanctionsDataset, querySanctions } from "./dataset.js";
+import {
+  getSanctionsDataset,
+  getMemecoinShadowBook,
+  getMemecoinSignals,
+  getMemecoinFilterAttribution,
+  getTokenContractRegistry,
+  listDatasets,
+} from "./dataset.js";
 
 // ── Config ────────────────────────────────────────────────────────────────
 const PORT = Number(process.env.PORT || 4021);
@@ -58,6 +65,11 @@ app.get("/", (_req, res) => {
       "GET /v1/token-price": "$0.01 — real-time token prices (CoinGecko). ?symbol=ETH or ?symbols=ETH,BTC,SOL",
       "POST /v1/wallet-score": "$0.03 — wallet risk score (0-100): sanctions, blacklist, activity, contract detection",
       "GET /v1/dataset/sanctions": "$0.01 — crypto sanctions & risk dataset (527 OFAC SDN + 91 Circle blacklist + 5 mixers). ?query= to filter.",
+      "GET /v1/dataset/memecoin-shadow-book": "$0.01 — 2,969 memecoin picks with outcomes (survivorship-bias-free).",
+      "GET /v1/dataset/memecoin-signals": "$0.01 — historical memecoin trading signals with P&L.",
+      "GET /v1/dataset/memecoin-filter-attribution": "$0.01 — filter attribution analysis (venue, liquidity, post-age).",
+      "GET /v1/dataset/token-contracts": "$0.01 — top 100 tokens by market cap with contract addresses.",
+      "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
     },
@@ -449,6 +461,17 @@ const sanctionsDatasetBazaar = declareDiscoveryExtension({
   },
 });
 
+const datasetBazaar = (name, example) =>
+  declareDiscoveryExtension({
+    method: "GET",
+    input: { query: "example" },
+    inputSchema: {
+      type: "object",
+      properties: { query: { type: "string", description: "Filter records" } },
+    },
+    output: { example, schema: { type: "object" } },
+  });
+
 const routes = {
   "POST /v1/check-counterparty": {
     accepts: [{ scheme: "exact", price: PRICE, network: NETWORK, payTo: PAY_TO }],
@@ -479,6 +502,30 @@ const routes = {
     description: "Crypto sanctions & risk dataset: 527 OFAC SDN addresses, 91 Circle blacklisted, 5 mixers. ?query= to filter, ?type= to filter by type.",
     mimeType: "application/json",
     extensions: sanctionsDatasetBazaar,
+  },
+  "GET /v1/dataset/memecoin-shadow-book": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "2,969 memecoin picks with outcomes (survivorship-bias-free). ?query= to filter by symbol/venue/dex.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Memecoin Shadow Book", { records: [{ symbol: "EXAMPLE", decision: "taken", outcome_multiple: 1.5 }] }),
+  },
+  "GET /v1/dataset/memecoin-signals": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Historical memecoin trading signals with entry/exit prices and P&L. Paper trading only.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Memecoin Signals", { records: [{ symbol: "EXAMPLE", pnl_pct: 50.0 }] }),
+  },
+  "GET /v1/dataset/memecoin-filter-attribution": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Filter attribution analysis: which filters correlate with winning trades (venue, liquidity, post-age).",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Filter Attribution", { aggregates: { by_venue: {} } }),
+  },
+  "GET /v1/dataset/token-contracts": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Top 100 tokens by market cap with contract addresses. ?query= to filter by symbol/name.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Token Contract Registry", { records: [{ symbol: "BTC", name: "Bitcoin" }] }),
   },
 };
 
@@ -553,7 +600,7 @@ app.get("/v1/dataset/sanctions", async (req, res) => {
   try {
     const { query, type } = req.query;
     if (query) {
-      return res.json(querySanctions(query));
+      return res.json(getSanctionsDataset(query));
     }
     if (type) {
       const ds = getSanctionsDataset();
@@ -564,6 +611,47 @@ app.get("/v1/dataset/sanctions", async (req, res) => {
   } catch (e) {
     res.status(500).json({ error: String(e?.message || e) });
   }
+});
+
+// Memecoin shadow book — 2,969 picks with outcomes
+app.get("/v1/dataset/memecoin-shadow-book", async (req, res) => {
+  try {
+    res.json(getMemecoinShadowBook(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Memecoin signals — historical trading signals with P&L
+app.get("/v1/dataset/memecoin-signals", async (req, res) => {
+  try {
+    res.json(getMemecoinSignals(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Memecoin filter attribution — which filters correlate with wins
+app.get("/v1/dataset/memecoin-filter-attribution", async (req, res) => {
+  try {
+    res.json(getMemecoinFilterAttribution(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Token contract registry — top 100 tokens by market cap
+app.get("/v1/dataset/token-contracts", async (req, res) => {
+  try {
+    res.json(getTokenContractRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// List all datasets (free, ungated)
+app.get("/v1/datasets", (_req, res) => {
+  res.json(listDatasets());
 });
 
 // Export for Cloudflare Workers and Vercel (and other serverless platforms)
