@@ -1,91 +1,96 @@
 # USDC Gate
 
-**Pre-flight counterparty risk for USDC payments. USDC only.**
+**Paid data and risk APIs for AI agents. Pay per call in USDC via x402.**
 
-A paid API that an AI agent (or any client) calls *before* it sends USDC, to answer three
-questions in one request:
+A marketplace where AI agents (or any client) pay per call for sanctions screening,
+memecoin signals, token data, and more — no account, no API key, no subscription.
 
-1. **Is the counterparty real?** — is the asset actually Circle-native USDC on that chain?
-2. **Is it safe to pay?** — is either address on Circle's **live, on-chain issuer blacklist**,
-   or on the OFAC SDN list?
-3. **Will it work?** — structural checks (self-send, amount policy, non-native asset).
+**Live:** https://usdc-gate-live.vercel.app · **Catalog:** `/catalog` · **Dashboard:** `/dashboard`
 
-The wedge is check #2: **Circle's `isBlacklisted(address)` is live on-chain state, readable at
-any block height.** OFAC is a dated, downloadable snapshot — a floor, not a live signal. An
+---
+
+## What's for sale
+
+### Risk & compliance
+| Endpoint | Price | Records | Description |
+|---|---|---|---|
+| `POST /v1/check-counterparty` | $0.02 | — | Counterparty risk: Circle blacklist + OFAC + flow checks |
+| `POST /v1/wallet-score` | $0.03 | — | Wallet risk score 0-100 |
+| `GET /v1/dataset/sanctions` | $0.02 | 623 | OFAC SDN + Circle blacklist + mixers |
+
+### Market data
+| Endpoint | Price | Records | Description |
+|---|---|---|---|
+| `GET /v1/token-price` | $0.02 | — | Real-time token prices (CoinGecko) |
+| `GET /v1/dataset/token-contracts` | $0.02 | 500 | Top 500 tokens with contract addresses |
+| `GET /v1/dataset/token-price-history` | $0.02 | 6 | 30-day hourly price history |
+| `GET /v1/dataset/solana-trending-pools` | $0.02 | 100 | Trending Solana DEX pools |
+| `GET /v1/dataset/stablecoins` | $0.01 | 8 | Stablecoin contract addresses |
+
+### Trading signals
+| Endpoint | Price | Records | Description |
+|---|---|---|---|
+| `GET /v1/dataset/memecoin-shadow-book` | $0.02 | 2,969 | Survivorship-bias-free picks |
+| `GET /v1/dataset/memecoin-signals` | $0.02 | 24 | Historical signals with P&L |
+| `GET /v1/dataset/memecoin-filter-attribution` | $0.01 | 24 | Filter attribution analysis |
+
+### Infrastructure
+| Endpoint | Price | Records | Description |
+|---|---|---|---|
+| `GET /v1/dataset/x402-services` | $0.05 | 4,000 | All x402 services on Agentic.Market |
+
+**Total: 12 paid endpoints, 7,248 records, $0.01–0.05 per call.**
+
+See [DATASETS.md](DATASETS.md) for the full catalog.
+
+---
+
+## Quick start
+
+```js
+import { x402Client, wrapFetchWithPayment } from "@x402/fetch";
+import { registerExactEvmScheme } from "@x402/evm/exact/client";
+import { privateKeyToAccount } from "viem/accounts";
+
+const account = privateKeyToAccount("0x...");
+let client = new x402Client();
+client = registerExactEvmScheme(client, { signer: account, networks: ["eip155:84532"] });
+const fetchWithPayment = wrapFetchWithPayment(fetch, client);
+
+// Pay $0.02 and get the sanctions dataset
+const res = await fetchWithPayment(
+  "https://usdc-gate-live.vercel.app/v1/dataset/sanctions"
+);
+const data = await res.json();
+```
+
+First request returns `402 Payment Required`. Pay the challenge in USDC, retry, get data.
+
+---
+
+## The counterparty check (flagship product)
+
+The wedge: **Circle's `isBlacklisted(address)` is live on-chain state, readable at any
+block height.** OFAC is a dated, downloadable snapshot — a floor, not a live signal. An
 address frozen mid-relationship is invisible to a list check and obvious to an on-chain read.
 
----
-
-## Why this exists
-
 The x402 facilitator screens payments at **both verification and settlement**. A decline
-returns `kyt_risk_detected` with a **403**, and it is **not retryable** — *"an address was
-declined rather than a request, so the same buyer is declined again until they pay from a
-different account."*
+returns `kyt_risk_detected` with a **403**, and it is **not retryable**. This check runs
+before that happens.
 
-So for an autonomous agent, a failed payment is **invisible until it happens, and it is
-unrecoverable.** The failure modes the x402 FAQ lists as most common are:
+### The flow layer (real chain history)
 
-| Cause | Where it shows up | Pre-flight checkable? |
-|---|---|---|
-| Invalid signature | 402 retry | no |
-| Amount mismatch (exact scheme is strict equality) | 402 retry | yes (policy) |
-| **Insufficient USDC or flagged by KYT** | **403, non-retryable** | **yes — this service** |
-
-`USDC Gate` is the pre-flight read that turns a silent 403 into a known condition.
-
----
-
-## The USDC-specific insight
-
-Circle's USDC (`FiatTokenV2`) exposes `isBlacklisted(address)`. When true, the address can
-neither send **nor** receive USDC — `transfer`, `transferFrom`, `approve`, `mint` and `burn`
-all revert. Circle can set it with a single `blacklist()` call, and has — for example, all
-**91 ETH addresses** on the OFAC SDN list are blacklisted on the Ethereum USDC contract
-(verified against the live contract; see `data/circle-blacklisted-ofac.json`).
-
-Two traps the service handles:
-
-- **Function-name trap:** USDC is `isBlacklisted`; USDT is `isBlackListed`. One letter.
-- **Native vs bridged:** Circle can only freeze *native* USDC. Bridged/wrapped USDC has a
-  different freeze surface. Screening logic that treats them as identical is wrong — so the
-  verdict reports `asset.kind` and `freezable_by_issuer` explicitly.
-
----
-
-## The flow layer (real chain history)
-
-The issuer blacklist answers "is this address frozen *right now*?". The flow layer
-answers "what does the money look like on the way in and out?" — the patterns that
-x402 measurement studies found make up most fictitious settlement count.
-
-`flow.js` pulls **USDC Transfer logs** for both addresses from two pluggable
-sources, then derives:
+`flow.js` pulls **USDC Transfer logs** for both addresses and derives:
 
 | Check | What it catches | Verdict |
 |---|---|---|
-| `shared_funder` | A third party that funded both sides, or one party funding the other | HOLD |
-| `mixer_exposure` | A counterparty on Circle's OFAC-derived SDN set, or a known mixer/privacy-pool contract | HOLD |
-| `peel_chain` | ≥3 outgoing transfers of strictly decreasing size (money peeled through fresh addresses) | HOLD |
-| `new_payee` | No USDC history at all in the window (proxy for a fresh address) | HOLD |
-
-Two things worth knowing about the sources:
-
-- **Blockscout** (richer — address metadata, pagination) is used when reachable.
-  Base Sepolia works today; Base mainnet's Blockscout sits behind a bot wall, so
-  production falls through to logs.
-- **eth_getLogs** against a configurable RPC is the fallback. It is bounded to a
-  block window (`FLOW_WINDOW_BLOCKS`, default 50,000 ≈ 2.8 days on Base) and
-  shrinks automatically when a provider rejects the range.
-
-Mixer contracts are **chain-bound** — the Tornado Cash 100 USDC pool on Ethereum
-is not that pool on Base — so `data/mixers.json` carries a `chains` list and a
-non-matching chain does not flag. OFAC SDN addresses are the opposite: sanctions
-attach to the controller, not the chain, so they match on any EVM chain.
+| `shared_funder` | A third party that funded both sides | HOLD |
+| `mixer_exposure` | Counterparty on OFAC SDN or a known mixer | HOLD |
+| `peel_chain` | ≥3 outgoing transfers of strictly decreasing size | HOLD |
+| `new_payee` | No USDC history in the window | HOLD |
 
 If history is unavailable the checks report `unknown` and never fail a verdict on
-their own. Every verdict carries the raw evidence under `flow.evidence` (source,
-coverage, window, hits) so a caller can audit the call rather than trust it.
+their own. Every verdict carries raw evidence under `flow.evidence`.
 
 ---
 
@@ -93,21 +98,24 @@ coverage, window, hits) so a caller can audit the call rather than trust it.
 
 | File | Purpose |
 |---|---|
-| `server.js` | Express + x402 middleware; the paid endpoint |
+| `server.js` | Express + x402 middleware; all paid endpoints |
 | `mcp-server.js` | stdio MCP server — the free, rate-limited funnel |
 | `check.js` | Verdict logic (no x402 coupling) |
-| `flow.js` | Real chain-history flow checks (Blockscout / eth_getLogs) |
+| `flow.js` | Real chain-history flow checks |
 | `usdc.js` | On-chain reads of `isBlacklisted`, token identity |
+| `prices.js` | CoinGecko price fetching |
+| `walletscore.js` | Wallet risk scoring |
+| `dataset.js` | Dataset loaders and catalog |
+| `openapi.js` | OpenAPI 3.1 + x-payment-info document |
+| `public/catalog.html` | Human-readable data catalog |
+| `public/dashboard.html` | Usage dashboard |
+| `scripts/refresh-datasets.mjs` | Daily dataset refresh (launchd) |
 | `client.mjs` | x402 buyer — reads the 402, signs, retries |
 | `demo.sh` | One-command end-to-end demo |
-| `demo-verdict.mjs` | Runs the live verdict logic on real cases |
-| `parse-ofac.mjs` | Builds the OFAC SDN snapshot from the official download |
-| `data/ofac-sdn-digital.json` | 527 real OFAC SDN digital-currency addresses |
-| `data/circle-blacklisted-ofac.json` | Which of those are Circle-blacklisted (all of them) |
-| `data/mixers.json` | Curated EVM mixer / privacy-pool contracts (chain-bound) |
-| `tests/` | Unit tests — verdict logic + flow engine, no network |
+| `data/` | Datasets (OFAC, Circle blacklist, mixers, etc.) |
+| `tests/` | Unit tests — no network |
 | `.env.example` | Configuration template |
-| `.buyer` / `.seller` | Throwaway Base Sepolia keys for the demo (gitignored) |
+| `.buyer` / `.seller` | Throwaway Base Sepolia keys (gitignored) |
 
 ---
 
@@ -116,9 +124,8 @@ coverage, window, hits) so a caller can audit the call rather than trust it.
 ```bash
 npm install
 cp .env.example .env      # optional: set RPC / flow window / seller key
-node parse-ofac.mjs       # build the OFAC snapshot (already committed in data/)
 node server.js            # listens on :4021
-npm test                  # 18 unit tests, no network
+npm test                  # unit tests, no network
 ```
 
 Or everything at once:
@@ -127,68 +134,19 @@ Or everything at once:
 ./demo.sh
 ```
 
-### The paid endpoint
-
-```
-POST /v1/check-counterparty
-Price: $0.02 USDC on Base Sepolia (eip155:84532)
-```
-
-```json
-{ "payer": "0x…", "payee": "0x…", "chain": "base-sepolia", "asset": "0x…", "amount": "0.02" }
-```
-
-Response:
-
-```json
-{
-  "verdict": "APPROVE | HOLD | REJECT",
-  "reason_codes": [],
-  "asset": { "kind": "native", "freezable_by_issuer": true, "contract": "0x…", "chain": "…" },
-  "issuer_blacklist": {
-    "chain": "base-sepolia",
-    "payer": { "address": "0x…", "blacklisted": false, "at_block": "55593928" },
-    "payee": { "address": "0x…", "blacklisted": false, "at_block": "55593928" },
-    "contract": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-    "evidence": "eth_call isBlacklisted(address)"
-  },
-  "sanctions": {
-    "list": "OFAC SDN",
-    "snapshot_fetched_at": "2026-11-07T08:07:50.852Z",
-    "addresses_in_snapshot": 527,
-    "payer": null,
-    "payee": null,
-    "caveat": "Exact match against a dated OFAC download — a floor, not a live signal."
-  },
-  "flow": { "self_send": false, "shared_funder": false, "mixer_exposure": false },
-  "policy": { "amount": "0.02", "ceiling": 100000, "floor": 0.000001 },
-  "checked_at": "…"
-}
-```
-
-Also free, ungated:
-
-- `GET /v1/sample` — a static example verdict, so a buyer can see the shape before paying.
-- `GET /health`
-- `GET /` — service metadata
-
 ---
 
 ## MCP access
 
-The same check is available as a stdio **MCP server**, so MCP-based agents can call it
-directly:
+The same check is available as a stdio **MCP server**:
 
 ```bash
 node mcp-server.js
 ```
 
-Tools:
+Tools: `check_counterparty`, `service_info`.
 
-- `check_counterparty` — the full verdict (native asset, issuer blacklist, OFAC, flow).
-- `service_info` — what the service checks, supported chains, and the paid endpoint.
-
-Wire it into a client with the standard stdio transport:
+Wire it into a client:
 
 ```json
 {
@@ -198,139 +156,41 @@ Wire it into a client with the standard stdio transport:
 }
 ```
 
-This is the **acquisition funnel**, not the product: it is free but rate-limited
-(`MCP_RATE_LIMIT`, default 30 calls/hour), and the response says so. Production traffic
-belongs on the paid x402 endpoint.
+This is the **acquisition funnel**, not the product: free but rate-limited
+(`MCP_RATE_LIMIT`, default 30 calls/hour).
 
 ---
 
-## The payment flow (what actually happens)
-
-```
-client                     server                    facilitator
-  |  POST /v1/check-counterparty  |                         |
-  |------------------------------>|                         |
-  |                               | build 402 requirements   |
-  |                               | (exact, $0.02, Base)    |
-  |  402 + PAYMENT-REQUIRED hdr   |                         |
-  |<------------------------------|                         |
-  |  read challenge, sign EIP-3009 TransferWithAuthorization  |
-  |  POST + PAYMENT-SIGNATURE     |                         |
-  |------------------------------>|  verify + settle        |
-  |                               |------------------------>|
-  |                               |  ok / kyt_risk_detected |
-  |  200 + verdict  (or 403)      |<------------------------|
-  |<------------------------------|                         |
-```
-
-Observed on Base Sepolia with the public facilitator:
-
-```
-HTTP 402
-PAYMENT-REQUIRED: {"x402Version":2,"accepts":[{"scheme":"exact","network":"eip155:84532",
-                 "amount":"20000","asset":"0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-                 "payTo":"0x9A04446dc4F72F61097093FeF4175211B384276f"}]}
-```
-
-`20000` atomic USDC = `$0.02`. No account, no API key, no gas token needed by the buyer
-(EIP-3009 authorization; the facilitator pays gas).
-
----
-
-## Seeing a real settlement
-
-The demo buyer (`0xc7d6D4bb6956f25954f988449F23be01012b63fF`) is unfunded, so the live run
-correctly returns the facilitator's real response:
-
-```
-{"error":"invalid_exact_evm_insufficient_balance"}
-```
-
-To see a full settle, fund that address with testnet USDC and re-run `./demo.sh`:
-
-1. Go to **https://faucet.circle.com** (public, no account) → select **Base Sepolia** →
-   paste `0xc7d6D4bb6956f25954f988449F23be01012b63fF` → claim 20 USDC.
-2. `node client.mjs` → should return `HTTP 200` plus the live verdict JSON.
-
-For mainnet, switch `X402_NETWORK` to `eip155:8453`, use a production facilitator, and fund
-the wallet with real USDC on Base.
-
----
-
-## Going to production
-
-```bash
-# Base mainnet
-X402_NETWORK=eip155:8453 \
-SELLER_PRIVATE_KEY=0x… \
-FACILITATOR=<production facilitator> \
-PRICE='$0.02' \
-node server.js
-```
-
-## Discovery and registration
-
-The service ships the machine-readable surfaces a crawler needs. All are
-**ungated** — a crawler must be able to read what is for sale before it pays.
+## Discovery surfaces
 
 | Route | What it is | Who reads it |
 |---|---|---|
-| `GET /.well-known/x402` | Manifest: endpoints, price, network, asset, payTo, schemas | agent402.tools, the CDP Bazaar, Celo's index |
-| `GET /.well-known/agent.json` | A2A agent card | A2A / Google AP2 discovery |
-| `GET /llms.txt` | Plain-text service description and call example | LLM crawlers, Agent402 |
-| `GET /skill.md` | Agent402-style skill file with the verdict vocabulary | Agent402 |
-| `POST /v1/check-counterparty` | 402 carries a `bazaar` discovery extension | the Bazaar (self-describing) |
+| `GET /.well-known/x402` | Manifest: endpoints, price, network, asset, payTo | agent402.tools, CDP Bazaar |
+| `GET /openapi.json` | OpenAPI 3.1 + x-payment-info | AgentCash / x402scan |
+| `GET /.well-known/agent.json` | A2A agent card | A2A / Google AP2 |
+| `GET /llms.txt` | Plain-text service description | LLM crawlers |
+| `GET /skill.md` | Agent402-style skill file | Agent402 |
+| `GET /catalog` | Human-readable catalog | Humans |
+| `GET /dashboard` | Usage stats | Humans |
+| `GET /v1/stats` | JSON usage stats | Anyone |
 
-### The two blockers — both real, both measured
+---
 
-**1. A public HTTPS origin is required.** Agent402 rejects anything else:
+## Deployment
 
-```
-$ curl -X POST https://agent402.tools/api/index/register \
-    -H 'content-type: application/json' \
-    -d '{"origin":"http://localhost:4021"}'
-{"error":"origin must be https"}      ← HTTP 400
-```
+**Base Sepolia (testnet)** — current deployment at https://usdc-gate-live.vercel.app
 
-`localhost` works for development and for the MCP smoke test; it will never
-be listed. Deploy to any public HTTPS origin and set `PUBLIC_ORIGIN` so the
-manifests advertise the right URL:
+**Base mainnet** — switch `X402_NETWORK` to `eip155:8453`, use a production
+facilitator, and fund the wallet with real USDC on Base.
 
 ```bash
-PUBLIC_ORIGIN=https://usdc-gate.example.com node server.js
+X402_NETWORK=eip155:8453 \
+SELLER_PRIVATE_KEY=0x… \
+PUBLIC_ORIGIN=https://usdc-gate.example.com \
+node server.js
 ```
 
-Render, Railway, Fly, Cloudflare Workers, or a $5 VPS are all sufficient —
-the service is a single Node process with no state.
-
-**2. The CDP Bazaar only indexes a resource after it has settled a real
-payment.** As of 7 Nov 2026 a search of `/discovery/resources` for this origin
-returned **0 hits**. The `bazaar` extension makes the endpoint
-*self-describing*, but the catalog is settlement-gated by design: it is a
-record of things that have actually been paid, not a directory of things that
-exist. One settled payment is the trigger.
-
-That second blocker is the same one documented under *Seeing a real
-settlement* — the demo buyer is unfunded. Fund it and one call settles both.
-
-### MCP directories
-
-`smithery.yaml` is included for Smithery. The MCP server is stdio
-(`npm run mcp`), tools `check_counterparty` and `service_info`.
-
-To list elsewhere, the same three things are needed:
-
-- **Glama** — add the server URL; it proxies to the MCP endpoint.
-- **mcp.so / MCP Marketplace** — register the tool as `type: "mcp"`.
-- **Smithery** — the committed `smithery.yaml` is the listing config.
-
-### ERC-8004
-
-Register an agent identity so verdicts are attributable, then collect
-*grounded* feedback: every review references the x402 payment hash that proves
-the interaction happened. That is the fix for the known weakness of the
-Reputation Registry — feedback that is "rarely grounded in verifiable
-interactions" and cheap to manipulate.
+Free hosting: Render, Railway, Fly, Vercel, Cloudflare Workers.
 
 ---
 
@@ -338,21 +198,15 @@ interactions" and cheap to manipulate.
 
 This is a **volume product**, and agent-payment volume is currently thin. Independent
 measurements put genuine agentic x402 commerce at roughly **$5,000–$11,000 per month across
-the entire ecosystem**, and one population-scale study found the value that *"demonstrably
-reaches a nameable service"* was **$187,861 over 280 days**, with a median lifetime revenue
-of **$3.96** across recipients.
+the entire ecosystem**, with a median lifetime revenue of **$3.96** per recipient.
 
-At `$0.02`/call, 50 calls/day is `$1/day`. So:
+At $0.02/call, 50 calls/day is $1/day. So:
 
 - **Do not** build this as a primary income stream on agent demand alone.
-- **Do** sell it to human compliance / risk / agent-orchestration teams (USDC-paid, same
-  backend) — that is the revenue line.
+- **Do** sell it to human compliance / risk / agent-orchestration teams (USDC-paid, same backend).
 - **Do** give the agent endpoint away as the acquisition funnel and the data source.
 
-The `flow` checks (`shared_funder`, `vanity_suffix_batch`, `closed_loop`, `mixer_exposure`)
-are the patterns that measurement studies found make up the majority of x402 settlement
-count — the difference between "manufacturability" and adoption. Wiring those to real
-chain history is the next build.
+The datasets are packaged data we already had — the marginal cost of serving them is ~zero.
 
 ---
 
@@ -360,25 +214,9 @@ chain history is the next build.
 
 MIT. The OFAC snapshot is US government public-domain data.
 
-## Deploy (free tier)
+---
 
-Both configs are committed. Pick one:
+## Further reading
 
-**Render** (easiest — auto-detects `render.yaml`):
-1. render.com → New Web Service → connect repo
-2. Add env var `SELLER_PRIVATE_KEY` (first line of `.seller`)
-3. Set `PUBLIC_ORIGIN` to your Render URL
-4. Deploy
-
-**Railway** (no sleep, $5/mo free credit):
-1. railway.app → New Project → Deploy from GitHub
-2. Add env var `SELLER_PRIVATE_KEY`
-3. Set `PUBLIC_ORIGIN` to your Railway URL
-4. Deploy
-
-After deploying, re-register with Agent402:
-```bash
-curl -X POST https://agent402.tools/api/index/register \
-  -H 'content-type: application/json' \
-  -d '{"origin":"https://YOUR-DEPLOY-URL"}'
-```
+- [BLOG_POST.md](BLOG_POST.md) — the full story of building this
+- [DATASETS.md](DATASETS.md) — the complete dataset catalog
