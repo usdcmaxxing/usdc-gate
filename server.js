@@ -1,4 +1,6 @@
 import express from "express";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { paymentMiddleware, x402ResourceServer } from "@x402/express";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
@@ -25,6 +27,8 @@ import {
   getStablecoinRegistry,
   listDatasets,
 } from "./dataset.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ── Config ────────────────────────────────────────────────────────────────
 const PORT = Number(process.env.PORT || 4021);
@@ -87,10 +91,18 @@ app.get("/", (_req, res) => {
       ethereum: { address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" },
     },
     payTo: PAY_TO,
+    catalog: `${ORIGIN}/catalog`,
+    dashboard: `${ORIGIN}/dashboard`,
+    stats: `${ORIGIN}/v1/stats`,
   });
 });
 
 app.get("/health", (_req, res) => res.json({ ok: true, payTo: PAY_TO }));
+
+// Agent Data Catalog — HTML page listing everything we sell
+app.get("/catalog", (_req, res) => {
+  res.type("text/html").sendFile(path.join(__dirname, "public", "catalog.html"));
+});
 
 // AgentCash / x402scan discovery document (OpenAPI 3.1 + x-payment-info)
 app.get("/openapi.json", (_req, res) => {
@@ -720,6 +732,85 @@ app.get("/v1/dataset/stablecoins", async (req, res) => {
   } catch (e) {
     res.status(500).json({ error: String(e?.message || e) });
   }
+});
+
+// ── Usage tracking ───────────────────────────────────────────────────────
+// In-memory stats: counts paid calls per endpoint. Resets on redeploy.
+const stats = {
+  endpoints: new Map(), // path -> { price, calls, revenue_usd, last_call }
+  recent: [],           // last 20 paid calls
+  total_calls: 0,
+  total_revenue_usd: 0,
+};
+
+function priceToUsd(price) {
+  const m = String(price).match(/\$([0-9.]+)/);
+  return m ? parseFloat(m[1]) : 0;
+}
+
+// Track paid calls: runs after payment middleware, before route handlers.
+app.use((req, res, next) => {
+  const originalJson = res.json.bind(res);
+  res.json = (body) => {
+    // Only track successful (200) responses on paid endpoints
+    if (res.statusCode === 200 && req.route && req.path.startsWith("/v1/") && req.path !== "/v1/stats") {
+      const path = req.route.path;
+      const priceMap = {
+        "/v1/check-counterparty": "$0.02",
+        "/v1/token-price": "$0.02",
+        "/v1/wallet-score": "$0.03",
+        "/v1/dataset/sanctions": "$0.02",
+        "/v1/dataset/memecoin-shadow-book": "$0.02",
+        "/v1/dataset/memecoin-signals": "$0.02",
+        "/v1/dataset/memecoin-filter-attribution": "$0.01",
+        "/v1/dataset/token-contracts": "$0.02",
+        "/v1/dataset/x402-services": "$0.05",
+        "/v1/dataset/token-price-history": "$0.02",
+        "/v1/dataset/solana-trending-pools": "$0.02",
+        "/v1/dataset/stablecoins": "$0.01",
+      };
+      const price = priceMap[path] || "$0.01";
+      const usd = priceToUsd(price);
+
+      const ep = stats.endpoints.get(path) || { price, calls: 0, revenue_usd: 0, last_call: null };
+      ep.calls += 1;
+      ep.revenue_usd += usd;
+      ep.last_call = new Date().toISOString();
+      stats.endpoints.set(path, ep);
+
+      stats.total_calls += 1;
+      stats.total_revenue_usd += usd;
+
+      stats.recent.unshift({
+        time: new Date().toISOString(),
+        path,
+        status: "200",
+        payer: req.body?.payer || req.query?.payer || "agent",
+      });
+      if (stats.recent.length > 20) stats.recent.pop();
+    }
+    return originalJson(body);
+  };
+  next();
+});
+
+app.get("/v1/stats", (_req, res) => {
+  const endpoints = Array.from(stats.endpoints.entries()).map(([path, e]) => ({
+    path, ...e,
+  }));
+  res.json({
+    total_calls: stats.total_calls,
+    total_revenue_usd: stats.total_revenue_usd,
+    endpoint_count: endpoints.length,
+    last_call: stats.recent[0]?.time || null,
+    endpoints,
+    recent_calls: stats.recent,
+  });
+});
+
+// Dashboard — HTML page showing usage stats
+app.get("/dashboard", (_req, res) => {
+  res.type("text/html").sendFile(path.join(__dirname, "public", "dashboard.html"));
 });
 
 // Export for Cloudflare Workers and Vercel (and other serverless platforms)

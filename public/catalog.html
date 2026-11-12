@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USDC Gate — Agent Data Catalog</title>
+<meta name="description" content="Paid data and risk APIs for AI agents. Sanctions, memecoin signals, token data, and more. Pay per call in USDC via x402.">
+<link rel="icon" href="/favicon.ico">
+<style>
+:root {
+  --bg: #0b0e11;
+  --card: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #2775CA;
+  --accent2: #58a6ff;
+  --green: #3fb950;
+  --orange: #d29922;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.4rem; margin: 2rem 0 1rem; color: var(--accent2); }
+h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+p { color: var(--muted); margin-bottom: 1rem; }
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+.tag-paid { background: #1f6feb33; color: var(--accent2); border: 1px solid #1f6feb55; }
+.tag-free { background: #23863633; color: var(--green); border: 1px solid #23863655; }
+.tag-dataset { background: #8957e533; color: #a371f7; border: 1px solid #8957e555; }
+.tag-api { background: #d2992233; color: var(--orange); border: 1px solid #d2992255; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.card h3 { margin-top: 0; }
+.price { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+.meta { font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem; }
+.code {
+  background: #0d1117;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+.code .comment { color: #8b949e; }
+.code .key { color: #79c0ff; }
+.code .string { color: #a5d6ff; }
+.code .number { color: #79c0ff; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.endpoint {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.endpoint .method { font-weight: 700; color: var(--accent2); font-family: monospace; }
+.endpoint .path { font-family: monospace; font-size: 0.85rem; }
+.endpoint .desc { font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem; }
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.stat .num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.8rem; color: var(--muted); }
+.hero {
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.cta:hover { background: #1a5f9e; text-decoration: none; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>USDC Gate</h1>
+  <p>Paid data and risk APIs for AI agents. Sanctions screening, memecoin signals, token data, and more — pay per call in USDC via x402.</p>
+  <a href="https://usdc-gate-live.vercel.app/health" class="cta">Check Health</a>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">12</div><div class="label">Paid Endpoints</div></div>
+  <div class="stat"><div class="num">9</div><div class="label">Datasets</div></div>
+  <div class="stat"><div class="num">7,248</div><div class="label">Total Records</div></div>
+  <div class="stat"><div class="num">$0.01–0.05</div><div class="label">Per Call</div></div>
+</div>
+
+<h2>🚀 Quick Start — Pay in 3 Lines</h2>
+<div class="card">
+<div class="code">
+<span class="comment">// 1. Install the x402 client</span>
+npm install @x402/fetch
+
+<span class="comment">// 2. Pay and call (agent-friendly, no API key)</span>
+<span class="key">const</span> res = <span class="key">await</span> fetchWithPayment(<span class="string">"https://usdc-gate-live.vercel.app/v1/dataset/sanctions"</span>);
+
+<span class="comment">// 3. Get your data</span>
+<span class="key">const</span> data = <span class="key">await</span> res.json();
+</div>
+<p>First request returns <code>402 Payment Required</code>. Pay the challenge in USDC, retry, and get the data. No account, no API key, no subscription.</p>
+</div>
+
+<h2>📊 Datasets</h2>
+<div class="grid">
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Sanctions & Risk List</h3>
+  <div class="path">GET /v1/dataset/sanctions</div>
+  <div class="desc">623 records: 527 OFAC SDN digital currency addresses, 91 Circle blacklisted addresses, 5 Tornado Cash mixer contracts. Filter by address, name, type, or asset.</div>
+  <div class="meta">623 records · ?query= filter · ?type= filter</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Memecoin Shadow Book</h3>
+  <div class="path">GET /v1/dataset/memecoin-shadow-book</div>
+  <div class="desc">2,969 memecoin picks with outcomes (survivorship-bias-free). Taken AND skipped picks with P&L, venue, liquidity, and post-age. For agents building trading strategies.</div>
+  <div class="meta">2,969 records · ?query= filter by symbol/venue/dex</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Memecoin Signals</h3>
+  <div class="path">GET /v1/dataset/memecoin-signals</div>
+  <div class="desc">Historical memecoin trading signals with entry/exit prices and P&L. Paper trading only — no real funds. Includes venue, liquidity, and exit reason.</div>
+  <div class="meta">24 records · ?query= filter</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.01</span>
+  <h3>Memecoin Filter Attribution</h3>
+  <div class="path">GET /v1/dataset/memecoin-filter-attribution</div>
+  <div class="desc">Which filters correlate with winning trades? Analysis by venue, liquidity band, and post-age. Proves venue &gt; liquidity &gt; post-age.</div>
+  <div class="meta">24 records + aggregates</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Token Contract Registry</h3>
+  <div class="path">GET /v1/dataset/token-contracts</div>
+  <div class="desc">Top 500 tokens by market cap with contract addresses across Ethereum, Base, Arbitrum, Optimism, Polygon, Solana, and more. Includes price and 24h change.</div>
+  <div class="meta">500 records · ?query= filter by symbol/name</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.05</span>
+  <h3>x402 Service Registry</h3>
+  <div class="path">GET /v1/dataset/x402-services</div>
+  <div class="desc">All 4,000 x402-paid services on Agentic.Market with pricing, endpoints, and networks. The most comprehensive x402 directory available. For agents discovering APIs to buy.</div>
+  <div class="meta">4,000 records · ?query= filter by name/domain</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Token Price History</h3>
+  <div class="path">GET /v1/dataset/token-price-history</div>
+  <div class="desc">30-day hourly price history for top tokens. 721 data points per token. For agents backtesting trading strategies and analyzing trends.</div>
+  <div class="meta">6 tokens × 721 hourly points · ?query= filter</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Solana Trending Pools</h3>
+  <div class="path">GET /v1/dataset/solana-trending-pools</div>
+  <div class="desc">100 trending Solana DEX pools with liquidity, volume, and price data. For agents analyzing memecoin markets and finding opportunities.</div>
+  <div class="meta">100 records · ?query= filter by token</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-dataset">Dataset</span>
+  <span class="tag tag-paid">$0.01</span>
+  <h3>Stablecoin Registry</h3>
+  <div class="path">GET /v1/dataset/stablecoins</div>
+  <div class="desc">8 major stablecoins (USDC, USDT, DAI, BUSD, TUSD, USDP, USDS, FRAX) with verified contract addresses across chains. Includes issuer and freezability.</div>
+  <div class="meta">8 records · ?query= filter</div>
+</div>
+
+</div>
+
+<h2>🔌 APIs</h2>
+<div class="grid">
+
+<div class="endpoint">
+  <span class="tag tag-api">API</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Counterparty Risk Check</h3>
+  <div class="path">POST /v1/check-counterparty</div>
+  <div class="desc">Pre-flight counterparty risk check for USDC payments. Checks Circle issuer blacklist (live on-chain), OFAC SDN, and on-chain flow patterns (shared funder, mixer exposure, peel chain). Returns APPROVE, HOLD, or REJECT.</div>
+  <div class="meta">Input: { payer, payee, chain?, asset?, amount? }</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-api">API</span>
+  <span class="tag tag-paid">$0.02</span>
+  <h3>Token Price</h3>
+  <div class="path">GET /v1/token-price</div>
+  <div class="desc">Real-time token prices from CoinGecko. Single symbol or batch. Includes 24h change and market cap.</div>
+  <div class="meta">?symbol=ETH or ?symbols=ETH,BTC,SOL</div>
+</div>
+
+<div class="endpoint">
+  <span class="tag tag-api">API</span>
+  <span class="tag tag-paid">$0.03</span>
+  <h3>Wallet Risk Score</h3>
+  <div class="path">POST /v1/wallet-score</div>
+  <div class="desc">Broader wallet risk assessment (0-100): sanctions, issuer blacklist, on-chain activity, contract detection. More comprehensive than the counterparty check.</div>
+  <div class="meta">Input: { address, chain? }</div>
+</div>
+
+</div>
+
+<h2>🆓 Free Endpoints</h2>
+<div class="grid">
+<div class="endpoint">
+  <span class="tag tag-free">Free</span>
+  <h3>Dataset Catalog</h3>
+  <div class="path">GET /v1/datasets</div>
+  <div class="desc">List all available datasets with pricing and record counts.</div>
+</div>
+<div class="endpoint">
+  <span class="tag tag-free">Free</span>
+  <h3>Sample Verdict</h3>
+  <div class="path">GET /v1/sample</div>
+  <div class="desc">Static example of the counterparty risk verdict shape.</div>
+</div>
+<div class="endpoint">
+  <span class="tag tag-free">Free</span>
+  <h3>Health</h3>
+  <div class="path">GET /health</div>
+  <div class="desc">Liveness check. Returns payTo address.</div>
+</div>
+</div>
+
+<h2>📖 Machine-Readable Discovery</h2>
+<div class="card">
+<p>Agents can discover this service automatically via:</p>
+<div class="code">
+<span class="comment">// x402 manifest (payment requirements)</span>
+GET /.well-known/x402
+
+<span class="comment">// OpenAPI spec (AgentCash / x402scan)</span>
+GET /openapi.json
+
+<span class="comment">// A2A agent card</span>
+GET /.well-known/agent.json
+
+<span class="comment">// LLM-readable index</span>
+GET /llms.txt
+</div>
+</div>
+
+<h2>💡 Example: Checking a Wallet</h2>
+<div class="card">
+<div class="code">
+<span class="comment">// Check if a wallet is safe before paying</span>
+<span class="key">const</span> res = <span class="key">await</span> fetchWithPayment(<span class="string">"https://usdc-gate-live.vercel.app/v1/check-counterparty"</span>, {
+  method: <span class="string">"POST"</span>,
+  headers: { <span class="string">"content-type"</span>: <span class="string">"application/json"</span> },
+  body: JSON.stringify({
+    payer: <span class="string">"0xYourWallet"</span>,
+    payee: <span class="string">"0xCounterpartyToPay"</span>
+  })
+});
+
+<span class="comment">// Response (200 after paying $0.02)</span>
+{
+  <span class="key">verdict</span>: <span class="string">"APPROVE"</span>,  <span class="comment">// or "HOLD" or "REJECT"</span>
+  <span class="key">reason_codes</span>: [],
+  <span class="key">issuer_blacklist</span>: { <span class="key">payer</span>: { <span class="key">blacklisted</span>: <span class="number">false</span> } },
+  <span class="key">sanctions</span>: { <span class="key">payer</span>: <span class="number">null</span> },
+  <span class="key">flow</span>: { <span class="key">shared_funder</span>: <span class="number">false</span>, <span class="key">mixer_exposure</span>: <span class="number">false</span> }
+}
+</div>
+</div>
+
+<footer>
+  <p><strong>USDC Gate</strong> — Paid data and risk APIs for AI agents.<br>
+  Pay per call in USDC via x402. No account, no API key, no subscription.<br>
+  <a href="https://github.com/usdcmaxxing/usdc-gate">GitHub</a> ·
+  <a href="https://usdc-gate-live.vercel.app/health">Health</a> ·
+  <a href="/.well-known/x402">x402 Manifest</a> ·
+  <a href="/openapi.json">OpenAPI</a></p>
+</footer>
+
+</body>
+</html>

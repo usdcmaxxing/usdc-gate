@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USDC Gate — Dashboard</title>
+<link rel="icon" href="/favicon.ico">
+<style>
+:root {
+  --bg: #0b0e11; --card: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #2775CA;
+  --green: #3fb950; --orange: #d29922; --red: #f85149;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg); color: var(--text); padding: 2rem; max-width: 1100px; margin: 0 auto; }
+h1 { margin-bottom: 0.5rem; }
+h2 { margin: 2rem 0 1rem; color: var(--accent); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+.stats { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.stat { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.5rem; text-align: center; flex: 1; min-width: 150px; }
+.stat .num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th { text-align: left; padding: 0.5rem; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border); }
+td { padding: 0.5rem; border-bottom: 1px solid var(--border); }
+tr:hover { background: #1c2128; }
+.method { font-weight: 700; color: var(--accent); font-family: monospace; }
+.path { font-family: monospace; }
+.price { color: var(--orange); font-weight: 600; }
+.count { color: var(--green); font-weight: 600; }
+.revenue { color: var(--accent); font-weight: 600; }
+.empty { color: var(--muted); font-style: italic; padding: 1rem; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>USDC Gate — Dashboard</h1>
+<p style="color: var(--muted)">Real-time usage stats. Data resets on redeploy.</p>
+
+<div class="stats" id="stats">
+  <div class="stat"><div class="num" id="total-calls">0</div><div class="label">Total Paid Calls</div></div>
+  <div class="stat"><div class="num" id="total-revenue">$0.00</div><div class="label">Total Revenue</div></div>
+  <div class="stat"><div class="num" id="endpoints">0</div><div class="label">Paid Endpoints</div></div>
+  <div class="stat"><div class="num" id="last-call">—</div><div class="label">Last Call</div></div>
+</div>
+
+<h2>Endpoints</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr><th>Endpoint</th><th>Price</th><th>Calls</th><th>Revenue</th><th>Last Call</th></tr>
+    </thead>
+    <tbody id="endpoints-table">
+      <tr><td colspan="5" class="empty">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Recent Calls</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr><th>Time</th><th>Endpoint</th><th>Status</th><th>Payer</th></tr>
+    </thead>
+    <tbody id="recent-table">
+      <tr><td colspan="4" class="empty">No calls yet</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p><a href="/catalog">← Back to Catalog</a> · <a href="/">API Home</a> · <a href="/health">Health</a></p>
+</footer>
+
+<script>
+async function loadStats() {
+  try {
+    const res = await fetch('/v1/stats');
+    const data = await res.json();
+
+    document.getElementById('total-calls').textContent = data.total_calls;
+    document.getElementById('total-revenue').textContent = '$' + data.total_revenue_usd.toFixed(4);
+    document.getElementById('endpoints').textContent = data.endpoint_count;
+    document.getElementById('last-call').textContent = data.last_call || '—';
+
+    const epTable = document.getElementById('endpoints-table');
+    if (data.endpoints.length === 0) {
+      epTable.innerHTML = '<tr><td colspan="5" class="empty">No calls yet</td></tr>';
+    } else {
+      epTable.innerHTML = data.endpoints.map(e =>
+        `<tr><td class="path">${e.path}</td><td class="price">${e.price}</td>` +
+        `<td class="count">${e.calls}</td><td class="revenue">$${e.revenue_usd.toFixed(4)}</td>` +
+        `<td>${e.last_call || '—'}</td></tr>`
+      ).join('');
+    }
+
+    const recentTable = document.getElementById('recent-table');
+    if (data.recent_calls.length === 0) {
+      recentTable.innerHTML = '<tr><td colspan="4" class="empty">No calls yet</td></tr>';
+    } else {
+      recentTable.innerHTML = data.recent_calls.map(c =>
+        `<tr><td>${c.time}</td><td class="path">${c.path}</td>` +
+        `<td>${c.status}</td><td class="path">${c.payer}</td></tr>`
+      ).join('');
+    }
+  } catch (e) {
+    console.error('Failed to load stats:', e);
+  }
+}
+
+loadStats();
+setInterval(loadStats, 5000); // Refresh every 5 seconds
+</script>
+
+</body>
+</html>
