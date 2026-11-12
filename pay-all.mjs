@@ -17,6 +17,10 @@ const calls = [
   { name: "wallet-score", url: `${BASE}/v1/wallet-score`, method: "POST",
     body: { address: account.address, chain: "base-sepolia" } },
   { name: "dataset-sanctions", url: `${BASE}/v1/dataset/sanctions`, method: "GET" },
+  { name: "dataset-memecoin-shadow-book", url: `${BASE}/v1/dataset/memecoin-shadow-book`, method: "GET" },
+  { name: "dataset-memecoin-signals", url: `${BASE}/v1/dataset/memecoin-signals`, method: "GET" },
+  { name: "dataset-memecoin-filter-attribution", url: `${BASE}/v1/dataset/memecoin-filter-attribution`, method: "GET" },
+  { name: "dataset-token-contracts", url: `${BASE}/v1/dataset/token-contracts`, method: "GET" },
 ];
 
 let client = new x402Client();
