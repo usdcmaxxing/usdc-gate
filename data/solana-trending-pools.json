@@ -1,0 +1,148 @@
+{
+  "name": "Solana Trending DEX Pools",
+  "description": "Trending Solana DEX pools with liquidity, volume, and price data. For AI agents analyzing memecoin markets.",
+  "version": "2026-11-11",
+  "source": "GeckoTerminal",
+  "records": [
+    {
+      "address": "Ho1aSG6WGH1FfXdEHrK2f4Ggt1Hoxo9s5jcLMDqeyeBz",
+      "name": "mihao / SOL",
+      "price_usd": "0.0183418705877966399446483620871124822212349578447738824136253664",
+      "liquidity_usd": "460854.8681",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "7Te1wXcfeQjKLGHXFvxSCnGZTqunoZ9fxBn7KKjrkNEr",
+      "name": "DacityCoin / TTWO",
+      "price_usd": "0.0068862309145752644281655966169990620654154063726903609001872192",
+      "liquidity_usd": "380942.3691",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "FnzKY6x7entQ1eR3D225dQyT7ybfka4PskBMQhb8L3CC",
+      "name": "ANSEM / SOL",
+      "price_usd": "0.0592225446777673249781446594845431503973541231974861829343667092",
+      "liquidity_usd": "1392471.6499",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "GUsid5mPW6KiExjQDDggoTHrFv4ecGqqAgYwiHa4Ujbb",
+      "name": "HOLD / SOL",
+      "price_usd": "0.000254091178045482417594169664995247191173816492994649828539290099",
+      "liquidity_usd": "45450.0424",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
+      "name": "Dacity / TTWO",
+      "price_usd": "0.0015397400136811370481097098548818901824102529991061666421046734",
+      "liquidity_usd": "207434.2917",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "Eoe22HdCa9rhtBwKL6nNZmZxfuzF35xkxobcvfaF1vWQ",
+      "name": "Max / SOL",
+      "price_usd": "0.00606135633508583579267489939683972122415376127692852111803419264",
+      "liquidity_usd": "291241.5667",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+      "name": "CATE / SOL",
+      "price_usd": "0.0239925395040526367055374716363616974303762874704188339151890414",
+      "liquidity_usd": "1613694.0396",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "5tYFviFWQRKV9BJSTHGitbdqEYC1BGUgRUDnSADUXqJP",
+      "name": "BURNIE / SOL",
+      "price_usd": "0.00093020995436622623286452470314776215801044633277949920036391358",
+      "liquidity_usd": "180540.5853",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "9rQAUw4uNyfsqsJ9F3BPo3hBFY1V6ptaEtPkRhhH3zpL",
+      "name": "PAYDAY / SOL",
+      "price_usd": "0.000156454587062738430263228500519736964500639508053778072047777984",
+      "liquidity_usd": "31559.0017",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "zxTpi4BtaWX3mgdAPoezkMD1hxx8CdeCfrqXMWvSCLX",
+      "name": "STONK / SOL",
+      "price_usd": "0.046533631517889246910852965775919488466581994468072062281410057",
+      "liquidity_usd": "2094808.6537",
+      "dex": "meteora"
+    },
+    {
+      "address": "8ewuF2o8ACro7fqWepZ3tKhkbBjndZU4Ldk9scRPw83d",
+      "name": "swordcat / SOL",
+      "price_usd": "0.00098915330145830480145166779511460146058816658944425503860220625",
+      "liquidity_usd": "126808.793",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "Dw4kAH8LhdmgfW1cgyvnWSwSDqkt37jeY7pW4oFkbGTu",
+      "name": "WIZARD / SOL",
+      "price_usd": "0.000405803602027536632517128518637322293980045723388175446773337376",
+      "liquidity_usd": "79994.9661",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "FJk9sajdc2Q4heRPPu3yLzkmf2ZByZkpiHQLv9e2bn5A",
+      "name": "FLOAT / SOL",
+      "price_usd": "0.0035880198630924822730773523370357213221200232322174286888775079",
+      "liquidity_usd": "353521.881",
+      "dex": "raydium"
+    },
+    {
+      "address": "GxYbNxjGR9mEuVzXsGBi2Y78RGkwBMRok4RS9sMUb8hE",
+      "name": ":3 / SOL",
+      "price_usd": "0.000101815017610123091444713436712744873436984212268803327114551832",
+      "liquidity_usd": "24984.514",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "7vcrVyJxtx2mdDPy67ie7CZJcQXtEa28EivUy2UFy9D8",
+      "name": "BOXCAT / SOL",
+      "price_usd": "0.0000449117502564714383975152642074148971305745428353236691111409952",
+      "liquidity_usd": "17003.0921",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
+      "name": "GATO / SOL",
+      "price_usd": "0.0059868772380365686217226948233782864862234815481630470462928472",
+      "liquidity_usd": "261897.8478",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "Fe7bpDYCs74GqiCUF14HwgUMToPKV1d9mDYVX5BTohFr",
+      "name": "CLAUDIA / SOL",
+      "price_usd": "0.00492303180434739132836649597339036789577618992979542147568455728",
+      "liquidity_usd": "316527.8444",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "5AFbwVSQPJf4cgEjq4TajZYyPYUvYktrRN3SahNrPnmv",
+      "name": "GTA6 / SOL",
+      "price_usd": "0.00568726244101619231334730335135512686341191326952011398227761436",
+      "liquidity_usd": "32130.9125",
+      "dex": "meteora"
+    },
+    {
+      "address": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
+      "name": "DOPE / SOL",
+      "price_usd": "0.00084636477653049580331965374802094254321837456983167087816846988",
+      "liquidity_usd": "115400.736",
+      "dex": "pumpswap"
+    },
+    {
+      "address": "4AFZ7XzcbmeyBoiy6XEoswJBG8WyjLXr6fAYsJsuVMKw",
+      "name": "CatFu / SOL",
+      "price_usd": "0.000086836336304579061431355832016303200916342764792707055494403743",
+      "liquidity_usd": "29516.8948",
+      "dex": "pumpswap"
+    }
+  ]
+}

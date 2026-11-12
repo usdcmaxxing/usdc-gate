@@ -19,6 +19,10 @@ import {
   getMemecoinSignals,
   getMemecoinFilterAttribution,
   getTokenContractRegistry,
+  getX402ServiceRegistry,
+  getTokenPriceHistory,
+  getSolanaTrendingPools,
+  getStablecoinRegistry,
   listDatasets,
 } from "./dataset.js";
 
@@ -69,6 +73,10 @@ app.get("/", (_req, res) => {
       "GET /v1/dataset/memecoin-signals": "$0.01 — historical memecoin trading signals with P&L.",
       "GET /v1/dataset/memecoin-filter-attribution": "$0.01 — filter attribution analysis (venue, liquidity, post-age).",
       "GET /v1/dataset/token-contracts": "$0.01 — top 100 tokens by market cap with contract addresses.",
+      "GET /v1/dataset/x402-services": "$0.01 — all x402-paid services on Agentic.Market with pricing.",
+      "GET /v1/dataset/token-price-history": "$0.01 — 30-day price history for top 10 tokens.",
+      "GET /v1/dataset/solana-trending-pools": "$0.01 — trending Solana DEX pools with liquidity and volume.",
+      "GET /v1/dataset/stablecoins": "$0.01 — major stablecoins with verified contract addresses across chains.",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -527,6 +535,30 @@ const routes = {
     mimeType: "application/json",
     extensions: datasetBazaar("Token Contract Registry", { records: [{ symbol: "BTC", name: "Bitcoin" }] }),
   },
+  "GET /v1/dataset/x402-services": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "All x402-paid services on Agentic.Market with pricing and endpoints. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("x402 Service Registry", { records: [{ name: "example", price: "$0.01" }] }),
+  },
+  "GET /v1/dataset/token-price-history": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "30-day price history for top 10 tokens (hourly). ?query= to filter by token.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Token Price History", { records: [{ token: "bitcoin", prices: [{ t: 0, price_usd: 0 }] }] }),
+  },
+  "GET /v1/dataset/solana-trending-pools": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Trending Solana DEX pools with liquidity and volume. ?query= to filter by token.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Solana Trending Pools", { records: [{ name: "EXAMPLE/SOL", liquidity_usd: "1000" }] }),
+  },
+  "GET /v1/dataset/stablecoins": {
+    accepts: [{ scheme: "exact", price: "$0.01", network: NETWORK, payTo: PAY_TO }],
+    description: "Major stablecoins with verified contract addresses across chains. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Stablecoin Registry", { records: [{ symbol: "USDC", issuer: "Circle" }] }),
+  },
 };
 
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
@@ -652,6 +684,42 @@ app.get("/v1/dataset/token-contracts", async (req, res) => {
 // List all datasets (free, ungated)
 app.get("/v1/datasets", (_req, res) => {
   res.json(listDatasets());
+});
+
+// x402 service registry — all x402-paid services on Agentic.Market
+app.get("/v1/dataset/x402-services", async (req, res) => {
+  try {
+    res.json(getX402ServiceRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Token price history — 30-day hourly data for top tokens
+app.get("/v1/dataset/token-price-history", async (req, res) => {
+  try {
+    res.json(getTokenPriceHistory(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Solana trending pools — DEX pools with liquidity and volume
+app.get("/v1/dataset/solana-trending-pools", async (req, res) => {
+  try {
+    res.json(getSolanaTrendingPools(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Stablecoin registry — major stablecoins with contract addresses
+app.get("/v1/dataset/stablecoins", async (req, res) => {
+  try {
+    res.json(getStablecoinRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
 });
 
 // Export for Cloudflare Workers and Vercel (and other serverless platforms)

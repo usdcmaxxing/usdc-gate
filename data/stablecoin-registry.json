@@ -1,0 +1,102 @@
+{
+  "name": "Stablecoin Registry",
+  "description": "Major stablecoins with verified contract addresses across chains. For AI agents checking asset risk and identifying stablecoin contracts.",
+  "version": "2026-11-11",
+  "source": "Public documentation (Circle, Tether, MakerDAO, Coinbase)",
+  "records": [
+    {
+      "name": "USDC",
+      "symbol": "USDC",
+      "issuer": "Circle",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "base-sepolia": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "solana": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "polygon": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+        "arbitrum": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+        "optimism": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
+      },
+      "freezable_by_issuer": true
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "issuer": "Tether",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "tron": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+        "solana": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "polygon": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "arbitrum": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+      },
+      "freezable_by_issuer": true
+    },
+    {
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "issuer": "MakerDAO",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "base": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "polygon": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+        "arbitrum": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+      },
+      "freezable_by_issuer": false
+    },
+    {
+      "name": "BUSD",
+      "symbol": "BUSD",
+      "issuer": "Binance",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+      },
+      "freezable_by_issuer": true
+    },
+    {
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "issuer": "TrueUSD",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0x0000000000085d4780B73119b644AE5ecd22b376"
+      },
+      "freezable_by_issuer": true
+    },
+    {
+      "name": "Paxos Dollar",
+      "symbol": "USDP",
+      "issuer": "Paxos",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0x8E870D67F660D95d5be530380D0eC0bd388289E1"
+      },
+      "freezable_by_issuer": true
+    },
+    {
+      "name": "USDS",
+      "symbol": "USDS",
+      "issuer": "Sky (MakerDAO)",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0xdC035D45d973E3EC169d2276DDab16f1e407384F"
+      },
+      "freezable_by_issuer": false
+    },
+    {
+      "name": "Frax",
+      "symbol": "FRAX",
+      "issuer": "Frax Finance",
+      "peg": "USD",
+      "addresses": {
+        "ethereum": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "arbitrum": "0x17FC002b466eEc40DaE837Fc4bE5f67996CddC79"
+      },
+      "freezable_by_issuer": false
+    }
+  ]
+}

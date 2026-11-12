@@ -21,6 +21,10 @@ const calls = [
   { name: "dataset-memecoin-signals", url: `${BASE}/v1/dataset/memecoin-signals`, method: "GET" },
   { name: "dataset-memecoin-filter-attribution", url: `${BASE}/v1/dataset/memecoin-filter-attribution`, method: "GET" },
   { name: "dataset-token-contracts", url: `${BASE}/v1/dataset/token-contracts`, method: "GET" },
+  { name: "dataset-x402-services", url: `${BASE}/v1/dataset/x402-services`, method: "GET" },
+  { name: "dataset-token-price-history", url: `${BASE}/v1/dataset/token-price-history`, method: "GET" },
+  { name: "dataset-solana-trending-pools", url: `${BASE}/v1/dataset/solana-trending-pools`, method: "GET" },
+  { name: "dataset-stablecoins", url: `${BASE}/v1/dataset/stablecoins`, method: "GET" },
 ];
 
 let client = new x402Client();

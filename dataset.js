@@ -60,6 +60,22 @@ export function getTokenContractRegistry(q) {
   return query(load("token-contract-registry"), q);
 }
 
+export function getX402ServiceRegistry(q) {
+  return query(load("x402-service-registry"), q);
+}
+
+export function getTokenPriceHistory(q) {
+  return query(load("token-price-history"), q);
+}
+
+export function getSolanaTrendingPools(q) {
+  return query(load("solana-trending-pools"), q);
+}
+
+export function getStablecoinRegistry(q) {
+  return query(load("stablecoin-registry"), q);
+}
+
 // List all available datasets (free — lets agents discover what we sell)
 export function listDatasets() {
   return {
@@ -98,6 +114,34 @@ export function listDatasets() {
         price: "$0.01",
         records: 100,
         description: "Top 100 tokens by market cap with contract addresses",
+      },
+      {
+        id: "x402-service-registry",
+        endpoint: "/v1/dataset/x402-services",
+        price: "$0.01",
+        records: 200,
+        description: "All x402-paid services on Agentic.Market with pricing",
+      },
+      {
+        id: "token-price-history",
+        endpoint: "/v1/dataset/token-price-history",
+        price: "$0.01",
+        records: 10,
+        description: "30-day price history for top 10 tokens (hourly OHLCV)",
+      },
+      {
+        id: "solana-trending-pools",
+        endpoint: "/v1/dataset/solana-trending-pools",
+        price: "$0.01",
+        records: 20,
+        description: "Trending Solana DEX pools with liquidity and volume",
+      },
+      {
+        id: "stablecoin-registry",
+        endpoint: "/v1/dataset/stablecoins",
+        price: "$0.01",
+        records: 8,
+        description: "Major stablecoins with verified contract addresses across chains",
       },
     ],
   };
