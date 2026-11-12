@@ -58,7 +58,13 @@ console.log(
 const app = express();
 app.use(express.json());
 
+// Landing page — human-readable
 app.get("/", (_req, res) => {
+  res.type("text/html").sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// Service metadata — machine-readable
+app.get("/v1/service-info", (_req, res) => {
   res.json({
     service: "USDC Gate",
     description: "Pre-flight counterparty risk for USDC payments. USDC only.",
