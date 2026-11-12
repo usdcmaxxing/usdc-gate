@@ -193,7 +193,7 @@ export function openApiDocument(origin) {
             "Filter with ?query= or ?type=sanctions|issuer_blacklist|mixer.",
           tags: ["Data"],
           "x-payment-info": {
-            price: { mode: "fixed", currency: "USD", amount: "0.010000" },
+            price: { mode: "fixed", currency: "USD", amount: "0.020000" },
             protocols: [{ x402: {} }],
           },
           parameters: [
