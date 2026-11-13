@@ -62,7 +62,7 @@
 
 **Add server:** https://glama.ai/mcp/servers
 
-**Command:** `node /Users/asa/usdc-gate/mcp-server.js`
+**Command:** `node mcp-server.js`
 
 **Transport:** stdio
 

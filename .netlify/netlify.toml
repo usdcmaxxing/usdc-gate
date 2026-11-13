@@ -7,7 +7,7 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "/Users/asa/usdc-gate"
+publish = "."
 publishOrigin = "default"
 
 [build.environment]
