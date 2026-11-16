@@ -5,6 +5,9 @@ import { fileURLToPath } from "node:url";
 import { isBlacklisted, isAddress, USDC } from "./usdc.js";
 import { analyzeFlow } from "./flow.js";
 
+// ES modules have no __dirname — derive it.
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 // Flow checks hit chain history (Blockscout / eth_getLogs). Off only when a
 // deployment explicitly wants the fast, history-free verdict.
 const FLOW_ENABLED = String(process.env.FLOW_ENABLED ?? "true") !== "false";

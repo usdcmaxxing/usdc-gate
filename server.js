@@ -25,6 +25,7 @@ import {
   getTokenPriceHistory,
   getSolanaTrendingPools,
   getStablecoinRegistry,
+  getMoneyOpportunityRegistry,
   listDatasets,
 } from "./dataset.js";
 
@@ -87,6 +88,7 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/token-price-history": "$0.02 — 30-day price history for top tokens.",
       "GET /v1/dataset/solana-trending-pools": "$0.02 — 100 trending Solana DEX pools with liquidity and volume.",
       "GET /v1/dataset/stablecoins": "$0.01 — major stablecoins with verified contract addresses across chains.",
+      "GET /v1/dataset/opportunities": "$0.03 — live money-making opportunities: hackathons, bug bounties, grants (ranked by expected value, updated daily).",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -306,6 +308,7 @@ app.get("/llms.txt", (_req, res) => {
       "- `GET /v1/dataset/token-price-history` — $0.02 — 30-day hourly price history",
       "- `GET /v1/dataset/solana-trending-pools` — $0.02 — 100 trending Solana pools",
       "- `GET /v1/dataset/stablecoins` — $0.01 — 8 stablecoins with addresses",
+      "- `GET /v1/dataset/opportunities` — $0.03 — live hackathons, bug bounties, grants (ranked by expected value)",
       "",
       "## Free, ungated",
       "",
@@ -626,6 +629,12 @@ const routes = {
     mimeType: "application/json",
     extensions: datasetBazaar("Stablecoin Registry", { records: [{ symbol: "USDC", issuer: "Circle" }] }),
   },
+  "GET /v1/dataset/opportunities": {
+    accepts: [{ scheme: "exact", price: "$0.03", network: NETWORK, payTo: PAY_TO }],
+    description: "Live money-making opportunities: hackathons, bug bounties, grants. Ranked by expected value. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Money Opportunity Registry", { records: [{ title: "Example Hackathon", prize_usd: 10000 }] }),
+  },
 };
 
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
@@ -789,6 +798,15 @@ app.get("/v1/dataset/stablecoins", async (req, res) => {
   }
 });
 
+// Money opportunity registry — hackathons, bounties, grants (from Opportunity Radar)
+app.get("/v1/dataset/opportunities", async (req, res) => {
+  try {
+    res.json(getMoneyOpportunityRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
 // ── Usage tracking ───────────────────────────────────────────────────────
 // In-memory stats: counts paid calls per endpoint. Resets on redeploy.
 const stats = {
@@ -823,6 +841,7 @@ app.use((req, res, next) => {
         "/v1/dataset/token-price-history": "$0.02",
         "/v1/dataset/solana-trending-pools": "$0.02",
         "/v1/dataset/stablecoins": "$0.01",
+        "/v1/dataset/opportunities": "$0.03",
       };
       const price = priceMap[path] || "$0.01";
       const usd = priceToUsd(price);

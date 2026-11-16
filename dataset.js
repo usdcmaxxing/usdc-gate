@@ -76,6 +76,10 @@ export function getStablecoinRegistry(q) {
   return query(load("stablecoin-registry"), q);
 }
 
+export function getMoneyOpportunityRegistry(q) {
+  return query(load("money-opportunity-registry"), q);
+}
+
 // List all available datasets (free — lets agents discover what we sell)
 export function listDatasets() {
   return {
@@ -142,6 +146,13 @@ export function listDatasets() {
         price: "$0.01",
         records: 8,
         description: "Major stablecoins with verified contract addresses across chains",
+      },
+      {
+        id: "money-opportunity-registry",
+        endpoint: "/v1/dataset/opportunities",
+        price: "$0.03",
+        records: 124,
+        description: "Live money-making opportunities: hackathons, bug bounties, grants (ranked by expected value, updated daily)",
       },
     ],
   };
