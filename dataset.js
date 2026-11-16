@@ -80,6 +80,18 @@ export function getMoneyOpportunityRegistry(q) {
   return query(load("money-opportunity-registry"), q);
 }
 
+export function getDeFiProtocolRegistry(q) {
+  return query(load("defi-protocol-registry"), q);
+}
+
+export function getChainRegistry(q) {
+  return query(load("chain-registry"), q);
+}
+
+export function getExchangeRegistry(q) {
+  return query(load("exchange-registry"), q);
+}
+
 // List all available datasets (free — lets agents discover what we sell)
 export function listDatasets() {
   return {
@@ -153,6 +165,27 @@ export function listDatasets() {
         price: "$0.03",
         records: 124,
         description: "Live money-making opportunities: hackathons, bug bounties, grants (ranked by expected value, updated daily)",
+      },
+      {
+        id: "defi-protocol-registry",
+        endpoint: "/v1/dataset/defi-protocols",
+        price: "$0.02",
+        records: 250,
+        description: "Top 250 DeFi protocols by TVL, with chains, TVL change, and market cap",
+      },
+      {
+        id: "chain-registry",
+        endpoint: "/v1/dataset/chains",
+        price: "$0.02",
+        records: 100,
+        description: "Top 100 blockchains by TVL with chain IDs and native token symbols",
+      },
+      {
+        id: "exchange-registry",
+        endpoint: "/v1/dataset/exchanges",
+        price: "$0.02",
+        records: 100,
+        description: "Top 100 crypto exchanges with trust scores, country, and 24h volume",
       },
     ],
   };

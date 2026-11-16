@@ -26,6 +26,9 @@ import {
   getSolanaTrendingPools,
   getStablecoinRegistry,
   getMoneyOpportunityRegistry,
+  getDeFiProtocolRegistry,
+  getChainRegistry,
+  getExchangeRegistry,
   listDatasets,
 } from "./dataset.js";
 
@@ -89,6 +92,9 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/solana-trending-pools": "$0.02 — 100 trending Solana DEX pools with liquidity and volume.",
       "GET /v1/dataset/stablecoins": "$0.01 — major stablecoins with verified contract addresses across chains.",
       "GET /v1/dataset/opportunities": "$0.03 — live money-making opportunities: hackathons, bug bounties, grants (ranked by expected value, updated daily).",
+      "GET /v1/dataset/defi-protocols": "$0.02 — top 250 DeFi protocols by TVL (DefiLlama).",
+      "GET /v1/dataset/chains": "$0.02 — top 100 blockchains by TVL.",
+      "GET /v1/dataset/exchanges": "$0.02 — top 100 crypto exchanges with trust scores.",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -309,6 +315,9 @@ app.get("/llms.txt", (_req, res) => {
       "- `GET /v1/dataset/solana-trending-pools` — $0.02 — 100 trending Solana pools",
       "- `GET /v1/dataset/stablecoins` — $0.01 — 8 stablecoins with addresses",
       "- `GET /v1/dataset/opportunities` — $0.03 — live hackathons, bug bounties, grants (ranked by expected value)",
+      "- `GET /v1/dataset/defi-protocols` — $0.02 — top 250 DeFi protocols by TVL",
+      "- `GET /v1/dataset/chains` — $0.02 — top 100 blockchains by TVL",
+      "- `GET /v1/dataset/exchanges` — $0.02 — top 100 crypto exchanges",
       "",
       "## Free, ungated",
       "",
@@ -635,6 +644,24 @@ const routes = {
     mimeType: "application/json",
     extensions: datasetBazaar("Money Opportunity Registry", { records: [{ title: "Example Hackathon", prize_usd: 10000 }] }),
   },
+  "GET /v1/dataset/defi-protocols": {
+    accepts: [{ scheme: "exact", price: "$0.02", network: NETWORK, payTo: PAY_TO }],
+    description: "Top 250 DeFi protocols by TVL, with chains and TVL change. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("DeFi Protocol Registry", { records: [{ name: "Aave", tvl_usd: 12000000000 }] }),
+  },
+  "GET /v1/dataset/chains": {
+    accepts: [{ scheme: "exact", price: "$0.02", network: NETWORK, payTo: PAY_TO }],
+    description: "Top 100 blockchains by TVL with chain IDs and native token symbols. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Blockchain Chain Registry", { records: [{ name: "Ethereum", tvl_usd: 100000000000 }] }),
+  },
+  "GET /v1/dataset/exchanges": {
+    accepts: [{ scheme: "exact", price: "$0.02", network: NETWORK, payTo: PAY_TO }],
+    description: "Top 100 crypto exchanges with trust scores and 24h volume. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Crypto Exchange Registry", { records: [{ name: "Coinbase Exchange", trust_score: 10 }] }),
+  },
 };
 
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
@@ -807,6 +834,33 @@ app.get("/v1/dataset/opportunities", async (req, res) => {
   }
 });
 
+// DeFi protocol registry — top protocols by TVL (DefiLlama)
+app.get("/v1/dataset/defi-protocols", async (req, res) => {
+  try {
+    res.json(getDeFiProtocolRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Chain registry — top blockchains by TVL (DefiLlama)
+app.get("/v1/dataset/chains", async (req, res) => {
+  try {
+    res.json(getChainRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
+// Exchange registry — top crypto exchanges (CoinGecko)
+app.get("/v1/dataset/exchanges", async (req, res) => {
+  try {
+    res.json(getExchangeRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
 // ── Usage tracking ───────────────────────────────────────────────────────
 // In-memory stats: counts paid calls per endpoint. Resets on redeploy.
 const stats = {
@@ -842,6 +896,9 @@ app.use((req, res, next) => {
         "/v1/dataset/solana-trending-pools": "$0.02",
         "/v1/dataset/stablecoins": "$0.01",
         "/v1/dataset/opportunities": "$0.03",
+        "/v1/dataset/defi-protocols": "$0.02",
+        "/v1/dataset/chains": "$0.02",
+        "/v1/dataset/exchanges": "$0.02",
       };
       const price = priceMap[path] || "$0.01";
       const usd = priceToUsd(price);
