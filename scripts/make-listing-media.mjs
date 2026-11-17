@@ -50,6 +50,16 @@ const SKILLS = [
     cmd: "$ curl -i /v1/dataset -H 'accept: application/json'",
     out: ["HTTP 402 Payment Required", "x-payment: scheme=exact, USDC", "network: base, amount: 20000", "→ 200 OK after settlement"],
   },
+  {
+    slug: "ai-agent-security-audit-permissions-injection-spend",
+    short: "AI Agent Security Audit",
+    tag: "Permissions, Injection, Spend",
+    accent: "#f43f5e",
+    price: "FREE",
+    points: ["Least-privilege tool and MCP scopes", "Instruction/data separation test", "Spend caps enforced in code, not prompts", "Scoped secrets + a real kill switch"],
+    cmd: "$ agent-audit run ./agent",
+    out: ["tools: 6 (2 over-scoped)", "injection test: PASSED", "spend cap: hard, in code", "VERDICT: SAFE TO RUN"],
+  },
 ];
 
 const logoHTML = (s) => `<!doctype html><html><head><meta charset="utf-8"><style>

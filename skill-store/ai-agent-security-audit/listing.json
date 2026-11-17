@@ -1,0 +1,15 @@
+{
+  "name": "AI Agent Security Audit — Permissions, Injection, Spend",
+  "summary": "Audits an AI agent before it touches money, credentials or production data: tool and MCP permissions, prompt-injection surface, spend caps, secrets and the kill switch.",
+  "description": "A free, practical audit you run before an agent touches real money, credentials, or production data. Written for people who actually run agents with wallets and API keys: it is a checklist plus copy-paste commands, not a threat-model deck.\n\nCovers the five failures that actually hurt: over-permissioned tools and MCP servers, no separation between instructions and data (prompt injection), spend caps that live only in the prompt instead of in code, root keys handed to a model, and no kill switch.\n\nIncludes a verdict report template you can paste into a ticket, and a short 'go further' section pointing at paid underwriting and paid-API skills.",
+  "pricing_type": "free",
+  "tags": ["ai-agents", "security", "mcp", "testing-debugging"],
+  "keywords": ["ai agent security", "agent security", "mcp permissions", "tool permissions", "prompt injection", "agent audit", "spend limits", "agent safety", "least privilege", "kill switch"],
+  "use_cases": [
+    "Audit an agent before giving it a wallet or API key",
+    "Review another team's agent for least-privilege permissions",
+    "Test whether an agent separates instructions from data",
+    "Check spend caps are enforced in code, not the prompt",
+    "Prepare a kill switch and rollback plan"
+  ]
+}
