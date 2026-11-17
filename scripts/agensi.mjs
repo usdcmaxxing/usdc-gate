@@ -52,7 +52,7 @@ function parseSse(text) {
 
 async function main() {
   const [tool, argsJson] = process.argv.slice(2);
-  const args = argsJson ? JSON.parse(argsJson) : {};
+  const args = argsJson ? (argsJson.trim().startsWith("{") ? JSON.parse(argsJson) : {}) : {};
 
   // handshake
   const init = await rpc("initialize", {
@@ -68,6 +68,16 @@ async function main() {
     const tools = r.json.result?.tools || [];
     for (const t of tools) console.log(`  ${t.name.padEnd(24)} ${(t.description || "").slice(0, 80)}`);
     console.log(`\n${tools.length} tools`);
+    return;
+  }
+
+  if (tool === "schema") {
+    const name = argsJson || "";
+    const r = await rpc("tools/list", {}, { sessionId: sid });
+    const t = (r.json.result?.tools || []).find((x) => x.name === name);
+    if (!t) { console.error("no such tool: " + name); return; }
+    console.log("description:", t.description);
+    console.log(JSON.stringify(t.inputSchema, null, 2));
     return;
   }
 
