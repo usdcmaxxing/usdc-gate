@@ -2,7 +2,7 @@
   "name": "Blockchain Chain Registry",
   "description": "Top 100 blockchains by TVL with chain IDs and native token symbols. For agents checking chain identity and DeFi activity.",
   "version": "2026-11-16",
-  "updated_at": "2026-11-16T08:59:41.948Z",
+  "updated_at": "2026-11-16T14:00:40.813Z",
   "source": "DefiLlama",
   "total": 100,
   "records": [
@@ -10,231 +10,231 @@
       "name": "Ethereum",
       "chain_id": 1,
       "token_symbol": "ETH",
-      "tvl_usd": 83721559274,
+      "tvl_usd": 83088122885,
       "gecko_id": "ethereum"
     },
     {
       "name": "Solana",
       "chain_id": null,
       "token_symbol": "SOL",
-      "tvl_usd": 10454523028,
+      "tvl_usd": 10436691755,
       "gecko_id": "solana"
     },
     {
       "name": "Base",
       "chain_id": 8453,
       "token_symbol": null,
-      "tvl_usd": 8364230177,
+      "tvl_usd": 8338847740,
       "gecko_id": null
     },
     {
       "name": "Tron",
       "chain_id": null,
       "token_symbol": "TRX",
-      "tvl_usd": 7295221910,
+      "tvl_usd": 7301331416,
       "gecko_id": "tron"
     },
     {
       "name": "Binance",
       "chain_id": 56,
       "token_symbol": "BNB",
-      "tvl_usd": 6249263896,
+      "tvl_usd": 6226217867,
       "gecko_id": "binancecoin"
     },
     {
       "name": "Bitcoin",
       "chain_id": null,
       "token_symbol": "BTC",
-      "tvl_usd": 6030108008,
+      "tvl_usd": 5978797083,
       "gecko_id": "bitcoin"
     },
     {
       "name": "Hyperliquid L1",
       "chain_id": null,
       "token_symbol": "HYPE",
-      "tvl_usd": 3263583701,
+      "tvl_usd": 3239834432,
       "gecko_id": "hyperliquid"
     },
     {
       "name": "Arbitrum",
       "chain_id": 42161,
       "token_symbol": "ARB",
-      "tvl_usd": 1976830717,
+      "tvl_usd": 1942782734,
       "gecko_id": "arbitrum"
     },
     {
       "name": "Robinhood Chain",
       "chain_id": 4663,
       "token_symbol": null,
-      "tvl_usd": 1609905025,
+      "tvl_usd": 1599459576,
       "gecko_id": null
     },
     {
       "name": "Ink",
       "chain_id": 57073,
       "token_symbol": null,
-      "tvl_usd": 1588286680,
+      "tvl_usd": 1580968947,
       "gecko_id": null
     },
     {
       "name": "Monad",
       "chain_id": 143,
       "token_symbol": "MON",
-      "tvl_usd": 1562369369,
+      "tvl_usd": 1563339986,
       "gecko_id": "monad"
     },
     {
       "name": "Avalanche",
       "chain_id": 43114,
       "token_symbol": "AVAX",
-      "tvl_usd": 1141012405,
+      "tvl_usd": 1135663952,
       "gecko_id": "avalanche-2"
     },
     {
       "name": "Optimism",
       "chain_id": 10,
       "token_symbol": "OP",
-      "tvl_usd": 1015032188,
+      "tvl_usd": 1011391524,
       "gecko_id": "optimism"
     },
     {
       "name": "Arc",
       "chain_id": 5042,
       "token_symbol": null,
-      "tvl_usd": 782939289,
+      "tvl_usd": 773975992,
       "gecko_id": null
     },
     {
       "name": "Polygon",
       "chain_id": 137,
       "token_symbol": "POL",
-      "tvl_usd": 621047848,
+      "tvl_usd": 621919445,
       "gecko_id": "polygon-ecosystem-token"
     },
     {
       "name": "Plasma",
       "chain_id": 9745,
       "token_symbol": "XPL",
-      "tvl_usd": 525083176,
+      "tvl_usd": 524390410,
       "gecko_id": "plasma"
     },
     {
       "name": "Sui",
       "chain_id": null,
       "token_symbol": "SUI",
-      "tvl_usd": 504032485,
+      "tvl_usd": 499803405,
       "gecko_id": "sui"
     },
     {
       "name": "Stellar",
       "chain_id": null,
       "token_symbol": "XLM",
-      "tvl_usd": 412383581,
+      "tvl_usd": 410920368,
       "gecko_id": "stellar"
     },
     {
       "name": "Anubis",
       "chain_id": null,
       "token_symbol": null,
-      "tvl_usd": 377197410,
+      "tvl_usd": 377915146,
       "gecko_id": null
     },
     {
       "name": "Bittensor",
       "chain_id": null,
       "token_symbol": "TAO",
-      "tvl_usd": 369773545,
+      "tvl_usd": 365551215,
       "gecko_id": "bittensor"
     },
     {
       "name": "Provenance",
       "chain_id": null,
       "token_symbol": "HASH",
-      "tvl_usd": 328584356,
+      "tvl_usd": 330087076,
       "gecko_id": "hash-2"
     },
     {
       "name": "Near",
       "chain_id": null,
       "token_symbol": "NEAR",
-      "tvl_usd": 318688011,
+      "tvl_usd": 315151479,
       "gecko_id": "near"
     },
     {
       "name": "X Layer",
       "chain_id": null,
       "token_symbol": null,
-      "tvl_usd": 283320935,
+      "tvl_usd": 285734718,
       "gecko_id": "okb"
     },
     {
       "name": "Flare",
       "chain_id": null,
       "token_symbol": "FLR",
-      "tvl_usd": 277885248,
+      "tvl_usd": 277132565,
       "gecko_id": "flare-networks"
     },
     {
       "name": "Ripple",
       "chain_id": null,
       "token_symbol": "XRP",
-      "tvl_usd": 272930156,
+      "tvl_usd": 270082140,
       "gecko_id": "ripple"
     },
     {
       "name": "TON",
       "chain_id": null,
       "token_symbol": "GRAM",
-      "tvl_usd": 241440473,
+      "tvl_usd": 237750432,
       "gecko_id": "the-open-network"
     },
     {
       "name": "Mantle",
       "chain_id": 5000,
       "token_symbol": "MNT",
-      "tvl_usd": 191232399,
+      "tvl_usd": 191157619,
       "gecko_id": "mantle"
     },
     {
       "name": "Pharos",
       "chain_id": 1672,
       "token_symbol": "PROS",
-      "tvl_usd": 161966192,
+      "tvl_usd": 160433235,
       "gecko_id": "pharos-network"
     },
     {
       "name": "Tempo",
       "chain_id": 4217,
       "token_symbol": null,
-      "tvl_usd": 159257373,
+      "tvl_usd": 159343024,
       "gecko_id": null
     },
     {
       "name": "Stable",
       "chain_id": 988,
       "token_symbol": "STABLE",
-      "tvl_usd": 155631792,
+      "tvl_usd": 155234779,
       "gecko_id": "stable-2"
     },
     {
       "name": "xDai",
       "chain_id": 100,
       "token_symbol": "GNO",
-      "tvl_usd": 122773402,
+      "tvl_usd": 121768496,
       "gecko_id": "gnosis"
     },
     {
       "name": "Stacks",
       "chain_id": null,
       "token_symbol": "STX",
-      "tvl_usd": 116003516,
+      "tvl_usd": 115350466,
       "gecko_id": "blockstack"
     },
     {
       "name": "Cronos",
       "chain_id": 25,
       "token_symbol": "CRO",
-      "tvl_usd": 114994846,
+      "tvl_usd": 114468617,
       "gecko_id": "crypto-com-chain"
     },
     {
@@ -248,462 +248,462 @@
       "name": "Morph",
       "chain_id": null,
       "token_symbol": "-",
-      "tvl_usd": 89912597,
+      "tvl_usd": 89549971,
       "gecko_id": "bitget-token"
     },
     {
       "name": "dYdX",
       "chain_id": null,
       "token_symbol": "dYdX",
-      "tvl_usd": 74674272,
+      "tvl_usd": 74669383,
       "gecko_id": "dydx-chain"
     },
     {
       "name": "Mixin",
       "chain_id": null,
       "token_symbol": "XIN",
-      "tvl_usd": 65322644,
+      "tvl_usd": 65317506,
       "gecko_id": "mixin"
     },
     {
       "name": "Katana",
       "chain_id": 747474,
       "token_symbol": "KAT",
-      "tvl_usd": 61698197,
+      "tvl_usd": 61435887,
       "gecko_id": "katana-network-token"
     },
     {
       "name": "Berachain",
       "chain_id": 80094,
       "token_symbol": "BERA",
-      "tvl_usd": 56866326,
+      "tvl_usd": 56806492,
       "gecko_id": "berachain-bera"
     },
     {
       "name": "RSK",
       "chain_id": 30,
       "token_symbol": "RIF",
-      "tvl_usd": 56380282,
+      "tvl_usd": 56369406,
       "gecko_id": "rif-token"
     },
     {
       "name": "Mezo",
       "chain_id": 31612,
       "token_symbol": "MEZO",
-      "tvl_usd": 54092496,
+      "tvl_usd": 53685424,
       "gecko_id": "mezo"
     },
     {
       "name": "Starknet",
       "chain_id": null,
       "token_symbol": "STRK",
-      "tvl_usd": 48092382,
+      "tvl_usd": 47777180,
       "gecko_id": "starknet"
     },
     {
       "name": "World Chain",
       "chain_id": 480,
       "token_symbol": "WLD",
-      "tvl_usd": 47814259,
+      "tvl_usd": 47284776,
       "gecko_id": "worldcoin-wld"
     },
     {
       "name": "Hedera",
       "chain_id": 295,
       "token_symbol": "HBAR",
-      "tvl_usd": 47032116,
+      "tvl_usd": 46552497,
       "gecko_id": "hedera-hashgraph"
-    },
-    {
-      "name": "Cardano",
-      "chain_id": null,
-      "token_symbol": "ADA",
-      "tvl_usd": 46459385,
-      "gecko_id": "cardano"
     },
     {
       "name": "Algorand",
       "chain_id": null,
       "token_symbol": "ALGO",
-      "tvl_usd": 46304032,
+      "tvl_usd": 46399188,
       "gecko_id": "algorand"
+    },
+    {
+      "name": "Cardano",
+      "chain_id": null,
+      "token_symbol": "ADA",
+      "tvl_usd": 46179540,
+      "gecko_id": "cardano"
     },
     {
       "name": "Pulse",
       "chain_id": null,
       "token_symbol": "PLS",
-      "tvl_usd": 44906319,
+      "tvl_usd": 45420458,
       "gecko_id": "pulsechain"
     },
     {
       "name": "Aptos",
       "chain_id": null,
       "token_symbol": "APT",
-      "tvl_usd": 43921779,
+      "tvl_usd": 43838251,
       "gecko_id": "aptos"
     },
     {
       "name": "HydraDX",
       "chain_id": null,
       "token_symbol": "HDX",
-      "tvl_usd": 39467879,
+      "tvl_usd": 39364631,
       "gecko_id": "hydradx"
     },
     {
       "name": "Proton",
       "chain_id": null,
       "token_symbol": "XPR",
-      "tvl_usd": 38127078,
+      "tvl_usd": 37883902,
       "gecko_id": "proton"
     },
     {
       "name": "Sei",
       "chain_id": null,
       "token_symbol": "SEI",
-      "tvl_usd": 37919509,
+      "tvl_usd": 37806855,
       "gecko_id": "sei-network"
     },
     {
       "name": "RISE",
       "chain_id": null,
       "token_symbol": "RISE",
-      "tvl_usd": 34011218,
+      "tvl_usd": 33933160,
       "gecko_id": "rise-chain"
     },
     {
       "name": "BOT Chain",
       "chain_id": 677,
       "token_symbol": "BOT",
-      "tvl_usd": 33432902,
+      "tvl_usd": 33435850,
       "gecko_id": null
-    },
-    {
-      "name": "Thorchain",
-      "chain_id": null,
-      "token_symbol": "RUNE",
-      "tvl_usd": 33116814,
-      "gecko_id": "thorchain"
     },
     {
       "name": "EOS",
       "chain_id": null,
       "token_symbol": "A",
-      "tvl_usd": 32878977,
+      "tvl_usd": 32812671,
       "gecko_id": "vaulta"
+    },
+    {
+      "name": "Thorchain",
+      "chain_id": null,
+      "token_symbol": "RUNE",
+      "tvl_usd": 32655854,
+      "gecko_id": "thorchain"
     },
     {
       "name": "Linea",
       "chain_id": 59144,
       "token_symbol": "LINEA",
-      "tvl_usd": 32825974,
+      "tvl_usd": 32581805,
       "gecko_id": "linea"
     },
     {
       "name": "Injective",
       "chain_id": null,
       "token_symbol": "INJ",
-      "tvl_usd": 31230705,
+      "tvl_usd": 31194091,
       "gecko_id": "injective-protocol"
     },
     {
       "name": "BSquared",
       "chain_id": null,
       "token_symbol": "B2",
-      "tvl_usd": 29246094,
+      "tvl_usd": 29018371,
       "gecko_id": "bsquared-network"
     },
     {
       "name": "Plume Mainnet",
       "chain_id": 98866,
       "token_symbol": "PLUME",
-      "tvl_usd": 28452359,
+      "tvl_usd": 28448709,
       "gecko_id": "plume"
     },
     {
       "name": "Fraxtal",
       "chain_id": 252,
       "token_symbol": "FRAX",
-      "tvl_usd": 27714508,
+      "tvl_usd": 27579145,
       "gecko_id": "frax-share"
     },
     {
       "name": "Unichain",
       "chain_id": 130,
       "token_symbol": "-",
-      "tvl_usd": 25535565,
+      "tvl_usd": 25543445,
       "gecko_id": null
     },
     {
       "name": "Sonic",
       "chain_id": 146,
       "token_symbol": "S",
-      "tvl_usd": 23745100,
+      "tvl_usd": 23459138,
       "gecko_id": "sonic-3"
     },
     {
       "name": "Filecoin",
       "chain_id": 314,
       "token_symbol": "FIL",
-      "tvl_usd": 22828278,
+      "tvl_usd": 22797893,
       "gecko_id": "filecoin"
     },
     {
       "name": "Etherlink",
       "chain_id": 42793,
       "token_symbol": null,
-      "tvl_usd": 22014339,
+      "tvl_usd": 21501376,
       "gecko_id": null
     },
     {
       "name": "Fluent",
       "chain_id": 25363,
       "token_symbol": "BLEND",
-      "tvl_usd": 20085382,
+      "tvl_usd": 20085882,
       "gecko_id": "fluent-network"
     },
     {
       "name": "Klaytn",
       "chain_id": 8217,
       "token_symbol": "KAIA",
-      "tvl_usd": 19196039,
+      "tvl_usd": 19078225,
       "gecko_id": "kaia"
     },
     {
       "name": "Tezos",
       "chain_id": null,
       "token_symbol": "XTZ",
-      "tvl_usd": 18470493,
+      "tvl_usd": 18439187,
       "gecko_id": "tezos"
     },
     {
       "name": "Merlin",
       "chain_id": null,
       "token_symbol": "MERL",
-      "tvl_usd": 18423684,
+      "tvl_usd": 17635154,
       "gecko_id": "merlin-chain"
     },
     {
       "name": "Bifrost Network",
       "chain_id": null,
       "token_symbol": "BFC",
-      "tvl_usd": 17164557,
+      "tvl_usd": 17016599,
       "gecko_id": "bifrost"
-    },
-    {
-      "name": "Celo",
-      "chain_id": 42220,
-      "token_symbol": "CELO",
-      "tvl_usd": 15482383,
-      "gecko_id": "celo"
     },
     {
       "name": "Kava",
       "chain_id": null,
       "token_symbol": "KAVA",
-      "tvl_usd": 15147472,
+      "tvl_usd": 15222748,
       "gecko_id": "kava"
+    },
+    {
+      "name": "Celo",
+      "chain_id": 42220,
+      "token_symbol": "CELO",
+      "tvl_usd": 14929441,
+      "gecko_id": "celo"
     },
     {
       "name": "Flow",
       "chain_id": 747,
       "token_symbol": "FLOW",
-      "tvl_usd": 14896874,
+      "tvl_usd": 14871787,
       "gecko_id": "flow"
     },
     {
       "name": "Elrond",
       "chain_id": null,
       "token_symbol": "EGLD",
-      "tvl_usd": 14537626,
+      "tvl_usd": 14589448,
       "gecko_id": "elrond-erd-2"
     },
     {
       "name": "Chainflip",
       "chain_id": null,
       "token_symbol": "FLIP",
-      "tvl_usd": 14363165,
+      "tvl_usd": 14441171,
       "gecko_id": "chainflip"
     },
     {
       "name": "Citrea",
       "chain_id": 4114,
       "token_symbol": "CTR",
-      "tvl_usd": 13285487,
+      "tvl_usd": 13249455,
       "gecko_id": "citrea"
     },
     {
       "name": "Strato",
       "chain_id": null,
       "token_symbol": null,
-      "tvl_usd": 13138707,
+      "tvl_usd": 13216670,
       "gecko_id": null
     },
     {
       "name": "ICP",
       "chain_id": null,
       "token_symbol": "ICP",
-      "tvl_usd": 12978392,
+      "tvl_usd": 12932187,
       "gecko_id": "internet-computer"
     },
     {
       "name": "Canton",
       "chain_id": null,
       "token_symbol": "CC",
-      "tvl_usd": 11520696,
+      "tvl_usd": 11569486,
       "gecko_id": "canton-network"
     },
     {
       "name": "zkSync Era",
       "chain_id": 324,
       "token_symbol": "ZK",
-      "tvl_usd": 11055390,
+      "tvl_usd": 11025181,
       "gecko_id": "zksync"
     },
     {
       "name": "Waves",
       "chain_id": null,
       "token_symbol": "WAVES",
-      "tvl_usd": 10880030,
+      "tvl_usd": 10822404,
       "gecko_id": "waves"
     },
     {
       "name": "Immutable zkEVM",
       "chain_id": 13371,
       "token_symbol": "IMX",
-      "tvl_usd": 10817146,
+      "tvl_usd": 10806063,
       "gecko_id": "immutable-x"
     },
     {
       "name": "Soneium",
       "chain_id": 1868,
       "token_symbol": null,
-      "tvl_usd": 10295320,
+      "tvl_usd": 10294670,
       "gecko_id": null
     },
     {
       "name": "Bifrost",
       "chain_id": null,
       "token_symbol": "BNC",
-      "tvl_usd": 10114081,
+      "tvl_usd": 10132748,
       "gecko_id": "bifrost-native-coin"
     },
     {
       "name": "ZIGChain",
       "chain_id": null,
       "token_symbol": "ZIG",
-      "tvl_usd": 10051258,
+      "tvl_usd": 10005581,
       "gecko_id": "zignaly"
     },
     {
       "name": "Reya Network",
       "chain_id": 1729,
       "token_symbol": "REYA",
-      "tvl_usd": 9787549,
+      "tvl_usd": 9777961,
       "gecko_id": "reya"
     },
     {
       "name": "MegaETH",
       "chain_id": 4326,
       "token_symbol": "MEGA",
-      "tvl_usd": 9376656,
+      "tvl_usd": 9373890,
       "gecko_id": "megaeth"
-    },
-    {
-      "name": "Elysium Kinetiq",
-      "chain_id": 99901,
-      "token_symbol": null,
-      "tvl_usd": 9057346,
-      "gecko_id": null
     },
     {
       "name": "XDC",
       "chain_id": null,
       "token_symbol": "XDC",
-      "tvl_usd": 9039416,
+      "tvl_usd": 8946318,
       "gecko_id": "xdce-crowd-sale"
+    },
+    {
+      "name": "Elysium Kinetiq",
+      "chain_id": 99901,
+      "token_symbol": null,
+      "tvl_usd": 8797818,
+      "gecko_id": null
     },
     {
       "name": "Ronin",
       "chain_id": 2020,
       "token_symbol": "RON",
-      "tvl_usd": 8179071,
+      "tvl_usd": 8188976,
       "gecko_id": "ronin"
     },
     {
       "name": "Osmosis",
       "chain_id": null,
       "token_symbol": "OSMO",
-      "tvl_usd": 7818476,
+      "tvl_usd": 7732164,
       "gecko_id": "osmosis"
     },
     {
       "name": "Conflux",
       "chain_id": null,
       "token_symbol": "CFX",
-      "tvl_usd": 7189342,
+      "tvl_usd": 7193729,
       "gecko_id": "conflux-token"
     },
     {
       "name": "Scroll",
       "chain_id": 534352,
       "token_symbol": "SCR",
-      "tvl_usd": 6459462,
+      "tvl_usd": 6427679,
       "gecko_id": "scroll"
     },
     {
       "name": "0G",
       "chain_id": 16661,
       "token_symbol": "0G",
-      "tvl_usd": 6297065,
+      "tvl_usd": 6151753,
       "gecko_id": "zero-gravity"
+    },
+    {
+      "name": "Zircuit",
+      "chain_id": 48900,
+      "token_symbol": "ZRC",
+      "tvl_usd": 5966134,
+      "gecko_id": "zircuit"
     },
     {
       "name": "Aurora",
       "chain_id": 1313161554,
       "token_symbol": "AURORA",
-      "tvl_usd": 5479029,
+      "tvl_usd": 5492549,
       "gecko_id": "aurora-near"
     },
     {
       "name": "Fuel",
       "chain_id": null,
       "token_symbol": "FUEL",
-      "tvl_usd": 5000049,
+      "tvl_usd": 4983159,
       "gecko_id": "fuel-network"
     },
     {
       "name": "Story",
       "chain_id": 1514,
       "token_symbol": "DATA",
-      "tvl_usd": 4940152,
+      "tvl_usd": 4865359,
       "gecko_id": "story-2"
     },
     {
       "name": "BOB",
       "chain_id": 60808,
       "token_symbol": "BOB",
-      "tvl_usd": 4774089,
+      "tvl_usd": 4731487,
       "gecko_id": "bob-build-on-bitcoin"
     },
     {
       "name": "Bitcoincash",
       "chain_id": null,
       "token_symbol": "BCH",
-      "tvl_usd": 4557186,
+      "tvl_usd": 4518875,
       "gecko_id": "bitcoin-cash"
-    },
-    {
-      "name": "Zircuit",
-      "chain_id": 48900,
-      "token_symbol": "ZRC",
-      "tvl_usd": 4548884,
-      "gecko_id": "zircuit"
     },
     {
       "name": "Bitkub",
       "chain_id": 96,
       "token_symbol": "KUB",
-      "tvl_usd": 4500853,
+      "tvl_usd": 4499034,
       "gecko_id": "bitkub-coin"
     }
   ]

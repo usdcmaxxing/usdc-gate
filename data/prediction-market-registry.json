@@ -1,0 +1,811 @@
+{
+  "name": "Prediction Market Registry",
+  "description": "Live event-derivative markets from Polymarket and Kalshi: odds, 24h volume, and close times. For agents trading events, hedging, or scanning for mispricing.",
+  "version": "2026-11-16",
+  "updated_at": "2026-11-17T01:20:18.505Z",
+  "source": "Polymarket Gamma API + Kalshi API",
+  "total": 40,
+  "records": [
+    {
+      "id": "poly-6567953",
+      "title": "Rockets vs. Heat",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-hou-mia-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 2025475.1094150005,
+      "price": 0.325,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $2,025,475. Price 33\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.325,
+        "volume_24h": 2025475.1094150005
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567952",
+      "title": "76ers vs. Nets",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-phi-bkn-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 1254327.060202,
+      "price": 0.885,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $1,254,327. Price 89\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.885,
+        "volume_24h": 1254327.060202
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567949",
+      "title": "Magic vs. Celtics",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-orl-bos-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 1002910.9444690002,
+      "price": 0.505,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $1,002,911. Price 51\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.505,
+        "volume_24h": 1002910.9444690002
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6919847",
+      "title": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-candidate-a-be-the-next-ceo-of-nvidia",
+      "prize_usd": 0,
+      "volume_24h": 899009.7463030001,
+      "price": 0.089,
+      "close": "2029-01-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $899,010. Price 9\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.089,
+        "volume_24h": 899009.7463030001
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567950",
+      "title": "Bulls vs. Cavaliers",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-chi-cle-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 879857.936482,
+      "price": 0.145,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $879,858. Price 14\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.145,
+        "volume_24h": 879857.936482
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6296764",
+      "title": "Chargers vs. Ravens",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nfl-lac-bal-2026-11-17",
+      "prize_usd": 0,
+      "volume_24h": 793247.698319,
+      "price": 0.325,
+      "close": "2026-11-17T01:15:00Z",
+      "description": "Polymarket event market. 24h volume $793,248. Price 33\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.325,
+        "volume_24h": 793247.698319
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567951",
+      "title": "Grizzlies vs. Wizards",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-mem-was-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 767981.4380670001,
+      "price": 0.285,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $767,981. Price 28\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.285,
+        "volume_24h": 767981.4380670001
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6998285",
+      "title": "Will Jensen Huang rejoin NVIDIA by December 31, 2026?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-jensen-huang-rejoin-nvidia-by-december-31-2026",
+      "prize_usd": 0,
+      "volume_24h": 741835.1183280001,
+      "price": 0.1075,
+      "close": "2027-01-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $741,835. Price 11\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.1075,
+        "volume_24h": 741835.1183280001
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6998284",
+      "title": "Will Jensen Huang rejoin NVIDIA by November 30, 2026?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-jensen-huang-rejoin-nvidia-by-november-30-2026",
+      "prize_usd": 0,
+      "volume_24h": 730926.5037149999,
+      "price": 0.0505,
+      "close": "2026-12-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $730,927. Price 5\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0505,
+        "volume_24h": 730926.5037149999
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567955",
+      "title": "Warriors vs. Pelicans",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-gsw-nop-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 647994.8610869999,
+      "price": 0.505,
+      "close": "2026-11-17T01:00:00Z",
+      "description": "Polymarket event market. 24h volume $647,995. Price 51\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.505,
+        "volume_24h": 647994.8610869999
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081667",
+      "title": "Spread: Warriors (-3.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-gsw-nop-2026-11-16-spread-away-3pt5",
+      "prize_usd": 0,
+      "volume_24h": 554455.40278,
+      "price": 0.415,
+      "close": "2026-11-17T01:00:00Z",
+      "description": "Polymarket event market. 24h volume $554,455. Price 42\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.415,
+        "volume_24h": 554455.40278
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7083686",
+      "title": "Spread: Rockets (-2.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-hou-mia-2026-11-16-spread-away-2pt5",
+      "prize_usd": 0,
+      "volume_24h": 490899.865862,
+      "price": 0.26,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $490,900. Price 26\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.26,
+        "volume_24h": 490899.865862
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-2772194",
+      "title": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578",
+      "prize_usd": 0,
+      "volume_24h": 425882.792,
+      "price": 0.0015,
+      "close": "2027-05-30T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $425,883. Price 0\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0015,
+        "volume_24h": 425882.792
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7089722",
+      "title": "Sydney: Matthew Dellavedova vs Jason Kubler",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/atp-dellave-kubler-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 391790.698461,
+      "price": 0.165,
+      "close": "2026-11-23T23:00:00Z",
+      "description": "Polymarket event market. 24h volume $391,791. Price 17\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.165,
+        "volume_24h": 391790.698461
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081779",
+      "title": "Spread: Grizzlies (-3.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-mem-was-2026-11-16-spread-away-3pt5",
+      "prize_usd": 0,
+      "volume_24h": 367244.83889699995,
+      "price": 0.195,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $367,245. Price 20\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.195,
+        "volume_24h": 367244.83889699995
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3580933",
+      "title": "Will Puma Shen win the next Taipei Mayor election?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-puma-shen-win-the-next-taipei-mayor-election-20260813125857102",
+      "prize_usd": 0,
+      "volume_24h": 366268.05088,
+      "price": 0.3985,
+      "close": "2026-11-29T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $366,268. Price 40\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.3985,
+        "volume_24h": 366268.05088
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081696",
+      "title": "Spread: 76ers (-5.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-phi-bkn-2026-11-16-spread-away-5pt5",
+      "prize_usd": 0,
+      "volume_24h": 346478.06597500003,
+      "price": 0.74,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $346,478. Price 74\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.74,
+        "volume_24h": 346478.06597500003
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6567954",
+      "title": "Trail Blazers vs. Timberwolves",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-por-min-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 345636.997688,
+      "price": 0.49,
+      "close": "2026-11-17T01:00:00Z",
+      "description": "Polymarket event market. 24h volume $345,637. Price 49\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.49,
+        "volume_24h": 345636.997688
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-559707",
+      "title": "Will Scott Colom win the 2028 Democratic presidential nomination?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-scott-colom-win-the-2028-democratic-presidential-nomination",
+      "prize_usd": 0,
+      "volume_24h": 301062.39,
+      "price": 0.0015,
+      "close": "2028-11-07T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $301,062. Price 0\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0015,
+        "volume_24h": 301062.39
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3215009",
+      "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637",
+      "prize_usd": 0,
+      "volume_24h": 293675.309165,
+      "price": 0.0465,
+      "close": "2026-12-09T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $293,675. Price 5\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0465,
+        "volume_24h": 293675.309165
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-2412744",
+      "title": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-anthropics-market-cap-be-less-than-1pt25t-at-market-close-on-ipo-day",
+      "prize_usd": 0,
+      "volume_24h": 291557.019111,
+      "price": 0.3695,
+      "close": "2028-01-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $291,557. Price 37\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.3695,
+        "volume_24h": 291557.019111
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3215007",
+      "title": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635",
+      "prize_usd": 0,
+      "volume_24h": 273931.468845,
+      "price": 0.0325,
+      "close": "2026-12-09T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $273,931. Price 3\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0325,
+        "volume_24h": 273931.468845
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081702",
+      "title": "Grizzlies vs. Wizards: O/U 231.5",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-mem-was-2026-11-16-total-231pt5",
+      "prize_usd": 0,
+      "volume_24h": 235634.558883,
+      "price": 0.79,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $235,635. Price 79\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.79,
+        "volume_24h": 235634.558883
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-4906128",
+      "title": "US announces end of Iranian blockade by November 30, 2026?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-november-30-2026",
+      "prize_usd": 0,
+      "volume_24h": 214433.064948,
+      "price": 0.0465,
+      "close": "2026-12-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $214,433. Price 5\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0465,
+        "volume_24h": 214433.064948
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6305593",
+      "title": "Spread: Ravens (-4.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nfl-lac-bal-2026-11-17-spread-home-4pt5",
+      "prize_usd": 0,
+      "volume_24h": 210431.69903600003,
+      "price": 0.505,
+      "close": "2026-11-17T01:15:00Z",
+      "description": "Polymarket event market. 24h volume $210,432. Price 51\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.505,
+        "volume_24h": 210431.69903600003
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3215005",
+      "title": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633",
+      "prize_usd": 0,
+      "volume_24h": 205471.820084,
+      "price": 0.0025,
+      "close": "2026-12-09T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $205,472. Price 0\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0025,
+        "volume_24h": 205471.820084
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-567621",
+      "title": "Will China invade Taiwan by end of 2026?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-china-invade-taiwan-before-2027",
+      "prize_usd": 0,
+      "volume_24h": 188779.58962799996,
+      "price": 0.0205,
+      "close": "2027-01-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $188,780. Price 2\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0205,
+        "volume_24h": 188779.58962799996
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7083692",
+      "title": "Spread: Rockets (-1.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-hou-mia-2026-11-16-spread-away-1pt5",
+      "prize_usd": 0,
+      "volume_24h": 185213.08482900003,
+      "price": 0.285,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $185,213. Price 28\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.285,
+        "volume_24h": 185213.08482900003
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-5972105",
+      "title": "Canadiens vs. Rangers",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nhl-mon-nyr-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 182264.27658600002,
+      "price": 0.535,
+      "close": "2026-11-17T00:30:00Z",
+      "description": "Polymarket event market. 24h volume $182,264. Price 54\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.535,
+        "volume_24h": 182264.27658600002
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-561282",
+      "title": "Will Rahm Emanuel win the 2028 US Presidential Election?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-rahm-emanuel-win-the-2028-us-presidential-election",
+      "prize_usd": 0,
+      "volume_24h": 179614.16850000003,
+      "price": 0.0065,
+      "close": "2028-11-07T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $179,614. Price 1\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0065,
+        "volume_24h": 179614.16850000003
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081677",
+      "title": "Spread: Celtics (-8.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-orl-bos-2026-11-16-spread-home-8pt5",
+      "prize_usd": 0,
+      "volume_24h": 174624.675222,
+      "price": 0.185,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $174,625. Price 19\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.185,
+        "volume_24h": 174624.675222
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3215006",
+      "title": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808634",
+      "prize_usd": 0,
+      "volume_24h": 172350.922987,
+      "price": 0.0045,
+      "close": "2026-12-09T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $172,351. Price 0\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0045,
+        "volume_24h": 172350.922987
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3215008",
+      "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636",
+      "prize_usd": 0,
+      "volume_24h": 153305.936946,
+      "price": 0.915,
+      "close": "2026-12-09T23:59:00Z",
+      "description": "Polymarket event market. 24h volume $153,306. Price 92\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.915,
+        "volume_24h": 153305.936946
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7072669",
+      "title": "Spread: Utah (-1.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nhl-van-utah-2026-11-16-spread-home-1pt5",
+      "prize_usd": 0,
+      "volume_24h": 149212.352579,
+      "price": 0.535,
+      "close": "2026-11-17T02:30:00Z",
+      "description": "Polymarket event market. 24h volume $149,212. Price 54\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.535,
+        "volume_24h": 149212.352579
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7081700",
+      "title": "Magic vs. Celtics: O/U 213.5",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nba-orl-bos-2026-11-16-total-213pt5",
+      "prize_usd": 0,
+      "volume_24h": 145653.87838799998,
+      "price": 0.085,
+      "close": "2026-11-17T00:00:00Z",
+      "description": "Polymarket event market. 24h volume $145,654. Price 9\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.085,
+        "volume_24h": 145653.87838799998
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-703257",
+      "title": "Will the US confirm that aliens exist before 2027?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-the-us-confirm-that-aliens-exist-before-2027-789-924-249",
+      "prize_usd": 0,
+      "volume_24h": 136595.426414,
+      "price": 0.0175,
+      "close": "2027-01-01T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $136,595. Price 2\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.0175,
+        "volume_24h": 136595.426414
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6908162",
+      "title": "Israel x Iran ceasefire continues through November 18?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-november-18",
+      "prize_usd": 0,
+      "volume_24h": 131104.760219,
+      "price": 0.984,
+      "close": "2026-11-19T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $131,105. Price 98\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.984,
+        "volume_24h": 131104.760219
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-7054148",
+      "title": "Drummondville: Duncan Chan vs Michael Mmoh",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/atp-chan-mmoh-2026-11-16",
+      "prize_usd": 0,
+      "volume_24h": 129261.53739700001,
+      "price": 0.9995,
+      "close": "2026-11-23T14:00:00Z",
+      "description": "Polymarket event market. 24h volume $129,262. Price 100\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.9995,
+        "volume_24h": 129261.53739700001
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-6305590",
+      "title": "Spread: Ravens (-1.5)",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/nfl-lac-bal-2026-11-17-spread-home-1pt5",
+      "prize_usd": 0,
+      "volume_24h": 128241.41510000001,
+      "price": 0.64,
+      "close": "2026-11-17T01:15:00Z",
+      "description": "Polymarket event market. 24h volume $128,241. Price 64\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.64,
+        "volume_24h": 128241.41510000001
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    },
+    {
+      "id": "poly-3580932",
+      "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "source": "Polymarket",
+      "category": "prediction",
+      "url": "https://polymarket.com/market/will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101",
+      "prize_usd": 0,
+      "volume_24h": 124613.73145999997,
+      "price": 0.605,
+      "close": "2026-11-29T04:59:00Z",
+      "description": "Polymarket event market. 24h volume $124,614. Price 61\u00a2.",
+      "raw": {
+        "source": "Polymarket",
+        "price": 0.605,
+        "volume_24h": 124613.73145999997
+      },
+      "expected_value": 0,
+      "effort": 2,
+      "win_probability": 0.1
+    }
+  ],
+  "edges": []
+}

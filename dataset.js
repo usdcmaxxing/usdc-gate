@@ -92,6 +92,10 @@ export function getExchangeRegistry(q) {
   return query(load("exchange-registry"), q);
 }
 
+export function getPredictionMarketRegistry(q) {
+  return query(load("prediction-market-registry"), q);
+}
+
 // List all available datasets (free — lets agents discover what we sell)
 export function listDatasets() {
   return {
@@ -186,6 +190,13 @@ export function listDatasets() {
         price: "$0.02",
         records: 100,
         description: "Top 100 crypto exchanges with trust scores, country, and 24h volume",
+      },
+      {
+        id: "prediction-market-registry",
+        endpoint: "/v1/dataset/prediction-markets",
+        price: "$0.03",
+        records: 40,
+        description: "Live Polymarket + Kalshi event markets with odds and 24h volume",
       },
     ],
   };

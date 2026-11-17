@@ -29,6 +29,7 @@ import {
   getDeFiProtocolRegistry,
   getChainRegistry,
   getExchangeRegistry,
+  getPredictionMarketRegistry,
   listDatasets,
 } from "./dataset.js";
 
@@ -95,6 +96,7 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/defi-protocols": "$0.02 — top 250 DeFi protocols by TVL (DefiLlama).",
       "GET /v1/dataset/chains": "$0.02 — top 100 blockchains by TVL.",
       "GET /v1/dataset/exchanges": "$0.02 — top 100 crypto exchanges with trust scores.",
+      "GET /v1/dataset/prediction-markets": "$0.03 — live Polymarket + Kalshi event markets with odds and volume.",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -662,6 +664,12 @@ const routes = {
     mimeType: "application/json",
     extensions: datasetBazaar("Crypto Exchange Registry", { records: [{ name: "Coinbase Exchange", trust_score: 10 }] }),
   },
+  "GET /v1/dataset/prediction-markets": {
+    accepts: [{ scheme: "exact", price: "$0.03", network: NETWORK, payTo: PAY_TO }],
+    description: "Live Polymarket + Kalshi event markets with odds, 24h volume, and close time. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Prediction Market Registry", { records: [{ title: "Rockets vs. Heat", price: 0.33 }] }),
+  },
 };
 
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
@@ -861,6 +869,15 @@ app.get("/v1/dataset/exchanges", async (req, res) => {
   }
 });
 
+// Prediction market registry — Polymarket + Kalshi event markets
+app.get("/v1/dataset/prediction-markets", async (req, res) => {
+  try {
+    res.json(getPredictionMarketRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
 // ── Usage tracking ───────────────────────────────────────────────────────
 // In-memory stats: counts paid calls per endpoint. Resets on redeploy.
 const stats = {
@@ -899,6 +916,7 @@ app.use((req, res, next) => {
         "/v1/dataset/defi-protocols": "$0.02",
         "/v1/dataset/chains": "$0.02",
         "/v1/dataset/exchanges": "$0.02",
+        "/v1/dataset/prediction-markets": "$0.03",
       };
       const price = priceMap[path] || "$0.01";
       const usd = priceToUsd(price);
