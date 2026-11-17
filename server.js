@@ -112,6 +112,7 @@ app.get("/v1/service-info", (_req, res) => {
     },
     payTo: PAY_TO,
     catalog: `${ORIGIN}/catalog`,
+    skills: `${ORIGIN}/skills`,
     dashboard: `${ORIGIN}/dashboard`,
     stats: `${ORIGIN}/v1/stats`,
   });
