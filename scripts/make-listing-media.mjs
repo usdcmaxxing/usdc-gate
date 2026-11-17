@@ -51,6 +51,16 @@ const SKILLS = [
     out: ["HTTP 402 Payment Required", "x-payment: scheme=exact, USDC", "network: base, amount: 20000", "→ 200 OK after settlement"],
   },
   {
+    slug: "code-ai-security-audit-prove-every-finding",
+    short: "Code & AI Security Audit",
+    tag: "Prove Every Finding",
+    accent: "#38bdf8",
+    price: "FREE",
+    points: ["Attack-surface map first", "Untrusted input traced to the sink", "Secrets in the tree AND git history", "The AI-agent layer others skip"],
+    cmd: "$ secaudit run ./repo --agent",
+    out: ["surface: 14 entry points", "SEV-1: IDOR on /api/:id (proven)", "3 secrets found — rotate first", "VERDICT: 2 findings, 5 hardening"],
+  },
+  {
     slug: "ai-agent-security-audit-permissions-injection-spend",
     short: "AI Agent Security Audit",
     tag: "Permissions, Injection, Spend",

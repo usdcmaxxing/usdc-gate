@@ -1,0 +1,15 @@
+{
+  "name": "Code & AI Security Audit — Prove Every Finding",
+  "summary": "Audits a codebase and the AI agent that runs against it: attack-surface map, untrusted-input-to-sink tracing, leaked secrets, vulnerable dependencies, OWASP, tool/MCP permissions, prompt injection and spend caps. Every finding must be proven.",
+  "description": "Most security audits fail the same way: they list everything a scanner flags, bury the two things that will actually be exploited, and are ignored. This skill does the opposite — it proves each finding and drops anything it cannot prove.\n\nIt covers the codebase (attack-surface map, untrusted input traced to SQL/shell/template/path/deserialization/contract sinks, secrets in the working tree and git history, dependency CVEs reachable from your surface, OWASP) AND the AI-agent layer that generic audits miss: tool and MCP permissions, instruction/data separation (prompt injection), spend caps enforced in code rather than the prompt, wallet key exposure, and human gates.\n\nOutput is a fixed report: Findings (proven only, each with path, proof, impact, diff-style fix and a regression test) and Hardening (unproven but worth doing). Zero false positives in Findings is a rule, not a hope.\n\nRead-only by default, never runs exploits against production, and never installs anything silently.",
+  "pricing_type": "free",
+  "tags": ["security", "code-quality-review", "ai-agents", "testing-debugging"],
+  "keywords": ["security audit", "code security", "appsec", "owasp", "penetration test", "secret leakage", "dependency audit", "prompt injection", "mcp permissions", "agent security", "vulnerability"],
+  "use_cases": [
+    "Audit a repo before release or before a pentest",
+    "Review a PR that touches auth, payments or file handling",
+    "Trace untrusted input to a dangerous sink and prove exploitability",
+    "Find leaked secrets in the working tree and git history",
+    "Audit the AI agent that runs against your code"
+  ]
+}
