@@ -1,8 +1,8 @@
 {
   "name": "DeFi Protocol Registry",
   "description": "Top 250 DeFi protocols by TVL, with chains, 24h/7d TVL change, and market cap. For agents assessing protocol risk and DeFi activity.",
-  "version": "2026-11-16",
-  "updated_at": "2026-11-16T14:00:40.813Z",
+  "version": "2026-11-17",
+  "updated_at": "2026-11-17T14:02:16.092Z",
   "source": "DefiLlama",
   "total": 250,
   "records": [
@@ -15,15 +15,15 @@
         "Bitcoin",
         "Solana",
         "Binance",
-        "Tron",
         "Ripple",
         "Arbitrum",
         "Doge",
         "Base",
         "Zcash",
-        "Plasma",
+        "Tron",
         "Sui",
         "Near",
+        "Plasma",
         "Aptos",
         "Arc",
         "Litecoin",
@@ -42,9 +42,9 @@
         "Celo",
         "Klaytn",
         "Sei",
+        "Starknet",
         "Ronin",
         "Kava",
-        "Starknet",
         "zkSync Era",
         "Chiliz",
         "Manta",
@@ -54,9 +54,9 @@
         "Fantom",
         "Op_Bnb"
       ],
-      "tvl_usd": 112275802829,
-      "tvl_change_24h": -1.8303403154926912,
-      "tvl_change_7d": -9.181357463781922,
+      "tvl_usd": 111521514394,
+      "tvl_change_24h": -0.6718174495258893,
+      "tvl_change_7d": -9.465889175459012,
       "mcap_usd": null,
       "url": "https://www.binance.com",
       "logo": "https://icons.llamao.fi/icons/protocols/binance-cex"
@@ -76,25 +76,25 @@
         "Litecoin",
         "Filecoin",
         "Bitcoincash",
+        "Aptos",
         "EthereumClassic",
         "TON",
         "Polkadot",
-        "Aptos",
         "Arbitrum",
-        "Sui",
-        "Optimism",
         "Base",
+        "Optimism",
+        "Polygon",
         "Avalanche",
+        "Sui",
         "Linea",
         "zkSync Era",
         "Scroll",
-        "Starknet",
-        "Polygon"
+        "Starknet"
       ],
-      "tvl_usd": 25600449671,
-      "tvl_change_24h": -0.8797626786847417,
-      "tvl_change_7d": -7.0776224866200295,
-      "mcap_usd": 1755089110.629495,
+      "tvl_usd": 27489524516,
+      "tvl_change_24h": 7.379068996077493,
+      "tvl_change_7d": -0.5538026907385643,
+      "mcap_usd": 1822971935.121788,
       "url": "https://www.okx.com",
       "logo": "https://icons.llamao.fi/icons/protocols/okx"
     },
@@ -109,10 +109,10 @@
         "Moonriver",
         "Moonbeam"
       ],
-      "tvl_usd": 17536118664,
-      "tvl_change_24h": -1.869779527099496,
-      "tvl_change_7d": -14.692070989453683,
-      "mcap_usd": 226359389.27336785,
+      "tvl_usd": 17702880934,
+      "tvl_change_24h": 0.46219801986219977,
+      "tvl_change_7d": -13.243112754050458,
+      "mcap_usd": 229625405.25405735,
       "url": "https://lido.fi/",
       "logo": "https://icons.llamao.fi/icons/protocols/lido"
     },
@@ -134,15 +134,15 @@
         "Citrea",
         "Plasma",
         "Hyperliquid L1",
-        "Abstract",
         "Peaq",
+        "Abstract",
         "Gensyn",
         "Somnia",
         "Hemi",
         "Fraxtal",
-        "Kava",
         "TAC",
         "Avalanche",
+        "Kava",
         "zkSync Era",
         "0G",
         "Sei",
@@ -155,8 +155,8 @@
         "Mantle",
         "Telos",
         "Celo",
-        "Robinhood Chain",
         "Linea",
+        "Robinhood Chain",
         "Katana",
         "Cronos",
         "Unichain",
@@ -173,15 +173,15 @@
         "CORE",
         "Mode",
         "Story",
+        "Plume Mainnet",
         "Manta",
         "xDai",
         "XDC",
         "LightLink",
         "Monad",
         "XPLA",
-        "Plume Mainnet",
-        "Tempo",
         "X Layer",
+        "Tempo",
         "Blast",
         "Morph",
         "Swellchain",
@@ -207,15 +207,15 @@
         "TomoChain",
         "Rayls",
         "Apex Fusion",
+        "zkVerify",
         "Irys",
         "Bittensor EVM",
-        "zkVerify",
         "Nibiru",
         "Klaytn"
       ],
-      "tvl_usd": 17072996977,
-      "tvl_change_24h": 2.581117047459429,
-      "tvl_change_7d": 3.674769220111756,
+      "tvl_usd": 17603559565,
+      "tvl_change_24h": 3.3991428476561936,
+      "tvl_change_7d": 8.330883698853285,
       "mcap_usd": null,
       "url": "https://layerzero.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/layerzero-v2"
@@ -247,9 +247,9 @@
         "Soneium",
         "Fantom"
       ],
-      "tvl_usd": 13903927851,
-      "tvl_change_24h": -1.6781088684864187,
-      "tvl_change_7d": -8.428328611947649,
+      "tvl_usd": 14037821410,
+      "tvl_change_24h": 0.9629908929365456,
+      "tvl_change_7d": -7.0424790691161405,
       "mcap_usd": null,
       "url": "https://aave.com",
       "logo": "https://icons.llamao.fi/icons/protocols/aave-v3"
@@ -271,39 +271,39 @@
         "Base",
         "Arbitrum",
         "Litecoin",
-        "Avalanche",
         "TON",
-        "Optimism",
+        "Avalanche",
         "Polygon",
-        "Plasma",
+        "Optimism",
         "Monad",
-        "Aptos",
-        "Starknet",
-        "Polkadot",
+        "Plasma",
         "Sui",
+        "Polkadot",
+        "Aptos",
         "Hedera",
+        "Starknet",
         "Cosmos",
         "Linea",
-        "Sei",
         "Sonic",
+        "Sei",
         "Celo",
         "zkSync Era",
         "dYdX",
         "Cardano",
-        "EOS",
         "Klaytn",
+        "EOS",
         "Manta",
         "Berachain",
         "Stable",
-        "Taiko",
         "Scroll",
+        "Taiko",
         "Kava",
         "Fantom",
         "Arbitrum Nova"
       ],
-      "tvl_usd": 13409999621,
-      "tvl_change_24h": 9.5781457405201,
-      "tvl_change_7d": -7.613577759438755,
+      "tvl_usd": 13415290182,
+      "tvl_change_24h": -0.050810985254727825,
+      "tvl_change_7d": -6.896777029630414,
       "mcap_usd": null,
       "url": "https://www.bybit.com",
       "logo": "https://icons.llamao.fi/icons/protocols/bybit"
@@ -334,9 +334,9 @@
         "Zilliqa",
         "Doge"
       ],
-      "tvl_usd": 11895337402,
-      "tvl_change_24h": -1.1242109558133535,
-      "tvl_change_7d": -16.98143136081599,
+      "tvl_usd": 12047588171,
+      "tvl_change_24h": 1.1914886450199447,
+      "tvl_change_7d": -13.5910672269478,
       "mcap_usd": null,
       "url": "https://www.bitfinex.com",
       "logo": "https://icons.llamao.fi/icons/protocols/bitfinex"
@@ -351,9 +351,9 @@
         "Polygon",
         "Avalanche"
       ],
-      "tvl_usd": 11468010839,
-      "tvl_change_24h": -1.8021053024119453,
-      "tvl_change_7d": -14.02297148744735,
+      "tvl_usd": 11582181533,
+      "tvl_change_24h": 0.1190423942776846,
+      "tvl_change_7d": -12.932590799857849,
       "mcap_usd": null,
       "url": "https://robinhood.com",
       "logo": "https://icons.llamao.fi/icons/protocols/robinhood"
@@ -378,13 +378,13 @@
         "Katana",
         "Citrea",
         "Etherlink",
-        "Morph",
         "Optimism",
+        "Morph",
         "Polygon",
         "Plume Mainnet",
         "MegaETH",
-        "Unichain",
         "Sei",
+        "Unichain",
         "XDC",
         "Celo",
         "TAC",
@@ -409,9 +409,9 @@
         "Bitlayer",
         "Botanix"
       ],
-      "tvl_usd": 9944301217,
-      "tvl_change_24h": -1.3946888118369998,
-      "tvl_change_7d": -7.496597366567229,
+      "tvl_usd": 10067294294,
+      "tvl_change_24h": 1.2368196979316366,
+      "tvl_change_7d": -6.236231078399214,
       "mcap_usd": null,
       "url": "https://app.morpho.org",
       "logo": "https://icons.llamao.fi/icons/protocols/morpho-blue"
@@ -423,10 +423,10 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 9558820955,
-      "tvl_change_24h": 0.23799853709260788,
-      "tvl_change_7d": -13.5077900675266,
-      "mcap_usd": 27087264.052012887,
+      "tvl_usd": 9625761714,
+      "tvl_change_24h": 0.7003035178819488,
+      "tvl_change_7d": -12.420628852761922,
+      "mcap_usd": 27858422.09886957,
       "url": "https://ssv.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/ssv-network"
     },
@@ -437,27 +437,12 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 7475926351,
-      "tvl_change_24h": -1.9678711367601665,
-      "tvl_change_7d": -13.636297879306952,
+      "tvl_usd": 7542910532,
+      "tvl_change_24h": 0.8650971287203646,
+      "tvl_change_7d": -12.832994919423996,
       "mcap_usd": null,
       "url": "https://wbtc.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/wbtc"
-    },
-    {
-      "name": "Binance staked ETH",
-      "slug": "binance-staked-eth",
-      "category": "Liquid Staking",
-      "chains": [
-        "Ethereum",
-        "Binance"
-      ],
-      "tvl_usd": 6972667762,
-      "tvl_change_24h": -1.739295915419575,
-      "tvl_change_7d": -14.93390535543368,
-      "mcap_usd": null,
-      "url": "https://www.binance.com/en/wbeth",
-      "logo": "https://icons.llamao.fi/icons/protocols/binance-staked-eth"
     },
     {
       "name": "Coinbase Bridge",
@@ -470,12 +455,27 @@
         "Doge",
         "Litecoin"
       ],
-      "tvl_usd": 6931155650,
-      "tvl_change_24h": -2.111700622696233,
-      "tvl_change_7d": -7.862274755372937,
+      "tvl_usd": 7046745741,
+      "tvl_change_24h": 1.6676885738315974,
+      "tvl_change_7d": -5.378765381308369,
       "mcap_usd": null,
       "url": "https://help.coinbase.com/en/exchange/crypto-transfers/wrapped-assets",
       "logo": "https://icons.llamao.fi/icons/protocols/coinbase-bridge"
+    },
+    {
+      "name": "Binance staked ETH",
+      "slug": "binance-staked-eth",
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum",
+        "Binance"
+      ],
+      "tvl_usd": 7039903713,
+      "tvl_change_24h": 0.6179668040133208,
+      "tvl_change_7d": -13.255492080188475,
+      "mcap_usd": null,
+      "url": "https://www.binance.com/en/wbeth",
+      "logo": "https://icons.llamao.fi/icons/protocols/binance-staked-eth"
     },
     {
       "name": "Hyperliquid Bridge",
@@ -485,9 +485,9 @@
         "Hyperliquid L1",
         "Arbitrum"
       ],
-      "tvl_usd": 5712639339,
-      "tvl_change_24h": -2.801445862748011,
-      "tvl_change_7d": -8.722954318703884,
+      "tvl_usd": 5684947950,
+      "tvl_change_24h": -1.089719705351115,
+      "tvl_change_7d": -8.760729549909797,
       "mcap_usd": null,
       "url": "https://app.hyperliquid.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/hyperliquid"
@@ -504,35 +504,34 @@
         "Tron",
         "Ripple",
         "Arbitrum",
+        "Plasma",
         "Hyperliquid L1",
         "Base",
-        "Plasma",
         "Optimism",
         "Polygon",
         "TON",
         "Robinhood Chain",
         "Zcash",
-        "Aptos",
-        "Doge",
         "Avalanche",
+        "Doge",
+        "Aptos",
         "Near",
         "Bittensor",
         "Morph",
         "Pi Network",
-        "Cardano",
         "Kaspa",
+        "Cardano",
         "Stellar",
         "Litecoin",
         "Hedera",
         "Polkadot",
         "Injective",
-        "Scroll",
-        "Sei",
         "Monad",
+        "Scroll",
+        "Sui",
+        "Sei",
         "Filecoin",
         "ICP",
-        "Sui",
-        "Arc",
         "Starknet",
         "XDC",
         "BSV Blockchain",
@@ -540,42 +539,43 @@
         "Canton",
         "Fetch Hub",
         "Celestia",
-        "Arweave",
         "Sonic",
+        "Arweave",
+        "Arc",
         "Qubic",
         "Conflux",
+        "Terra",
         "MegaETH",
         "zkSync Era",
-        "Terra",
-        "Allora",
         "Cosmos",
+        "Allora",
         "Cronos",
         "Linea",
-        "Klaytn",
-        "EOS",
-        "Stacks",
         "Thorchain",
+        "EOS",
+        "Klaytn",
+        "Stacks",
         "Oasis",
         "Mina",
         "dYdX",
-        "XION",
         "Nervos",
+        "XION",
         "Babylon Genesis",
         "Alephium",
-        "Proton",
         "Kusama",
+        "Proton",
         "PlatON",
         "Metis",
-        "World Chain",
         "Elrond",
-        "Tezos",
-        "Ontology",
-        "Neo3",
         "Massa",
+        "Tezos",
+        "World Chain",
+        "Neo3",
+        "Ontology",
         "Astar",
         "Orai",
-        "Kava",
         "Mantra",
+        "Kava",
         "Osmosis",
         "BandChain",
         "Fantom",
@@ -583,9 +583,9 @@
         "Harmony",
         "Initia"
       ],
-      "tvl_usd": 5165610269,
-      "tvl_change_24h": -2.8648123795427125,
-      "tvl_change_7d": -9.269778309748162,
+      "tvl_usd": 5264425882,
+      "tvl_change_24h": 1.912951384892466,
+      "tvl_change_7d": -9.181386067279306,
       "mcap_usd": null,
       "url": "https://www.bitget.com",
       "logo": "https://icons.llamao.fi/icons/protocols/bitget"
@@ -600,8 +600,8 @@
         "Binance",
         "Solana",
         "Doge",
-        "Tron",
         "Fetch Hub",
+        "Tron",
         "Ripple",
         "Base",
         "Plasma",
@@ -612,107 +612,107 @@
         "Bittensor",
         "Arbitrum",
         "Litecoin",
+        "Kaspa",
         "Sui",
         "Pi Network",
-        "Kaspa",
         "Near",
         "Avalanche",
-        "Filecoin",
         "Optimism",
-        "Polygon",
+        "Filecoin",
         "Cardano",
+        "Polygon",
         "EthereumClassic",
         "Manta",
         "Bitcoincash",
         "BSV Blockchain",
         "X Layer",
         "Linea",
-        "Robinhood Chain",
         "Stellar",
+        "Robinhood Chain",
         "Qubic",
         "Aleo",
-        "Klaytn",
         "Akash",
         "Polkadot",
-        "Monad",
-        "Injective",
-        "ICP",
         "Celo",
-        "XDC",
-        "Canton",
-        "Dash",
+        "Injective",
+        "Monad",
+        "Klaytn",
         "WEMIX",
+        "ICP",
+        "XDC",
+        "Dash",
+        "Canton",
         "Arweave",
-        "Algorand",
         "Cronos",
+        "Algorand",
         "Hedera",
         "Peaq",
         "MemeCore",
         "Conflux",
-        "Cosmos",
         "Starknet",
+        "Cosmos",
         "World Chain",
         "Sei",
         "Flare",
         "VeChain",
-        "Stable",
-        "HashKey Chain",
         "Celestia",
-        "Theta",
+        "HashKey Chain",
         "Nervos",
+        "Stable",
+        "Theta",
         "EOS",
         "Ergo",
         "zkSync Era",
         "Allora",
-        "Mantle",
         "Sonic",
-        "Casper",
         "Stacks",
+        "Casper",
         "Plume Mainnet",
-        "Proton",
+        "Mantle",
         "Merlin",
         "Metis",
         "dYdX",
-        "MegaETH",
         "Mina",
-        "Alephium",
+        "Proton",
+        "MegaETH",
         "Decred",
-        "Ontology",
         "Terra",
-        "Kava",
         "Tezos",
+        "Ontology",
+        "Alephium",
         "CORE",
         "Oasis",
         "Coti",
+        "Scroll",
         "Taiko",
         "Supra",
-        "Scroll",
-        "Neo3",
+        "LUKSO",
         "Berachain",
+        "Neo3",
+        "0G",
         "Flux",
         "IOTA",
         "ZIGChain",
         "Kusama",
         "IoTeX",
-        "Story",
-        "ZetaChain",
-        "LUKSO",
         "Zilliqa",
-        "Elrond",
-        "0G",
         "Thorchain",
+        "ZetaChain",
+        "Story",
+        "Kava",
+        "Elrond",
         "Chiliz",
         "Babylon Genesis",
         "Agoric",
-        "Radix",
-        "Astar",
-        "Osmosis",
         "Ronin",
+        "Astar",
+        "Radix",
         "Vana",
-        "Mantra",
-        "RSK",
+        "Osmosis",
         "Constellation",
+        "RSK",
         "Xai",
+        "Mantra",
         "Bitkub",
         "Dymension",
         "Etherlink",
@@ -721,17 +721,17 @@
         "Somnia",
         "ApeChain",
         "Fuse",
-        "Arc",
-        "BandChain",
-        "Op_Bnb",
         "XPLA",
+        "BandChain",
         "Bifrost",
         "Fogo",
         "Bitlayer",
         "Mode",
         "Boba",
         "Aura Network",
+        "Op_Bnb",
         "Matchain",
+        "Arc",
         "Zircuit",
         "Aurora",
         "Arbitrum Nova",
@@ -772,10 +772,10 @@
         "TomoChain",
         "HAQQ"
       ],
-      "tvl_usd": 5155818620,
-      "tvl_change_24h": -1.7980248979555569,
-      "tvl_change_7d": -9.555705410803313,
-      "mcap_usd": 776773324.9682411,
+      "tvl_usd": 5196359488,
+      "tvl_change_24h": 0.7863129254905346,
+      "tvl_change_7d": -8.963500684544172,
+      "mcap_usd": 773547160.9452367,
       "url": "https://www.gate.com",
       "logo": "https://icons.llamao.fi/icons/protocols/gate"
     },
@@ -786,9 +786,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 4869970713,
-      "tvl_change_24h": -0.2586594310403285,
-      "tvl_change_7d": -2.3430834707999537,
+      "tvl_usd": 4853431917,
+      "tvl_change_24h": -0.33960769949061387,
+      "tvl_change_7d": -2.2879178713648685,
       "mcap_usd": null,
       "url": "https://www.app.ethena.fi/join/3y20d",
       "logo": "https://icons.llamao.fi/icons/protocols/ethena-usde"
@@ -800,10 +800,10 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 4604072995,
-      "tvl_change_24h": -1.4318151850564789,
-      "tvl_change_7d": -14.720918918722873,
-      "mcap_usd": 130921271.50591578,
+      "tvl_usd": 4654382110,
+      "tvl_change_24h": 1.0927088841453667,
+      "tvl_change_7d": -13.033260788137696,
+      "mcap_usd": 133275104.61443497,
       "url": "https://www.eigencloud.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/eigencloud"
     },
@@ -814,9 +814,9 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 4376478155,
-      "tvl_change_24h": -1.7129235092767345,
-      "tvl_change_7d": -13.601084270055665,
+      "tvl_usd": 4416625692,
+      "tvl_change_24h": 0.9173480415555275,
+      "tvl_change_7d": -12.817142221545168,
       "mcap_usd": null,
       "url": "https://www.binance.com/en/collateral-btokens",
       "logo": "https://icons.llamao.fi/icons/protocols/binance-bitcoin"
@@ -829,9 +829,9 @@
         "Bitcoin",
         "Ethereum"
       ],
-      "tvl_usd": 4162148502,
-      "tvl_change_24h": -1.9586518052122983,
-      "tvl_change_7d": -15.067650292228947,
+      "tvl_usd": 4213498863,
+      "tvl_change_24h": 1.2337464971695908,
+      "tvl_change_7d": -13.196965237799532,
       "mcap_usd": null,
       "url": "https://www.gemini.com",
       "logo": "https://icons.llamao.fi/icons/protocols/gemini"
@@ -844,9 +844,9 @@
         "Ethereum",
         "xDai"
       ],
-      "tvl_usd": 4077684807,
-      "tvl_change_24h": -1.609954278480231,
-      "tvl_change_7d": -12.450655672839574,
+      "tvl_usd": 4010745959,
+      "tvl_change_24h": -1.6415895611609415,
+      "tvl_change_7d": -12.503491079423299,
       "mcap_usd": null,
       "url": "https://spark.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/sparklend"
@@ -867,9 +867,9 @@
         "Near",
         "XDC"
       ],
-      "tvl_usd": 3793297879,
-      "tvl_change_24h": -2.6314557451983234,
-      "tvl_change_7d": -12.267630973729197,
+      "tvl_usd": 3808772150,
+      "tvl_change_24h": -1.3467345033433844,
+      "tvl_change_7d": -10.750110453132038,
       "mcap_usd": null,
       "url": "https://www.bitstamp.net",
       "logo": "https://icons.llamao.fi/icons/protocols/bitstamp"
@@ -881,9 +881,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 3744034654,
-      "tvl_change_24h": 0.32254922762898275,
-      "tvl_change_7d": -9.467915433929946,
+      "tvl_usd": 3777108209,
+      "tvl_change_24h": 0.8833667023092175,
+      "tvl_change_7d": -9.507755731018051,
       "mcap_usd": null,
       "url": "https://app.sky.money/",
       "logo": "https://icons.llamao.fi/icons/protocols/sky-lending"
@@ -909,20 +909,53 @@
         "Starknet",
         "Klaytn",
         "Zcash",
-        "Hedera",
-        "Near",
-        "Sui",
         "Hyperliquid L1",
+        "Near",
+        "Hedera",
+        "Sui",
         "Dash",
         "Cardano",
         "Stellar"
       ],
-      "tvl_usd": 3737177700,
-      "tvl_change_24h": -0.986161949902467,
-      "tvl_change_7d": -10.425092787488722,
-      "mcap_usd": 129875975.83432849,
+      "tvl_usd": 3709619645,
+      "tvl_change_24h": -0.7374028490365276,
+      "tvl_change_7d": -9.715518891600155,
+      "mcap_usd": 129440371.34748487,
       "url": "https://www.mexc.com",
       "logo": "https://icons.llamao.fi/icons/protocols/mexc"
+    },
+    {
+      "name": "USDT0",
+      "slug": "usdt0",
+      "category": "Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 3664165241,
+      "tvl_change_24h": 0.6115421812833404,
+      "tvl_change_7d": 8.433850827058095,
+      "mcap_usd": null,
+      "url": "https://usdt0.to",
+      "logo": "https://icons.llamao.fi/icons/protocols/usdt0"
+    },
+    {
+      "name": "ether.fi Stake",
+      "slug": "ether.fi-stake",
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum",
+        "Base",
+        "Arbitrum",
+        "Berachain",
+        "Scroll",
+        "Optimism"
+      ],
+      "tvl_usd": 3468551876,
+      "tvl_change_24h": 1.5150099859967838,
+      "tvl_change_7d": -13.046623232560023,
+      "mcap_usd": null,
+      "url": "https://www.ether.fi",
+      "logo": "https://icons.llamao.fi/icons/protocols/ether.fi"
     },
     {
       "name": "HTX",
@@ -949,45 +982,12 @@
         "Polygon",
         "Algorand"
       ],
-      "tvl_usd": 3644253216,
-      "tvl_change_24h": 10.410911470269312,
-      "tvl_change_7d": 5.046868987030479,
+      "tvl_usd": 3335758083,
+      "tvl_change_24h": -8.46524966134524,
+      "tvl_change_7d": -14.788617394370917,
       "mcap_usd": null,
       "url": "https://www.htx.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/htx"
-    },
-    {
-      "name": "USDT0",
-      "slug": "usdt0",
-      "category": "Bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 3641893526,
-      "tvl_change_24h": 1.4452502304660158,
-      "tvl_change_7d": 9.6314733073676,
-      "mcap_usd": null,
-      "url": "https://usdt0.to",
-      "logo": "https://icons.llamao.fi/icons/protocols/usdt0"
-    },
-    {
-      "name": "ether.fi Stake",
-      "slug": "ether.fi-stake",
-      "category": "Liquid Staking",
-      "chains": [
-        "Ethereum",
-        "Base",
-        "Arbitrum",
-        "Berachain",
-        "Optimism",
-        "Scroll"
-      ],
-      "tvl_usd": 3416787209,
-      "tvl_change_24h": -2.0237332445514227,
-      "tvl_change_7d": -14.72968116943629,
-      "mcap_usd": null,
-      "url": "https://www.ether.fi",
-      "logo": "https://icons.llamao.fi/icons/protocols/ether.fi"
     },
     {
       "name": "Deribit",
@@ -1001,26 +1001,12 @@
         "Binance",
         "EthereumPoW"
       ],
-      "tvl_usd": 3050413747,
-      "tvl_change_24h": -1.6909530089023974,
-      "tvl_change_7d": -13.209376979740398,
+      "tvl_usd": 3114332191,
+      "tvl_change_24h": 1.5771317812005776,
+      "tvl_change_7d": -11.575650739282011,
       "mcap_usd": null,
       "url": "https://www.deribit.com",
       "logo": "https://icons.llamao.fi/icons/protocols/deribit"
-    },
-    {
-      "name": "JustLend sTRX",
-      "slug": "justlend-strx",
-      "category": "Liquid Staking",
-      "chains": [
-        "Tron"
-      ],
-      "tvl_usd": 3009485339,
-      "tvl_change_24h": -1.048797309761838,
-      "tvl_change_7d": -4.148186033315156,
-      "mcap_usd": null,
-      "url": "https://app.justlend.org/strx?lang=en-US",
-      "logo": "https://icons.llamao.fi/icons/protocols/justlend-strx"
     },
     {
       "name": "JustLend V1",
@@ -1029,12 +1015,26 @@
       "chains": [
         "Tron"
       ],
-      "tvl_usd": 2939337891,
-      "tvl_change_24h": -3.2699808049067514,
-      "tvl_change_7d": -12.325734876927982,
+      "tvl_usd": 3016522614,
+      "tvl_change_24h": 1.9596784637444529,
+      "tvl_change_7d": -9.593922789235265,
       "mcap_usd": null,
       "url": "https://justlend.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/justlend-v1"
+    },
+    {
+      "name": "JustLend sTRX",
+      "slug": "justlend-strx",
+      "category": "Liquid Staking",
+      "chains": [
+        "Tron"
+      ],
+      "tvl_usd": 3015928003,
+      "tvl_change_24h": 0.2140785845220421,
+      "tvl_change_7d": -4.38112991167408,
+      "mcap_usd": null,
+      "url": "https://app.justlend.org/strx?lang=en-US",
+      "logo": "https://icons.llamao.fi/icons/protocols/justlend-strx"
     },
     {
       "name": "Arbitrum Bridge",
@@ -1043,9 +1043,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 2899246108,
-      "tvl_change_24h": -0.7273143152076784,
-      "tvl_change_7d": -8.47362445589053,
+      "tvl_usd": 2924195262,
+      "tvl_change_24h": 0.48102605220515215,
+      "tvl_change_7d": -7.174579782555028,
       "mcap_usd": null,
       "url": "https://portal.arbitrum.io/bridge",
       "logo": "https://icons.llamao.fi/icons/protocols/arbitrum-bridge"
@@ -1067,12 +1067,40 @@
         "Unichain",
         "Corn"
       ],
-      "tvl_usd": 2749462852,
-      "tvl_change_24h": 1.324850075317002,
-      "tvl_change_7d": -4.233559475114461,
+      "tvl_usd": 2720533639,
+      "tvl_change_24h": -1.052176932995593,
+      "tvl_change_7d": -5.330952000788926,
       "mcap_usd": null,
       "url": "https://www.steakhouse.financial/",
       "logo": "https://icons.llamao.fi/icons/protocols/steakhouse-financial"
+    },
+    {
+      "name": "Base Bridge",
+      "slug": "base-bridge",
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 2702237119,
+      "tvl_change_24h": 1.5506159150541237,
+      "tvl_change_7d": -3.099615363391436,
+      "mcap_usd": null,
+      "url": "https://docs.base.org/base-chain/network-information/bridges-mainnet",
+      "logo": "https://icons.llamao.fi/icons/protocols/base-bridge"
+    },
+    {
+      "name": "Babylon Protocol",
+      "slug": "babylon-protocol",
+      "category": "Restaking",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 2696237911,
+      "tvl_change_24h": 1.2046030577317595,
+      "tvl_change_7d": -11.284491093944851,
+      "mcap_usd": 44023599.040956184,
+      "url": "https://babylonlabs.io",
+      "logo": "https://icons.llamao.fi/icons/protocols/babylon-protocol"
     },
     {
       "name": "Sentora Curator",
@@ -1084,9 +1112,9 @@
         "Solana",
         "Tempo"
       ],
-      "tvl_usd": 2682914975,
-      "tvl_change_24h": -0.565562245677043,
-      "tvl_change_7d": 0.22650435160062443,
+      "tvl_usd": 2680070961,
+      "tvl_change_24h": -0.09270688294482454,
+      "tvl_change_7d": -1.6440023776439574,
       "mcap_usd": null,
       "url": "https://sentora.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/sentora"
@@ -1101,58 +1129,34 @@
         "Arbitrum",
         "Optimism",
         "Unichain",
-        "Avalanche",
         "Robinhood Chain",
+        "Avalanche",
         "X Layer"
       ],
-      "tvl_usd": 2677660865,
-      "tvl_change_24h": -2.3785642572796917,
-      "tvl_change_7d": -0.29706383660945335,
+      "tvl_usd": 2667932704,
+      "tvl_change_24h": -0.3633081636145903,
+      "tvl_change_7d": 2.3066098579026715,
       "mcap_usd": null,
       "url": "https://spark.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/spark-liquidity-layer"
     },
     {
-      "name": "Babylon Protocol",
-      "slug": "babylon-protocol",
-      "category": "Restaking",
+      "name": "Maple",
+      "slug": "maple",
+      "category": "Lending",
       "chains": [
-        "Bitcoin"
+        "Bitcoin",
+        "Ethereum",
+        "Ripple",
+        "Hyperliquid L1",
+        "Solana"
       ],
-      "tvl_usd": 2664145533,
-      "tvl_change_24h": -1.0833164885983564,
-      "tvl_change_7d": -12.171282045512314,
-      "mcap_usd": 42160354.83576451,
-      "url": "https://babylonlabs.io",
-      "logo": "https://icons.llamao.fi/icons/protocols/babylon-protocol"
-    },
-    {
-      "name": "Base Bridge",
-      "slug": "base-bridge",
-      "category": "Canonical Bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 2660975608,
-      "tvl_change_24h": -0.21842638111563417,
-      "tvl_change_7d": -5.289888193566156,
+      "tvl_usd": 2342212862,
+      "tvl_change_24h": 5.923354712473923,
+      "tvl_change_7d": 6.468076327916947,
       "mcap_usd": null,
-      "url": "https://docs.base.org/base-chain/network-information/bridges-mainnet",
-      "logo": "https://icons.llamao.fi/icons/protocols/base-bridge"
-    },
-    {
-      "name": "Polygon Bridge",
-      "slug": "polygon-bridge",
-      "category": "Canonical Bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 2491069544,
-      "tvl_change_24h": -1.0658600382669192,
-      "tvl_change_7d": -5.676098534109769,
-      "mcap_usd": 834961711.7227954,
-      "url": "https://polygon.technology/",
-      "logo": "https://icons.llamao.fi/icons/protocols/polygon-bridge"
+      "url": "https://www.maple.finance",
+      "logo": "https://icons.llamao.fi/icons/protocols/maple"
     },
     {
       "name": "KuCoin",
@@ -1169,9 +1173,9 @@
         "Near",
         "Avalanche",
         "Doge",
+        "Base",
         "Cardano",
         "Sui",
-        "Base",
         "Optimism",
         "TON",
         "Aptos",
@@ -1183,30 +1187,26 @@
         "Polygon",
         "Kucoin"
       ],
-      "tvl_usd": 2246319807,
-      "tvl_change_24h": -1.9749675105581161,
-      "tvl_change_7d": -10.608220754900103,
+      "tvl_usd": 2291103631,
+      "tvl_change_24h": 1.9936530848991367,
+      "tvl_change_7d": -7.221194856436185,
       "mcap_usd": null,
       "url": "https://www.kucoin.com",
       "logo": "https://icons.llamao.fi/icons/protocols/kucoin"
     },
     {
-      "name": "Maple",
-      "slug": "maple",
-      "category": "Lending",
+      "name": "Polygon Bridge",
+      "slug": "polygon-bridge",
+      "category": "Canonical Bridge",
       "chains": [
-        "Bitcoin",
-        "Ethereum",
-        "Ripple",
-        "Hyperliquid L1",
-        "Solana"
+        "Ethereum"
       ],
-      "tvl_usd": 2193240736,
-      "tvl_change_24h": -2.0835915655951425,
-      "tvl_change_7d": -4.605182034243853,
-      "mcap_usd": null,
-      "url": "https://www.maple.finance",
-      "logo": "https://icons.llamao.fi/icons/protocols/maple"
+      "tvl_usd": 2204547061,
+      "tvl_change_24h": -11.501986493642718,
+      "tvl_change_7d": -16.127900885317672,
+      "mcap_usd": 873683692.7969421,
+      "url": "https://polygon.technology/",
+      "logo": "https://icons.llamao.fi/icons/protocols/polygon-bridge"
     },
     {
       "name": "JustCryptos",
@@ -1215,9 +1215,9 @@
       "chains": [
         "Tron"
       ],
-      "tvl_usd": 1999944175,
-      "tvl_change_24h": -2.1074746010950065,
-      "tvl_change_7d": -14.874547003056279,
+      "tvl_usd": 2026854596,
+      "tvl_change_24h": 0.2680003647272997,
+      "tvl_change_7d": -12.897876100324666,
       "mcap_usd": null,
       "url": "https://just.network/token",
       "logo": "https://icons.llamao.fi/icons/protocols/justcryptos"
@@ -1236,9 +1236,9 @@
         "Optimism",
         "Fantom"
       ],
-      "tvl_usd": 1788793122,
-      "tvl_change_24h": -3.1423051262819257,
-      "tvl_change_7d": -14.145321790820319,
+      "tvl_usd": 1846415429,
+      "tvl_change_24h": 3.100013470742695,
+      "tvl_change_7d": -12.00471661246479,
       "mcap_usd": null,
       "url": "https://crypto.com",
       "logo": "https://icons.llamao.fi/icons/protocols/crypto-com"
@@ -1267,12 +1267,12 @@
         "Polygon",
         "Linea",
         "HashKey Chain",
-        "Shibarium",
-        "Sonic"
+        "Sonic",
+        "Shibarium"
       ],
-      "tvl_usd": 1742256467,
-      "tvl_change_24h": -0.9537988197944429,
-      "tvl_change_7d": -4.8568627323357845,
+      "tvl_usd": 1746231751,
+      "tvl_change_24h": 0.0300364014914436,
+      "tvl_change_7d": -4.696964666128494,
       "mcap_usd": null,
       "url": "https://chain.link/cross-chain",
       "logo": "https://icons.llamao.fi/icons/protocols/ccip"
@@ -1297,26 +1297,12 @@
         "Arc",
         "Tempo"
       ],
-      "tvl_usd": 1529512645,
-      "tvl_change_24h": -0.1608796370804697,
-      "tvl_change_7d": -3.657029263104434,
+      "tvl_usd": 1534306467,
+      "tvl_change_24h": 0.3134215498487265,
+      "tvl_change_7d": -7.00492521232826,
       "mcap_usd": null,
       "url": "https://www.gauntlet.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/gauntlet"
-    },
-    {
-      "name": "Falcon Finance",
-      "slug": "falcon-finance",
-      "category": "Basis Trading",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 1480922957,
-      "tvl_change_24h": 0.0023181797980953434,
-      "tvl_change_7d": -10.793409211955264,
-      "mcap_usd": 342079113.0696132,
-      "url": "https://app.falcon.finance",
-      "logo": "https://icons.llamao.fi/icons/protocols/falcon-finance"
     },
     {
       "name": "Veda",
@@ -1337,12 +1323,26 @@
         "BOB",
         "Scroll"
       ],
-      "tvl_usd": 1479526176,
-      "tvl_change_24h": -1.2749330766619948,
-      "tvl_change_7d": -11.2531788815443,
+      "tvl_usd": 1489165454,
+      "tvl_change_24h": 0.6515111403300438,
+      "tvl_change_7d": -10.890797652826805,
       "mcap_usd": null,
       "url": "https://veda.tech",
       "logo": "https://icons.llamao.fi/icons/protocols/veda"
+    },
+    {
+      "name": "Falcon Finance",
+      "slug": "falcon-finance",
+      "category": "Basis Trading",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 1480557457,
+      "tvl_change_24h": -0.02468057763246634,
+      "tvl_change_7d": -10.811965225570049,
+      "mcap_usd": 360313197.7375018,
+      "url": "https://app.falcon.finance",
+      "logo": "https://icons.llamao.fi/icons/protocols/falcon-finance"
     },
     {
       "name": "Hyperliquid Earn",
@@ -1351,9 +1351,9 @@
       "chains": [
         "Hyperliquid L1"
       ],
-      "tvl_usd": 1438271175,
-      "tvl_change_24h": 1.9105104294826418,
-      "tvl_change_7d": -1.6656915244451085,
+      "tvl_usd": 1459047721,
+      "tvl_change_24h": 0.8333401252197632,
+      "tvl_change_7d": -0.2714659340391563,
       "mcap_usd": null,
       "url": "https://app.hyperliquid.xyz/earn",
       "logo": "https://icons.llamao.fi/icons/protocols/hyperliquid-earn"
@@ -1365,36 +1365,12 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 1330784244,
-      "tvl_change_24h": -1.4059622951641586,
-      "tvl_change_7d": -12.657347784837086,
+      "tvl_usd": 1361783121,
+      "tvl_change_24h": 2.32936907951202,
+      "tvl_change_7d": -9.39781515503823,
       "mcap_usd": null,
       "url": "https://www.sanctum.so",
       "logo": "https://icons.llamao.fi/icons/protocols/sanctum-validator-lsts"
-    },
-    {
-      "name": "PancakeSwap AMM",
-      "slug": "pancakeswap-amm",
-      "category": "Dexs",
-      "chains": [
-        "Binance",
-        "Ethereum",
-        "Aptos",
-        "Arbitrum",
-        "Base",
-        "zkSync Era",
-        "Robinhood Chain",
-        "Op_Bnb",
-        "Linea",
-        "Monad",
-        "Polygon zkEVM"
-      ],
-      "tvl_usd": 1282623871,
-      "tvl_change_24h": -0.6563745917284081,
-      "tvl_change_7d": -10.36137536201096,
-      "mcap_usd": null,
-      "url": "https://pancakeswap.finance/",
-      "logo": "https://icons.llamao.fi/icons/protocols/pancakeswap-amm"
     },
     {
       "name": "Uniswap V3",
@@ -1428,14 +1404,12 @@
         "Filecoin",
         "XDC",
         "Telos",
-        "Nibiru",
         "BOB",
         "Hemi",
         "Elysium Kinetiq",
-        "Lens",
         "Linea",
-        "Redbelly",
         "Scroll",
+        "Redbelly",
         "Sonic",
         "Taiko",
         "MegaETH",
@@ -1443,16 +1417,42 @@
         "Manta",
         "Tempo",
         "LightLink",
+        "Nibiru",
         "Blast",
         "Lisk",
-        "Saga"
+        "Saga",
+        "Lens"
       ],
-      "tvl_usd": 1276563706,
-      "tvl_change_24h": -1.5751925299200877,
-      "tvl_change_7d": -13.33472247814565,
+      "tvl_usd": 1313506508,
+      "tvl_change_24h": 2.8939254489063018,
+      "tvl_change_7d": -10.342775691644178,
       "mcap_usd": null,
       "url": "https://app.uniswap.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/uniswap-v3"
+    },
+    {
+      "name": "PancakeSwap AMM",
+      "slug": "pancakeswap-amm",
+      "category": "Dexs",
+      "chains": [
+        "Binance",
+        "Ethereum",
+        "Aptos",
+        "Arbitrum",
+        "Base",
+        "zkSync Era",
+        "Robinhood Chain",
+        "Op_Bnb",
+        "Linea",
+        "Monad",
+        "Polygon zkEVM"
+      ],
+      "tvl_usd": 1276772395,
+      "tvl_change_24h": -0.4562113764661291,
+      "tvl_change_7d": -10.742242577489279,
+      "mcap_usd": null,
+      "url": "https://pancakeswap.finance/",
+      "logo": "https://icons.llamao.fi/icons/protocols/pancakeswap-amm"
     },
     {
       "name": "HashKey Exchange",
@@ -1473,9 +1473,9 @@
         "Polkadot",
         "Polygon"
       ],
-      "tvl_usd": 1243425529,
-      "tvl_change_24h": -1.2705819139298171,
-      "tvl_change_7d": -12.365259352804344,
+      "tvl_usd": 1226921495,
+      "tvl_change_24h": -1.7840926059896134,
+      "tvl_change_7d": -13.321105607824038,
       "mcap_usd": null,
       "url": "https://www.hashkey.com",
       "logo": "https://icons.llamao.fi/icons/protocols/hashkey-exchange"
@@ -1510,10 +1510,10 @@
         "Injective",
         "XPLA"
       ],
-      "tvl_usd": 1175402405,
-      "tvl_change_24h": -3.2604193157686296,
-      "tvl_change_7d": -13.44833044428239,
-      "mcap_usd": 58028620.353172906,
+      "tvl_usd": 1200543451,
+      "tvl_change_24h": 0.8424832631267236,
+      "tvl_change_7d": -10.960291218641231,
+      "mcap_usd": 59607068.46800367,
       "url": "https://portalbridge.com",
       "logo": "https://icons.llamao.fi/icons/protocols/portal"
     },
@@ -1545,10 +1545,10 @@
         "TON",
         "Fantom"
       ],
-      "tvl_usd": 1157068362,
-      "tvl_change_24h": -1.224853907072415,
-      "tvl_change_7d": -12.803892396189596,
-      "mcap_usd": 32137457.20253976,
+      "tvl_usd": 1175003417,
+      "tvl_change_24h": 1.5500427881535757,
+      "tvl_change_7d": -11.116614227514589,
+      "mcap_usd": 32206840.172191672,
       "url": "https://www.bitkub.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/bitkub"
     },
@@ -1559,9 +1559,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 1129025247,
-      "tvl_change_24h": -0.45494477378319687,
-      "tvl_change_7d": -2.239177120226543,
+      "tvl_usd": 1153441145,
+      "tvl_change_24h": 2.162564390912692,
+      "tvl_change_7d": -0.8146029497890623,
       "mcap_usd": null,
       "url": "https://kamino.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/kamino-lend"
@@ -1580,9 +1580,9 @@
         "Avalanche",
         "Unichain"
       ],
-      "tvl_usd": 1123811123,
-      "tvl_change_24h": -9.506355040826506,
-      "tvl_change_7d": -13.189672765196377,
+      "tvl_usd": 1149226035,
+      "tvl_change_24h": 2.2614931617197556,
+      "tvl_change_7d": -8.20565683721425,
       "mcap_usd": null,
       "url": "https://spark.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/spark-savings"
@@ -1598,10 +1598,10 @@
         "Plume Mainnet",
         "Robinhood Chain"
       ],
-      "tvl_usd": 1105735224,
-      "tvl_change_24h": -0.20752071876088962,
-      "tvl_change_7d": -0.569036971984147,
-      "mcap_usd": 5944998.095935675,
+      "tvl_usd": 1105935043,
+      "tvl_change_24h": 0.02559151021577577,
+      "tvl_change_7d": -0.5751715896314238,
+      "mcap_usd": 6174212.503893998,
       "url": "https://data.grove.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/grove-finance"
     },
@@ -1612,10 +1612,10 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 1088193381,
-      "tvl_change_24h": -1.4163488759614182,
-      "tvl_change_7d": -9.388326187578926,
-      "mcap_usd": 651138.6374758896,
+      "tvl_usd": 1099735979,
+      "tvl_change_24h": 1.0607120592163852,
+      "tvl_change_7d": -8.041561763284477,
+      "mcap_usd": 613396.1548711839,
       "url": "https://obol.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/obol"
     },
@@ -1635,9 +1635,9 @@
         "Scroll",
         "Ronin"
       ],
-      "tvl_usd": 1072120747,
-      "tvl_change_24h": -1.2586840044352243,
-      "tvl_change_7d": -11.589491054253898,
+      "tvl_usd": 1085719594,
+      "tvl_change_24h": 1.268406299084262,
+      "tvl_change_7d": -9.891038617588123,
       "mcap_usd": null,
       "url": "https://www.compound.xyz/",
       "logo": "https://icons.llamao.fi/icons/protocols/compound-v3"
@@ -1653,12 +1653,48 @@
         "Berachain",
         "Katana"
       ],
-      "tvl_usd": 1046205811,
-      "tvl_change_24h": -1.0825569101904335,
-      "tvl_change_7d": -9.915866350550331,
-      "mcap_usd": 19795923.932069384,
+      "tvl_usd": 1051545317,
+      "tvl_change_24h": 0.5103685221881591,
+      "tvl_change_7d": -9.259428899992201,
+      "mcap_usd": 22034296.701958954,
       "url": "https://app.concrete.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/concrete"
+    },
+    {
+      "name": "Uniswap V4",
+      "slug": "uniswap-v4",
+      "category": "Dexs",
+      "chains": [
+        "Ethereum",
+        "Robinhood Chain",
+        "Base",
+        "Monad",
+        "Arbitrum",
+        "Binance",
+        "Polygon",
+        "X Layer",
+        "Unichain",
+        "Ink",
+        "Elysium Kinetiq",
+        "Tempo",
+        "Arc",
+        "Avalanche",
+        "Soneium",
+        "Optimism",
+        "Linea",
+        "Celo",
+        "World Chain",
+        "MegaETH",
+        "Hyperliquid L1",
+        "Zora",
+        "Blast"
+      ],
+      "tvl_usd": 1022666282,
+      "tvl_change_24h": 1.7830609111023676,
+      "tvl_change_7d": -6.248004915952762,
+      "mcap_usd": null,
+      "url": "https://app.uniswap.org/",
+      "logo": "https://icons.llamao.fi/icons/protocols/uniswap-v4"
     },
     {
       "name": "Curve DEX",
@@ -1666,8 +1702,8 @@
       "category": "Dexs",
       "chains": [
         "Ethereum",
-        "Etherlink",
         "Fraxtal",
+        "Etherlink",
         "Monad",
         "Arbitrum",
         "Polygon",
@@ -1698,48 +1734,12 @@
         "Arc",
         "Harmony"
       ],
-      "tvl_usd": 1011263530,
-      "tvl_change_24h": -0.22232421823530046,
-      "tvl_change_7d": -4.8787310863863524,
+      "tvl_usd": 1011089882,
+      "tvl_change_24h": -0.19436791359397887,
+      "tvl_change_7d": -4.7699115733154684,
       "mcap_usd": null,
       "url": "https://curve.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/curve"
-    },
-    {
-      "name": "Uniswap V4",
-      "slug": "uniswap-v4",
-      "category": "Dexs",
-      "chains": [
-        "Ethereum",
-        "Robinhood Chain",
-        "Base",
-        "Monad",
-        "Arbitrum",
-        "Binance",
-        "Polygon",
-        "X Layer",
-        "Unichain",
-        "Ink",
-        "Tempo",
-        "Elysium Kinetiq",
-        "Arc",
-        "Avalanche",
-        "Soneium",
-        "Optimism",
-        "Linea",
-        "Celo",
-        "World Chain",
-        "MegaETH",
-        "Hyperliquid L1",
-        "Zora",
-        "Blast"
-      ],
-      "tvl_usd": 1004750961,
-      "tvl_change_24h": -4.936571876727143,
-      "tvl_change_7d": -7.707760740290297,
-      "mcap_usd": null,
-      "url": "https://app.uniswap.org/",
-      "logo": "https://icons.llamao.fi/icons/protocols/uniswap-v4"
     },
     {
       "name": "Pendle V2",
@@ -1761,12 +1761,28 @@
         "Berachain",
         "Optimism"
       ],
-      "tvl_usd": 978208299,
-      "tvl_change_24h": 0.2755697543278046,
-      "tvl_change_7d": -2.139319049762051,
+      "tvl_usd": 980362778,
+      "tvl_change_24h": 0.22024750499913637,
+      "tvl_change_7d": -1.945347094213929,
       "mcap_usd": null,
       "url": "https://pendle.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/pendle-v2"
+    },
+    {
+      "name": "USDD",
+      "slug": "usdd",
+      "category": "CDP",
+      "chains": [
+        "Tron",
+        "Ethereum",
+        "Binance"
+      ],
+      "tvl_usd": 977417752,
+      "tvl_change_24h": 3.9740248993449114,
+      "tvl_change_7d": -7.410352093673225,
+      "mcap_usd": null,
+      "url": "https://usdd.io/",
+      "logo": "https://icons.llamao.fi/icons/protocols/usdd"
     },
     {
       "name": "Venus Core Pool",
@@ -1782,28 +1798,12 @@
         "Optimism",
         "Op_Bnb"
       ],
-      "tvl_usd": 952503737,
-      "tvl_change_24h": -1.9143110775808623,
-      "tvl_change_7d": -15.085119185298197,
+      "tvl_usd": 973733814,
+      "tvl_change_24h": 1.6699746240805098,
+      "tvl_change_7d": -12.786913903849722,
       "mcap_usd": null,
       "url": "https://app.venus.io/#/core-pool",
       "logo": "https://icons.llamao.fi/icons/protocols/venus-core-pool"
-    },
-    {
-      "name": "USDD",
-      "slug": "usdd",
-      "category": "CDP",
-      "chains": [
-        "Tron",
-        "Ethereum",
-        "Binance"
-      ],
-      "tvl_usd": 938655068,
-      "tvl_change_24h": -2.970214197024873,
-      "tvl_change_7d": -12.086182658989088,
-      "mcap_usd": null,
-      "url": "https://usdd.io/",
-      "logo": "https://icons.llamao.fi/icons/protocols/usdd"
     },
     {
       "name": "Jupiter Lend",
@@ -1812,26 +1812,12 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 937670688,
-      "tvl_change_24h": 0.8505896556960266,
-      "tvl_change_7d": 3.358843111554634,
+      "tvl_usd": 971361380,
+      "tvl_change_24h": 2.2220748808897213,
+      "tvl_change_7d": 8.31791086641293,
       "mcap_usd": null,
       "url": "https://jup.ag/?ref=f6y1ryr2snn3",
       "logo": "https://icons.llamao.fi/icons/protocols/jupiter-lend"
-    },
-    {
-      "name": "Rocket Pool",
-      "slug": "rocket-pool",
-      "category": "Liquid Staking",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 866417607,
-      "tvl_change_24h": -2.042648276264572,
-      "tvl_change_7d": -15.422624237064127,
-      "mcap_usd": 27974987.82101918,
-      "url": "https://rocketpool.net",
-      "logo": "https://icons.llamao.fi/icons/protocols/rocket-pool"
     },
     {
       "name": "Unit",
@@ -1847,12 +1833,26 @@
         "Base",
         "Avalanche"
       ],
-      "tvl_usd": 858334346,
-      "tvl_change_24h": -2.4061476387558685,
-      "tvl_change_7d": -5.6224659477624215,
+      "tvl_usd": 884891194,
+      "tvl_change_24h": 1.7698766487262816,
+      "tvl_change_7d": -1.63481557839728,
       "mcap_usd": null,
       "url": "https://hyperunit.xyz/deposit",
       "logo": "https://icons.llamao.fi/icons/protocols/unit"
+    },
+    {
+      "name": "Rocket Pool",
+      "slug": "rocket-pool",
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 875864798,
+      "tvl_change_24h": 1.0903738868975381,
+      "tvl_change_7d": -13.275719184712358,
+      "mcap_usd": 28879445.541666836,
+      "url": "https://rocketpool.net",
+      "logo": "https://icons.llamao.fi/icons/protocols/rocket-pool"
     },
     {
       "name": "Raydium AMM",
@@ -1861,9 +1861,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 825754286,
-      "tvl_change_24h": -1.927136903107396,
-      "tvl_change_7d": -14.266792660377618,
+      "tvl_usd": 837255028,
+      "tvl_change_24h": 0.9938162256832186,
+      "tvl_change_7d": -14.094182961940305,
       "mcap_usd": null,
       "url": "https://raydium.io",
       "logo": "https://icons.llamao.fi/icons/protocols/raydium"
@@ -1876,36 +1876,12 @@
         "Binance",
         "Ethereum"
       ],
-      "tvl_usd": 825484396,
-      "tvl_change_24h": 1.3481054268877273,
-      "tvl_change_7d": -8.559551729507092,
+      "tvl_usd": 825849094,
+      "tvl_change_24h": 0.044179903207535176,
+      "tvl_change_7d": -8.816756444827561,
       "mcap_usd": null,
       "url": "https://lista.org/lending",
       "logo": "https://icons.llamao.fi/icons/protocols/lista-lending"
-    },
-    {
-      "name": "Poloniex",
-      "slug": "poloniex",
-      "category": "CEX",
-      "chains": [
-        "Ethereum",
-        "Tron",
-        "Ripple",
-        "Polygon",
-        "Stellar",
-        "Solana",
-        "EthereumClassic",
-        "Bitcoin",
-        "Arbitrum",
-        "Optimism",
-        "Cardano"
-      ],
-      "tvl_usd": 800813259,
-      "tvl_change_24h": 2.0345475873805583,
-      "tvl_change_7d": -21.399697433252996,
-      "mcap_usd": null,
-      "url": "https://www.poloniex.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/poloniex"
     },
     {
       "name": "Aave V4",
@@ -1917,12 +1893,52 @@
         "Avalanche",
         "Base"
       ],
-      "tvl_usd": 782828731,
-      "tvl_change_24h": -0.057201326274253006,
-      "tvl_change_7d": -3.077445885588972,
+      "tvl_usd": 789326277,
+      "tvl_change_24h": 0.8300086930643715,
+      "tvl_change_7d": -0.6554150859139867,
       "mcap_usd": null,
       "url": "https://aave.com",
       "logo": "https://icons.llamao.fi/icons/protocols/aave-v4"
+    },
+    {
+      "name": "Poloniex",
+      "slug": "poloniex",
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Ripple",
+        "Tron",
+        "Polygon",
+        "Stellar",
+        "Solana",
+        "EthereumClassic",
+        "Arbitrum",
+        "Optimism",
+        "Cardano",
+        "Bitcoin"
+      ],
+      "tvl_usd": 781693104,
+      "tvl_change_24h": -2.3875921800380837,
+      "tvl_change_7d": -23.862464050956504,
+      "mcap_usd": null,
+      "url": "https://www.poloniex.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/poloniex"
+    },
+    {
+      "name": "Optimism Bridge",
+      "slug": "optimism-bridge",
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum",
+        "Base",
+        "PGN"
+      ],
+      "tvl_usd": 779966194,
+      "tvl_change_24h": 76.56459224834958,
+      "tvl_change_7d": 62.28918988559309,
+      "mcap_usd": null,
+      "url": "https://app.optimism.io/bridge/deposit",
+      "logo": "https://icons.llamao.fi/icons/protocols/optimism-bridge"
     },
     {
       "name": "Binance Staked SOL",
@@ -1931,9 +1947,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 731071587,
-      "tvl_change_24h": -4.094561053529759,
-      "tvl_change_7d": -21.938544259449984,
+      "tvl_usd": 755388645,
+      "tvl_change_24h": 1.7758565199285812,
+      "tvl_change_7d": -17.926995535909086,
       "mcap_usd": null,
       "url": "https://www.binance.com/en/solana-staking",
       "logo": "https://icons.llamao.fi/icons/protocols/binance-staked-sol"
@@ -1945,9 +1961,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 716483357,
-      "tvl_change_24h": -2.158857557402854,
-      "tvl_change_7d": -18.646404176779228,
+      "tvl_usd": 738691465,
+      "tvl_change_24h": 3.1842202318576938,
+      "tvl_change_7d": -14.6218787100469,
       "mcap_usd": null,
       "url": "https://jito.network",
       "logo": "https://icons.llamao.fi/icons/protocols/jito-liquid-staking"
@@ -1976,9 +1992,9 @@
         "Ink",
         "Celo"
       ],
-      "tvl_usd": 709393843,
-      "tvl_change_24h": -0.15440743222863773,
-      "tvl_change_7d": -13.686589065437772,
+      "tvl_usd": 714279343,
+      "tvl_change_24h": 0.6886865885739724,
+      "tvl_change_7d": -13.052046039339118,
       "mcap_usd": null,
       "url": "https://app.uniswap.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/uniswap-v2"
@@ -1991,12 +2007,26 @@
         "Ethereum",
         "xDai"
       ],
-      "tvl_usd": 709360260,
-      "tvl_change_24h": -1.5320465999089379,
-      "tvl_change_7d": -14.361722441658458,
+      "tvl_usd": 707676308,
+      "tvl_change_24h": -0.2373901816571049,
+      "tvl_change_7d": -13.938624617173318,
       "mcap_usd": null,
       "url": "https://stakewise.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/stakewise"
+    },
+    {
+      "name": "Kinetiq kHYPE",
+      "slug": "kinetiq-khype",
+      "category": "Liquid Staking",
+      "chains": [
+        "Hyperliquid L1"
+      ],
+      "tvl_usd": 690720921,
+      "tvl_change_24h": 5.667411522483732,
+      "tvl_change_7d": -6.753614486475186,
+      "mcap_usd": null,
+      "url": "https://kinetiq.xyz/stake",
+      "logo": "https://icons.llamao.fi/icons/protocols/kinetiq-khype"
     },
     {
       "name": "SwissBorg",
@@ -2009,25 +2039,25 @@
         "Ripple",
         "Binance",
         "Hyperliquid L1",
-        "Polygon",
         "Bittensor",
         "Near",
         "Cardano",
         "Hedera",
+        "Polygon",
         "Avalanche",
         "Sui",
         "Doge",
         "Optimism",
-        "Tron",
         "Polkadot",
+        "Tron",
         "Stellar",
         "Injective",
         "Arbitrum",
         "Cosmos",
         "TON",
         "Algorand",
-        "Sei",
         "Celestia",
+        "Sei",
         "Sonic",
         "Berachain",
         "xDai",
@@ -2035,10 +2065,10 @@
         "Osmosis",
         "Moonbeam"
       ],
-      "tvl_usd": 676706444,
-      "tvl_change_24h": -1.4472374736838276,
-      "tvl_change_7d": -13.820223054647258,
-      "mcap_usd": 132800288.67703734,
+      "tvl_usd": 686994820,
+      "tvl_change_24h": 1.5203602870978727,
+      "tvl_change_7d": -12.177770271373959,
+      "mcap_usd": 134574355.11663446,
       "url": "https://swissborg.com",
       "logo": "https://icons.llamao.fi/icons/protocols/swissborg"
     },
@@ -2049,26 +2079,12 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 658891049,
-      "tvl_change_24h": -1.7491063822421324,
-      "tvl_change_7d": -16.666326867871163,
+      "tvl_usd": 666922154,
+      "tvl_change_24h": 1.2188822291641088,
+      "tvl_change_7d": -14.196522434750023,
       "mcap_usd": null,
       "url": "https://kelpdao.xyz/restake/?utm_source=0x798fF1e6D7AFd28c333eE6eBe03125d30ec6eF10",
       "logo": "https://icons.llamao.fi/icons/protocols/kelp"
-    },
-    {
-      "name": "Kinetiq kHYPE",
-      "slug": "kinetiq-khype",
-      "category": "Liquid Staking",
-      "chains": [
-        "Hyperliquid L1"
-      ],
-      "tvl_usd": 653674497,
-      "tvl_change_24h": -3.1056569587635323,
-      "tvl_change_7d": -14.325486346352633,
-      "mcap_usd": null,
-      "url": "https://kinetiq.xyz/stake",
-      "logo": "https://icons.llamao.fi/icons/protocols/kinetiq-khype"
     },
     {
       "name": "PancakeSwap AMM V3",
@@ -2087,9 +2103,9 @@
         "Op_Bnb",
         "Polygon zkEVM"
       ],
-      "tvl_usd": 637958784,
-      "tvl_change_24h": -1.0911292517192805,
-      "tvl_change_7d": -5.212956186631047,
+      "tvl_usd": 640598097,
+      "tvl_change_24h": 0.41371221686728177,
+      "tvl_change_7d": -7.207568616757925,
       "mcap_usd": null,
       "url": "https://pancakeswap.finance/swap",
       "logo": "https://icons.llamao.fi/icons/protocols/pancakeswap-amm-v3"
@@ -2108,10 +2124,10 @@
         "Optimism",
         "EthereumClassic"
       ],
-      "tvl_usd": 617461314,
-      "tvl_change_24h": -1.8874677323636746,
-      "tvl_change_7d": -15.800193445642421,
-      "mcap_usd": 21027809.89883012,
+      "tvl_usd": 616295609,
+      "tvl_change_24h": -0.18878997822361043,
+      "tvl_change_7d": -16.24937354385318,
+      "mcap_usd": 21151063.987459745,
       "url": "https://tornadocash.eth.limo/",
       "logo": "https://icons.llamao.fi/icons/protocols/tornado-cash"
     },
@@ -2122,30 +2138,12 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 608058483,
-      "tvl_change_24h": -1.6122504844526304,
-      "tvl_change_7d": -13.720694543596977,
+      "tvl_usd": 615427799,
+      "tvl_change_24h": 1.2119419172983186,
+      "tvl_change_7d": -12.500224865330438,
       "mcap_usd": null,
       "url": "https://www.kraken.com/kbtc",
       "logo": "https://icons.llamao.fi/icons/protocols/kraken-bitcoin"
-    },
-    {
-      "name": "Aster Bridge",
-      "slug": "aster-bridge",
-      "category": "Bridge",
-      "chains": [
-        "Binance",
-        "Ethereum",
-        "Arbitrum",
-        "Solana",
-        "Scroll"
-      ],
-      "tvl_usd": 593922690,
-      "tvl_change_24h": 1.2327372982697966,
-      "tvl_change_7d": -2.823847725871616,
-      "mcap_usd": null,
-      "url": "https://www.asterdex.com",
-      "logo": "https://icons.llamao.fi/icons/protocols/aster-bridge"
     },
     {
       "name": "Fluid Lending",
@@ -2159,12 +2157,26 @@
         "Polygon",
         "Sui"
       ],
-      "tvl_usd": 587186491,
-      "tvl_change_24h": 0.6476080614117308,
-      "tvl_change_7d": -1.9692704519376463,
+      "tvl_usd": 592629519,
+      "tvl_change_24h": 0.35489878368646544,
+      "tvl_change_7d": -1.9330646467067254,
       "mcap_usd": null,
       "url": "https://www.fluid.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/fluid-lending"
+    },
+    {
+      "name": "Jupiter Perpetual Exchange",
+      "slug": "jupiter-perpetual-exchange",
+      "category": "Derivatives",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 590346502,
+      "tvl_change_24h": 3.8697722764903943,
+      "tvl_change_7d": -7.447871043396248,
+      "mcap_usd": null,
+      "url": "https://jup.ag/?ref=f6y1ryr2snn3",
+      "logo": "https://icons.llamao.fi/icons/protocols/jupiter-perpetual-exchange"
     },
     {
       "name": "Lista Liquid Staking",
@@ -2173,9 +2185,9 @@
       "chains": [
         "Binance"
       ],
-      "tvl_usd": 582905200,
-      "tvl_change_24h": -1.346656670602414,
-      "tvl_change_7d": -15.931608777834555,
+      "tvl_usd": 588165007,
+      "tvl_change_24h": 0.9023436057103709,
+      "tvl_change_7d": -15.614807600992023,
       "mcap_usd": null,
       "url": "https://lista.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/lista-liquid-staking"
@@ -2187,8 +2199,8 @@
       "chains": [
         "Bitcoin",
         "Ethereum",
-        "Solana",
         "Tron",
+        "Solana",
         "Binance",
         "Ripple",
         "Polygon",
@@ -2196,8 +2208,8 @@
         "Litecoin",
         "Hyperliquid L1",
         "Injective",
-        "Doge",
         "Scroll",
+        "Doge",
         "Sei",
         "Sui",
         "TON",
@@ -2206,26 +2218,30 @@
         "Plasma",
         "Base"
       ],
-      "tvl_usd": 568465825,
-      "tvl_change_24h": -1.140186202070467,
-      "tvl_change_7d": -17.343168241795397,
+      "tvl_usd": 583880042,
+      "tvl_change_24h": 2.7115468616700724,
+      "tvl_change_7d": -10.852233822902392,
       "mcap_usd": null,
       "url": "https://www.osl.com/en",
       "logo": "https://icons.llamao.fi/icons/protocols/osl-exchange"
     },
     {
-      "name": "Jupiter Perpetual Exchange",
-      "slug": "jupiter-perpetual-exchange",
-      "category": "Derivatives",
+      "name": "Aster Bridge",
+      "slug": "aster-bridge",
+      "category": "Bridge",
       "chains": [
-        "Solana"
+        "Binance",
+        "Ethereum",
+        "Arbitrum",
+        "Solana",
+        "Scroll"
       ],
-      "tvl_usd": 568352552,
-      "tvl_change_24h": -2.122319894276842,
-      "tvl_change_7d": -11.728138608870864,
+      "tvl_usd": 558915832,
+      "tvl_change_24h": -5.8941775862785875,
+      "tvl_change_7d": -7.248861290420152,
       "mcap_usd": null,
-      "url": "https://jup.ag/?ref=f6y1ryr2snn3",
-      "logo": "https://icons.llamao.fi/icons/protocols/jupiter-perpetual-exchange"
+      "url": "https://www.asterdex.com",
+      "logo": "https://icons.llamao.fi/icons/protocols/aster-bridge"
     },
     {
       "name": "Function FBTC",
@@ -2234,12 +2250,26 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 535784970,
-      "tvl_change_24h": -0.17521977767785302,
-      "tvl_change_7d": -12.912613899951381,
+      "tvl_usd": 541694998,
+      "tvl_change_24h": 1.1030596555211787,
+      "tvl_change_7d": -12.270814119479965,
       "mcap_usd": null,
       "url": "https://www.fxn.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/function-fbtc"
+    },
+    {
+      "name": "Liquid Collective",
+      "slug": "liquid-collective",
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 513933129,
+      "tvl_change_24h": 0.5754060465699524,
+      "tvl_change_7d": -10.701473919466352,
+      "mcap_usd": null,
+      "url": "https://liquidcollective.io",
+      "logo": "https://icons.llamao.fi/icons/protocols/liquid-collective"
     },
     {
       "name": "Lighter Bridge",
@@ -2249,47 +2279,27 @@
         "Ethereum",
         "Arbitrum"
       ],
-      "tvl_usd": 535056732,
-      "tvl_change_24h": -2.8782516796414654,
-      "tvl_change_7d": -7.137186143007341,
+      "tvl_usd": 490199853,
+      "tvl_change_24h": -8.383574312329088,
+      "tvl_change_7d": -15.525710242253282,
       "mcap_usd": null,
       "url": "https://app.lighter.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/lighter-bridge"
     },
     {
-      "name": "Liquid Collective",
-      "slug": "liquid-collective",
-      "category": "Liquid Staking",
+      "name": "Nonce Capital",
+      "slug": "nonce-capital",
+      "category": "Risk Curators",
       "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 506763666,
-      "tvl_change_24h": -1.8709445076976579,
-      "tvl_change_7d": -12.550104446684799,
-      "mcap_usd": null,
-      "url": "https://liquidcollective.io",
-      "logo": "https://icons.llamao.fi/icons/protocols/liquid-collective"
-    },
-    {
-      "name": "BingX",
-      "slug": "bingx",
-      "category": "CEX",
-      "chains": [
-        "Binance",
-        "Bitcoin",
-        "Solana",
         "Ethereum",
-        "Tron",
-        "TON",
-        "Ripple",
-        "Arbitrum"
+        "Optimism"
       ],
-      "tvl_usd": 496027311,
-      "tvl_change_24h": -0.7704151540340973,
-      "tvl_change_7d": -6.070072139049813,
+      "tvl_usd": 484043283,
+      "tvl_change_24h": 0.5262207954719287,
+      "tvl_change_7d": -11.36043217079444,
       "mcap_usd": null,
-      "url": "https://bingx.com",
-      "logo": "https://icons.llamao.fi/icons/protocols/bingx"
+      "url": "https://nonce-capital.xyz/",
+      "logo": "https://icons.llamao.fi/icons/protocols/nonce-capital"
     },
     {
       "name": "Upshift",
@@ -2312,27 +2322,33 @@
         "Mezo",
         "Ink"
       ],
-      "tvl_usd": 481937604,
-      "tvl_change_24h": -0.47267712751258273,
-      "tvl_change_7d": 6.187564434736487,
+      "tvl_usd": 476976523,
+      "tvl_change_24h": -1.0294032671234703,
+      "tvl_change_7d": -0.5111237811840681,
       "mcap_usd": null,
       "url": "https://app.upshift.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/upshift"
     },
     {
-      "name": "Nonce Capital",
-      "slug": "nonce-capital",
-      "category": "Risk Curators",
+      "name": "BingX",
+      "slug": "bingx",
+      "category": "CEX",
       "chains": [
+        "Binance",
+        "Bitcoin",
         "Ethereum",
-        "Optimism"
+        "Solana",
+        "Tron",
+        "TON",
+        "Ripple",
+        "Arbitrum"
       ],
-      "tvl_usd": 481509480,
-      "tvl_change_24h": -2.4676984366773524,
-      "tvl_change_7d": -12.096590958203933,
+      "tvl_usd": 471809372,
+      "tvl_change_24h": -5.265171402306734,
+      "tvl_change_7d": -10.78272637260676,
       "mcap_usd": null,
-      "url": "https://nonce-capital.xyz/",
-      "logo": "https://icons.llamao.fi/icons/protocols/nonce-capital"
+      "url": "https://bingx.com",
+      "logo": "https://icons.llamao.fi/icons/protocols/bingx"
     },
     {
       "name": "Re",
@@ -2344,10 +2360,10 @@
         "Arbitrum",
         "Avalanche"
       ],
-      "tvl_usd": 472005252,
-      "tvl_change_24h": -0.7753632568674362,
-      "tvl_change_7d": -3.0731175003701026,
-      "mcap_usd": 35441853.26497181,
+      "tvl_usd": 469571669,
+      "tvl_change_24h": -0.5195532428143963,
+      "tvl_change_7d": -3.808912802698387,
+      "mcap_usd": 36896837.54707007,
       "url": "https://app.re.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/re"
     },
@@ -2358,70 +2374,12 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 461885010,
-      "tvl_change_24h": -2.4565991415293666,
-      "tvl_change_7d": -14.665947494662674,
+      "tvl_usd": 468585991,
+      "tvl_change_24h": 1.450789896033882,
+      "tvl_change_7d": -12.67293130537277,
       "mcap_usd": null,
       "url": "https://robinhood.com/us/en/chain/",
       "logo": "https://icons.llamao.fi/icons/protocols/robinhood-chain-bridge"
-    },
-    {
-      "name": "Backpack",
-      "slug": "backpack",
-      "category": "CEX",
-      "chains": [
-        "Solana",
-        "Bitcoin",
-        "Ethereum",
-        "Hyperliquid L1",
-        "Near",
-        "Zcash",
-        "Sui",
-        "Ripple",
-        "Base",
-        "Monad",
-        "Arbitrum",
-        "Binance",
-        "Doge",
-        "Optimism",
-        "Sei",
-        "Aptos",
-        "Plasma",
-        "Polygon",
-        "Tron",
-        "Robinhood Chain",
-        "Arc",
-        "Tempo",
-        "Stable",
-        "Fogo",
-        "0G",
-        "Avalanche",
-        "Eclipse",
-        "Litecoin",
-        "Bitcoincash"
-      ],
-      "tvl_usd": 457813271,
-      "tvl_change_24h": -0.1565090835015468,
-      "tvl_change_7d": -7.608676096437165,
-      "mcap_usd": 209008318.93041936,
-      "url": "https://backpack.exchange",
-      "logo": "https://icons.llamao.fi/icons/protocols/backpack"
-    },
-    {
-      "name": "Optimism Bridge",
-      "slug": "optimism-bridge",
-      "category": "Canonical Bridge",
-      "chains": [
-        "Ethereum",
-        "Base",
-        "PGN"
-      ],
-      "tvl_usd": 439024226,
-      "tvl_change_24h": 0.6800953340649443,
-      "tvl_change_7d": -7.8679572587208355,
-      "mcap_usd": null,
-      "url": "https://app.optimism.io/bridge/deposit",
-      "logo": "https://icons.llamao.fi/icons/protocols/optimism-bridge"
     },
     {
       "name": "Convex Finance",
@@ -2433,10 +2391,10 @@
         "Arbitrum",
         "Polygon"
       ],
-      "tvl_usd": 429887615,
-      "tvl_change_24h": -1.4076509563394666,
-      "tvl_change_7d": -12.924039720958021,
-      "mcap_usd": 129677037.29117829,
+      "tvl_usd": 435492515,
+      "tvl_change_24h": 1.3038058922793851,
+      "tvl_change_7d": -11.489100940303771,
+      "mcap_usd": 131157030.38102265,
       "url": "https://www.convexfinance.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/convex-finance"
     },
@@ -2447,10 +2405,10 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 428396664,
-      "tvl_change_24h": -2.6393675566265955,
-      "tvl_change_7d": -13.539964244507956,
-      "mcap_usd": 1823276.326252314,
+      "tvl_usd": 429128598,
+      "tvl_change_24h": -0.3090958428435613,
+      "tvl_change_7d": -13.29727757614637,
+      "mcap_usd": 1823413.5387617964,
       "url": "https://www.methprotocol.xyz/",
       "logo": "https://icons.llamao.fi/icons/protocols/meth-protocol"
     },
@@ -2462,9 +2420,9 @@
         "Bitcoin",
         "Ethereum"
       ],
-      "tvl_usd": 420437168,
-      "tvl_change_24h": -1.4969041640559055,
-      "tvl_change_7d": -17.928066198573177,
+      "tvl_usd": 421883104,
+      "tvl_change_24h": -0.30126650008176625,
+      "tvl_change_7d": -17.928381121507726,
       "mcap_usd": null,
       "url": "https://www.lombard.finance/app/stake/?referrer=ssybnl",
       "logo": "https://icons.llamao.fi/icons/protocols/lombard-lbtc"
@@ -2492,9 +2450,9 @@
         "Linea",
         "EOS"
       ],
-      "tvl_usd": 416113556,
-      "tvl_change_24h": -1.266592034798947,
-      "tvl_change_7d": -11.684377719886058,
+      "tvl_usd": 420900115,
+      "tvl_change_24h": 0.6597614213203116,
+      "tvl_change_7d": -9.456893934059934,
       "mcap_usd": null,
       "url": "https://indodax.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/indodax"
@@ -2508,9 +2466,9 @@
         "Ethereum",
         "Ripple"
       ],
-      "tvl_usd": 409243680,
-      "tvl_change_24h": -2.086862755260256,
-      "tvl_change_7d": -13.278189760652467,
+      "tvl_usd": 413017814,
+      "tvl_change_24h": 0.8716165411488248,
+      "tvl_change_7d": -12.508986941025398,
       "mcap_usd": null,
       "url": "https://korbit.co.kr",
       "logo": "https://icons.llamao.fi/icons/protocols/korbit"
@@ -2522,9 +2480,9 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 386666913,
-      "tvl_change_24h": -1.6324950815023556,
-      "tvl_change_7d": -13.621497574507913,
+      "tvl_usd": 391575883,
+      "tvl_change_24h": 1.2695602904361039,
+      "tvl_change_7d": -12.454036532806015,
       "mcap_usd": null,
       "url": "https://www.lorenzo-protocol.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/lorenzo-enzobtc"
@@ -2536,12 +2494,26 @@
       "chains": [
         "Anubis"
       ],
-      "tvl_usd": 377467667,
-      "tvl_change_24h": 4.627014714149524,
-      "tvl_change_7d": 9.396368825588937,
+      "tvl_usd": 381359975,
+      "tvl_change_24h": 1.031163175212015,
+      "tvl_change_7d": 12.044244352415816,
       "mcap_usd": null,
       "url": null,
       "logo": "https://icons.llamao.fi/icons/protocols/rocketswap-anubis-v2"
+    },
+    {
+      "name": "Jupiter Staked SOL",
+      "slug": "jupiter-staked-sol",
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 379292886,
+      "tvl_change_24h": 3.4468500425310538,
+      "tvl_change_7d": -12.22136276459625,
+      "mcap_usd": null,
+      "url": "https://jup.ag/?ref=f6y1ryr2snn3",
+      "logo": "https://icons.llamao.fi/icons/protocols/jupiter-staked-sol"
     },
     {
       "name": "SolvBTC",
@@ -2561,26 +2533,26 @@
         "Avalanche",
         "BOB"
       ],
-      "tvl_usd": 372972706,
-      "tvl_change_24h": -2.9298898276083634,
-      "tvl_change_7d": -18.76688296424298,
+      "tvl_usd": 376406023,
+      "tvl_change_24h": 0.9205277056392589,
+      "tvl_change_7d": -17.87060493936204,
       "mcap_usd": null,
       "url": "https://app.solv.finance/solvbtc",
       "logo": "https://icons.llamao.fi/icons/protocols/solvbtc"
     },
     {
-      "name": "Jupiter Staked SOL",
-      "slug": "jupiter-staked-sol",
+      "name": "Coinbase Wrapped Staked ETH",
+      "slug": "coinbase-wrapped-staked-eth",
       "category": "Liquid Staking",
       "chains": [
-        "Solana"
+        "Ethereum"
       ],
-      "tvl_usd": 366654843,
-      "tvl_change_24h": -1.692014434493089,
-      "tvl_change_7d": -16.53951352645913,
+      "tvl_usd": 368507208,
+      "tvl_change_24h": 2.150728937272305,
+      "tvl_change_7d": -11.448194784771061,
       "mcap_usd": null,
-      "url": "https://jup.ag/?ref=f6y1ryr2snn3",
-      "logo": "https://icons.llamao.fi/icons/protocols/jupiter-staked-sol"
+      "url": "https://www.coinbase.com/price/coinbase-wrapped-staked-eth",
+      "logo": "https://icons.llamao.fi/icons/protocols/coinbase-wrapped-staked-eth"
     },
     {
       "name": "Huma",
@@ -2592,43 +2564,26 @@
         "Stellar",
         "Monad"
       ],
-      "tvl_usd": 366545393,
-      "tvl_change_24h": 2.1643011070515854,
-      "tvl_change_7d": 6.304129768479669,
-      "mcap_usd": 11611091.752643412,
+      "tvl_usd": 351373665,
+      "tvl_change_24h": -4.142729677575488,
+      "tvl_change_7d": -2.537953693282361,
+      "mcap_usd": 13911559.391454337,
       "url": "https://app.huma.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/huma"
     },
     {
-      "name": "Coinbase Wrapped Staked ETH",
-      "slug": "coinbase-wrapped-staked-eth",
-      "category": "Liquid Staking",
+      "name": "Mantle Bridge",
+      "slug": "mantle-bridge",
+      "category": "Canonical Bridge",
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 360748486,
-      "tvl_change_24h": -1.6429878273293639,
-      "tvl_change_7d": -13.903755285142154,
-      "mcap_usd": null,
-      "url": "https://www.coinbase.com/price/coinbase-wrapped-staked-eth",
-      "logo": "https://icons.llamao.fi/icons/protocols/coinbase-wrapped-staked-eth"
-    },
-    {
-      "name": "Merlins Seal",
-      "slug": "merlins-seal",
-      "category": "Bridge",
-      "chains": [
-        "Bitcoin",
-        "Ethereum",
-        "Arbitrum",
-        "Zkfair"
-      ],
-      "tvl_usd": 330944718,
-      "tvl_change_24h": -1.7167602340363715,
-      "tvl_change_7d": -13.607811102966494,
-      "mcap_usd": 40289906.84747142,
-      "url": "https://merlinchain.io/bridge/staking",
-      "logo": "https://icons.llamao.fi/icons/protocols/merlins-seal"
+      "tvl_usd": 340855334,
+      "tvl_change_24h": 275.0072569870953,
+      "tvl_change_7d": 239.37272943235877,
+      "mcap_usd": 1300007369.4890938,
+      "url": "https://app.mantle.xyz/bridge",
+      "logo": "https://icons.llamao.fi/icons/protocols/mantle-bridge"
     },
     {
       "name": "Bittensor dTAO",
@@ -2637,9 +2592,9 @@
       "chains": [
         "Bittensor"
       ],
-      "tvl_usd": 329482651,
-      "tvl_change_24h": -2.6595186623878675,
-      "tvl_change_7d": -16.650581018048115,
+      "tvl_usd": 340009066,
+      "tvl_change_24h": 1.8759489770444873,
+      "tvl_change_7d": -13.202492962034256,
       "mcap_usd": null,
       "url": "https://bittensor.com",
       "logo": "https://icons.llamao.fi/icons/protocols/bittensor-dtao"
@@ -2656,18 +2611,35 @@
         "Solana",
         "Arbitrum",
         "Plasma",
-        "Optimism",
         "Linea",
+        "Optimism",
         "zkSync Era",
         "Binance",
         "Sonic"
       ],
-      "tvl_usd": 325906642,
-      "tvl_change_24h": 0.18468740626833835,
-      "tvl_change_7d": 7.495804887594957,
+      "tvl_usd": 336541636,
+      "tvl_change_24h": 3.263202741209099,
+      "tvl_change_7d": 10.061992995057082,
       "mcap_usd": null,
       "url": "https://bitvavo.com/en",
       "logo": "https://icons.llamao.fi/icons/protocols/bitvavo"
+    },
+    {
+      "name": "Merlins Seal",
+      "slug": "merlins-seal",
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Arbitrum",
+        "Zkfair"
+      ],
+      "tvl_usd": 335103866,
+      "tvl_change_24h": 1.2567498941483422,
+      "tvl_change_7d": -12.530742445320712,
+      "mcap_usd": 41150550.64453626,
+      "url": "https://merlinchain.io/bridge/staking",
+      "logo": "https://icons.llamao.fi/icons/protocols/merlins-seal"
     },
     {
       "name": "Ethena USDtb",
@@ -2676,9 +2648,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 317853624,
-      "tvl_change_24h": 0.021840784003330782,
-      "tvl_change_7d": -23.714981746708148,
+      "tvl_usd": 317848308,
+      "tvl_change_24h": -0.0016726624407965573,
+      "tvl_change_7d": -23.7092610058901,
       "mcap_usd": null,
       "url": "https://usdtb.money",
       "logo": "https://icons.llamao.fi/icons/protocols/ethena-usdtb"
@@ -2690,26 +2662,12 @@
       "chains": [
         "Polygon"
       ],
-      "tvl_usd": 315937812,
-      "tvl_change_24h": -0.2057940092837498,
-      "tvl_change_7d": 3.284136757015716,
+      "tvl_usd": 316908485,
+      "tvl_change_24h": 0.3637209665304084,
+      "tvl_change_7d": 3.010948284543801,
       "mcap_usd": null,
       "url": "https://polymarket.com",
       "logo": "https://icons.llamao.fi/icons/protocols/polymarket-international"
-    },
-    {
-      "name": "OnRe",
-      "slug": "onre",
-      "category": "RWA",
-      "chains": [
-        "Solana"
-      ],
-      "tvl_usd": 303063286,
-      "tvl_change_24h": -0.13258077890382935,
-      "tvl_change_7d": -2.0164821432834685,
-      "mcap_usd": null,
-      "url": "https://app.onre.finance",
-      "logo": "https://icons.llamao.fi/icons/protocols/onre"
     },
     {
       "name": "ether.fi Liquid",
@@ -2718,12 +2676,26 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 297659864,
-      "tvl_change_24h": -3.729233224304579,
-      "tvl_change_7d": -15.854380324715606,
+      "tvl_usd": 301480129,
+      "tvl_change_24h": 1.2834332515761986,
+      "tvl_change_7d": -14.133578353461203,
       "mcap_usd": null,
       "url": "https://www.ether.fi",
       "logo": "https://icons.llamao.fi/icons/protocols/ether.fi"
+    },
+    {
+      "name": "OnRe",
+      "slug": "onre",
+      "category": "RWA",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 295478914,
+      "tvl_change_24h": -2.5025703211547636,
+      "tvl_change_7d": -4.483989180341538,
+      "mcap_usd": null,
+      "url": "https://app.onre.finance",
+      "logo": "https://icons.llamao.fi/icons/protocols/onre"
     },
     {
       "name": "Forward Industries SOL",
@@ -2732,9 +2704,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 289465216,
-      "tvl_change_24h": -0.5347643676109897,
-      "tvl_change_7d": 6.58587520540361,
+      "tvl_usd": 292070707,
+      "tvl_change_24h": 1.3921110198530613,
+      "tvl_change_7d": 9.031304463167558,
       "mcap_usd": null,
       "url": "https://www.forwardindustries.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/forward-industries-sol"
@@ -2747,117 +2719,54 @@
         "Optimism",
         "Scroll"
       ],
-      "tvl_usd": 284428842,
-      "tvl_change_24h": 0.10259720544306106,
-      "tvl_change_7d": -3.4980093698927988,
+      "tvl_usd": 285938566,
+      "tvl_change_24h": 0.5701216067728296,
+      "tvl_change_7d": -3.7268470643916203,
       "mcap_usd": null,
       "url": "https://www.ether.fi",
       "logo": "https://icons.llamao.fi/icons/protocols/etherfi-borrowing-market"
     },
     {
-      "name": "CIAN Yield Layer",
-      "slug": "cian-yield-layer",
-      "category": "Yield Aggregator",
-      "chains": [
-        "Ethereum",
-        "Mantle",
-        "Arbitrum",
-        "Optimism",
-        "Base",
-        "Binance",
-        "Scroll"
-      ],
-      "tvl_usd": 264208340,
-      "tvl_change_24h": -1.4979077675982353,
-      "tvl_change_7d": -1.7237321967466102,
-      "mcap_usd": null,
-      "url": "https://yieldlayer.cian.app/vaults/0xB13aa2d0345b0439b064f26B82D8dCf3f508775d?chainId=1&utm_source=TPFDZE",
-      "logo": "https://icons.llamao.fi/icons/protocols/cian-yield-layer"
-    },
-    {
-      "name": "Bitunix",
-      "slug": "bitunix",
+      "name": "Backpack",
+      "slug": "backpack",
       "category": "CEX",
       "chains": [
-        "Ethereum",
-        "Bitcoin",
-        "Tron",
-        "Ripple",
-        "Binance",
         "Solana",
+        "Bitcoin",
+        "Ethereum",
+        "Hyperliquid L1",
+        "Zcash",
+        "Near",
+        "Sui",
+        "Ripple",
+        "Base",
         "Arbitrum",
         "Optimism",
-        "Avalanche",
-        "Base",
-        "TON",
+        "Monad",
         "Polygon",
-        "Cardano",
-        "Litecoin"
+        "Binance",
+        "Doge",
+        "Tron",
+        "Arc",
+        "Sei",
+        "Aptos",
+        "Plasma",
+        "Robinhood Chain",
+        "Tempo",
+        "Stable",
+        "Fogo",
+        "0G",
+        "Avalanche",
+        "Eclipse",
+        "Litecoin",
+        "Bitcoincash"
       ],
-      "tvl_usd": 263454910,
-      "tvl_change_24h": 0.16621239003154642,
-      "tvl_change_7d": -2.138863843731116,
-      "mcap_usd": null,
-      "url": "https://www.bitunix.com",
-      "logo": "https://icons.llamao.fi/icons/protocols/bitunix"
-    },
-    {
-      "name": "M0",
-      "slug": "m0",
-      "category": "Stablecoin Issuer",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 262883885,
-      "tvl_change_24h": 2.8979179301877878,
-      "tvl_change_7d": 6.162309540351373,
-      "mcap_usd": null,
-      "url": "https://www.m0.org/",
-      "logo": "https://icons.llamao.fi/icons/protocols/m0"
-    },
-    {
-      "name": "tBTC",
-      "slug": "tbtc",
-      "category": "Decentralized BTC",
-      "chains": [
-        "Bitcoin",
-        "Ethereum"
-      ],
-      "tvl_usd": 262800389,
-      "tvl_change_24h": -2.7951336448858655,
-      "tvl_change_7d": -18.026327269445645,
-      "mcap_usd": null,
-      "url": "https://threshold.network/",
-      "logo": "https://icons.llamao.fi/icons/protocols/tbtc"
-    },
-    {
-      "name": "Orca DEX",
-      "slug": "orca-dex",
-      "category": "Dexs",
-      "chains": [
-        "Solana",
-        "Eclipse"
-      ],
-      "tvl_usd": 252854991,
-      "tvl_change_24h": 0.8121323966655609,
-      "tvl_change_7d": -8.665304987395416,
-      "mcap_usd": null,
-      "url": "https://www.orca.so",
-      "logo": "https://icons.llamao.fi/icons/protocols/orca-dex"
-    },
-    {
-      "name": "HyperLend Pooled",
-      "slug": "hyperlend-pooled",
-      "category": "Lending",
-      "chains": [
-        "Hyperliquid L1"
-      ],
-      "tvl_usd": 250946542,
-      "tvl_change_24h": -3.1709056299422116,
-      "tvl_change_7d": -12.650908050735197,
-      "mcap_usd": null,
-      "url": "https://app.hyperlend.finance/?ref=DEFILLAMA",
-      "logo": "https://icons.llamao.fi/icons/protocols/hyperlend"
+      "tvl_usd": 277667037,
+      "tvl_change_24h": -39.34928188032926,
+      "tvl_change_7d": -44.24877331025818,
+      "mcap_usd": 270127931.76192653,
+      "url": "https://backpack.exchange",
+      "logo": "https://icons.llamao.fi/icons/protocols/backpack"
     },
     {
       "name": "RockawayX",
@@ -2875,26 +2784,117 @@
         "Etherlink",
         "Plume Mainnet"
       ],
-      "tvl_usd": 247191940,
-      "tvl_change_24h": 0.7896674741984242,
-      "tvl_change_7d": -17.377810086138552,
+      "tvl_usd": 270220089,
+      "tvl_change_24h": 9.315897926518886,
+      "tvl_change_7d": -6.891999615099337,
       "mcap_usd": null,
       "url": "https://rockawayx.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/rockawayx"
     },
     {
-      "name": "SUNSwap V2",
-      "slug": "sunswap-v2",
+      "name": "CIAN Yield Layer",
+      "slug": "cian-yield-layer",
+      "category": "Yield Aggregator",
+      "chains": [
+        "Ethereum",
+        "Mantle",
+        "Arbitrum",
+        "Optimism",
+        "Base",
+        "Binance",
+        "Scroll"
+      ],
+      "tvl_usd": 267891660,
+      "tvl_change_24h": 1.39409711198077,
+      "tvl_change_7d": -0.08726371777707698,
+      "mcap_usd": null,
+      "url": "https://yieldlayer.cian.app/vaults/0xB13aa2d0345b0439b064f26B82D8dCf3f508775d?chainId=1&utm_source=TPFDZE",
+      "logo": "https://icons.llamao.fi/icons/protocols/cian-yield-layer"
+    },
+    {
+      "name": "M0",
+      "slug": "m0",
+      "category": "Stablecoin Issuer",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 267366558,
+      "tvl_change_24h": 1.709751203664439,
+      "tvl_change_7d": 6.7279517417088215,
+      "mcap_usd": null,
+      "url": "https://www.m0.org/",
+      "logo": "https://icons.llamao.fi/icons/protocols/m0"
+    },
+    {
+      "name": "HyperLend Pooled",
+      "slug": "hyperlend-pooled",
+      "category": "Lending",
+      "chains": [
+        "Hyperliquid L1"
+      ],
+      "tvl_usd": 260230001,
+      "tvl_change_24h": 0.6717602781028802,
+      "tvl_change_7d": -9.8111134662839,
+      "mcap_usd": null,
+      "url": "https://app.hyperlend.finance/?ref=DEFILLAMA",
+      "logo": "https://icons.llamao.fi/icons/protocols/hyperlend"
+    },
+    {
+      "name": "tBTC",
+      "slug": "tbtc",
+      "category": "Decentralized BTC",
+      "chains": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "tvl_usd": 260215567,
+      "tvl_change_24h": -0.9835687088504415,
+      "tvl_change_7d": -18.886141344976792,
+      "mcap_usd": null,
+      "url": "https://threshold.network/",
+      "logo": "https://icons.llamao.fi/icons/protocols/tbtc"
+    },
+    {
+      "name": "Bitunix",
+      "slug": "bitunix",
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Bitcoin",
+        "Tron",
+        "Binance",
+        "Ripple",
+        "Solana",
+        "Avalanche",
+        "Optimism",
+        "Base",
+        "Polygon",
+        "Arbitrum",
+        "TON",
+        "Cardano",
+        "Litecoin"
+      ],
+      "tvl_usd": 259792472,
+      "tvl_change_24h": -1.6548964092504548,
+      "tvl_change_7d": -3.3808981214126845,
+      "mcap_usd": null,
+      "url": "https://www.bitunix.com",
+      "logo": "https://icons.llamao.fi/icons/protocols/bitunix"
+    },
+    {
+      "name": "Orca DEX",
+      "slug": "orca-dex",
       "category": "Dexs",
       "chains": [
-        "Tron"
+        "Solana",
+        "Eclipse"
       ],
-      "tvl_usd": 245831112,
-      "tvl_change_24h": -1.2991194152686205,
-      "tvl_change_7d": -3.146853974338825,
+      "tvl_usd": 254693334,
+      "tvl_change_24h": 0.415002495995509,
+      "tvl_change_7d": -8.402069126621456,
       "mcap_usd": null,
-      "url": "https://sunswap.com/#/home",
-      "logo": "https://icons.llamao.fi/icons/protocols/sunswap-v2"
+      "url": "https://www.orca.so",
+      "logo": "https://icons.llamao.fi/icons/protocols/orca-dex"
     },
     {
       "name": "PumpSwap",
@@ -2903,41 +2903,12 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 245134519,
-      "tvl_change_24h": 1.086126447559991,
-      "tvl_change_7d": -17.72885788966343,
+      "tvl_usd": 252142107,
+      "tvl_change_24h": 2.5291979602240104,
+      "tvl_change_7d": -7.753226042644343,
       "mcap_usd": null,
       "url": "https://swap.pump.fun",
       "logo": "https://icons.llamao.fi/icons/protocols/pumpswap"
-    },
-    {
-      "name": "Phemex",
-      "slug": "phemex",
-      "category": "CEX",
-      "chains": [
-        "Ethereum",
-        "Bitcoin",
-        "Solana",
-        "Ripple",
-        "Tron",
-        "Binance",
-        "Sui",
-        "Arbitrum",
-        "Base",
-        "Polygon",
-        "Avalanche",
-        "Optimism",
-        "Polkadot",
-        "zkSync Era",
-        "Linea",
-        "Fantom"
-      ],
-      "tvl_usd": 244411033,
-      "tvl_change_24h": 1.6947141805180337,
-      "tvl_change_7d": -6.7501210688902376,
-      "mcap_usd": null,
-      "url": "https://phemex.com",
-      "logo": "https://icons.llamao.fi/icons/protocols/phemex"
     },
     {
       "name": "Bedrock uniBTC",
@@ -2963,28 +2934,69 @@
         "Bitlayer",
         "BOB"
       ],
-      "tvl_usd": 242499389,
-      "tvl_change_24h": -1.7947731643300244,
-      "tvl_change_7d": -24.680433192465145,
+      "tvl_usd": 246357556,
+      "tvl_change_24h": 1.5910009828711225,
+      "tvl_change_7d": -23.576535698756174,
       "mcap_usd": null,
       "url": "https://app.bedrock.technology/",
       "logo": "https://icons.llamao.fi/icons/protocols/bedrock-unibtc"
     },
     {
-      "name": "OpenTrade",
-      "slug": "opentrade",
-      "category": "RWA",
+      "name": "SUNSwap V2",
+      "slug": "sunswap-v2",
+      "category": "Dexs",
       "chains": [
-        "Avalanche",
-        "Ethereum",
-        "Plume Mainnet"
+        "Tron"
       ],
-      "tvl_usd": 241504637,
-      "tvl_change_24h": -0.01616078906823759,
-      "tvl_change_7d": -1.6914998890261614,
+      "tvl_usd": 243896310,
+      "tvl_change_24h": -0.7870452969803807,
+      "tvl_change_7d": -3.285757266158967,
       "mcap_usd": null,
-      "url": "https://www.opentrade.io",
-      "logo": "https://icons.llamao.fi/icons/protocols/opentrade"
+      "url": "https://sunswap.com/#/home",
+      "logo": "https://icons.llamao.fi/icons/protocols/sunswap-v2"
+    },
+    {
+      "name": "World Chain Bridge",
+      "slug": "world-chain-bridge",
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 243132651,
+      "tvl_change_24h": 2.693310677892555,
+      "tvl_change_7d": -14.258329563510515,
+      "mcap_usd": null,
+      "url": "https://world.org/",
+      "logo": "https://icons.llamao.fi/icons/protocols/world-chain"
+    },
+    {
+      "name": "Phemex",
+      "slug": "phemex",
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Bitcoin",
+        "Solana",
+        "Ripple",
+        "Tron",
+        "Sui",
+        "Binance",
+        "Arbitrum",
+        "Base",
+        "Polygon",
+        "Avalanche",
+        "Optimism",
+        "Polkadot",
+        "zkSync Era",
+        "Linea",
+        "Fantom"
+      ],
+      "tvl_usd": 242885714,
+      "tvl_change_24h": -0.6240795675483355,
+      "tvl_change_7d": -6.4547944547835385,
+      "mcap_usd": null,
+      "url": "https://phemex.com",
+      "logo": "https://icons.llamao.fi/icons/protocols/phemex"
     },
     {
       "name": "Euler V2",
@@ -2995,8 +3007,8 @@
         "Ethereum",
         "Base",
         "Avalanche",
-        "Unichain",
         "Plasma",
+        "Unichain",
         "Hyperliquid L1",
         "Arbitrum",
         "BOB",
@@ -3008,9 +3020,9 @@
         "Swellchain",
         "Mantle"
       ],
-      "tvl_usd": 240115554,
-      "tvl_change_24h": -0.8318664397614128,
-      "tvl_change_7d": -12.336878561495553,
+      "tvl_usd": 239306918,
+      "tvl_change_24h": -0.6069755541173123,
+      "tvl_change_7d": -5.707668447798184,
       "mcap_usd": null,
       "url": "https://www.euler.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/euler-v2"
@@ -3022,40 +3034,26 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 237257230,
-      "tvl_change_24h": -2.0692263921604166,
-      "tvl_change_7d": -14.959028446057872,
+      "tvl_usd": 238900099,
+      "tvl_change_24h": 0.021620541537387794,
+      "tvl_change_7d": -13.525789323481547,
       "mcap_usd": null,
       "url": "https://symbiotic.fi",
       "logo": "https://icons.llamao.fi/icons/protocols/symbiotic"
     },
     {
-      "name": "World Chain Bridge",
-      "slug": "world-chain-bridge",
-      "category": "Canonical Bridge",
+      "name": "Tydro",
+      "slug": "tydro",
+      "category": "Lending",
       "chains": [
-        "Ethereum"
+        "Ink"
       ],
-      "tvl_usd": 236756074,
-      "tvl_change_24h": -0.25731701880251023,
-      "tvl_change_7d": -16.635358524077077,
+      "tvl_usd": 232089576,
+      "tvl_change_24h": 127.38870427821024,
+      "tvl_change_7d": 98.5555462594628,
       "mcap_usd": null,
-      "url": "https://world.org/",
-      "logo": "https://icons.llamao.fi/icons/protocols/world-chain"
-    },
-    {
-      "name": "Nexus BTC",
-      "slug": "nexus-btc",
-      "category": "Bridge",
-      "chains": [
-        "Bitcoin"
-      ],
-      "tvl_usd": 232963934,
-      "tvl_change_24h": 6.712723683900279,
-      "tvl_change_7d": -30.119520466750828,
-      "mcap_usd": null,
-      "url": "https://www.bit.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/nexus-btc"
+      "url": "https://tydro.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/tydro"
     },
     {
       "name": "Morpho Midnight",
@@ -3065,9 +3063,9 @@
         "Ethereum",
         "Base"
       ],
-      "tvl_usd": 224537212,
-      "tvl_change_24h": 11.540771482876025,
-      "tvl_change_7d": 39.9013909348875,
+      "tvl_usd": 228150947,
+      "tvl_change_24h": 1.6094148526884595,
+      "tvl_change_7d": 37.60574911121901,
       "mcap_usd": null,
       "url": "https://app.morpho.org",
       "logo": "https://icons.llamao.fi/icons/protocols/morpho-midnight"
@@ -3079,12 +3077,26 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 222110344,
-      "tvl_change_24h": -1.8903879978710165,
-      "tvl_change_7d": -13.695392308984964,
+      "tvl_usd": 225070524,
+      "tvl_change_24h": 1.3327520648939384,
+      "tvl_change_7d": -12.47643747783603,
       "mcap_usd": null,
       "url": "https://www.gate.com/staking/BTC",
       "logo": "https://icons.llamao.fi/icons/protocols/gate-btc"
+    },
+    {
+      "name": "Aave Horizon RWA",
+      "slug": "aave-horizon-rwa",
+      "category": "Lending",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 222578923,
+      "tvl_change_24h": 0.9575879205092832,
+      "tvl_change_7d": 1.7316814126681237,
+      "mcap_usd": null,
+      "url": "https://app.aave.com/markets/?marketName=proto_horizon_v3",
+      "logo": "https://icons.llamao.fi/icons/protocols/aave-horizon-rwa"
     },
     {
       "name": "EtherFi Cash Liquid",
@@ -3094,26 +3106,26 @@
         "Optimism",
         "Scroll"
       ],
-      "tvl_usd": 220594261,
-      "tvl_change_24h": -1.0821469808807649,
-      "tvl_change_7d": -5.982469946544029,
+      "tvl_usd": 221650462,
+      "tvl_change_24h": 0.1522131061701799,
+      "tvl_change_7d": -5.683122362948339,
       "mcap_usd": null,
       "url": "https://www.ether.fi",
       "logo": "https://icons.llamao.fi/icons/protocols/etherfi-cash-liquid"
     },
     {
-      "name": "Aave Horizon RWA",
-      "slug": "aave-horizon-rwa",
-      "category": "Lending",
+      "name": "xDAI Stake Bridge",
+      "slug": "xdai-stake-bridge",
+      "category": "Canonical Bridge",
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 220453429,
-      "tvl_change_24h": -0.014542403959268313,
-      "tvl_change_7d": 0.581992446790764,
-      "mcap_usd": null,
-      "url": "https://app.aave.com/markets/?marketName=proto_horizon_v3",
-      "logo": "https://icons.llamao.fi/icons/protocols/aave-horizon-rwa"
+      "tvl_usd": 216014521,
+      "tvl_change_24h": 4.772831593723197,
+      "tvl_change_7d": -10.856186292326683,
+      "mcap_usd": 55553.95256801086,
+      "url": "https://www.gnosis.io/",
+      "logo": "https://icons.llamao.fi/icons/protocols/xdai-stake"
     },
     {
       "name": "Hyperithm",
@@ -3128,33 +3140,15 @@
         "Hyperliquid L1",
         "Katana",
         "Stable",
-        "Binance",
-        "XRPL EVM"
+        "XRPL EVM",
+        "Binance"
       ],
-      "tvl_usd": 218331586,
-      "tvl_change_24h": -0.4109194808293637,
-      "tvl_change_7d": -5.398685637073271,
+      "tvl_usd": 214613577,
+      "tvl_change_24h": -1.7029187780706678,
+      "tvl_change_7d": -5.656446754413196,
       "mcap_usd": null,
       "url": "https://www.hyperithm.com",
       "logo": "https://icons.llamao.fi/icons/protocols/hyperithm"
-    },
-    {
-      "name": "Plume Vaults",
-      "slug": "plume-vaults",
-      "category": "RWA",
-      "chains": [
-        "Ethereum",
-        "Plume Mainnet",
-        "Solana",
-        "Binance",
-        "Avalanche"
-      ],
-      "tvl_usd": 212242817,
-      "tvl_change_24h": 0.31761702579929363,
-      "tvl_change_7d": -3.214452927898037,
-      "mcap_usd": null,
-      "url": "https://app.plume.org/vaults",
-      "logo": "https://icons.llamao.fi/icons/protocols/plume-vaults"
     },
     {
       "name": "Defi Saver Asset Management",
@@ -3166,26 +3160,12 @@
         "Optimism",
         "Base"
       ],
-      "tvl_usd": 208289334,
-      "tvl_change_24h": -12.277839906177107,
-      "tvl_change_7d": -35.273390923029524,
+      "tvl_usd": 211120798,
+      "tvl_change_24h": 1.359389800685591,
+      "tvl_change_7d": -34.2504128291485,
       "mcap_usd": null,
       "url": "https://defisaver.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/defi-saver-asset-management"
-    },
-    {
-      "name": "xDAI Stake Bridge",
-      "slug": "xdai-stake-bridge",
-      "category": "Canonical Bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 206174175,
-      "tvl_change_24h": -1.4334038434907654,
-      "tvl_change_7d": -13.548107640827695,
-      "mcap_usd": 54990.42950702031,
-      "url": "https://www.gnosis.io/",
-      "logo": "https://icons.llamao.fi/icons/protocols/xdai-stake"
     },
     {
       "name": "Mellow Core",
@@ -3198,9 +3178,9 @@
         "Mezo",
         "Monad"
       ],
-      "tvl_usd": 205630421,
-      "tvl_change_24h": -7.803447780692437,
-      "tvl_change_7d": -16.179614015130156,
+      "tvl_usd": 209822448,
+      "tvl_change_24h": 2.0386222065010884,
+      "tvl_change_7d": -14.357269012660339,
       "mcap_usd": null,
       "url": "https://app.mellow.finance/vaults",
       "logo": "https://icons.llamao.fi/icons/protocols/mellow-core"
@@ -3212,12 +3192,26 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 204642556,
-      "tvl_change_24h": -1.7320543330062321,
-      "tvl_change_7d": -14.219955425821084,
+      "tvl_usd": 208327006,
+      "tvl_change_24h": 1.6879066171516541,
+      "tvl_change_7d": -12.376742692952007,
       "mcap_usd": null,
       "url": "https://lightning.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/lightning-network"
+    },
+    {
+      "name": "Drift Staked SOL",
+      "slug": "drift-staked-sol",
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 205752814,
+      "tvl_change_24h": 3.4694945912521433,
+      "tvl_change_7d": -12.892261487956475,
+      "mcap_usd": null,
+      "url": "https://app.drift.trade",
+      "logo": "https://icons.llamao.fi/icons/protocols/drift-staked-sol"
     },
     {
       "name": "BitFi Basis",
@@ -3232,12 +3226,26 @@
         "Bitlayer",
         "CORE"
       ],
-      "tvl_usd": 203820437,
-      "tvl_change_24h": -1.2696523873760128,
-      "tvl_change_7d": -12.70356482891819,
+      "tvl_usd": 205100525,
+      "tvl_change_24h": 0.6280468933523196,
+      "tvl_change_7d": -12.457697151116633,
       "mcap_usd": null,
       "url": "https://www.bitfi.one",
       "logo": "https://icons.llamao.fi/icons/protocols/bitfi-basis"
+    },
+    {
+      "name": "Marinade Native",
+      "slug": "marinade-native",
+      "category": "Staking Pool",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 201603464,
+      "tvl_change_24h": 2.7771975763513126,
+      "tvl_change_7d": -32.566275281461714,
+      "mcap_usd": null,
+      "url": "https://app.marinade.finance/",
+      "logo": "https://icons.llamao.fi/icons/protocols/marinade-finance"
     },
     {
       "name": "Solstice",
@@ -3246,63 +3254,26 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 201066515,
-      "tvl_change_24h": -0.009753262880863645,
-      "tvl_change_7d": -0.00007310839002627745,
-      "mcap_usd": 7256156.544022462,
+      "tvl_usd": 201065334,
+      "tvl_change_24h": -0.011998107598856222,
+      "tvl_change_7d": 0.03340420989090376,
+      "mcap_usd": 7580678.473539676,
       "url": "https://solstice.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/solstice"
     },
     {
-      "name": "Drift Staked SOL",
-      "slug": "drift-staked-sol",
-      "category": "Liquid Staking",
+      "name": "Starknet Bridge",
+      "slug": "starknet-bridge",
+      "category": "Canonical Bridge",
       "chains": [
-        "Solana"
+        "Ethereum"
       ],
-      "tvl_usd": 198853599,
-      "tvl_change_24h": -1.2780029907730466,
-      "tvl_change_7d": -17.09775879707911,
-      "mcap_usd": null,
-      "url": "https://app.drift.trade",
-      "logo": "https://icons.llamao.fi/icons/protocols/drift-staked-sol"
-    },
-    {
-      "name": "K3 Capital",
-      "slug": "k3-capital",
-      "category": "Risk Curators",
-      "chains": [
-        "Monad",
-        "Ethereum",
-        "Optimism",
-        "Plasma",
-        "Arbitrum",
-        "Binance",
-        "Hyperliquid L1",
-        "Unichain",
-        "Avalanche"
-      ],
-      "tvl_usd": 198684315,
-      "tvl_change_24h": -1.6945456340783096,
-      "tvl_change_7d": -9.473595896466293,
-      "mcap_usd": null,
-      "url": "https://k3.capital",
-      "logo": "https://icons.llamao.fi/icons/protocols/k3-capital"
-    },
-    {
-      "name": "R25",
-      "slug": "r25",
-      "category": "RWA",
-      "chains": [
-        "Pharos",
-        "Sui"
-      ],
-      "tvl_usd": 198341805,
-      "tvl_change_24h": 0.004357280747996128,
-      "tvl_change_7d": 0.2950586857465112,
-      "mcap_usd": null,
-      "url": "https://www.r25.xyz/",
-      "logo": "https://icons.llamao.fi/icons/protocols/r25"
+      "tvl_usd": 200796566,
+      "tvl_change_24h": 3.0386509360212273,
+      "tvl_change_7d": -10.400279528546946,
+      "mcap_usd": 270973207.20599145,
+      "url": "https://starkgate.starknet.io",
+      "logo": "https://icons.llamao.fi/icons/protocols/starknet-bridge"
     },
     {
       "name": "Fluid DEX",
@@ -3315,26 +3286,48 @@
         "Base",
         "Polygon"
       ],
-      "tvl_usd": 197429743,
-      "tvl_change_24h": -0.209668732467037,
-      "tvl_change_7d": -5.1036832449758265,
+      "tvl_usd": 197940260,
+      "tvl_change_24h": 0.16298360870175088,
+      "tvl_change_7d": -5.691544150896405,
       "mcap_usd": null,
       "url": "https://www.fluid.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/fluid-dex"
     },
     {
-      "name": "Marinade Native",
-      "slug": "marinade-native",
-      "category": "Staking Pool",
+      "name": "Nexus BTC",
+      "slug": "nexus-btc",
+      "category": "Bridge",
       "chains": [
-        "Solana"
+        "Bitcoin"
       ],
-      "tvl_usd": 196155829,
-      "tvl_change_24h": -1.8057980845949686,
-      "tvl_change_7d": -35.48580244097769,
+      "tvl_usd": 197100586,
+      "tvl_change_24h": -15.3943775037079,
+      "tvl_change_7d": -40.722611001650854,
       "mcap_usd": null,
-      "url": "https://app.marinade.finance/",
-      "logo": "https://icons.llamao.fi/icons/protocols/marinade-finance"
+      "url": "https://www.bit.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/nexus-btc"
+    },
+    {
+      "name": "K3 Capital",
+      "slug": "k3-capital",
+      "category": "Risk Curators",
+      "chains": [
+        "Monad",
+        "Ethereum",
+        "Optimism",
+        "Plasma",
+        "Arbitrum",
+        "Hyperliquid L1",
+        "Binance",
+        "Unichain",
+        "Avalanche"
+      ],
+      "tvl_usd": 196989024,
+      "tvl_change_24h": -2.209691141581871,
+      "tvl_change_7d": -8.59756139308466,
+      "mcap_usd": null,
+      "url": "https://k3.capital",
+      "logo": "https://icons.llamao.fi/icons/protocols/k3-capital"
     },
     {
       "name": "KPK",
@@ -3353,26 +3346,27 @@
         "Polygon",
         "Avalanche"
       ],
-      "tvl_usd": 195525787,
-      "tvl_change_24h": null,
-      "tvl_change_7d": -5.13408145247962,
+      "tvl_usd": 196000818,
+      "tvl_change_24h": 0.24295075242226005,
+      "tvl_change_7d": -4.9427440607612425,
       "mcap_usd": null,
       "url": "https://kpk.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/kpk"
     },
     {
-      "name": "Starknet Bridge",
-      "slug": "starknet-bridge",
-      "category": "Canonical Bridge",
+      "name": "R25",
+      "slug": "r25",
+      "category": "RWA",
       "chains": [
-        "Ethereum"
+        "Pharos",
+        "Sui"
       ],
-      "tvl_usd": 194874995,
-      "tvl_change_24h": -3.498526982488414,
-      "tvl_change_7d": -14.546022765960032,
-      "mcap_usd": 260614982.0943712,
-      "url": "https://starkgate.starknet.io",
-      "logo": "https://icons.llamao.fi/icons/protocols/starknet-bridge"
+      "tvl_usd": 195028455,
+      "tvl_change_24h": -1.6705254269516132,
+      "tvl_change_7d": -1.4359412527233815,
+      "mcap_usd": null,
+      "url": "https://www.r25.xyz/",
+      "logo": "https://icons.llamao.fi/icons/protocols/r25"
     },
     {
       "name": "Hive Protocol",
@@ -3381,9 +3375,9 @@
       "chains": [
         "BSquared"
       ],
-      "tvl_usd": 187152771,
-      "tvl_change_24h": -1.8103245558842644,
-      "tvl_change_7d": -13.423528997143308,
+      "tvl_usd": 189767511,
+      "tvl_change_24h": 1.3971150506402807,
+      "tvl_change_7d": -12.415818153507757,
       "mcap_usd": null,
       "url": "https://hive.bsquared.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/hive-protocol"
@@ -3398,9 +3392,9 @@
         "MegaETH",
         "Botanix"
       ],
-      "tvl_usd": 185975451,
-      "tvl_change_24h": -0.0346875616429827,
-      "tvl_change_7d": -5.168863791763343,
+      "tvl_usd": 189256480,
+      "tvl_change_24h": 1.7642271860809728,
+      "tvl_change_7d": -3.3737430117450486,
       "mcap_usd": null,
       "url": "https://gmx.io",
       "logo": "https://icons.llamao.fi/icons/protocols/gmx-evm"
@@ -3412,12 +3406,26 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 181148952,
-      "tvl_change_24h": -1.482168334078267,
-      "tvl_change_7d": -9.811654930773159,
+      "tvl_usd": 183928515,
+      "tvl_change_24h": 1.1749992194598065,
+      "tvl_change_7d": -7.204087358038919,
       "mcap_usd": null,
       "url": "https://app.olympusdao.finance/#/lending/cooler",
       "logo": "https://icons.llamao.fi/icons/protocols/cooler-loans"
+    },
+    {
+      "name": "Fluid Lite",
+      "slug": "fluid-lite",
+      "category": "Yield Aggregator",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 181010277,
+      "tvl_change_24h": 12.612339181436454,
+      "tvl_change_7d": -2.86094087049797,
+      "mcap_usd": null,
+      "url": "https://www.fluid.io/",
+      "logo": "https://icons.llamao.fi/icons/protocols/fluid-lite"
     },
     {
       "name": "WEEX",
@@ -3441,26 +3449,12 @@
         "zkSync Era",
         "Op_Bnb"
       ],
-      "tvl_usd": 180468004,
-      "tvl_change_24h": -0.46575547683268326,
-      "tvl_change_7d": -2.584301948824219,
+      "tvl_usd": 179878945,
+      "tvl_change_24h": -0.3264066422023433,
+      "tvl_change_7d": -3.4296374137527437,
       "mcap_usd": null,
       "url": "https://www.weex.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/weex"
-    },
-    {
-      "name": "Figure Markets Prime",
-      "slug": "figure-markets-prime",
-      "category": "Lending",
-      "chains": [
-        "Provenance"
-      ],
-      "tvl_usd": 180360669,
-      "tvl_change_24h": -0.27068000407555814,
-      "tvl_change_7d": 11.866567417720717,
-      "mcap_usd": null,
-      "url": "https://www.figure.com/crypto-backed-loan/",
-      "logo": "https://icons.llamao.fi/icons/protocols/figure-markets-prime"
     },
     {
       "name": "Linea Bridge",
@@ -3469,9 +3463,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 177279243,
-      "tvl_change_24h": -0.9482989041994045,
-      "tvl_change_7d": -10.508111825153037,
+      "tvl_usd": 179358371,
+      "tvl_change_24h": 1.1727985364574636,
+      "tvl_change_7d": -9.024269373062822,
       "mcap_usd": null,
       "url": "https://bridge.linea.build",
       "logo": "https://icons.llamao.fi/icons/protocols/linea-bridge"
@@ -3483,9 +3477,9 @@
       "chains": [
         "Avalanche"
       ],
-      "tvl_usd": 170123987,
-      "tvl_change_24h": -2.1147318253248955,
-      "tvl_change_7d": -16.609943698888074,
+      "tvl_usd": 174790530,
+      "tvl_change_24h": 2.7430246511927407,
+      "tvl_change_7d": -12.167708112736278,
       "mcap_usd": null,
       "url": "https://app.benqi.fi/savax",
       "logo": "https://icons.llamao.fi/icons/protocols/benqi-staked-avax"
@@ -3506,15 +3500,15 @@
         "xDai",
         "Ripple",
         "Litecoin",
-        "TON",
         "Dash",
         "Sui",
         "Doge",
         "Optimism",
+        "TON",
         "Monad",
-        "Avalanche",
         "Cardano",
         "Solana",
+        "Avalanche",
         "Stellar",
         "Berachain",
         "X Layer",
@@ -3522,26 +3516,26 @@
         "Aurora",
         "Aptos"
       ],
-      "tvl_usd": 166922706,
-      "tvl_change_24h": 0.5921244150363805,
-      "tvl_change_7d": -11.806257432388662,
+      "tvl_usd": 168130240,
+      "tvl_change_24h": 0.7234092019173346,
+      "tvl_change_7d": -10.853333296798695,
       "mcap_usd": null,
       "url": "https://near.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/near-intents"
     },
     {
-      "name": "Fraxtal",
-      "slug": "fraxtal",
-      "category": "Chain",
+      "name": "Figure Markets Prime",
+      "slug": "figure-markets-prime",
+      "category": "Lending",
       "chains": [
-        "Ethereum"
+        "Provenance"
       ],
-      "tvl_usd": 162121751,
-      "tvl_change_24h": -0.5366992361508949,
-      "tvl_change_7d": -0.9766086392287718,
+      "tvl_usd": 167087247,
+      "tvl_change_24h": -7.3593774371178995,
+      "tvl_change_7d": 9.210178953150077,
       "mcap_usd": null,
-      "url": "https://frax.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/fraxtal"
+      "url": "https://www.figure.com/crypto-backed-loan/",
+      "logo": "https://icons.llamao.fi/icons/protocols/figure-markets-prime"
     },
     {
       "name": "Solv Basis Trading",
@@ -3557,9 +3551,9 @@
         "Solana",
         "Soneium"
       ],
-      "tvl_usd": 161299749,
-      "tvl_change_24h": -2.4561498308154626,
-      "tvl_change_7d": -14.27004184578611,
+      "tvl_usd": 163341758,
+      "tvl_change_24h": 0.15116844768998305,
+      "tvl_change_7d": -13.029661106633156,
       "mcap_usd": null,
       "url": "https://solv.finance/",
       "logo": "https://icons.llamao.fi/icons/protocols/solv-basis-trading"
@@ -3571,26 +3565,26 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 160740480,
-      "tvl_change_24h": -1.3844433484313754,
-      "tvl_change_7d": -17.433484035035292,
+      "tvl_usd": 162539638,
+      "tvl_change_24h": 1.1192933999580248,
+      "tvl_change_7d": -14.919529849677389,
       "mcap_usd": null,
       "url": "https://marinade.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/marinade-finance"
     },
     {
-      "name": "Fluid Lite",
-      "slug": "fluid-lite",
-      "category": "Yield Aggregator",
+      "name": "Fraxtal",
+      "slug": "fraxtal",
+      "category": "Chain",
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 160737516,
-      "tvl_change_24h": -2.927847609348902,
-      "tvl_change_7d": -14.928094841221082,
+      "tvl_usd": 161438646,
+      "tvl_change_24h": -0.42135297797810267,
+      "tvl_change_7d": -1.4520020689490423,
       "mcap_usd": null,
-      "url": "https://www.fluid.io/",
-      "logo": "https://icons.llamao.fi/icons/protocols/fluid-lite"
+      "url": "https://frax.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/fraxtal"
     },
     {
       "name": "Stacks sBTC",
@@ -3599,12 +3593,26 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 159471550,
-      "tvl_change_24h": -1.7914808434908167,
-      "tvl_change_7d": -13.221366357170893,
+      "tvl_usd": 161408078,
+      "tvl_change_24h": 1.2143406186958146,
+      "tvl_change_7d": -12.378901468341823,
       "mcap_usd": null,
       "url": "https://docs.stacks.co/more-guides/sbtc",
       "logo": "https://icons.llamao.fi/icons/protocols/stacks-sbtc"
+    },
+    {
+      "name": "DFDV Staked SOL",
+      "slug": "dfdv-staked-sol",
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 160095844,
+      "tvl_change_24h": 3.75713092090524,
+      "tvl_change_7d": -11.498415373539956,
+      "mcap_usd": null,
+      "url": "https://defidevcorp.com/?tab=dfdvSOLcom",
+      "logo": "https://icons.llamao.fi/icons/protocols/dfdv-staked-sol"
     },
     {
       "name": "b14g",
@@ -3615,50 +3623,44 @@
         "CORE",
         "Babylon Genesis"
       ],
-      "tvl_usd": 158966715,
-      "tvl_change_24h": -0.9051749181634818,
-      "tvl_change_7d": -16.705594172787073,
+      "tvl_usd": 159195744,
+      "tvl_change_24h": 0.14407348375509343,
+      "tvl_change_7d": -16.823745977369413,
       "mcap_usd": null,
       "url": "https://www.b14g.xyz/",
       "logo": "https://icons.llamao.fi/icons/protocols/b14g"
     },
     {
-      "name": "Clearstar",
-      "slug": "clearstar",
-      "category": "Risk Curators",
+      "name": "Plume Vaults",
+      "slug": "plume-vaults",
+      "category": "RWA",
       "chains": [
-        "Base",
-        "Flare",
+        "Plume Mainnet",
         "Ethereum",
-        "Monad",
-        "Hyperliquid L1",
-        "Starknet",
-        "Katana",
-        "Arbitrum",
-        "Hemi",
-        "Polygon",
-        "Unichain"
+        "Solana",
+        "Binance",
+        "Avalanche"
       ],
-      "tvl_usd": 158887488,
-      "tvl_change_24h": 0.16942151587491594,
-      "tvl_change_7d": -8.195135073102975,
+      "tvl_usd": 158447581,
+      "tvl_change_24h": -25.346080614263798,
+      "tvl_change_7d": -27.69899601465437,
       "mcap_usd": null,
-      "url": "https://clearstar.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/clearstar"
+      "url": "https://app.plume.org/vaults",
+      "logo": "https://icons.llamao.fi/icons/protocols/plume-vaults"
     },
     {
-      "name": "Derive V3 Options",
-      "slug": "derive-v3-options",
-      "category": "Options",
+      "name": "stHYPE",
+      "slug": "sthype",
+      "category": "Liquid Staking",
       "chains": [
-        "Ethereum"
+        "Hyperliquid L1"
       ],
-      "tvl_usd": 158367921,
-      "tvl_change_24h": -6.119492673550951,
-      "tvl_change_7d": -5.500162451827947,
+      "tvl_usd": 157671635,
+      "tvl_change_24h": 4.593397049095998,
+      "tvl_change_7d": -6.186915146205038,
       "mcap_usd": null,
-      "url": "https://app.derive.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/derive"
+      "url": "https://app.valantis.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/sthype"
     },
     {
       "name": "USD AI",
@@ -3667,12 +3669,26 @@
       "chains": [
         "Arbitrum"
       ],
-      "tvl_usd": 157277908,
-      "tvl_change_24h": 0.004366954785339772,
-      "tvl_change_7d": -0.3310362046371864,
-      "mcap_usd": 54410241.84224204,
+      "tvl_usd": 157284217,
+      "tvl_change_24h": -0.015872668239509835,
+      "tvl_change_7d": -0.3497959026731081,
+      "mcap_usd": 56623179.722965285,
       "url": "https://usd.ai/",
       "logo": "https://icons.llamao.fi/icons/protocols/usd-ai"
+    },
+    {
+      "name": "Derive V3 Options",
+      "slug": "derive-v3-options",
+      "category": "Options",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 156556998,
+      "tvl_change_24h": -3.522780129122623,
+      "tvl_change_7d": -7.101662254423786,
+      "mcap_usd": null,
+      "url": "https://app.derive.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/derive"
     },
     {
       "name": "RealT Tokens",
@@ -3681,26 +3697,12 @@
       "chains": [
         "xDai"
       ],
-      "tvl_usd": 155051861,
-      "tvl_change_24h": -0.011656596115216189,
-      "tvl_change_7d": 0.008029033563332177,
+      "tvl_usd": 155050650,
+      "tvl_change_24h": -0.0007812809840572754,
+      "tvl_change_7d": 0.0029694005228293463,
       "mcap_usd": null,
       "url": null,
       "logo": "https://icons.llamao.fi/icons/protocols/realt"
-    },
-    {
-      "name": "DFDV Staked SOL",
-      "slug": "dfdv-staked-sol",
-      "category": "Liquid Staking",
-      "chains": [
-        "Solana"
-      ],
-      "tvl_usd": 154298642,
-      "tvl_change_24h": -1.3411426137004554,
-      "tvl_change_7d": -15.738035219877858,
-      "mcap_usd": null,
-      "url": "https://defidevcorp.com/?tab=dfdvSOLcom",
-      "logo": "https://icons.llamao.fi/icons/protocols/dfdv-staked-sol"
     },
     {
       "name": "Tonstakers LSD",
@@ -3709,9 +3711,9 @@
       "chains": [
         "TON"
       ],
-      "tvl_usd": 154084121,
-      "tvl_change_24h": -3.763551426645151,
-      "tvl_change_7d": -1.7181494951999383,
+      "tvl_usd": 153991048,
+      "tvl_change_24h": -0.06040445791890647,
+      "tvl_change_7d": -6.083052810637227,
       "mcap_usd": null,
       "url": "https://tonstakers.com",
       "logo": "https://icons.llamao.fi/icons/protocols/tonstakers-lsd"
@@ -3727,9 +3729,9 @@
         "Arbitrum",
         "Optimism"
       ],
-      "tvl_usd": 153467588,
-      "tvl_change_24h": -0.554142821850462,
-      "tvl_change_7d": -9.97065278129135,
+      "tvl_usd": 153829038,
+      "tvl_change_24h": 0.23552178961917036,
+      "tvl_change_7d": -9.803401531382164,
       "mcap_usd": null,
       "url": "https://www.aera.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/aera-v3"
@@ -3741,40 +3743,12 @@
       "chains": [
         "Hyperliquid L1"
       ],
-      "tvl_usd": 151846109,
-      "tvl_change_24h": 0.36651327440134196,
-      "tvl_change_7d": 1.7487262025052104,
+      "tvl_usd": 152200190,
+      "tvl_change_24h": 0.23318367113567717,
+      "tvl_change_7d": 1.9159420430310234,
       "mcap_usd": null,
       "url": "https://app.hyperliquid.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/hyperliquid"
-    },
-    {
-      "name": "stHYPE",
-      "slug": "sthype",
-      "category": "Liquid Staking",
-      "chains": [
-        "Hyperliquid L1"
-      ],
-      "tvl_usd": 150747217,
-      "tvl_change_24h": -2.125998498162204,
-      "tvl_change_7d": -9.865382580871653,
-      "mcap_usd": null,
-      "url": "https://app.valantis.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/sthype"
-    },
-    {
-      "name": "cap",
-      "slug": "cap",
-      "category": "Lending",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 150505916,
-      "tvl_change_24h": -0.27412857146075,
-      "tvl_change_7d": -16.032315702576014,
-      "mcap_usd": 162985663.1664217,
-      "url": "https://cap.app/",
-      "logo": "https://icons.llamao.fi/icons/protocols/cap"
     },
     {
       "name": "FAssets",
@@ -3784,28 +3758,36 @@
         "Ripple",
         "Flare"
       ],
-      "tvl_usd": 148154946,
-      "tvl_change_24h": -1.2282418013913627,
-      "tvl_change_7d": -11.143965457270895,
+      "tvl_usd": 151026715,
+      "tvl_change_24h": 1.938355106207851,
+      "tvl_change_7d": -9.115672629627909,
       "mcap_usd": null,
       "url": "https://fassets.au.cc/",
       "logo": "https://icons.llamao.fi/icons/protocols/fassets"
     },
     {
-      "name": "Saturn",
-      "slug": "saturn",
-      "category": "Stablecoin Wrapper",
+      "name": "Clearstar",
+      "slug": "clearstar",
+      "category": "Risk Curators",
       "chains": [
+        "Flare",
+        "Base",
         "Ethereum",
         "Monad",
-        "Binance"
+        "Hyperliquid L1",
+        "Starknet",
+        "Katana",
+        "Arbitrum",
+        "Hemi",
+        "Polygon",
+        "Unichain"
       ],
-      "tvl_usd": 148147400,
-      "tvl_change_24h": 0.511014891526699,
-      "tvl_change_7d": -3.744366765555611,
+      "tvl_usd": 149811098,
+      "tvl_change_24h": -5.712463545618618,
+      "tvl_change_7d": -12.362053538994672,
       "mcap_usd": null,
-      "url": "https://app.saturn.credit/",
-      "logo": "https://icons.llamao.fi/icons/protocols/saturn"
+      "url": "https://clearstar.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/clearstar"
     },
     {
       "name": "Lagoon",
@@ -3836,12 +3818,42 @@
         "Unichain",
         "World Chain"
       ],
-      "tvl_usd": 147939305,
-      "tvl_change_24h": -0.46525036552607446,
-      "tvl_change_7d": -4.4400413440241095,
+      "tvl_usd": 148143486,
+      "tvl_change_24h": 0.13801658263913907,
+      "tvl_change_7d": -4.066655833834744,
       "mcap_usd": null,
       "url": "https://lagoon.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/lagoon"
+    },
+    {
+      "name": "Saturn",
+      "slug": "saturn",
+      "category": "Stablecoin Wrapper",
+      "chains": [
+        "Ethereum",
+        "Monad",
+        "Binance"
+      ],
+      "tvl_usd": 147752389,
+      "tvl_change_24h": -0.26663325262319404,
+      "tvl_change_7d": -2.52700910595901,
+      "mcap_usd": null,
+      "url": "https://app.saturn.credit/",
+      "logo": "https://icons.llamao.fi/icons/protocols/saturn"
+    },
+    {
+      "name": "cap",
+      "slug": "cap",
+      "category": "Lending",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 146912930,
+      "tvl_change_24h": -2.387272185747449,
+      "tvl_change_7d": -17.585342973770764,
+      "mcap_usd": 158898476.64685905,
+      "url": "https://cap.app/",
+      "logo": "https://icons.llamao.fi/icons/protocols/cap"
     },
     {
       "name": "Avalon Superearn",
@@ -3851,9 +3863,9 @@
         "Ethereum",
         "Binance"
       ],
-      "tvl_usd": 142286547,
-      "tvl_change_24h": 0.016736528788328542,
-      "tvl_change_7d": 0.016388311710670678,
+      "tvl_usd": 142270894,
+      "tvl_change_24h": -0.0047886282523137425,
+      "tvl_change_7d": 0.005440594815283362,
       "mcap_usd": null,
       "url": "https://app.avalonfinance.xyz/earn",
       "logo": "https://icons.llamao.fi/icons/protocols/avalon-superearn"
@@ -3870,26 +3882,12 @@
         "Binance",
         "Near"
       ],
-      "tvl_usd": 140154979,
-      "tvl_change_24h": -1.4721476413256767,
-      "tvl_change_7d": -20.471304645308834,
-      "mcap_usd": 6736028.619173088,
+      "tvl_usd": 141465365,
+      "tvl_change_24h": 0.9349544871631252,
+      "tvl_change_7d": -19.143080754740552,
+      "mcap_usd": 6713461.817031378,
       "url": "https://staderlabs.com",
       "logo": "https://icons.llamao.fi/icons/protocols/stader"
-    },
-    {
-      "name": "Figure Markets Exchange",
-      "slug": "figure-markets-exchange",
-      "category": "OTC Marketplace",
-      "chains": [
-        "Provenance"
-      ],
-      "tvl_usd": 139618049,
-      "tvl_change_24h": 5.341619155063171,
-      "tvl_change_7d": 8.717733813352794,
-      "mcap_usd": null,
-      "url": "https://www.figuremarkets.com/crypto-exchange/",
-      "logo": "https://icons.llamao.fi/icons/protocols/figure-markets-exchange"
     },
     {
       "name": "Lombard BTC.b",
@@ -3898,9 +3896,9 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 139263208,
-      "tvl_change_24h": 0.90854175281045,
-      "tvl_change_7d": -11.672494992260766,
+      "tvl_usd": 139773857,
+      "tvl_change_24h": 0.36667909428165046,
+      "tvl_change_7d": -11.85913687968862,
       "mcap_usd": null,
       "url": "https://www.lombard.finance/app/stake/?referrer=ssybnl",
       "logo": "https://icons.llamao.fi/icons/protocols/lombard-btc.b"
@@ -3912,12 +3910,47 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 138581272,
-      "tvl_change_24h": -0.00825501526716721,
-      "tvl_change_7d": 0.007858955932832146,
+      "tvl_usd": 138577826,
+      "tvl_change_24h": -0.0024864415380250193,
+      "tvl_change_7d": 0.005685715466000829,
       "mcap_usd": null,
       "url": "https://app.theo.xyz/",
       "logo": "https://icons.llamao.fi/icons/protocols/theo-network-thusd"
+    },
+    {
+      "name": "Sanctum Infinity",
+      "slug": "sanctum-infinity",
+      "category": "Dexs",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 138419237,
+      "tvl_change_24h": 4.410749750481386,
+      "tvl_change_7d": -12.831188726649359,
+      "mcap_usd": null,
+      "url": "https://www.sanctum.so",
+      "logo": "https://icons.llamao.fi/icons/protocols/sanctum-infinity"
+    },
+    {
+      "name": "Aero Slipstream",
+      "slug": "aero-slipstream",
+      "category": "Dexs",
+      "chains": [
+        "Base",
+        "Ethereum",
+        "Optimism",
+        "Robinhood Chain",
+        "Arbitrum",
+        "Elysium Kinetiq",
+        "Arc",
+        "Ink"
+      ],
+      "tvl_usd": 138089188,
+      "tvl_change_24h": 15.164256491254918,
+      "tvl_change_7d": -3.631967961978546,
+      "mcap_usd": null,
+      "url": "https://aero.xyz/",
+      "logo": "https://icons.llamao.fi/icons/protocols/aero-slipstream"
     },
     {
       "name": "exSat Staking BTC",
@@ -3926,9 +3959,9 @@
       "chains": [
         "Bitcoin"
       ],
-      "tvl_usd": 137826188,
-      "tvl_change_24h": -1.8277368124173137,
-      "tvl_change_7d": -17.228152453003915,
+      "tvl_usd": 136757324,
+      "tvl_change_24h": 0.37679747961662713,
+      "tvl_change_7d": -17.68553521117464,
       "mcap_usd": null,
       "url": "https://exsat.network/app/bridge",
       "logo": "https://icons.llamao.fi/icons/protocols/exsat-staking-btc"
@@ -3940,9 +3973,9 @@
       "chains": [
         "Monad"
       ],
-      "tvl_usd": 136541998,
-      "tvl_change_24h": 0.004478659415241282,
-      "tvl_change_7d": 0.9093776223856764,
+      "tvl_usd": 136324614,
+      "tvl_change_24h": -0.16686868677354028,
+      "tvl_change_7d": -0.544127137799336,
       "mcap_usd": null,
       "url": "https://app.curvance.com",
       "logo": "https://icons.llamao.fi/icons/protocols/curvance"
@@ -3966,26 +3999,31 @@
         "Optimism",
         "Fantom"
       ],
-      "tvl_usd": 134375214,
-      "tvl_change_24h": -1.813750407626216,
-      "tvl_change_7d": -15.066257090816265,
+      "tvl_usd": 135915966,
+      "tvl_change_24h": 1.1466037606039379,
+      "tvl_change_7d": -13.961299526731082,
       "mcap_usd": null,
       "url": "https://coindcx.com",
       "logo": "https://icons.llamao.fi/icons/protocols/coindcx"
     },
     {
-      "name": "Sanctum Infinity",
-      "slug": "sanctum-infinity",
-      "category": "Dexs",
+      "name": "PinkSale",
+      "slug": "pinksale",
+      "category": "Launchpad",
       "chains": [
-        "Solana"
+        "Binance",
+        "Ethereum",
+        "Polygon",
+        "Cronos",
+        "Avalanche",
+        "Fantom"
       ],
-      "tvl_usd": 132571825,
-      "tvl_change_24h": -2.7196688118810215,
-      "tvl_change_7d": -18.54237841229292,
-      "mcap_usd": null,
-      "url": "https://www.sanctum.so",
-      "logo": "https://icons.llamao.fi/icons/protocols/sanctum-infinity"
+      "tvl_usd": 132883889,
+      "tvl_change_24h": 0.7897830450810801,
+      "tvl_change_7d": -9.250770320460191,
+      "mcap_usd": 18098374.756073862,
+      "url": "https://www.pinksale.finance",
+      "logo": "https://icons.llamao.fi/icons/protocols/pinksale"
     },
     {
       "name": "Yearn Finance",
@@ -4000,31 +4038,26 @@
         "Arbitrum",
         "Fantom"
       ],
-      "tvl_usd": 132026644,
-      "tvl_change_24h": -0.5067334349006813,
-      "tvl_change_7d": -9.05319091640159,
+      "tvl_usd": 132649772,
+      "tvl_change_24h": 0.4719708186720055,
+      "tvl_change_7d": -8.131743912307314,
       "mcap_usd": null,
       "url": "https://yearn.fi/",
       "logo": "https://icons.llamao.fi/icons/protocols/yearn-finance"
     },
     {
-      "name": "PinkSale",
-      "slug": "pinksale",
-      "category": "Launchpad",
+      "name": "Figure Markets Exchange",
+      "slug": "figure-markets-exchange",
+      "category": "OTC Marketplace",
       "chains": [
-        "Binance",
-        "Ethereum",
-        "Polygon",
-        "Cronos",
-        "Avalanche",
-        "Fantom"
+        "Provenance"
       ],
-      "tvl_usd": 131842619,
-      "tvl_change_24h": -0.8818217496266811,
-      "tvl_change_7d": -10.86288966541818,
-      "mcap_usd": 18098374.756073862,
-      "url": "https://www.pinksale.finance",
-      "logo": "https://icons.llamao.fi/icons/protocols/pinksale"
+      "tvl_usd": 130984994,
+      "tvl_change_24h": -6.183337928407113,
+      "tvl_change_7d": -1.4009420005277775,
+      "mcap_usd": null,
+      "url": "https://www.figuremarkets.com/crypto-exchange/",
+      "logo": "https://icons.llamao.fi/icons/protocols/figure-markets-exchange"
     },
     {
       "name": "Galaxy Curation",
@@ -4035,12 +4068,26 @@
         "Ethereum",
         "Base"
       ],
-      "tvl_usd": 129937584,
-      "tvl_change_24h": 0.7362369880246149,
-      "tvl_change_7d": 11.302693817129807,
+      "tvl_usd": 129961265,
+      "tvl_change_24h": 0.751644167219581,
+      "tvl_change_7d": 10.366949207116832,
       "mcap_usd": null,
       "url": "https://www.galaxy.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/galaxy-curation"
+    },
+    {
+      "name": "Rhea Lend",
+      "slug": "rhea-lend",
+      "category": "Lending",
+      "chains": [
+        "Near"
+      ],
+      "tvl_usd": 129779091,
+      "tvl_change_24h": 4.401282672898475,
+      "tvl_change_7d": -9.707601725565311,
+      "mcap_usd": null,
+      "url": "https://lending.rhea.finance/",
+      "logo": "https://icons.llamao.fi/icons/protocols/rhea-lend"
     },
     {
       "name": "Liquity V1",
@@ -4049,12 +4096,26 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 128194581,
-      "tvl_change_24h": -1.8087261749212615,
-      "tvl_change_7d": -13.73214932029208,
+      "tvl_usd": 129374021,
+      "tvl_change_24h": 0.07793215089773753,
+      "tvl_change_7d": -11.892499656147464,
       "mcap_usd": null,
       "url": "https://www.liquity.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/liquity-v1"
+    },
+    {
+      "name": "Meteora DLMM",
+      "slug": "meteora-dlmm",
+      "category": "Dexs",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 127206701,
+      "tvl_change_24h": 1.03787345020298,
+      "tvl_change_7d": -7.274983005175045,
+      "mcap_usd": null,
+      "url": "https://app.meteora.ag/",
+      "logo": "https://icons.llamao.fi/icons/protocols/meteora"
     },
     {
       "name": "Axelar",
@@ -4106,61 +4167,12 @@
         "XRPL EVM",
         "Linea"
       ],
-      "tvl_usd": 125558589,
-      "tvl_change_24h": 0.1970003804692766,
-      "tvl_change_7d": -4.711004336596886,
+      "tvl_usd": 126454406,
+      "tvl_change_24h": 0.7134653576861893,
+      "tvl_change_7d": -4.68154498550895,
       "mcap_usd": null,
       "url": "https://axelar.network",
       "logo": "https://icons.llamao.fi/icons/protocols/axelar"
-    },
-    {
-      "name": "Meteora DLMM",
-      "slug": "meteora-dlmm",
-      "category": "Dexs",
-      "chains": [
-        "Solana"
-      ],
-      "tvl_usd": 124902778,
-      "tvl_change_24h": -1.1226717076352912,
-      "tvl_change_7d": -8.37432480075752,
-      "mcap_usd": null,
-      "url": "https://app.meteora.ag/",
-      "logo": "https://icons.llamao.fi/icons/protocols/meteora"
-    },
-    {
-      "name": "Rhea Lend",
-      "slug": "rhea-lend",
-      "category": "Lending",
-      "chains": [
-        "Near"
-      ],
-      "tvl_usd": 124307947,
-      "tvl_change_24h": -1.9959386605796112,
-      "tvl_change_7d": -12.891056740874461,
-      "mcap_usd": null,
-      "url": "https://lending.rhea.finance/",
-      "logo": "https://icons.llamao.fi/icons/protocols/rhea-lend"
-    },
-    {
-      "name": "Aero Slipstream",
-      "slug": "aero-slipstream",
-      "category": "Dexs",
-      "chains": [
-        "Base",
-        "Ethereum",
-        "Optimism",
-        "Arbitrum",
-        "Robinhood Chain",
-        "Arc",
-        "Elysium Kinetiq",
-        "Ink"
-      ],
-      "tvl_usd": 123981267,
-      "tvl_change_24h": -1.9000547838718376,
-      "tvl_change_7d": -3.1217947389441605,
-      "mcap_usd": null,
-      "url": "https://aero.xyz/",
-      "logo": "https://icons.llamao.fi/icons/protocols/aero-slipstream"
     },
     {
       "name": "Avalanche Core Bridge",
@@ -4170,9 +4182,9 @@
         "Ethereum",
         "Bitcoin"
       ],
-      "tvl_usd": 122999410,
-      "tvl_change_24h": -1.3365593567994551,
-      "tvl_change_7d": -7.229843279150842,
+      "tvl_usd": 123929618,
+      "tvl_change_24h": 0.7562702969978687,
+      "tvl_change_7d": -7.605567221452887,
       "mcap_usd": null,
       "url": "https://core.app/bridge/",
       "logo": "https://icons.llamao.fi/icons/protocols/avalanche-core-bridge"
@@ -4184,9 +4196,9 @@
       "chains": [
         "Sui"
       ],
-      "tvl_usd": 118958150,
-      "tvl_change_24h": -1.157497536600232,
-      "tvl_change_7d": -11.02007373603874,
+      "tvl_usd": 122746934,
+      "tvl_change_24h": 3.1849715247746104,
+      "tvl_change_7d": -8.919297319287693,
       "mcap_usd": null,
       "url": "https://www.suilend.fi",
       "logo": "https://icons.llamao.fi/icons/protocols/suilend"
@@ -4198,9 +4210,9 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 114697566,
-      "tvl_change_24h": -2.6371839334845504,
-      "tvl_change_7d": -18.980860936947863,
+      "tvl_usd": 119949157,
+      "tvl_change_24h": 4.578642036719785,
+      "tvl_change_7d": -13.350578674160133,
       "mcap_usd": null,
       "url": "https://phantom.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/phantom-sol"
@@ -4215,38 +4227,60 @@
         "Fraxtal",
         "Arbitrum",
         "Polygon",
-        "Optimism",
         "Avalanche",
+        "Optimism",
         "Sonic",
         "Linea",
         "xDai"
       ],
-      "tvl_usd": 113788539,
-      "tvl_change_24h": -0.27693521809273136,
-      "tvl_change_7d": -12.28920223915587,
+      "tvl_usd": 117034523,
+      "tvl_change_24h": 2.852645437563055,
+      "tvl_change_7d": -8.211198879351684,
       "mcap_usd": null,
       "url": "https://stakedao.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/stake-dao-yield"
     },
     {
-      "name": "Dolomite",
-      "slug": "dolomite",
-      "category": "Lending",
+      "name": "SunSwap V4",
+      "slug": "sunswap-v4",
+      "category": "Dexs",
       "chains": [
-        "Ethereum",
-        "Arbitrum",
-        "Berachain",
-        "Mantle",
-        "X Layer",
-        "Botanix",
-        "Polygon zkEVM"
+        "Tron"
       ],
-      "tvl_usd": 112338197,
-      "tvl_change_24h": -14.268753243586062,
-      "tvl_change_7d": -17.905260223595405,
-      "mcap_usd": 10030979.143724035,
-      "url": "https://dolomite.io",
-      "logo": "https://icons.llamao.fi/icons/protocols/dolomite"
+      "tvl_usd": 116777940,
+      "tvl_change_24h": 88.58746124186177,
+      "tvl_change_7d": -11.747482808883575,
+      "mcap_usd": null,
+      "url": "https://sun.io",
+      "logo": "https://icons.llamao.fi/icons/protocols/sunswap-v4"
+    },
+    {
+      "name": "Hyperliquid Spot Orderbook",
+      "slug": "hyperliquid-spot-orderbook",
+      "category": "Dexs",
+      "chains": [
+        "Hyperliquid L1"
+      ],
+      "tvl_usd": 116251599,
+      "tvl_change_24h": 7.855318294167773,
+      "tvl_change_7d": -8.790216834181606,
+      "mcap_usd": null,
+      "url": "https://app.hyperliquid.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/hyperliquid"
+    },
+    {
+      "name": "Aster USDF",
+      "slug": "aster-usdf",
+      "category": "Basis Trading",
+      "chains": [
+        "Binance"
+      ],
+      "tvl_usd": 111639741,
+      "tvl_change_24h": -0.01824539311951412,
+      "tvl_change_7d": -0.7264847963024579,
+      "mcap_usd": null,
+      "url": "https://www.asterdex.com/en/usdf",
+      "logo": "https://icons.llamao.fi/icons/protocols/aster-usdf"
     },
     {
       "name": "UNCX Network V2",
@@ -4263,40 +4297,12 @@
         "Optimism",
         "xDai"
       ],
-      "tvl_usd": 111838970,
-      "tvl_change_24h": -0.4963167764439902,
-      "tvl_change_7d": -12.792018920933074,
+      "tvl_usd": 111559456,
+      "tvl_change_24h": -0.24992485176770174,
+      "tvl_change_7d": -14.457051098560513,
       "mcap_usd": null,
       "url": "https://uncx.network/",
       "logo": "https://icons.llamao.fi/icons/protocols/uncx-network-v2"
-    },
-    {
-      "name": "Aster USDF",
-      "slug": "aster-usdf",
-      "category": "Basis Trading",
-      "chains": [
-        "Binance"
-      ],
-      "tvl_usd": 111660114,
-      "tvl_change_24h": -0.05543288126884249,
-      "tvl_change_7d": -0.7355322108230951,
-      "mcap_usd": null,
-      "url": "https://www.asterdex.com/en/usdf",
-      "logo": "https://icons.llamao.fi/icons/protocols/aster-usdf"
-    },
-    {
-      "name": "Hyperliquid Spot Orderbook",
-      "slug": "hyperliquid-spot-orderbook",
-      "category": "Dexs",
-      "chains": [
-        "Hyperliquid L1"
-      ],
-      "tvl_usd": 107784762,
-      "tvl_change_24h": 18.913315476326915,
-      "tvl_change_7d": -7.396171063362573,
-      "mcap_usd": null,
-      "url": "https://app.hyperliquid.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/hyperliquid"
     },
     {
       "name": "Valos",
@@ -4305,26 +4311,26 @@
       "chains": [
         "Monad"
       ],
-      "tvl_usd": 106467456,
-      "tvl_change_24h": 0.07456900165085756,
-      "tvl_change_7d": 0.22110261482137616,
+      "tvl_usd": 106387310,
+      "tvl_change_24h": -0.008478754939602595,
+      "tvl_change_7d": 0.11127660954559815,
       "mcap_usd": null,
       "url": "https://valos.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/valos"
     },
     {
-      "name": "Lighter Robinhood Perps",
-      "slug": "lighter-robinhood-perps",
-      "category": "Derivatives",
+      "name": "Blend Pools V2",
+      "slug": "blend-pools-v2",
+      "category": "Lending",
       "chains": [
-        "Robinhood Chain"
+        "Stellar"
       ],
-      "tvl_usd": 105356065,
-      "tvl_change_24h": -5.068630936388047,
-      "tvl_change_7d": -7.152809922107949,
+      "tvl_usd": 105593848,
+      "tvl_change_24h": 0.7214906664180631,
+      "tvl_change_7d": -7.078071516358321,
       "mcap_usd": null,
-      "url": "https://robinhoodchain.lighter.xyz/trade/LIT",
-      "logo": "https://icons.llamao.fi/icons/protocols/lighter-robinhood-perps"
+      "url": "https://www.blend.capital",
+      "logo": "https://icons.llamao.fi/icons/protocols/blend-pools-v2"
     },
     {
       "name": "Railgun",
@@ -4336,26 +4342,12 @@
         "Binance",
         "Polygon"
       ],
-      "tvl_usd": 104169716,
-      "tvl_change_24h": 0.7623363842439232,
-      "tvl_change_7d": -1.4130629526549399,
-      "mcap_usd": 98573425.83339685,
+      "tvl_usd": 105356702,
+      "tvl_change_24h": 0.5797592411996817,
+      "tvl_change_7d": -2.0157122702013908,
+      "mcap_usd": 96928770.25031047,
       "url": "https://railgun.org",
       "logo": "https://icons.llamao.fi/icons/protocols/railgun"
-    },
-    {
-      "name": "Blend Pools V2",
-      "slug": "blend-pools-v2",
-      "category": "Lending",
-      "chains": [
-        "Stellar"
-      ],
-      "tvl_usd": 103654659,
-      "tvl_change_24h": -1.528425773908964,
-      "tvl_change_7d": -8.526458957262065,
-      "mcap_usd": null,
-      "url": "https://www.blend.capital",
-      "logo": "https://icons.llamao.fi/icons/protocols/blend-pools-v2"
     },
     {
       "name": "Armitage by Wintermute",
@@ -4364,40 +4356,12 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 102769618,
-      "tvl_change_24h": -0.6383909419647438,
-      "tvl_change_7d": 7.839647323230707,
+      "tvl_usd": 103254115,
+      "tvl_change_24h": 0.47342416962491995,
+      "tvl_change_7d": 5.226913773549512,
       "mcap_usd": null,
       "url": "https://armitage.wintermute.com",
       "logo": "https://icons.llamao.fi/icons/protocols/armitage-by-wintermute"
-    },
-    {
-      "name": "Tydro",
-      "slug": "tydro",
-      "category": "Lending",
-      "chains": [
-        "Ink"
-      ],
-      "tvl_usd": 102067329,
-      "tvl_change_24h": -1.3518380260595677,
-      "tvl_change_7d": -11.929303457127332,
-      "mcap_usd": null,
-      "url": "https://tydro.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/tydro"
-    },
-    {
-      "name": "Lofty",
-      "slug": "lofty",
-      "category": "RWA",
-      "chains": [
-        "Algorand"
-      ],
-      "tvl_usd": 101148049,
-      "tvl_change_24h": -0.02552495079702055,
-      "tvl_change_7d": 0.04005126561996519,
-      "mcap_usd": null,
-      "url": "https://www.lofty.ai",
-      "logo": "https://icons.llamao.fi/icons/protocols/lofty"
     },
     {
       "name": "NEAR Bridge",
@@ -4412,12 +4376,40 @@
         "Arbitrum",
         "Base"
       ],
-      "tvl_usd": 100455712,
-      "tvl_change_24h": -2.8615921857107764,
-      "tvl_change_7d": -10.434049933413604,
+      "tvl_usd": 103045668,
+      "tvl_change_24h": 2.578206327722498,
+      "tvl_change_7d": -8.353467515210326,
       "mcap_usd": null,
       "url": "https://near.org/",
       "logo": "https://icons.llamao.fi/icons/protocols/near"
+    },
+    {
+      "name": "Lighter Robinhood Perps",
+      "slug": "lighter-robinhood-perps",
+      "category": "Derivatives",
+      "chains": [
+        "Robinhood Chain"
+      ],
+      "tvl_usd": 101664722,
+      "tvl_change_24h": -3.5036836400778952,
+      "tvl_change_7d": -11.395922797142077,
+      "mcap_usd": null,
+      "url": "https://robinhoodchain.lighter.xyz/trade/LIT",
+      "logo": "https://icons.llamao.fi/icons/protocols/lighter-robinhood-perps"
+    },
+    {
+      "name": "Lofty",
+      "slug": "lofty",
+      "category": "RWA",
+      "chains": [
+        "Algorand"
+      ],
+      "tvl_usd": 101131851,
+      "tvl_change_24h": -0.02401921537230578,
+      "tvl_change_7d": 0.016019223067658572,
+      "mcap_usd": null,
+      "url": "https://www.lofty.ai",
+      "logo": "https://icons.llamao.fi/icons/protocols/lofty"
     },
     {
       "name": "Pionex",
@@ -4428,45 +4420,37 @@
         "Ethereum",
         "Binance",
         "Tron",
-        "Arbitrum",
         "Solana",
+        "Arbitrum",
         "Optimism",
         "Avalanche"
       ],
-      "tvl_usd": 98078952,
-      "tvl_change_24h": -2.7360274493013605,
-      "tvl_change_7d": -17.65501405428259,
+      "tvl_usd": 99968618,
+      "tvl_change_24h": 1.9266779376199565,
+      "tvl_change_7d": -13.012899781156165,
       "mcap_usd": null,
       "url": "https://www.pionex.com/en",
       "logo": "https://icons.llamao.fi/icons/protocols/pionex"
     },
     {
-      "name": "Lighter LLP",
-      "slug": "lighter-llp",
-      "category": "Derivatives",
-      "chains": [
-        "zkLighter"
-      ],
-      "tvl_usd": 97074786,
-      "tvl_change_24h": 1.6718492773594846,
-      "tvl_change_7d": -3.9104240459362245,
-      "mcap_usd": null,
-      "url": "https://app.lighter.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/lighter-llp"
-    },
-    {
-      "name": "NAVI Lending",
-      "slug": "navi-lending",
+      "name": "Dolomite",
+      "slug": "dolomite",
       "category": "Lending",
       "chains": [
-        "Sui"
+        "Ethereum",
+        "Arbitrum",
+        "Berachain",
+        "Mantle",
+        "X Layer",
+        "Botanix",
+        "Polygon zkEVM"
       ],
-      "tvl_usd": 96166223,
-      "tvl_change_24h": -1.4708395013996665,
-      "tvl_change_7d": -22.3853151048301,
-      "mcap_usd": null,
-      "url": "https://www.naviprotocol.io/",
-      "logo": "https://icons.llamao.fi/icons/protocols/navi-lending"
+      "tvl_usd": 96888025,
+      "tvl_change_24h": -13.878685963258334,
+      "tvl_change_7d": -30.73744539819053,
+      "mcap_usd": 10296899.942852477,
+      "url": "https://dolomite.io",
+      "logo": "https://icons.llamao.fi/icons/protocols/dolomite"
     },
     {
       "name": "Bitrue",
@@ -4495,28 +4479,12 @@
         "CORE",
         "Sui"
       ],
-      "tvl_usd": 95223292,
-      "tvl_change_24h": -1.572626670344249,
-      "tvl_change_7d": -19.063438435062466,
+      "tvl_usd": 96230056,
+      "tvl_change_24h": 1.0572673024376655,
+      "tvl_change_7d": -16.462487769766128,
       "mcap_usd": null,
       "url": "https://www.bitrue.com",
       "logo": "https://icons.llamao.fi/icons/protocols/bitrue"
-    },
-    {
-      "name": "Extended Perps",
-      "slug": "extended-perps",
-      "category": "Derivatives",
-      "chains": [
-        "Arc",
-        "Ethereum",
-        "Starknet"
-      ],
-      "tvl_usd": 93534961,
-      "tvl_change_24h": -0.383093279142372,
-      "tvl_change_7d": -5.940313650997766,
-      "mcap_usd": null,
-      "url": "https://app.extended.exchange",
-      "logo": "https://icons.llamao.fi/icons/protocols/extended-perps"
     },
     {
       "name": "The Vault Liquid Staking",
@@ -4525,40 +4493,12 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 93179711,
-      "tvl_change_24h": -1.9119285154573902,
-      "tvl_change_7d": -17.33054882635318,
+      "tvl_usd": 95908151,
+      "tvl_change_24h": 2.9281484458347933,
+      "tvl_change_7d": -13.375716458867174,
       "mcap_usd": null,
       "url": "https://thevault.finance",
       "logo": "https://icons.llamao.fi/icons/protocols/the-vault-liquid-staking"
-    },
-    {
-      "name": "Bybit Staked SOL",
-      "slug": "bybit-staked-sol",
-      "category": "Liquid Staking",
-      "chains": [
-        "Solana"
-      ],
-      "tvl_usd": 92774494,
-      "tvl_change_24h": -4.21939586986241,
-      "tvl_change_7d": -26.886758168574517,
-      "mcap_usd": null,
-      "url": "https://www.bybit.com/en/web3/staking/BybitSOL",
-      "logo": "https://icons.llamao.fi/icons/protocols/bybit-staked-sol"
-    },
-    {
-      "name": "Avant avUSD",
-      "slug": "avant-avusd",
-      "category": "Onchain Capital Allocator",
-      "chains": [
-        "Avalanche"
-      ],
-      "tvl_usd": 92274137,
-      "tvl_change_24h": 0.0003841299814695276,
-      "tvl_change_7d": -14.943415192144116,
-      "mcap_usd": null,
-      "url": "https://app.avantprotocol.com/products",
-      "logo": "https://icons.llamao.fi/icons/protocols/avant-avusd"
     },
     {
       "name": "Ourbit",
@@ -4574,12 +4514,98 @@
         "Arbitrum",
         "Optimism"
       ],
-      "tvl_usd": 92239176,
-      "tvl_change_24h": -3.2694624414396998,
-      "tvl_change_7d": -14.209978172358632,
+      "tvl_usd": 93860562,
+      "tvl_change_24h": 1.7578055230604122,
+      "tvl_change_7d": -13.151790565460871,
       "mcap_usd": null,
       "url": "https://www.ourbit.com",
       "logo": "https://icons.llamao.fi/icons/protocols/ourbit"
+    },
+    {
+      "name": "JPool",
+      "slug": "jpool",
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 93559548,
+      "tvl_change_24h": 3.465793271352055,
+      "tvl_change_7d": -11.261574963130755,
+      "mcap_usd": null,
+      "url": "https://app.jpool.one",
+      "logo": "https://icons.llamao.fi/icons/protocols/jpool"
+    },
+    {
+      "name": "Bybit Staked SOL",
+      "slug": "bybit-staked-sol",
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 92981023,
+      "tvl_change_24h": 0.22261378304160928,
+      "tvl_change_7d": -26.150560385761835,
+      "mcap_usd": null,
+      "url": "https://www.bybit.com/en/web3/staking/BybitSOL",
+      "logo": "https://icons.llamao.fi/icons/protocols/bybit-staked-sol"
+    },
+    {
+      "name": "NAVI Lending",
+      "slug": "navi-lending",
+      "category": "Lending",
+      "chains": [
+        "Sui"
+      ],
+      "tvl_usd": 92872700,
+      "tvl_change_24h": -3.424823562524267,
+      "tvl_change_7d": -25.341866238260494,
+      "mcap_usd": null,
+      "url": "https://www.naviprotocol.io/",
+      "logo": "https://icons.llamao.fi/icons/protocols/navi-lending"
+    },
+    {
+      "name": "Extended Perps",
+      "slug": "extended-perps",
+      "category": "Derivatives",
+      "chains": [
+        "Arc",
+        "Ethereum",
+        "Starknet"
+      ],
+      "tvl_usd": 92632517,
+      "tvl_change_24h": -0.9648199618758468,
+      "tvl_change_7d": -6.566931487971388,
+      "mcap_usd": null,
+      "url": "https://app.extended.exchange",
+      "logo": "https://icons.llamao.fi/icons/protocols/extended-perps"
+    },
+    {
+      "name": "Avant avUSD",
+      "slug": "avant-avusd",
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Avalanche"
+      ],
+      "tvl_usd": 92539281,
+      "tvl_change_24h": 0.287344309408482,
+      "tvl_change_7d": -13.441061501549584,
+      "mcap_usd": null,
+      "url": "https://app.avantprotocol.com/products",
+      "logo": "https://icons.llamao.fi/icons/protocols/avant-avusd"
+    },
+    {
+      "name": "Bitget bgBTC",
+      "slug": "bitget-bgbtc",
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 91959049,
+      "tvl_change_24h": 0.8726902562766128,
+      "tvl_change_7d": -12.670994426954906,
+      "mcap_usd": null,
+      "url": "https://www.bitget.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/bitget-bgbtc"
     },
     {
       "name": "Frax USD",
@@ -4588,9 +4614,9 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 91979148,
-      "tvl_change_24h": -2.0557295621968166,
-      "tvl_change_7d": -3.2294262765439186,
+      "tvl_usd": 91824257,
+      "tvl_change_24h": -0.16839786008972624,
+      "tvl_change_7d": -3.6518751142801023,
       "mcap_usd": null,
       "url": "https://frax.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/frax-usd"
@@ -4618,54 +4644,42 @@
         "Solana",
         "Plume Mainnet"
       ],
-      "tvl_usd": 91389716,
-      "tvl_change_24h": -0.016464438023206185,
-      "tvl_change_7d": 1.7961902930013025,
-      "mcap_usd": 546223.1447851403,
+      "tvl_usd": 91428943,
+      "tvl_change_24h": 0.03074981729838555,
+      "tvl_change_7d": -0.8410899183690219,
+      "mcap_usd": 570486.5814957201,
       "url": "https://app.reservoir.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/reservoir-protocol"
     },
     {
-      "name": "Bitget bgBTC",
-      "slug": "bitget-bgbtc",
-      "category": "Bridge",
+      "name": "Doppler Finance",
+      "slug": "doppler-finance",
+      "category": "CeDeFi",
       "chains": [
-        "Bitcoin"
-      ],
-      "tvl_usd": 91163474,
-      "tvl_change_24h": -1.6122504844526304,
-      "tvl_change_7d": -13.699190442628336,
-      "mcap_usd": null,
-      "url": "https://www.bitget.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/bitget-bgbtc"
-    },
-    {
-      "name": "Mantle Bridge",
-      "slug": "mantle-bridge",
-      "category": "Canonical Bridge",
-      "chains": [
+        "Ripple",
         "Ethereum"
       ],
-      "tvl_usd": 90892997,
-      "tvl_change_24h": 1.0438612567508727,
-      "tvl_change_7d": -9.775067101753862,
-      "mcap_usd": 1211657066.7374573,
-      "url": "https://app.mantle.xyz/bridge",
-      "logo": "https://icons.llamao.fi/icons/protocols/mantle-bridge"
+      "tvl_usd": 90007213,
+      "tvl_change_24h": 2.449477133941457,
+      "tvl_change_7d": -8.948484811075971,
+      "mcap_usd": null,
+      "url": "https://app.doppler.finance",
+      "logo": "https://icons.llamao.fi/icons/protocols/doppler-finance"
     },
     {
-      "name": "JPool",
-      "slug": "jpool",
+      "name": "Frax Ether",
+      "slug": "frax-ether",
       "category": "Liquid Staking",
       "chains": [
-        "Solana"
+        "Ethereum",
+        "Fraxtal"
       ],
-      "tvl_usd": 90425584,
-      "tvl_change_24h": -1.2287458732271404,
-      "tvl_change_7d": -15.43245098563574,
+      "tvl_usd": 89473015,
+      "tvl_change_24h": 1.2067283710835568,
+      "tvl_change_7d": -13.304380647224178,
       "mcap_usd": null,
-      "url": "https://app.jpool.one",
-      "logo": "https://icons.llamao.fi/icons/protocols/jpool"
+      "url": "https://frax.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/frax-ether"
     },
     {
       "name": "Curve LlamaLend",
@@ -4677,27 +4691,12 @@
         "Fraxtal",
         "Optimism"
       ],
-      "tvl_usd": 89089666,
-      "tvl_change_24h": -0.28839907082368654,
-      "tvl_change_7d": -5.241388952694209,
+      "tvl_usd": 89083814,
+      "tvl_change_24h": -0.006569147968775724,
+      "tvl_change_7d": -4.508643501835465,
       "mcap_usd": null,
       "url": "https://www.curve.finance/lend/ethereum/markets/",
       "logo": "https://icons.llamao.fi/icons/protocols/curve-llamalend"
-    },
-    {
-      "name": "Frax Ether",
-      "slug": "frax-ether",
-      "category": "Liquid Staking",
-      "chains": [
-        "Ethereum",
-        "Fraxtal"
-      ],
-      "tvl_usd": 88406192,
-      "tvl_change_24h": -1.5153743950044287,
-      "tvl_change_7d": -15.214520315084314,
-      "mcap_usd": null,
-      "url": "https://frax.com/",
-      "logo": "https://icons.llamao.fi/icons/protocols/frax-ether"
     },
     {
       "name": "zkSync Era txBridge",
@@ -4706,27 +4705,12 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 87881207,
-      "tvl_change_24h": -1.6612422722768656,
-      "tvl_change_7d": -13.586818505914394,
+      "tvl_usd": 88887216,
+      "tvl_change_24h": 1.144736985949237,
+      "tvl_change_7d": -11.463395090626804,
       "mcap_usd": null,
       "url": null,
       "logo": "https://icons.llamao.fi/icons/protocols/zksync-era-txbridge"
-    },
-    {
-      "name": "Doppler Finance",
-      "slug": "doppler-finance",
-      "category": "CeDeFi",
-      "chains": [
-        "Ripple",
-        "Ethereum"
-      ],
-      "tvl_usd": 87855219,
-      "tvl_change_24h": -1.2823233139034187,
-      "tvl_change_7d": -12.557304425938568,
-      "mcap_usd": null,
-      "url": "https://app.doppler.finance",
-      "logo": "https://icons.llamao.fi/icons/protocols/doppler-finance"
     },
     {
       "name": "Aave V2",
@@ -4737,12 +4721,26 @@
         "Polygon",
         "Avalanche"
       ],
-      "tvl_usd": 87520107,
-      "tvl_change_24h": -0.881300280269059,
-      "tvl_change_7d": -9.029319034232685,
-      "mcap_usd": 1666025875.8638334,
+      "tvl_usd": 87756541,
+      "tvl_change_24h": 0.27014816329662494,
+      "tvl_change_7d": -8.676382340321652,
+      "mcap_usd": 1744918562.3888726,
       "url": "https://aave.com",
       "logo": "https://icons.llamao.fi/icons/protocols/aave-v2"
+    },
+    {
+      "name": "Benqi Lending",
+      "slug": "benqi-lending",
+      "category": "Lending",
+      "chains": [
+        "Avalanche"
+      ],
+      "tvl_usd": 87103895,
+      "tvl_change_24h": 2.957774412540786,
+      "tvl_change_7d": -12.328321935735985,
+      "mcap_usd": 11343254.223834012,
+      "url": "https://benqi.fi",
+      "logo": "https://icons.llamao.fi/icons/protocols/benqi-lending"
     },
     {
       "name": "Ember",
@@ -4756,40 +4754,12 @@
         "Monad",
         "Arbitrum"
       ],
-      "tvl_usd": 86864388,
-      "tvl_change_24h": -2.5502720833682275,
-      "tvl_change_7d": -8.809104569002429,
+      "tvl_usd": 87080626,
+      "tvl_change_24h": 0.24893692667818357,
+      "tvl_change_7d": -8.31781252461478,
       "mcap_usd": null,
       "url": "https://ember.so/",
       "logo": "https://icons.llamao.fi/icons/protocols/ember"
-    },
-    {
-      "name": "Sky Money",
-      "slug": "sky-money",
-      "category": "Risk Curators",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 86525831,
-      "tvl_change_24h": -0.3359619794566129,
-      "tvl_change_7d": -5.765717067644289,
-      "mcap_usd": null,
-      "url": "https://app.sky.money/?network=ethereum&widget=vaults",
-      "logo": "https://icons.llamao.fi/icons/protocols/sky-money"
-    },
-    {
-      "name": "SUNSwap V3",
-      "slug": "sunswap-v3",
-      "category": "Dexs",
-      "chains": [
-        "Tron"
-      ],
-      "tvl_usd": 86241425,
-      "tvl_change_24h": -1.1096622604304969,
-      "tvl_change_7d": -44.956016477370945,
-      "mcap_usd": null,
-      "url": "https://sunswap.com/#/home",
-      "logo": "https://icons.llamao.fi/icons/protocols/sunswap-v3"
     },
     {
       "name": "Biconomy.com",
@@ -4801,40 +4771,26 @@
         "Polygon",
         "Tron"
       ],
-      "tvl_usd": 85935092,
-      "tvl_change_24h": -1.4367628046188088,
-      "tvl_change_7d": -10.768525838550929,
-      "mcap_usd": 553957.2628450445,
+      "tvl_usd": 86577801,
+      "tvl_change_24h": 0.7479004916733487,
+      "tvl_change_7d": -10.076472346884131,
+      "mcap_usd": 567002.5805960705,
       "url": "https://www.biconomy.com",
       "logo": "https://icons.llamao.fi/icons/protocols/biconomy.com"
     },
     {
-      "name": "Zama",
-      "slug": "zama",
-      "category": "Privacy",
+      "name": "Sky Money",
+      "slug": "sky-money",
+      "category": "Risk Curators",
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 85633761,
-      "tvl_change_24h": -2.291998799086059,
-      "tvl_change_7d": -20.735062880467652,
-      "mcap_usd": 136203562.739342,
-      "url": "https://www.zama.org/",
-      "logo": "https://icons.llamao.fi/icons/protocols/zama"
-    },
-    {
-      "name": "Benqi Lending",
-      "slug": "benqi-lending",
-      "category": "Lending",
-      "chains": [
-        "Avalanche"
-      ],
-      "tvl_usd": 84601571,
-      "tvl_change_24h": -1.3573630878789373,
-      "tvl_change_7d": -12.403439151701392,
-      "mcap_usd": 10997168.229105951,
-      "url": "https://benqi.fi",
-      "logo": "https://icons.llamao.fi/icons/protocols/benqi-lending"
+      "tvl_usd": 85724497,
+      "tvl_change_24h": -1.0462298165266048,
+      "tvl_change_7d": -4.82825971650837,
+      "mcap_usd": null,
+      "url": "https://app.sky.money/?network=ethereum&widget=vaults",
+      "logo": "https://icons.llamao.fi/icons/protocols/sky-money"
     },
     {
       "name": "Beefy",
@@ -4884,10 +4840,10 @@
         "Aurora",
         "Harmony"
       ],
-      "tvl_usd": 84507183,
-      "tvl_change_24h": -0.9785782562101133,
-      "tvl_change_7d": -10.707277500362437,
-      "mcap_usd": 4078620.441919313,
+      "tvl_usd": 84870094,
+      "tvl_change_24h": 0.4294434602947632,
+      "tvl_change_7d": -9.814633795615151,
+      "mcap_usd": 4132529.9827838154,
       "url": "https://beefy.com",
       "logo": "https://icons.llamao.fi/icons/protocols/beefy"
     },
@@ -4899,12 +4855,26 @@
         "Arbitrum",
         "Morph"
       ],
-      "tvl_usd": 83531190,
-      "tvl_change_24h": -0.02208437672889829,
-      "tvl_change_7d": 8.739188656174775,
+      "tvl_usd": 83593741,
+      "tvl_change_24h": 0.07488401599911754,
+      "tvl_change_7d": 8.326950909060244,
       "mcap_usd": null,
       "url": "https://popdex.xyz/",
       "logo": "https://icons.llamao.fi/icons/protocols/popdex-bridge"
+    },
+    {
+      "name": "Avalon CeDeFi",
+      "slug": "avalon-cedefi",
+      "category": "Anchor BTC",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 83252533,
+      "tvl_change_24h": 1.306417995131909,
+      "tvl_change_7d": -12.586653003130436,
+      "mcap_usd": null,
+      "url": "https://www.avalonfinance.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/avalon-labs"
     },
     {
       "name": "Keyrock",
@@ -4914,26 +4884,46 @@
         "Arc",
         "Ethereum"
       ],
-      "tvl_usd": 83079106,
-      "tvl_change_24h": 0.02171850872245784,
-      "tvl_change_7d": -0.6317297832975584,
+      "tvl_usd": 83075922,
+      "tvl_change_24h": -0.0038322943553907862,
+      "tvl_change_7d": -0.5202431175043358,
       "mcap_usd": null,
       "url": "https://keyrock.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/keyrock"
     },
     {
-      "name": "Avalon CeDeFi",
-      "slug": "avalon-cedefi",
-      "category": "Anchor BTC",
+      "name": "Zama",
+      "slug": "zama",
+      "category": "Privacy",
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 82178932,
-      "tvl_change_24h": -2.13119016747261,
-      "tvl_change_7d": -14.047317655755634,
+      "tvl_usd": 82570601,
+      "tvl_change_24h": -3.5770467584984686,
+      "tvl_change_7d": -21.976984445123122,
+      "mcap_usd": 152496972.29481453,
+      "url": "https://www.zama.org/",
+      "logo": "https://icons.llamao.fi/icons/protocols/zama"
+    },
+    {
+      "name": "VALR",
+      "slug": "valr",
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Ripple",
+        "Solana",
+        "Tron",
+        "Avalanche",
+        "Binance",
+        "Bitcoin"
+      ],
+      "tvl_usd": 81575302,
+      "tvl_change_24h": 21.800130582207842,
+      "tvl_change_7d": 3.3157358664715417,
       "mcap_usd": null,
-      "url": "https://www.avalonfinance.xyz",
-      "logo": "https://icons.llamao.fi/icons/protocols/avalon-labs"
+      "url": "https://valr.com/",
+      "logo": "https://icons.llamao.fi/icons/protocols/valr"
     },
     {
       "name": "Noble",
@@ -4942,12 +4932,26 @@
       "chains": [
         "Noble"
       ],
-      "tvl_usd": 81523091,
-      "tvl_change_24h": -0.5584058120828672,
-      "tvl_change_7d": -5.818680962124432,
+      "tvl_usd": 81509534,
+      "tvl_change_24h": -0.042756187264402,
+      "tvl_change_7d": -5.049350586822072,
       "mcap_usd": null,
       "url": "https://www.noble.xyz",
       "logo": "https://icons.llamao.fi/icons/protocols/noble"
+    },
+    {
+      "name": "Compound V2",
+      "slug": "compound-v2",
+      "category": "Lending",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 81440385,
+      "tvl_change_24h": 0.8388052160764943,
+      "tvl_change_7d": -11.008615108075475,
+      "mcap_usd": null,
+      "url": "https://www.compound.xyz/",
+      "logo": "https://icons.llamao.fi/icons/protocols/compound"
     },
     {
       "name": "Renzo",
@@ -4968,41 +4972,12 @@
         "Sei",
         "Blast"
       ],
-      "tvl_usd": 80878048,
-      "tvl_change_24h": -1.0954606201360662,
-      "tvl_change_7d": -14.315601348868668,
-      "mcap_usd": 25723252.4141773,
+      "tvl_usd": 81136657,
+      "tvl_change_24h": 0.31975117576699574,
+      "tvl_change_7d": -13.609077868814609,
+      "mcap_usd": 26155623.38134456,
       "url": "https://app.renzoprotocol.com/restake",
       "logo": "https://icons.llamao.fi/icons/protocols/renzo"
-    },
-    {
-      "name": "Compound V2",
-      "slug": "compound-v2",
-      "category": "Lending",
-      "chains": [
-        "Ethereum"
-      ],
-      "tvl_usd": 80594113,
-      "tvl_change_24h": -1.3593752794958505,
-      "tvl_change_7d": -12.370847457529251,
-      "mcap_usd": null,
-      "url": "https://www.compound.xyz/",
-      "logo": "https://icons.llamao.fi/icons/protocols/compound"
-    },
-    {
-      "name": "Lorenzo sUSD1+",
-      "slug": "lorenzo-susd1+",
-      "category": "Yield",
-      "chains": [
-        "Binance",
-        "Ethereum"
-      ],
-      "tvl_usd": 79899526,
-      "tvl_change_24h": 0.05258262752360565,
-      "tvl_change_7d": 0.06007509368977537,
-      "mcap_usd": null,
-      "url": "https://lorenzo-protocol.xyz/home",
-      "logo": "https://icons.llamao.fi/icons/protocols/lorenzo-susd1+"
     },
     {
       "name": "SoSoValue Indexes",
@@ -5018,9 +4993,9 @@
         "Doge",
         "Cardano"
       ],
-      "tvl_usd": 79507364,
-      "tvl_change_24h": -2.320370819954192,
-      "tvl_change_7d": -14.685112800813684,
+      "tvl_usd": 81097790,
+      "tvl_change_24h": 2.0003505006638704,
+      "tvl_change_7d": -12.20792078571067,
       "mcap_usd": null,
       "url": "https://ssi.sosovalue.com/share/MAG7.ssi/0TC050BY?tid=ssi-invite-share-0TC050BY",
       "logo": "https://icons.llamao.fi/icons/protocols/ssi"
@@ -5032,40 +5007,95 @@
       "chains": [
         "Solana"
       ],
-      "tvl_usd": 79238106,
-      "tvl_change_24h": -0.3283670165256325,
-      "tvl_change_7d": -17.185404567497102,
+      "tvl_usd": 80832122,
+      "tvl_change_24h": 2.0116781043125513,
+      "tvl_change_7d": -13.461791992001878,
       "mcap_usd": null,
       "url": null,
       "logo": "https://icons.llamao.fi/icons/protocols/phase-delegation"
     },
     {
-      "name": "Tori Finance",
-      "slug": "tori-finance",
-      "category": "Basis Trading",
+      "name": "Hyperlane",
+      "slug": "hyperlane",
+      "category": "Cross Chain Bridge",
       "chains": [
-        "Ethereum"
+        "Binance",
+        "Ethereum",
+        "Base",
+        "Arbitrum",
+        "Optimism",
+        "Polygon",
+        "Hyperliquid L1",
+        "Ink",
+        "Unichain",
+        "Avalanche",
+        "Celo",
+        "Linea",
+        "BSquared",
+        "Metis",
+        "Mantle",
+        "Scroll",
+        "Mode",
+        "xDai",
+        "Plasma",
+        "Zora",
+        "Blast",
+        "Sei",
+        "Sonic",
+        "Swellchain",
+        "Plume",
+        "Vana",
+        "Mint"
       ],
-      "tvl_usd": 77333902,
-      "tvl_change_24h": -0.02674719555867,
-      "tvl_change_7d": 4.605800568425806,
-      "mcap_usd": null,
-      "url": "https://tori.finance/",
-      "logo": "https://icons.llamao.fi/icons/protocols/tori-finance"
+      "tvl_usd": 80338359,
+      "tvl_change_24h": 37.92510754933406,
+      "tvl_change_7d": 13.483814801488236,
+      "mcap_usd": 13869884.537161153,
+      "url": "https://www.hyperlane.xyz/",
+      "logo": "https://icons.llamao.fi/icons/protocols/hyperlane"
     },
     {
-      "name": "Helius Staked SOL",
-      "slug": "helius-staked-sol",
-      "category": "Liquid Staking",
+      "name": "SUNSwap V3",
+      "slug": "sunswap-v3",
+      "category": "Dexs",
       "chains": [
-        "Solana"
+        "Tron"
       ],
-      "tvl_usd": 76919514,
-      "tvl_change_24h": -1.2175469971572568,
-      "tvl_change_7d": -7.20573956905217,
+      "tvl_usd": 80162145,
+      "tvl_change_24h": -7.272164770342954,
+      "tvl_change_7d": -48.81172081093636,
       "mcap_usd": null,
-      "url": "https://www.helius.dev",
-      "logo": "https://icons.llamao.fi/icons/protocols/helius-staked-sol"
+      "url": "https://sunswap.com/#/home",
+      "logo": "https://icons.llamao.fi/icons/protocols/sunswap-v3"
+    },
+    {
+      "name": "Lorenzo sUSD1+",
+      "slug": "lorenzo-susd1+",
+      "category": "Yield",
+      "chains": [
+        "Binance",
+        "Ethereum"
+      ],
+      "tvl_usd": 79891130,
+      "tvl_change_24h": -0.010509192132374778,
+      "tvl_change_7d": 0.02209858256267694,
+      "mcap_usd": null,
+      "url": "https://lorenzo-protocol.xyz/home",
+      "logo": "https://icons.llamao.fi/icons/protocols/lorenzo-susd1+"
+    },
+    {
+      "name": "Lighter LLP",
+      "slug": "lighter-llp",
+      "category": "Derivatives",
+      "chains": [
+        "zkLighter"
+      ],
+      "tvl_usd": 79799767,
+      "tvl_change_24h": -17.795577474501115,
+      "tvl_change_7d": -21.75188771981921,
+      "mcap_usd": null,
+      "url": "https://app.lighter.xyz",
+      "logo": "https://icons.llamao.fi/icons/protocols/lighter-llp"
     },
     {
       "name": "Yield Basis",
@@ -5074,12 +5104,26 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 76908371,
-      "tvl_change_24h": -1.1621153790285632,
-      "tvl_change_7d": -15.486268450970073,
-      "mcap_usd": 12562457.37767169,
+      "tvl_usd": 78172750,
+      "tvl_change_24h": 0.6821855553420306,
+      "tvl_change_7d": -13.705834063268512,
+      "mcap_usd": 13269323.546149261,
       "url": "https://yieldbasis.com/",
       "logo": "https://icons.llamao.fi/icons/protocols/yield-basis"
+    },
+    {
+      "name": "Tori Finance",
+      "slug": "tori-finance",
+      "category": "Basis Trading",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 77442073,
+      "tvl_change_24h": 0.1398751591365226,
+      "tvl_change_7d": 4.091149689416483,
+      "mcap_usd": null,
+      "url": "https://tori.finance/",
+      "logo": "https://icons.llamao.fi/icons/protocols/tori-finance"
     },
     {
       "name": "Nexus Mutual Insurance",
@@ -5088,28 +5132,12 @@
       "chains": [
         "Ethereum"
       ],
-      "tvl_usd": 76865668,
-      "tvl_change_24h": -0.8318918076299155,
-      "tvl_change_7d": -10.967690597810005,
+      "tvl_usd": 77426476,
+      "tvl_change_24h": 0.729594838364946,
+      "tvl_change_7d": -9.76544593850673,
       "mcap_usd": null,
       "url": "https://nexusmutual.io/",
       "logo": "https://icons.llamao.fi/icons/protocols/nexus-mutual-insurance"
-    },
-    {
-      "name": "Enzyme Finance",
-      "slug": "enzyme-finance",
-      "category": "Indexes",
-      "chains": [
-        "Ethereum",
-        "Polygon",
-        "Arbitrum"
-      ],
-      "tvl_usd": 75290700,
-      "tvl_change_24h": -1.4426588080951603,
-      "tvl_change_7d": -12.793940563359527,
-      "mcap_usd": 3771224.238472467,
-      "url": "https://enzyme.finance/",
-      "logo": "https://icons.llamao.fi/icons/protocols/enzyme-finance"
     }
   ]
 }

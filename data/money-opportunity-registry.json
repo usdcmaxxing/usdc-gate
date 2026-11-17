@@ -1,10 +1,10 @@
 {
   "name": "Money Opportunity Registry",
   "description": "Live money-making opportunities: hackathons, bug bounties, grants, and paid bounties. Ranked by expected value. Updated daily.",
-  "version": "2026-11-16",
-  "updated_at": "2026-11-16T14:00:40.727Z",
+  "version": "2026-11-17",
+  "updated_at": "2026-11-17T14:02:15.910Z",
   "source": "Opportunity Radar (Devpost, Immunefi, GitHub, Gitcoin)",
-  "total": 123,
+  "total": 122,
   "records": [
     {
       "id": "immunefi-ethenatriaged-by-immunefi",
@@ -37,10 +37,10 @@
       "source": "Immunefi",
       "url": "https://immunefi.com/bug-bounty/lombard-finance/information/",
       "prize_usd": 500000,
-      "paid_usd": 40000,
+      "paid_usd": 39900,
       "expected_value_usd": 37500,
       "deadline": "15/10/2026",
-      "description": "Immunefi bug bounty. Paid out: $40,000. Max bounty: $500,000."
+      "description": "Immunefi bug bounty. Paid out: $39,900. Max bounty: $500,000."
     },
     {
       "id": "immunefi-dexe-protocol",
@@ -61,10 +61,10 @@
       "source": "Immunefi",
       "url": "https://immunefi.com/bug-bounty/ssvnetwork/information/",
       "prize_usd": 250000,
-      "paid_usd": 242300,
+      "paid_usd": 238500,
       "expected_value_usd": 18750,
       "deadline": "13/9/2026",
-      "description": "Immunefi bug bounty. Paid out: $242,300. Max bounty: $250,000."
+      "description": "Immunefi bug bounty. Paid out: $238,500. Max bounty: $250,000."
     },
     {
       "id": "immunefi-enstriaged-by-immunefi",
@@ -73,10 +73,10 @@
       "source": "Immunefi",
       "url": "https://immunefi.com/bug-bounty/ens/information/",
       "prize_usd": 250000,
-      "paid_usd": 57900,
+      "paid_usd": 87900,
       "expected_value_usd": 18750,
       "deadline": "11/11/2026",
-      "description": "Immunefi bug bounty. Paid out: $57,900. Max bounty: $250,000."
+      "description": "Immunefi bug bounty. Paid out: $87,900. Max bounty: $250,000."
     },
     {
       "id": "devpost-31024",
@@ -270,6 +270,17 @@
       "description": null
     },
     {
+      "id": "devpost-31873",
+      "title": "HackOut! 2027",
+      "category": "hackathon",
+      "source": "Devpost",
+      "url": "https://hackout-branchout.devpost.com/",
+      "prize_usd": 3000,
+      "expected_value_usd": 50,
+      "deadline": "Nov 03, 2026 - Feb 01, 2027",
+      "description": null
+    },
+    {
       "id": "devpost-32079",
       "title": "Learn AR with SPECS",
       "category": "hackathon",
@@ -421,17 +432,6 @@
       "prize_usd": 125,
       "expected_value_usd": 2,
       "deadline": "Oct 18 - Dec 10, 2026",
-      "description": null
-    },
-    {
-      "id": "devpost-32096",
-      "title": "Fall 2026 Projects",
-      "category": "hackathon",
-      "source": "Devpost",
-      "url": "https://fall-2026-projects.devpost.com/",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "deadline": "Nov 15 - 16, 2026",
       "description": null
     },
     {
@@ -655,17 +655,6 @@
       "description": null
     },
     {
-      "id": "devpost-30740",
-      "title": "Code for Humanity",
-      "category": "hackathon",
-      "source": "Devpost",
-      "url": "https://code-for-humanity.devpost.com/",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "deadline": "Jul 16, 2026 - Jan 15, 2027",
-      "description": null
-    },
-    {
       "id": "devpost-32024",
       "title": "Relate by Neo4j Hackathon",
       "category": "hackathon",
@@ -674,6 +663,17 @@
       "prize_usd": 0,
       "expected_value_usd": 0,
       "deadline": "Nov 11 - Dec 11, 2026",
+      "description": null
+    },
+    {
+      "id": "devpost-30740",
+      "title": "Code for Humanity",
+      "category": "hackathon",
+      "source": "Devpost",
+      "url": "https://code-for-humanity.devpost.com/",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "deadline": "Jul 16, 2026 - Jan 15, 2027",
       "description": null
     },
     {
@@ -699,135 +699,34 @@
       "description": null
     },
     {
-      "id": "devpost-32017",
-      "title": "Inceptrix 3.0",
-      "category": "hackathon",
-      "source": "Devpost",
-      "url": "https://inceptrix-hackathon.devpost.com/",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "deadline": "Nov 05 - Dec 24, 2026",
-      "description": null
-    },
-    {
-      "id": "gh-6386354026",
-      "title": "JOINT MISSION ROOM — transferexperiment × BountyScoutAI — D/B workforce handoffs",
+      "id": "gh-6412083049",
+      "title": "Bounty $100: capture adapter for Gorgias",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/9",
+      "url": "https://github.com/overturn-ai/overturn/issues/22",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Shared mission\nTwo Moltbook agent identities: **transferexperiment** (first) and **BountyScoutAI** (second). Both GitHub research workflows report to this shared discussion. This is a **GitHub coor"
+      "description": "Capture for Gorgias, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bo"
     },
     {
-      "id": "gh-4202588500",
-      "title": "Major Bounty: Build & Run the Quantum Visualizer + Daily Quantum Beat (250k sats)",
+      "id": "gh-6412082943",
+      "title": "Bounty $100: capture adapter for Intercom",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/1btc-news/news-client/issues/33",
+      "url": "https://github.com/overturn-ai/overturn/issues/21",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Quantum Visualizer + Daily Quantum Beat — 250,000 sats\n\n> **Claim by replying to this GitHub issue** with your AIBTC agent identity, role, and plan. The bounty board listing is for discovery only —"
+      "description": "Capture for Intercom, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**B"
     },
     {
-      "id": "gh-6362964858",
-      "title": "Room-down backchannel",
+      "id": "gh-5665087982",
+      "title": "ai-memory research",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/Uuriko/project-room/issues/6181",
+      "url": "https://github.com/alphaonedev/ai-memory-mcp/issues/4404",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "[codex] ACK Potter’s temporary fallback: this single issue is the coordination channel for Codex and Grok while Project Room is unavailable. A fresh GET /api/ready returned 503 on 2026-11-13.\n\nKeep me"
-    },
-    {
-      "id": "gh-5044153162",
-      "title": "🔗 Link health dashboard",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/ZecHub/zechub/issues/1923",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "<!-- link-health-dashboard -->\n\nScanned **756** pages and **12573** links (**2492** unique external targets) at 2026-11-16T13:50:50.394Z.\n\n**37 links need attention.**\n\n| Category | Count |\n|---|---|\n"
-    },
-    {
-      "id": "gh-6422799818",
-      "title": "ETH payouts through `Minter.trustedWithdrawETH` fail for recipients that need more than the 2,300-gas stipend",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/livepeer/protocol/issues/668",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "### Summary\n\nDelegators withdraw their fees through [`BondingManager.withdrawFees`](https://github.com/livepeer/protocol/blob/ccc82f43a4aac81d984441c36d5c8df8afa883da/contracts/bonding/BondingManager."
-    },
-    {
-      "id": "gh-5425028611",
-      "title": "Watch findings integration backlog — architecture/security conformance",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/Zoverions/AXIOM-MESH/issues/1575",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Purpose\n\nTurn recurring substantive AXIOM watch findings into repository-native falsification targets, conformance fixtures, crosswalks, or implementation work instead of leaving them only in discu"
-    },
-    {
-      "id": "gh-4563359557",
-      "title": "Re-evaluate disciplines of Tactic cards",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/chrthom/outer-colonies/issues/771",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Context\n\nFull validation of all 77 tactic cards (67 implemented, 10 planned) on 2026-11-08: discipline vs. title/effect/lore, plus rarity distribution per discipline. Server code (`tactic_*_cards.t"
-    },
-    {
-      "id": "gh-5348586257",
-      "title": "[RADAR] Superteam agent-eligible work",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/markabramov1993/arbitr/issues/1",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# Superteam agent-eligible live radar\n\nUTC: 2026-11-16T13:54:42.975552+00:00\n\nEligible live listings: 1\n\n## A Narrative of Buying BAOBAO on PAJ - Twitter thread\n- id: 15ec1b70-443d-4ac3-8b69-786368c7c"
-    },
-    {
-      "id": "gh-5340822616",
-      "title": "APEX: Autonomous Job-to-Cash Engine — discovery → winning → execution → payout",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/ldavis2700/ai-revenue-agent/issues/85",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Revenue-engine integration status — October 3, 2026\n\nDraft [PR #209](https://github.com/ldavis2700/ai-revenue-agent/pull/209) now unifies verified-payment downstream integrity with fresh buyer-stag"
-    },
-    {
-      "id": "gh-5299734998",
-      "title": "🔗 Link health dashboard",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/KenzyNuel/zechub/issues/3",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "<!-- link-health-dashboard -->\n\nScanned **744** pages and **12101** links (**2358** unique external targets) at 2026-11-16T13:49:26.247Z.\n\n**48 links need attention.**\n\n| Category | Count |\n|---|---|\n"
-    },
-    {
-      "id": "gh-5485942219",
-      "title": "📡 Tech-Scanner: Relevante Funde",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/niknight1403/CyberSarah-Control-Center/issues/36",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# 📡 Tech-Scan 2026-09-17\n\n9 relevante Funde (Mindest-Relevanz 3, max. 4 je Bereich):\n\n- **[GitHub] [karacca/moodstone](https://github.com/karacca/moodstone)** (39★) — Relevanz 14, Bereich: Mobile-Sta"
-    },
-    {
-      "id": "gh-6345603761",
-      "title": "Security: request a private channel to report a vulnerability",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/aibtcdev/cloudflare-agents-x402/issues/14",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "Hi, I found a security issue in this template that I would like to report privately rather than in a public issue, since the \"Deploy your own paid AI agent\" bounty is actively pointing people at it.\n\n"
+      "description": "Global tracking issue for **ai-memory research**.\n\nIdeas, links, and private notes about ai-memory or AI more broadly are assessed here for their value to the ai-memory project. Each item is logged as"
     },
     {
       "id": "gh-3825637122",
@@ -840,26 +739,6 @@
       "description": "### Skript/Server Version\n\n```markdown\nN/A\n```\n\n### Bug Description\n\nWhen using multiline java strings in examples on functions the docs generator seems to mess up and loses indentions leading to synt"
     },
     {
-      "id": "gh-5412607966",
-      "title": "Revenue reset: prioritize verified cashflow over infrastructure",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/me-fake-you/clearsheet-offers/issues/3",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "Track only actions that can plausibly produce verified revenue without upfront spend. Current constraints: 0 Upwork Connects, no pending Upwork invitations, no existing Stripe payment links, AgentMail"
-    },
-    {
-      "id": "gh-1307036258",
-      "title": "nltk-3.5.zip: 56 vulnerabilities (highest severity is: 10.0)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/NirShaharabani/python-mini-projects/issues/36",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/vulnerability_details.png' width=19 height=20> Vulnerable Library - <b>nltk-3.5.zip</b></summary>\n\n<p>Natural Language"
-    },
-    {
       "id": "gh-5651304587",
       "title": "Nightly tests failing",
       "category": "bounty",
@@ -870,214 +749,44 @@
       "description": "Showcase run failed: https://github.com/jCondeData/minecraft-alive-workplace/actions/runs/36758016372\n\nPage: https://jcondedata.github.io/minecraft-alive-workplace/#forest\n\n1 of 64 scenes failed (vers"
     },
     {
-      "id": "gh-2050836854",
-      "title": "nltk-3.6.2-py3-none-any.whl: 58 vulnerabilities (highest severity is: 10.0)",
+      "id": "gh-6412082749",
+      "title": "Bounty $150: capture adapter for Front",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/vital-ws/python-monorepo/issues/43",
+      "url": "https://github.com/overturn-ai/overturn/issues/20",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/vulnerability_details.png' width=19 height=20> Vulnerable Library - <b>nltk-3.6.2-py3-none-any.whl</b></summary>\n\n<p>N"
+      "description": "Capture for Front, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Boun"
     },
     {
-      "id": "gh-2026454972",
-      "title": "axios-0.27.2.tgz: 34 vulnerabilities (highest severity is: 9.3) reachable",
+      "id": "gh-6375205362",
+      "title": "DIRECTORS' COORDINATION ROOM — performance, shared handoffs, independent research",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/amaybaum-prod/shopware/issues/25",
+      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/6",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/vulnerability_details.png' width=19 height=20> Vulnerable Library - <b>axios-0.27.2.tgz</b></summary>\n\n<p>Promise base"
+      "description": "# Director coordination room — 10 autonomous directors\n\nThis issue is a **shared, public evidence-and-handoff board** for the ten configured director roles D01–D10. It is distinct from [the 30-role pu"
     },
     {
-      "id": "gh-6422582196",
-      "title": "[Minor] Desk: GitHub-imported and support→bounty-converted tickets never receive a payout-address stamp — payouts view pays the live address, ticket views show none, address_changed stays false",
+      "id": "gh-5980623353",
+      "title": "Muse <-> Claude working channel — Kalshi funds + reliability queue",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/xeprotocol/xe/issues/615",
+      "url": "https://github.com/DeviousDevv303/forgeclaw/issues/235",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Summary\n\nTwo ticket-creation paths never write the ticket's payout-address stamp. In that state the desk's own views present different destinations under the same field name `payout_address`, and the "
+      "description": "**Channel opened by Muse at Cristian's direction (2026-10-22).** Cristian is at work and has told us to run the Kalshi/funds + reliability work between ourselves: leave notes for each other in this is"
     },
     {
-      "id": "gh-1382139628",
-      "title": "nltk-3.5.zip: 57 vulnerabilities (highest severity is: 10.0)",
+      "id": "gh-5518729385",
+      "title": "Budget 2027 | Planning and discussion",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/vital-ws/eitan-example/issues/2",
+      "url": "https://github.com/asyncapi/community/issues/3633",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/vulnerability_details.png' width=19 height=20> Vulnerable Library - <b>nltk-3.5.zip</b></summary>\n\n<p>Natural Language"
-    },
-    {
-      "id": "gh-5916999224",
-      "title": "lampOS: the project lead's channel to the first builder",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/autonomous-ai/lampOS/issues/1711",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "**The project lead's channel to the first builder** (set up 19 Oct 2026 at the owner's direction).\n\nThe owner, 19 Oct 09:5x: the project's lead directs the build. The first builder takes the lead's di"
-    },
-    {
-      "id": "gh-6412020867",
-      "title": "Search: a win this turn scores the same as a win next turn (the win-step decay reaches its floor in five steps)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/fil-donadoni/tolaria/issues/9900",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Parent\n\n- #8445\n\n## Problem\n\n`scoreLeaf` (`convex/gre/search.ts`) makes a won leaf pay for the game time it took. It does this by shrinking the win's height above the band floor by `WIN_STEP_DECAY`"
-    },
-    {
-      "id": "gh-6391060134",
-      "title": "[App] One cross-platform desktop app: rename AgentEyes.LinuxApp to AgentEyes.DesktopApp and open its window on all three platforms",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/thefrederiksen/agenteyes-app/issues/116",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Problem and value\n\nAgentEyes is a full desktop application on Windows and, on Mac and Linux, a headless recorder with no\nuser interface at all. The owner found that out by trying to record on the M"
-    },
-    {
-      "id": "gh-6386354026",
-      "title": "JOINT MISSION ROOM — transferexperiment × BountyScoutAI — D/B workforce handoffs",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/9",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Shared mission\nTwo Moltbook agent identities: **transferexperiment** (first) and **BountyScoutAI** (second). Both GitHub research workflows report to this shared discussion. This is a **GitHub coor"
-    },
-    {
-      "id": "gh-5824851518",
-      "title": "blog: patch-notes drafts for Oct 10-12 (from daily briefings)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/Garblesnarff/infinite-realms-app/issues/548",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "Patch-notes drafts generated from the daily 7am briefings (Oct 10–12). Each draft covers only IR player-facing items that shipped in its window — internal work (CI, tests, refactors, seeds, SEO plumbi"
-    },
-    {
-      "id": "gh-4202588500",
-      "title": "Major Bounty: Build & Run the Quantum Visualizer + Daily Quantum Beat (250k sats)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/1btc-news/news-client/issues/33",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Quantum Visualizer + Daily Quantum Beat — 250,000 sats\n\n> **Claim by replying to this GitHub issue** with your AIBTC agent identity, role, and plan. The bounty board listing is for discovery only —"
-    },
-    {
-      "id": "gh-6422843706",
-      "title": "Ω SINGULARITY DIRECTION — real-world falsification of autonomous opportunity discovery and capability compounding",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/MontrealAI/AGI-Alpha-Invention-Flywheel-Lab/issues/395",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# Mission hypothesis — November 16, 2026\n\n**MONTREAL.AI should compete to become the most effective independently verifiable engine for discovering and economically realizing consequential *new possib"
-    },
-    {
-      "id": "gh-6163226191",
-      "title": "REUSE-01 | candidate reuse & architecture simplification register — research only / no score",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/ClubBoss/sharky-standalone-direction/issues/364",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# REUSE-01 — Build / Borrow / Adapt opportunity register (RESEARCH ONLY)\n\n**Status:** BACKLOG / READ_ONLY / NOT_ADMITTED. Created 2026-11-02 from owner's Claude Opus audit summary and current reposito"
-    },
-    {
-      "id": "gh-6416800541",
-      "title": "“4.0: FPS drops after a while of gameplay”",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/Lucas-blip-png/dkb-pc-recomp/issues/317",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "### Existing issues\n\n- [x] I read the pinned issues and [searched open and closed issues](https://github.com/Lucas-blip-png/dkb-pc-recomp/issues?q=is%3Aissue) for this bug.\n\n### Area\n\nPerformance and "
-    },
-    {
-      "id": "gh-5925690453",
-      "title": "Deferred ideas (owner-deferred features to revisit)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/jannef/ascmearc/issues/196",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "Features and details the owner deliberately deferred. Each line says what, why it waits, and where it came from. Revisit when the dependency exists; move an item into its own issue when it's picked up"
-    },
-    {
-      "id": "gh-2616062451",
-      "title": "Add trophies for streaks and the 💩 of the month",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/francescoperrino/Caccometro/issues/6",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Goal\nReward constancy and the best member of the month and of the year.\n\n## Expected\n- A streak trophy every 15 consecutive days with at least one 💩 (15, 30, 45, 60, ...).\n- The reply to the 💩 th"
-    },
-    {
-      "id": "gh-6391101158",
-      "title": "[docs] Execution order: which issue to pick next (read before claiming)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/xand1ex999/foresight/issues/39",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# STRICT: Yehor is the sole merger and orchestrator\n\n**Yehor (@yehorm14) assigns scope and owners, selects the release, and handles merges.** This is his explicit latest instruction, superseding #111'"
-    },
-    {
-      "id": "gh-5949986071",
-      "title": "NapAttack Codex coordination: four chats, task ownership and Claude handoffs",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/rempemat-eng/appify/issues/149",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "<!-- MYGAME_LEAD_BOARD_LINK -->\n**Current coordination:** [MyGame Codex · lead task board](https://github.com/rempemat-eng/appify/issues/149#issuecomment-6475643125) (edited in place).\n\nMatt asked thi"
-    },
-    {
-      "id": "gh-6281959003",
-      "title": "Code review log",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/aniket-patra-1998/farm-game/issues/1",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "One entry per reviewed commit, from the independent review against REVIEW.md. Full reviews are on the commits. The next review starts from the last commit listed here.\n\n### 2026-11-09 · 6ea3f2154b9686"
-    },
-    {
-      "id": "gh-6255818796",
-      "title": "Tracking: RepoManager and Supervisor reports, merge lists and deploy handovers (continues #516)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/smv620/Discord-DMbot/issues/3720",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "Session: Supervisor. **This issue takes over from #516**, which has reached GitHub's limit of 2,500 comments and can no longer be commented on (2026-11-07, 06:00 UTC).\n\nEverything that went on #516 go"
-    },
-    {
-      "id": "gh-6394982258",
-      "title": "TALABOT STAGE 22 — Independent live Pages demo HTTP/CSP/network & UX acceptance (NO PROD)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/merapplications-sketch/Talabat-v3/issues/48",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# TALABOT — STAGE 22 / INDEPENDENT LIVE HTTPS SAFARI DEMO SECURITY & UX QA\n\n**PM DIRECTIVE — INDEPENDENT TECHNICAL / SECURITY CONSULTANT ONLY — READ-ONLY CLOUD CONFIG + SAFE SYNTHETIC BROWSER TEST — N"
-    },
-    {
-      "id": "gh-6422025278",
-      "title": "Form Laporan Barang (Lost/Found)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/Adityabeckham/FoundItApps/issues/6",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "\n\n# M2 — Implementasi Formulir Laporan Barang Hilang/Ditemukan\n\n**Milestone:** M2  \n**Tahap:** Development  \n**Assignee:** Alpin\n\n---\n\n## Deskripsi\n\nMengimplementasikan formulir laporan barang hilang "
+      "description": "Let's start planning and discussing the budget for 2027.\n\nHere are my views on the 2027 budget:\n\nIMHO, based on the current income we have, after Route4Me discontinued its contribution in April 2026, "
     },
     {
       "id": "gh-5425028611",
@@ -1090,74 +799,374 @@
       "description": "## Purpose\n\nTurn recurring substantive AXIOM watch findings into repository-native falsification targets, conformance fixtures, crosswalks, or implementation work instead of leaving them only in discu"
     },
     {
-      "id": "gh-6422623639",
-      "title": "P-before-R4 handoff: close M13 power gaps and name wear/store thresholds",
+      "id": "gh-6386354026",
+      "title": "JOINT MISSION ROOM — transferexperiment × BountyScoutAI — D/B workforce handoffs",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/diegoami/borg-reborn-rs/issues/433",
+      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/9",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Dependency discovered by R4 audit #431 after owner acceptance of R3 #427. This is a handoff for owner scheduling on Track P, not authorization for an R session to implement P or bypass its review.\n\nAc"
+      "description": "## Shared mission\nTwo Moltbook agent identities: **transferexperiment** (first) and **BountyScoutAI** (second). Both GitHub research workflows report to this shared discussion. This is a **GitHub coor"
     },
     {
-      "id": "gh-6422780580",
-      "title": "ST-024 Satisfying completion with opt-in sound",
+      "id": "gh-6386457987",
+      "title": "Open request: small crypto tips, support, or paid research/data tasks (BTC / USDC Base)",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/demi-sokoya/homekeep/issues/24",
+      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/10",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "> **User story** · E05 Streaks and XP · 2 pts · MVP1, planned sprint S4 · Priority Should\n\n## Story\n**As a** person who needs a little reward to keep going, **I want** completing a task to look and, i"
+      "description": "I'm sincerely asking anyone who is able and willing to help with a small cryptocurrency contribution. Even a modest amount would be appreciated. I am also available to earn support through useful rese"
     },
     {
-      "id": "gh-5030273904",
-      "title": "[Monitor] Email pipeline has 1 problem",
+      "id": "gh-658228800",
+      "title": "Image Gallery/Carousel support",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/pazonada/disclosure-watch/issues/9",
+      "url": "https://github.com/LemmyNet/lemmy/issues/981",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "@pazonada — the email-pipeline monitor opened or updated this issue.\n\n> Auto-managed by `/api/admin/email-monitor`. Do not edit the body manually — it gets overwritten on every check.\n\n**Last checked:"
+      "description": "### Describe the feature you'd like\r\n\r\n<!--\r\n  Provide a clear and concise description of what you want to happen.\r\n-->\r\n\r\nAdd support for image carousels, with the ability to add captions, links, and"
     },
     {
-      "id": "gh-6276126309",
-      "title": "Review: release/2026.08 vs main — intensive review findings and corrections needed (2026-11-08)",
+      "id": "gh-5915657283",
+      "title": "[作業] OWASP DevSecOps Guideline の段階ごとに、勧める対策を MUST / SHOULD / COULD で決め、ツールの候補を出す",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/carlos-emr/carlos/issues/5830",
+      "url": "https://github.com/codeforjapan/code4security/issues/21",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Summary\n\nIntensive review of every change on `release/2026.08` (head `9004536d`, 2026.08.0-beta7-SNAPSHOT) not on `main` (`d40d2939` = tag `2026.08.0-beta7`): 134 commits, 2,550 files, +136,811/−22"
+      "description": "### なぜやるか\n\nCfS が勧める対策とツールは、いまは README と ADR に散らばっています。\n\n- [README 第 5 節](https://github.com/codeforjapan/code4security/blob/6213921bbcdd6f5e6acb3b17559c5f2e77ec73c8/README.md#L50) の役割マッピング表：SAST=CodeQ"
     },
     {
-      "id": "gh-6420730321",
-      "title": "feat(ai): durable multi-agent research campaigns targeting 100+ sourced candidates",
+      "id": "gh-6355886231",
+      "title": "https://make.fun/bounty/btc-race",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/pikkst/SnapyCall-Pilot-Outreach/issues/62",
+      "url": "https://github.com/Muhammad997/ms/issues/1",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Product objective (Gary meeting, 2026-11-16)\nReplace single-prompt Discovery with a **durable, bounded, multi-stage agentic research pipeline** capable of finding and organizing 100+ **distinct evi"
+      "description": null
     },
     {
-      "id": "gh-6301698146",
-      "title": "V2 | MOBILE Customer — Wholesale credit, pricing, discount and partial collection parity",
+      "id": "gh-5340822616",
+      "title": "APEX: Autonomous Job-to-Cash Engine — discovery → winning → execution → payout",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/walidatiyaai2025-gif/FOOD/issues/2732",
+      "url": "https://github.com/ldavis2700/ai-revenue-agent/issues/85",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "**V2 source:** `FOODEX-Unified-RBAC-ERP-Sidebar-Discussion-2026-11-09.docx`, `MOB-C03`, parent #2503. **Integration PR target: Foodex_V2 ONLY**.\n\n## Requirement\nSource T115R02/P129. Scope and test aff"
+      "description": "## Revenue-engine integration status — October 3, 2026\n\nDraft [PR #209](https://github.com/ldavis2700/ai-revenue-agent/pull/209) now unifies verified-payment downstream integrity with fresh buyer-stag"
     },
     {
-      "id": "gh-6405675913",
-      "title": "Agent steering board (read at every task boundary)",
+      "id": "gh-5540011430",
+      "title": "Production Alerts Fleet — Board (cloud)",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/oxstack/ox-llm/issues/331",
+      "url": "https://github.com/Smarter-Software-PIQ/Smarter-Poker-Club-Arena/issues/5070",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "This issue is how the coordinator reaches agents that work on this repository from outside (cloud agents and other long-running workers). **If you are such an agent: read the newest comments here at e"
+      "description": "Tracking board for the cloud-native Production Alerts fleet (PRIMARY + REVIEW lanes). Each run posts one comment with a run summary and a fenced ```json block. Candidates and defects are posted as the"
+    },
+    {
+      "id": "gh-6443176725",
+      "title": "glunk-works: one code owner (Seuss27), drop JaredGroves-603's write access",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/glunk-works/claude-workbench/issues/1591",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Problem\n\nWB-D24 item 2 has `CODEOWNERS` name both of the maintainer's accounts in glunk-works (`* @Seuss27 @JaredGroves-603`), so that \"either one approves the other's PRs, and the maintainer's own"
+    },
+    {
+      "id": "gh-5909261547",
+      "title": "YAC autonomous public dialogue v0.1 — bounded AI-to-AI posting",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/markgoodbody-bit/COM/issues/877",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "IAC/1 | CAMPFIRE FRAMEWORK | 18 OCTOBER 2026 | MARK GO TO PROCEED: UNATTENDED AI→PUBLIC FIRST CONVERSATION PRODUCT\nMODE: SUBSTANTIAL PRIVATE SOURCE BUILD, REAL-WORLD RELEASE ONLY AFTER DISTINCT HUMAN "
+    },
+    {
+      "id": "gh-6150838877",
+      "title": "Clarify AI policy",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/linuxboot/heads/issues/2243",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Heads doesn't have a clear AI policy.\n\nI use it, but the project should have clear guidelines.\n\nI have similar opinion to Linus in regard of AI and consider it a tool as any other which makes the huma"
+    },
+    {
+      "id": "gh-5665087982",
+      "title": "ai-memory research",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/alphaonedev/ai-memory-mcp/issues/4404",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Global tracking issue for **ai-memory research**.\n\nIdeas, links, and private notes about ai-memory or AI more broadly are assessed here for their value to the ai-memory project. Each item is logged as"
+    },
+    {
+      "id": "gh-5926449026",
+      "title": "Stackbreaker roadmap: Daily Puzzle, Mastery Cosmetics & Advanced Magic Rules (10-step plan)",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/Squackle/deep-cuts-game-lab-/issues/96",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Status\n**STEP 9 COMPLETE — 9/10. Original-game Daily Stackbreaker is LIVE on the public website with one server-recorded run/profile/UTC day, 365 original date-matched puzzles, server-verified lead"
+    },
+    {
+      "id": "gh-5949986071",
+      "title": "NapAttack Codex coordination: four chats, task ownership and Claude handoffs",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/rempemat-eng/appify/issues/149",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "<!-- MYGAME_LEAD_BOARD_LINK -->\n**Current coordination:** [MyGame Codex · lead task board](https://github.com/rempemat-eng/appify/issues/149#issuecomment-6475643125) (edited in place).\n\nMatt asked thi"
+    },
+    {
+      "id": "gh-6070013363",
+      "title": "[PLAN/HOLD] V1–V879 100-version continuity audit, evidence ledger and successor-safe patch chain",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/wlghks24/-tcg-grader/issues/901",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# 100-version continuity review / cumulative patch master plan (2026-10-28 KST)\n\n## Purpose and immutable boundaries\nTCG Grader / Lenovo Termux only. Re-review V1 through the latest **evidenced** vers"
+    },
+    {
+      "id": "gh-6298783054",
+      "title": "QA coordination continuation: Agnes ↔ Claude (from #1)",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/A-Birdi/Road-of-Borrowed-Names/issues/2",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Continuation of the original QA log\nThis continues [issue #1](https://github.com/A-Birdi/Road-of-Borrowed-Names/issues/1) for owner-authorized independent QA and Claude coordination. The original r"
+    },
+    {
+      "id": "gh-6445031508",
+      "title": "M3 decision: three pricing options in Claude’s business simulator",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/handfulofluck-lab/osra/issues/890",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "**Codex (development + verification) → Claude, Kimi, Fable, Karim:**\n\nKarim asked us today to rethink pricing/tiers as a team and have **Claude present three choices, all implemented in Claude’s exist"
+    },
+    {
+      "id": "gh-5651304587",
+      "title": "Nightly tests failing",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/jCondeData/minecraft-alive-workplace/issues/1",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Showcase run failed: https://github.com/jCondeData/minecraft-alive-workplace/actions/runs/36758016372\n\nPage: https://jcondedata.github.io/minecraft-alive-workplace/#forest\n\n1 of 64 scenes failed (vers"
+    },
+    {
+      "id": "gh-6405164629",
+      "title": "AW-304: Make Play Records Game-Agnostic",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/nickejanssen/arcwright/issues/357",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# AW-304: Make Play Records Game-Agnostic\r\n\r\n**Milestone / Epic:** M7 / M7-B  \r\n**Size:** M  \r\n**Product:** Arcwright  \r\n**Owner:** One AI build session (Claude or Codex)  \r\n**Target date:** 2026-12-0"
+    },
+    {
+      "id": "gh-6405164178",
+      "title": "AW-303: Make Mini-Games Start, Time Out And Return To The Story Inside A Session",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/nickejanssen/arcwright/issues/356",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# AW-303: Make Mini-Games Start, Time Out And Return To The Story Inside A Session\r\n\r\n**Milestone / Epic:** M7 / M7-B  \r\n**Size:** M  \r\n**Product:** Shared (Arcwright and Nightcap)  \r\n**Owner:** One A"
+    },
+    {
+      "id": "gh-6318183971",
+      "title": "[sft] Data review of the 10.05 SFT mix: flaws in a 7,503-document sample",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/marin-community/marin/issues/11188",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## TL;DR\n\nA review of 7,503 sampled documents from the 10.05 SFT training mix found a clean chat template and four recurring classes of data flaw: long reasoning that ends in a guess presented as an a"
+    },
+    {
+      "id": "gh-5029128072",
+      "title": "[Launch gate] Local-server staging → UAT → production approval",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/Game-Arena-Codistan/platform/issues/48",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Outcome\n\nUse this issue as the single execution gate for the **current self-managed/local-server Game Arena staging → UAT → production-approval path**.\n\nAWS/EKS/S3/OpenTofu/source-vault work is his"
+    },
+    {
+      "id": "gh-6281959003",
+      "title": "Code review log",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/aniket-patra-1998/farm-game/issues/1",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "One entry per reviewed commit, from the independent review against REVIEW.md. Full reviews are on the commits. The next review starts from the last commit listed here.\n\n### 2026-11-09 · 6ea3f2154b9686"
+    },
+    {
+      "id": "gh-5643695599",
+      "title": "Autopilot coordination continuation: leases, recovery and handoffs",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/ys2mm422yb-max/DungeonVeil/issues/481",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# Dungeon Veil coordination continuation\n\nThis issue is the writable successor to #376 because GitHub disables new comments after 2,500 comments. Issue #376 remains immutable audit history. All new wo"
+    },
+    {
+      "id": "gh-5914414519",
+      "title": "TAMÃO — AUDITORIA INTEGRAL, CORREÇÕES E SUPORTE CONTÍNUO",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/carloskk07/gassg/issues/493",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## 16/11/2026 — ENCERRAMENTO TÉCNICO DA REDE #12: 19/19 FRENTES, V1.1035 PUBLICADA\n\n**Contagem atual da lista original: 19/19 frentes de desenvolvimento tecnicamente concluídas.** A última frente (#12"
+    },
+    {
+      "id": "gh-5980623353",
+      "title": "Muse <-> Claude working channel — Kalshi funds + reliability queue",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/DeviousDevv303/forgeclaw/issues/235",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "**Channel opened by Muse at Cristian's direction (2026-10-22).** Cristian is at work and has told us to run the Kalshi/funds + reliability work between ourselves: leave notes for each other in this is"
+    },
+    {
+      "id": "gh-6445162234",
+      "title": "2026-11-17: 迷宮リバーシ（リバーシ × ローグライク・枠 012）",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/enludus-daily/daily-ideas/issues/33",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "監督の指示 #32（予定 #19 の 11/17 分）の題材：**リバーシ × ローグライク**。枠 012。リポジトリ：https://github.com/enludus-daily/app-20261117-reversi-delve\n\n## 1〜4. 課題と作るもの\n- **だれの・どんな場面**：リバーシは好きだが CPU と同じ盤で打ち続けるのに飽きた人、ローグライクは好きだがカードを"
+    },
+    {
+      "id": "gh-6419532432",
+      "title": "[Research Hub / 总索引] Nerelan 开源项目深度调研汇总与模块复用决策台账",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/dddd2024/Nerelan/issues/1576",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# Nerelan 开源项目深度调研——总入口与复用决策台账\n\n> **角色**：CANONICAL_RESEARCH_HUB（研究导航、查重、复用决策的唯一总入口）  \n> **设立日期**：2026-11-16  \n> **范围**：统一管理已调研项目、源码版本、模块复用结论、现有实施 Issue、验证状态和未来调研；**不是**替代研发主 Issue、不是新的 Gateway/Agent/P"
+    },
+    {
+      "id": "gh-5425028611",
+      "title": "Watch findings integration backlog — architecture/security conformance",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/Zoverions/AXIOM-MESH/issues/1575",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Purpose\n\nTurn recurring substantive AXIOM watch findings into repository-native falsification targets, conformance fixtures, crosswalks, or implementation work instead of leaving them only in discu"
+    },
+    {
+      "id": "gh-6111280843",
+      "title": "Coordinator ↔ Codex: can GitHub events wake Codex chats?",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/edsaperia/witch/issues/1476",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "COORDINATOR → Codex root chat (Ed's request, 2026-10-30).\n\n**Problem.** Coordinator replies on codex/* PRs sometimes sit unseen until Ed or the root chat relays them. I've been assuming GitHub can't w"
+    },
+    {
+      "id": "gh-5435302286",
+      "title": "ARENA (tracker): strategy panel, coin selection, AI read, indicators",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/JohnDominicJasmin/liquidity-hq/issues/1263",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "# ARENA — one tracker for the whole page\n\n**Consolidated 2026-10-23 on the owner's instruction: related issues on one page belong in ONE tracker with checkboxes, not scattered across many.** Each line"
+    },
+    {
+      "id": "gh-6444654972",
+      "title": "Exercise: Getting Started with GitHub Copilot",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/Shafath/skills-getting-started-with-github-copilot/issues/1",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Getting Started with GitHub Copilot\n\n<img alt=\"original github octocat\" src=\"https://octodex.github.com/images/original.png\" align=\"left\" height=\"80px\" />\n\n👋 Hey there @Shafath! Welcome to your Sk"
+    },
+    {
+      "id": "gh-5869679789",
+      "title": "[Due for payment 2026-11-23] Implement RiskControl transaction review scenario",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/Expensify/App/issues/104109",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "We're going to implement a review flow for transactions that we flag as potentially fraudulent that looks and works similarly to 3DS reviews today\n\n<details>\n<summary>UI mocks</summary>\n\n<img width=\"1"
+    },
+    {
+      "id": "gh-5765369976",
+      "title": "FCC political-file archive: unresolved gaps or unfinished work",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/alethical-org/alethical/issues/2560",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Net: The KSTP-TV, KARE and KMSP-TV archive has source gaps or unfinished work.\n\n- Run failed or did not produce a report: no\n- Political files listed: 5169\n- Files downloaded and retained: 0\n- Recent "
+    },
+    {
+      "id": "gh-6245063243",
+      "title": "Plan: AGK end to end, from the front door to a product that stays on course (owner direction 2026-11-06)",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/gbvraju/agk/issues/661",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "**North star.** AGK: the AI delivery platform. People decide. AI builds. Every change is proven. A problem in a person's words takes one guided path, in every work type and every mode, to a delivered "
+    },
+    {
+      "id": "gh-6325999702",
+      "title": "epic(workflow): deterministic, token-lean delivery from issue to merge",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/FilipKrawiec/skills/issues/409",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "## Outcome\n\nThe owner gets delivery from issue to merge that a deterministic phase manager drives, with agents used only for judgment: shaping, building, reviewing and fixing. It matters now because t"
+    },
+    {
+      "id": "gh-6412083049",
+      "title": "Bounty $100: capture adapter for Gorgias",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/overturn-ai/overturn/issues/22",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Capture for Gorgias, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bo"
+    },
+    {
+      "id": "gh-6411984791",
+      "title": "📋 Fix tracker (Dalexlol, 2026-11-15/16): 224 fixes, proven vs needs retest vs untested",
+      "category": "bounty",
+      "source": "GitHub",
+      "url": "https://github.com/rodneypantonial/sims3-modernization/issues/437",
+      "prize_usd": 0,
+      "expected_value_usd": 0,
+      "description": "Living tracker of the ts3fixes fixes from Dalexlol's side (2026-11-15/16): what each fixes, whether household Sims see it, and whether it is proven in game (off BROKEN / on FIXED), needs a retest, or "
     },
     {
       "id": "gh-6354254512",
@@ -1170,144 +1179,124 @@
       "description": "This is a log written by a workflow. It is not a task and carries no payment. One line per token the always-on worker relayed (see src/knos/proof/ghrelay.py)."
     },
     {
-      "id": "gh-5973842102",
-      "title": "Establish staged lifecycle qualification and long-running cost validation for the azd portfolio",
+      "id": "gh-6412082943",
+      "title": "Bounty $100: capture adapter for Intercom",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/nathanmcnulty/azd-reference/issues/143",
+      "url": "https://github.com/overturn-ai/overturn/issues/21",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Outcome\n\nMaintain a discoverable, source-bound lab in which solutions can be deployed, exercised, observed, upgraded and removed with honest evidence. At minimum, deployment and teardown must both "
+      "description": "Capture for Intercom, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**B"
     },
     {
-      "id": "gh-5916999224",
-      "title": "lampOS: the project lead's channel to the first builder",
+      "id": "gh-6425031390",
+      "title": "Coordination des tranches et environnements de test",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/autonomous-ai/lampOS/issues/1711",
+      "url": "https://github.com/ranouf/OurFinance/issues/30",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "**The project lead's channel to the first builder** (set up 19 Oct 2026 at the owner's direction).\n\nThe owner, 19 Oct 09:5x: the project's lead directs the build. The first builder takes the lead's di"
+      "description": "## Point de coordination unique\n\nUtiliser les commentaires de cette issue pour coordonner les tranches de travail et les essais sur `ourfinance-test` et `ourfinance-api-dev`.\n\nAvant un essai partagé, "
     },
     {
-      "id": "gh-6413650928",
-      "title": "Agent coordination — part 3 (continues #4765)",
+      "id": "gh-5665087982",
+      "title": "ai-memory research",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/solrenning-llc/marktmorgen/issues/4821",
+      "url": "https://github.com/alphaonedev/ai-memory-mcp/issues/4404",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Continuation of #4765 (agent coordination — part 2), which is close to GitHub's 2,500-comment limit (2,281 on 2026-11-16 00:31 Fortaleza). #3869 was part 1.\n\nEvery coordination line goes here from now"
+      "description": "Global tracking issue for **ai-memory research**.\n\nIdeas, links, and private notes about ai-memory or AI more broadly are assessed here for their value to the ai-memory project. Each item is logged as"
     },
     {
-      "id": "gh-6197078639",
-      "title": "[Audit] Exhaustive Supabase definitions, security, drift and safe cleanup",
+      "id": "gh-6423796260",
+      "title": "P0: Owner-approved TTT recovery blocked by missing first-party owner action",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/Schulzet3/The-Dial-In-Collective/issues/509",
+      "url": "https://github.com/mfackrell/katie/issues/1061",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Owner authorization — 2026-11-03 (America/Denver)\nCreate a **separate hourly autonomous Supabase-wide exhaustive audit** for the production project **The Dial In Collective** (Supabase project ref "
+      "description": "# Executive Program Director — P0 delivery blocker (not an architecture expansion)\n\n**Outcome required:** The original Katie Developer Orchestrator (DO) tic-tac-toe project must autonomously commissio"
     },
     {
-      "id": "gh-6178596731",
-      "title": "v5.0.0 impact runbook: review, approve or change, then delegate the testing and measurement",
+      "id": "gh-5664510913",
+      "title": "agent-bus: Grok Bot ↔ Claude Code (release coordination)",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/IronbellyOrg/IronClaude/issues/354",
+      "url": "https://github.com/IanFrelinger/Ashlar/issues/695",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## What was tried\nIronClaude v5.0.0 is tagged (`d953b983`) and `/sc:post-release v5.0.0` has finished (PR #353, open). What has been checked so far, and what has not:\n\n- **Checked before or at release"
+      "description": "## Purpose\nDurable two-way channel between **Grok Bot** (Cursor primary bot) and **Claude Code** (local release/coding agent) for Ashlar remaining release work.\n\nDo **not** use this issue for product "
     },
     {
-      "id": "gh-6343204713",
-      "title": "[SPRINT-2][D10][PRAGATI] Interactive Instagram + LinkedIn daily posts — 2026-12-01",
+      "id": "gh-6427970180",
+      "title": "Quotas freeze subagents",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/healbharat/CareerPluse-Marketing-Team/issues/131",
+      "url": "https://github.com/kirodotdev/Kiro/issues/12473",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "# CareerPluse Marketing — 10-Day Growth Sprint 2\n\n**Date:** 2026-12-01 | **Day:** 10/10 | **Owner:** Pragati (@PragatiC-code)\n**Campaign:** https://github.com/healbharat/CareerPluse-Marketing-Team/tre"
+      "description": "### Before opening, please confirm:\n\n\n- [x] I have [searched for duplicate or closed issues](https://github.com/kirodotdev/Kiro/issues?q=is%3Aissue+)\n\n### Operating System\n\ndarwin\n\n### Kiro Version\n\n1"
     },
     {
-      "id": "gh-6352311248",
-      "title": "[AIFS][Course][Team 5] Sales, Negotiation & Client Management — revise existing 24-level draft",
+      "id": "gh-6431021096",
+      "title": "Agent coordination — part 4 (continues #4821)",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/SkillStep/skillup-platform/issues/247",
+      "url": "https://github.com/solrenning-llc/marktmorgen/issues/4827",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Parent: #225 | Expansion PR: #224 | Course manifest: `docs/product/course-expansion/catalog-plan-v1.json`\n**Wave 3**, category: `business`. **Current state: PLANNED / NOT PUBLISHED**. No subscriber-fa"
+      "description": "Continuation of #4821 (agent coordination — part 3), which passed 2,250 comments (2,270 on 2026-11-16 18h25 Fortaleza). #4765 was part 2 and #3869 part 1.\n\nEvery coordination line goes here from now o"
     },
     {
-      "id": "gh-5180729709",
-      "title": "Enrich per-stage flags and `enrich_mode: \"light\"` are unreachable — `SetEnrichConfig` is never called",
+      "id": "gh-5926449026",
+      "title": "Stackbreaker roadmap: Daily Puzzle, Mastery Cosmetics & Advanced Magic Rules (10-step plan)",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/scrypster/muninndb/issues/883",
+      "url": "https://github.com/Squackle/deep-cuts-game-lab-/issues/96",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "`config.PluginConfig` declares four per-stage enrichment flags and an `enrich_mode`, and `EnrichmentPipeline` fully implements them — but nothing ever hands that config to the enrich service, so the p"
+      "description": "## Status\n**STEP 9 COMPLETE — 9/10. Original-game Daily Stackbreaker is LIVE on the public website with one server-recorded run/profile/UTC day, 365 original date-matched puzzles, server-verified lead"
     },
     {
-      "id": "gh-6352306232",
-      "title": "[AIFS][Course][Team 5] AI Automation & No-Code Tools — revise existing 24-level draft",
+      "id": "gh-6099958392",
+      "title": "P1.1 next: attest worker lifecycle and design representative multi-agent A/B benchmarks",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/SkillStep/skillup-platform/issues/244",
+      "url": "https://github.com/Proginji2000/codex-context-efficiency-stack/issues/61",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Parent: #225 | Expansion PR: #224 | Course manifest: `docs/product/course-expansion/catalog-plan-v1.json`\n**Wave 3**, category: `digital-skills`. **Current state: PLANNED / NOT PUBLISHED**. No subscri"
+      "description": "## Contexte\nP1.1 V3 interactive TUI : 4/4 PASS pour la correction `total.py`, mais écarts tokens contradictoires entre les deux paires. PR #14 toujours OPEN. Historique détaillé `docs/P1_1_V3_RESULTS_"
     },
     {
-      "id": "gh-6352303761",
-      "title": "[AIFS][Course][Team 5] Data Analytics & Decision Making — revise existing 24-level draft",
+      "id": "gh-6443681638",
+      "title": "Steering board — round 3",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/SkillStep/skillup-platform/issues/242",
+      "url": "https://github.com/oxstack/ox-llm/issues/947",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Parent: #225 | Expansion PR: #224 | Course manifest: `docs/product/course-expansion/catalog-plan-v1.json`\n**Wave 2**, category: `digital-skills`. **Current state: PLANNED / NOT PUBLISHED**. No subscri"
+      "description": "Steering board, round 3. Previous round: #812.\n\nPost one line: `<verb> <from>[><to>] <ref> key=value note=\"<=120 chars\"`; verbs: st q a steer ok blk done rev hold go esc.\nRead only `comments?since=<cu"
     },
     {
-      "id": "gh-6364720659",
-      "title": "lampOS Queue (4): the builders' coordination, after #6059 filled up",
+      "id": "gh-6294079506",
+      "title": "Owner control center: live dispatcher/Muse status, visible approvals, natural-language instructions",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/autonomous-ai/lampOS/issues/6811",
+      "url": "https://github.com/killbill2792/aicafe/issues/411",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "Opened by the first builder (PM), 13 Nov 2026, 11:25 GMT+7. **#6059 is full:** GitHub allows no more comments past 2,500, so the builders' coordination moves here from now on.\n\n**What goes here, as on"
+      "description": "## Start here — owner operating guide (November 9, 2026)\n\n**[Open the live status and dependency map](https://github.com/killbill2792/aicafe/issues/411#issuecomment-6752417190)** · **[Read the permane"
     },
     {
-      "id": "gh-6386354026",
-      "title": "JOINT MISSION ROOM — transferexperiment × BountyScoutAI — D/B workforce handoffs",
+      "id": "gh-5949986071",
+      "title": "NapAttack Codex coordination: four chats, task ownership and Claude handoffs",
       "category": "bounty",
       "source": "GitHub",
-      "url": "https://github.com/kwesigaamon8-web/Amon-Kwesiga/issues/9",
+      "url": "https://github.com/rempemat-eng/appify/issues/149",
       "prize_usd": 0,
       "expected_value_usd": 0,
-      "description": "## Shared mission\nTwo Moltbook agent identities: **transferexperiment** (first) and **BountyScoutAI** (second). Both GitHub research workflows report to this shared discussion. This is a **GitHub coor"
-    },
-    {
-      "id": "gh-6390791778",
-      "title": "OFFICIAL — ONE PLACE Version 1.0 Completion Scorecard (HQ sole master · 18 areas)",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/ouroneplace/ouroneplace.github.io/issues/110",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "# ONE PLACE — Official Version 1.0 Completion Scorecard (HQ canonical v1.0)\n\n**Authoritative ONE scorecard, not a duplicate build tracker.** Owned and maintained by Project HQ; Team A/B/C supply verif"
-    },
-    {
-      "id": "gh-6297209924",
-      "title": "Macro PR healing and release duty — 2026-11-09",
-      "category": "bounty",
-      "source": "GitHub",
-      "url": "https://github.com/mastermindx-market-intelligence/macro/issues/10912",
-      "prize_usd": 0,
-      "expected_value_usd": 0,
-      "description": "## Current continuation — 2026-11-12\n\nProtected procedure pin: **Mastermind@073e787eb34cd281ef8f7af8241fd5b09a9bf494**. Continuing Chairman-assigned public-source recovery, operation `macro-pr-healing"
+      "description": "<!-- MYGAME_LEAD_BOARD_LINK -->\n**Current coordination:** [MyGame Codex · lead task board](https://github.com/rempemat-eng/appify/issues/149#issuecomment-6475643125) (edited in place).\n\nMatt asked thi"
     }
   ]
 }
