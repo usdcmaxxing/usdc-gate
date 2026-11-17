@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-17T16:00:58.772Z",
+  "checked_at": "2026-11-17T16:16:04.564Z",
   "origin": "https://usdc-gate-live.vercel.app",
   "failures": 0,
   "results": [
@@ -8,42 +8,42 @@
       "path": "/health",
       "status": 200,
       "ok": true,
-      "ms": 628
+      "ms": 3712
     },
     {
       "name": "catalog",
       "path": "/catalog",
       "status": 200,
       "ok": true,
-      "ms": 422
+      "ms": 559
     },
     {
       "name": "dashboard",
       "path": "/dashboard",
       "status": 200,
       "ok": true,
-      "ms": 160
+      "ms": 200
     },
     {
       "name": "stats",
       "path": "/v1/stats",
       "status": 200,
       "ok": true,
-      "ms": 157
+      "ms": 154
     },
     {
       "name": "llms.txt",
       "path": "/llms.txt",
       "status": 200,
       "ok": true,
-      "ms": 174
+      "ms": 370
     },
     {
       "name": "openapi",
       "path": "/openapi.json",
       "status": 200,
       "ok": true,
-      "ms": 173
+      "ms": 158
     },
     {
       "name": "x402 manifest",
@@ -57,7 +57,7 @@
       "path": "/.well-known/agent.json",
       "status": 200,
       "ok": true,
-      "ms": 165
+      "ms": 174
     }
   ]
 }
