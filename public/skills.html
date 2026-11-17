@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Store — USDC Gate</title>
+<meta name="description" content="Battle-tested AI agent skills. Pay once in USDC via x402. No platform fee, no subscription.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<style>
+:root{--bg:#0b0e11;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#f78166;--accent2:#58a6ff;--green:#3fb950;--orange:#d29922}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{padding:2rem;text-align:center;border-bottom:1px solid var(--border);background:linear-gradient(135deg,#0d1117,#161b22)}
+header h1{font-size:2.2rem;background:linear-gradient(135deg,var(--accent),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header p{color:var(--muted);max-width:640px;margin:.75rem auto 0}
+.container{max-width:1000px;margin:0 auto;padding:2rem 1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column}
+.card h2{font-size:1.25rem;margin-bottom:.25rem}
+.card .tagline{color:var(--accent2);font-size:.92rem;margin-bottom:.75rem}
+.card .desc{color:var(--muted);font-size:.88rem;flex:1}
+.card ul{list-style:none;margin:1rem 0;font-size:.85rem;color:var(--muted)}
+.card ul li{padding:.3rem 0;border-bottom:1px solid #21262d}
+.card ul li:before{content:"✓ ";color:var(--green);font-weight:700}
+.price{font-size:1.8rem;font-weight:700;color:var(--accent);margin-top:.5rem}
+.meta{font-size:.78rem;color:var(--muted);margin-top:.25rem}
+.how{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-top:2rem}
+.how h3{margin-bottom:.75rem}
+.how ol{padding-left:1.25rem;color:var(--muted);font-size:.9rem}
+.how li{margin-bottom:.4rem}
+.how code{background:#0d1117;padding:.15rem .4rem;border-radius:4px;font-size:.82rem;color:var(--accent2)}
+.badge{display:inline-block;background:#23863633;color:var(--green);border:1px solid #23863655;padding:.2rem .6rem;border-radius:20px;font-size:.75rem;font-weight:600;margin-top:.75rem}
+footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧩 Skill Store</h1>
+  <p>Battle-tested AI agent skills (SKILL.md). Pay once in USDC via x402 — <strong>no platform fee, no subscription</strong>. Buyers keep the file forever.</p>
+  <span class="badge">0% platform fee · paid directly in USDC</span>
+</header>
+
+<div class="container">
+  <div class="grid" id="grid"><p style="color:var(--muted)">Loading…</p></div>
+
+  <div class="how">
+    <h3>How buying works</h3>
+    <ol>
+      <li>Request a skill endpoint — e.g. <code>GET /v1/skill/agent-paid-services</code></li>
+      <li>Get a <code>402 Payment Required</code> with the price in USDC</li>
+      <li>Pay with an x402 client (or any wallet via EIP-3009)</li>
+      <li>Retry — receive the SKILL.md instantly</li>
+    </ol>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:.75rem">
+      Skills run inside your own agent — nothing is hosted by us, no account needed, no recurring charge.
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p><a href="/catalog" style="color:var(--accent2)">← Data catalog</a> ·
+     <a href="/" style="color:var(--accent2)">Home</a> ·
+     <a href="/v1/skills" style="color:var(--accent2)">JSON catalog</a></p>
+  <p style="margin-top:.5rem">USDC Gate · skills are MIT-licensed · you may use them in your own agents</p>
+</footer>
+
+<script>
+async function load() {
+  const res = await fetch('/v1/skills');
+  const data = await res.json();
+  document.getElementById('grid').innerHTML = data.skills.map(s => `
+    <div class="card">
+      <h2>${s.name}</h2>
+      <div class="tagline">${s.tagline}</div>
+      <ul>${s.includes.map(i => `<li>${i}</li>`).join('')}</ul>
+      <div class="price">${s.price}</div>
+      <div class="meta">${s.endpoint} · one-time, USDC</div>
+      <div class="meta">Tags: ${s.tags.join(', ')}</div>
+    </div>
+  `).join('');
+}
+load();
+</script>
+</body>
+</html>

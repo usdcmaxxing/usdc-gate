@@ -15,6 +15,7 @@ import { checkCounterparty, OFAC } from "./check.js";
 import { getTokenPrice, getMultiplePrices } from "./prices.js";
 import { scoreWallet } from "./walletscore.js";
 import { openApiDocument } from "./openapi.js";
+import { listSkills, getSkill, SKILLS } from "./skillstore.js";
 import {
   getSanctionsDataset,
   getMemecoinShadowBook,
@@ -97,6 +98,9 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/chains": "$0.02 — top 100 blockchains by TVL.",
       "GET /v1/dataset/exchanges": "$0.02 — top 100 crypto exchanges with trust scores.",
       "GET /v1/dataset/prediction-markets": "$0.03 — live Polymarket + Kalshi event markets with odds and volume.",
+      "GET /v1/skill/agent-paid-services": "$29 — build paid x402/USDC APIs (SKILL.md).",
+      "GET /v1/skill/x402-implementation-gotchas": "$19 — the silent x402 bugs (SKILL.md).",
+      "GET /v1/skill/memecoin-strategy-validation": "$24 — validate a memecoin edge (SKILL.md).",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -324,6 +328,8 @@ app.get("/llms.txt", (_req, res) => {
       "## Free, ungated",
       "",
       "- `GET /v1/datasets` — list all datasets",
+      "- `GET /v1/skills` — list all skills (free catalog)",
+      "- `GET /skills` — human-readable skill store",
       "- `GET /catalog` — human-readable catalog",
       "- `GET /dashboard` — usage dashboard",
       "- `GET /v1/sample` — static example of the verdict shape",
@@ -672,6 +678,16 @@ const routes = {
   },
 };
 
+// Skill store — each SKILL.md is an x402-paid HTTP resource (no platform fee).
+for (const skill of SKILLS) {
+  routes[`GET /v1/skill/${skill.slug}`] = {
+    accepts: [{ scheme: "exact", price: skill.price, network: NETWORK, payTo: PAY_TO }],
+    description: `${skill.tagline} — the SKILL.md as a paid download.`,
+    mimeType: "text/markdown",
+    extensions: datasetBazaar(skill.name, { records: [{ name: skill.slug, price: skill.price }] }),
+  };
+}
+
 const facilitatorClient = withBazaar(new HTTPFacilitatorClient({ url: FACILITATOR }));
 const resourceServer = new x402ResourceServer(facilitatorClient)
   .register(NETWORK, new ExactEvmScheme())
@@ -878,6 +894,22 @@ app.get("/v1/dataset/prediction-markets", async (req, res) => {
   }
 });
 
+// ── Skill store ──────────────────────────────────────────────────────────
+// Free catalog (lets buyers discover what's for sale before paying).
+app.get("/v1/skills", (_req, res) => res.json(listSkills()));
+
+// Paid download — the SKILL.md is the product. x402 middleware gates this.
+app.get("/v1/skill/:slug", (req, res) => {
+  const skill = getSkill(req.params.slug);
+  if (!skill) return res.status(404).json({ error: "skill not found" });
+  res.type("text/markdown; charset=utf-8").sendFile(path.join(__dirname, skill.file));
+});
+
+// Human-readable store page.
+app.get("/skills", (_req, res) => {
+  res.type("text/html").sendFile(path.join(__dirname, "public", "skills.html"));
+});
+
 // ── Usage tracking ───────────────────────────────────────────────────────
 // In-memory stats: counts paid calls per endpoint. Resets on redeploy.
 const stats = {
@@ -917,6 +949,9 @@ app.use((req, res, next) => {
         "/v1/dataset/chains": "$0.02",
         "/v1/dataset/exchanges": "$0.02",
         "/v1/dataset/prediction-markets": "$0.03",
+        "/v1/skill/agent-paid-services": "$29",
+        "/v1/skill/x402-implementation-gotchas": "$19",
+        "/v1/skill/memecoin-strategy-validation": "$24",
       };
       const price = priceMap[path] || "$0.01";
       const usd = priceToUsd(price);
