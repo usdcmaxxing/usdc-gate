@@ -100,7 +100,6 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/prediction-markets": "$0.03 — live Polymarket + Kalshi event markets with odds and volume.",
       "GET /v1/skill/agent-paid-services": "$29 — build paid x402/USDC APIs (SKILL.md).",
       "GET /v1/skill/x402-implementation-gotchas": "$19 — the silent x402 bugs (SKILL.md).",
-      "GET /v1/skill/memecoin-strategy-validation": "$24 — validate a memecoin edge (SKILL.md).",
       "GET /v1/datasets": "free list of all available datasets",
       "GET /v1/sample": "free static example of the verdict shape",
       "GET /health": "liveness",
@@ -952,7 +951,6 @@ app.use((req, res, next) => {
         "/v1/dataset/prediction-markets": "$0.03",
         "/v1/skill/agent-paid-services": "$29",
         "/v1/skill/x402-implementation-gotchas": "$19",
-        "/v1/skill/memecoin-strategy-validation": "$24",
       };
       const price = priceMap[path] || "$0.01";
       const usd = priceToUsd(price);

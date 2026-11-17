@@ -13,7 +13,6 @@
 |---|---|---|
 | Agent-Paid Services | $29 | `GET /v1/skill/agent-paid-services` |
 | x402 Implementation Gotchas | $19 | `GET /v1/skill/x402-implementation-gotchas` |
-| Memecoin Strategy Validation | $24 | `GET /v1/skill/memecoin-strategy-validation` |
 
 - Paid via **x402 in USDC** → **0% platform fee**, straight to the payTo wallet.
 - Free catalog so buyers can see what's inside before paying.
@@ -38,14 +37,10 @@ The direct store has **no built-in discovery**. Marketplaces have audiences. Bot
 ### 2. AgentAlley — 70% of net
 - Apply to be a creator; each item is reviewed. $1–$500 price range.
 
-### 3. Graded Prompts — 85% of every sale
-- A human runs every prompt on its real model before listing. Best for the
-  `memecoin-strategy-validation` skill.
-
-### 4. AIMarket24 — 85% (95% for the first 50 sellers, 6 months)
+### 3. AIMarket24 — 85% (95% for the first 50 sellers, 6 months)
 - Free listing, $1 minimum. Good for volume.
 
-### 5. MCP Marketplace — 85% via Stripe Connect
+### 4. MCP Marketplace — 85% via Stripe Connect
 
 **Copy-paste listing text for every platform:** `skill-store/LISTINGS.md`
 
@@ -57,7 +52,7 @@ The store has no audience yet. Realistic channels:
 
 1. **Post the store** on the same places we prepared for USDC Gate
    (`publish/hn-post.md`, `publish/x-thread.md` — adapt the angle to "skills").
-2. **Dev.to article**: "I packaged three agent skills and now sell them for USDC" —
+2. **Dev.to article**: "I packaged two agent skills and now sell them for USDC" —
    the build story sells better than the product.
 3. **List in the agent directories** (Agent402, Circle Marketplace) — the skills are
    agent-native, so they belong there.
@@ -70,7 +65,7 @@ The store has no audience yet. Realistic channels:
 
 - **Add more skills.** We have ~40 bundled skills; the unique ones are packaged, but
   the good generic ones (PDF, weekly review, competitor monitor) could be repackaged.
-- **Bundle pricing** — 3 skills for $49 (vs $72 separately).
+- **Bundle pricing** — both skills for $39 (vs $48 separately).
 - **Free sample** — a 1-page teaser for each, so buyers can judge before paying.
 - **Version updates** — skills improve; charge for major versions.
 
@@ -84,7 +79,7 @@ usdc-gate/
 ├── skills/                    ← the actual SKILL.md files (paid downloads)
 │   ├── agent-paid-services/SKILL.md
 │   ├── x402-implementation-gotchas/SKILL.md
-│   └── memecoin-strategy-validation/SKILL.md
+
 ├── public/skills.html         ← store page
 └── skill-store/LISTINGS.md    ← marketplace copy
 ```

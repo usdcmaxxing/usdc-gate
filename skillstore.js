@@ -38,24 +38,6 @@ export const SKILLS = [
       "Facilitator settlement structure",
     ],
   },
-  {
-    slug: "memecoin-strategy-validation",
-    name: "Memecoin Strategy Validation",
-    tagline: "Test a memecoin trading edge against real baselines — not vibes.",
-    description:
-      "How to validate a memecoin strategy without fooling yourself: key on token address (never symbol), read win/loss records not just P&L, account for survivorship bias, benchmark against verified leader profiles, and spot the venue effect.",
-    price: "$24",
-    amount_atomic: "2400000",
-    file: "skills/memecoin-strategy-validation/SKILL.md",
-    tags: ["crypto", "trading", "backtest", "risk", "memecoin"],
-    includes: [
-      "Address-vs-symbol identity trap",
-      "Verified leader profiles as baselines",
-      "Survivorship-bias-free record keeping",
-      "Venue routing: where the edge actually is",
-      "A pre-registration discipline for claims",
-    ],
-  },
 ];
 
 export function listSkills() {
