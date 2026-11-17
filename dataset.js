@@ -96,6 +96,10 @@ export function getPredictionMarketRegistry(q) {
   return query(load("prediction-market-registry"), q);
 }
 
+export function getThreatIntelRegistry(q) {
+  return query(load("threat-intel-registry"), q);
+}
+
 // List all available datasets (free — lets agents discover what we sell)
 export function listDatasets() {
   return {
@@ -197,6 +201,13 @@ export function listDatasets() {
         price: "$0.03",
         records: 40,
         description: "Live Polymarket + Kalshi event markets with odds and 24h volume",
+      },
+      {
+        id: "threat-intel-registry",
+        endpoint: "/v1/dataset/threat-intel",
+        price: "$0.03",
+        records: 150,
+        description: "Active cyber threats: CISA exploited vulns, crypto hacks, breaches, advisories",
       },
     ],
   };

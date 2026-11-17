@@ -31,6 +31,7 @@ import {
   getChainRegistry,
   getExchangeRegistry,
   getPredictionMarketRegistry,
+  getThreatIntelRegistry,
   listDatasets,
 } from "./dataset.js";
 
@@ -98,6 +99,7 @@ app.get("/v1/service-info", (_req, res) => {
       "GET /v1/dataset/chains": "$0.02 — top 100 blockchains by TVL.",
       "GET /v1/dataset/exchanges": "$0.02 — top 100 crypto exchanges with trust scores.",
       "GET /v1/dataset/prediction-markets": "$0.03 — live Polymarket + Kalshi event markets with odds and volume.",
+      "GET /v1/dataset/threat-intel": "$0.03 — active cyber threats: CISA exploited vulns, crypto hacks, breaches.",
       "GET /v1/skill/agent-paid-services": "$29 — build paid x402/USDC APIs (SKILL.md).",
       "GET /v1/skill/x402-implementation-gotchas": "$19 — the silent x402 bugs (SKILL.md).",
       "GET /v1/datasets": "free list of all available datasets",
@@ -676,6 +678,12 @@ const routes = {
     mimeType: "application/json",
     extensions: datasetBazaar("Prediction Market Registry", { records: [{ title: "Rockets vs. Heat", price: 0.33 }] }),
   },
+  "GET /v1/dataset/threat-intel": {
+    accepts: [{ scheme: "exact", price: "$0.03", network: NETWORK, payTo: PAY_TO }],
+    description: "Active cyber threats: CISA known-exploited vulns (with deadlines), recent crypto hacks (amounts/techniques), data breaches, UK advisories. ?query= to filter.",
+    mimeType: "application/json",
+    extensions: datasetBazaar("Threat Intelligence Registry", { records: [{ cve: "CVE-2026-115731", vendor: "Perforce" }] }),
+  },
 };
 
 // Skill store — each SKILL.md is an x402-paid HTTP resource (no platform fee).
@@ -894,6 +902,15 @@ app.get("/v1/dataset/prediction-markets", async (req, res) => {
   }
 });
 
+// Threat intelligence registry — active attacks, exploits, breaches
+app.get("/v1/dataset/threat-intel", async (req, res) => {
+  try {
+    res.json(getThreatIntelRegistry(req.query.query));
+  } catch (e) {
+    res.status(500).json({ error: String(e?.message || e) });
+  }
+});
+
 // ── Skill store ──────────────────────────────────────────────────────────
 // Free catalog (lets buyers discover what's for sale before paying).
 app.get("/v1/skills", (_req, res) => res.json(listSkills()));
@@ -949,6 +966,7 @@ app.use((req, res, next) => {
         "/v1/dataset/chains": "$0.02",
         "/v1/dataset/exchanges": "$0.02",
         "/v1/dataset/prediction-markets": "$0.03",
+        "/v1/dataset/threat-intel": "$0.03",
         "/v1/skill/agent-paid-services": "$29",
         "/v1/skill/x402-implementation-gotchas": "$19",
       };

@@ -1,22 +1,21 @@
 ---
-name: x402-service
-description: "Build and publish paid x402 APIs on Cloudflare Workers for the vAPI Network: viem RPC reads, EIP-712 signing, openapi/payment headers, and the silent gotchas that break them."
-version: 1.0.0
-author: Hermes Agent
+name: x402-implementation-gotchas
+description: "Build and publish paid x402 APIs on Cloudflare Workers: viem RPC reads, EIP-712 signing, openapi/payment headers, and the silent gotchas that break them."
+version: 1.1.0
+author: toolweather
 license: MIT
 platforms: [macos, linux]
 metadata:
   hermes:
-    tags: [x402, vapi, viem, cloudflare-workers, eip712, payments, agents]
+    tags: [x402, viem, cloudflare-workers, eip712, payments, agents]
     related_skills: []
 ---
 
 # Building x402 services
 
 A paid x402 API = Hono app + `@x402`-style manual middleware (or
-`@x402/express`) + a viem chain read + an oracle key for signing. The
-protocol conventions live in memory; this skill covers the **implementation
-gotchas** that cost real debugging time.
+`@x402/express`) + a viem chain read + an oracle key for signing. This
+skill covers the **implementation gotchas** that cost real debugging time.
 
 ## 1. viem's `getLogs` silently ignores a bare `topics` array
 
@@ -146,24 +145,23 @@ export default {
 };
 ```
 
-`wrangler secret put` needs interactive OAuth; use
-`wrangler deploy --temporary --secrets-file <file>` for non-interactive secret
-upload. `.secrets` must be gitignored.
+Keep credentials in your platform's own credential store and out of the repo;
+never commit them, and rotate any that were ever exposed.
 
 ## 7. Testing the paid flow without a funded wallet
 
-Stand up a mock facilitator that accepts everything, point the service at it,
-and exercise the real payment gate locally:
+Point the service at a local stub of the facilitator that returns a
+deterministic valid response, and exercise the real payment gate locally:
 
 ```bash
-node scripts/mock-facilitator.mjs 4399     # returns { isValid: true } for /verify
+node scripts/stub-facilitator.mjs 4399     # local stub: { isValid: true }
 X402_FACILITATOR=http://localhost:4399 npm run dev
 ```
 
-Then run an HTTP test that pays with a base64 JSON blob. This covers the
-full gate → chain read → sign → verify path. For the deployed Worker you can
-only test the free routes plus a real `/v1/verify` signature (the paid routes
-need a funded wallet).
+Then run an HTTP test through the full gate → chain read → sign → verify path
+with a locally signed payload. For the deployed Worker you can only test the
+free routes plus a real `/v1/verify` signature (the paid routes need a funded
+wallet).
 
 Make HTTP tests **discover** a recent on-chain tx rather than hardcoding one —
 a hardcoded tx ages out of the window and the test fails for the wrong reason.
